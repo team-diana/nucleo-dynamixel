@@ -30,6 +30,8 @@ int main() {
 
 See existing documentation, use the same format. Use the \\brief, \\param, \\return keywords
 
+Read also https://www.rosettacommons.org/docs/latest/development_documentation/tutorials/doxygen-tips
+
 ## Update doxygen
 
 ```bash
