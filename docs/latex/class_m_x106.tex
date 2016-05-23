@@ -12,33 +12,118 @@ Control a single \hyperlink{class_m_x106}{M\+X106} motor.
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bfseries M\+X106} (int ID, \hyperlink{classcommunication__1}{communication\+\_\+1} \&line, float gear\+\_\+train)\hypertarget{class_m_x106_ac413364acbcb66c88315d418a5be7d8e}{}\label{class_m_x106_ac413364acbcb66c88315d418a5be7d8e}
-
-\item 
-int {\bfseries Set\+Mode} (int mode)\hypertarget{class_m_x106_a7de70ad947eebbe398e4fcf18222a8de}{}\label{class_m_x106_a7de70ad947eebbe398e4fcf18222a8de}
-
-\item 
+\hyperlink{class_m_x106_ac413364acbcb66c88315d418a5be7d8e}{M\+X106} (int ID, \hyperlink{classcommunication__1}{communication\+\_\+1} \&line, float gear\+\_\+train)
+\begin{DoxyCompactList}\small\item\em Create a \hyperlink{class_m_x106}{M\+X106} instance. \end{DoxyCompactList}\item 
+int \hyperlink{class_m_x106_a7de70ad947eebbe398e4fcf18222a8de}{Set\+Mode} (int mode)
+\begin{DoxyCompactList}\small\item\em Set the motor mode. \end{DoxyCompactList}\item 
 int {\bfseries Set\+C\+W\+Limit} (float degrees)\hypertarget{class_m_x106_a1ac021a9b34ba0970529bee8ae4e168f}{}\label{class_m_x106_a1ac021a9b34ba0970529bee8ae4e168f}
 
 \item 
 int {\bfseries Set\+C\+C\+W\+Limit} (float degrees)\hypertarget{class_m_x106_a86db972dd474db642a008625bebef821}{}\label{class_m_x106_a86db972dd474db642a008625bebef821}
 
 \item 
-int {\bfseries Goal\+Position} (float degrees)\hypertarget{class_m_x106_afafe22d441e2073dea60acda999cc245}{}\label{class_m_x106_afafe22d441e2073dea60acda999cc245}
-
-\item 
-int {\bfseries Set\+Speed} (float goal\+\_\+speed)\hypertarget{class_m_x106_ab347df7137e25c8a31d7c6b0c412ed76}{}\label{class_m_x106_ab347df7137e25c8a31d7c6b0c412ed76}
-
-\item 
-float {\bfseries Get\+Temp} (void)\hypertarget{class_m_x106_a550761cebd3a9571f0ad001baace5157}{}\label{class_m_x106_a550761cebd3a9571f0ad001baace5157}
-
-\end{DoxyCompactItemize}
+int \hyperlink{class_m_x106_afafe22d441e2073dea60acda999cc245}{Goal\+Position} (float degrees)
+\begin{DoxyCompactList}\small\item\em Set the goal position that the motor will reach. \end{DoxyCompactList}\item 
+int \hyperlink{class_m_x106_ab347df7137e25c8a31d7c6b0c412ed76}{Set\+Speed} (float goal\+\_\+speed)
+\begin{DoxyCompactList}\small\item\em Set the maximum speed used during movement. Motor will try to reach this speed. \end{DoxyCompactList}\item 
+float \hyperlink{class_m_x106_a550761cebd3a9571f0ad001baace5157}{Get\+Temp} (void)
+\begin{DoxyCompactList}\small\item\em Get current temperature of the motor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Control a single \hyperlink{class_m_x106}{M\+X106} motor. 
 
 This class controls a single \hyperlink{class_m_x106}{M\+X106} motor. Using this class you can control position, movement, and other parameters. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+X106@{M\+X106}!M\+X106@{M\+X106}}
+\index{M\+X106@{M\+X106}!M\+X106@{M\+X106}}
+\subsubsection[{\texorpdfstring{M\+X106(int I\+D, communication\+\_\+1 \&line, float gear\+\_\+train)}{MX106(int ID, communication_1 &line, float gear_train)}}]{\setlength{\rightskip}{0pt plus 5cm}M\+X106\+::\+M\+X106 (
+\begin{DoxyParamCaption}
+\item[{int}]{ID, }
+\item[{{\bf communication\+\_\+1} \&}]{line, }
+\item[{float}]{gear\+\_\+train}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_x106_ac413364acbcb66c88315d418a5be7d8e}{}\label{class_m_x106_ac413364acbcb66c88315d418a5be7d8e}
+
+
+Create a \hyperlink{class_m_x106}{M\+X106} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & unique ID of the dynamixel motor \\
+\hline
+{\em line} & \hyperlink{classcommunication__1}{communication\+\_\+1} instance, used for communicating with the motor \\
+\hline
+{\em gear\+\_\+train} & gear ratio \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{M\+X106@{M\+X106}!Get\+Temp@{Get\+Temp}}
+\index{Get\+Temp@{Get\+Temp}!M\+X106@{M\+X106}}
+\subsubsection[{\texorpdfstring{Get\+Temp(void)}{GetTemp(void)}}]{\setlength{\rightskip}{0pt plus 5cm}float M\+X106\+::\+Get\+Temp (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_x106_a550761cebd3a9571f0ad001baace5157}{}\label{class_m_x106_a550761cebd3a9571f0ad001baace5157}
+
+
+Get current temperature of the motor. 
+
+\begin{DoxyReturn}{Returns}
+current temperature of the motor 
+\end{DoxyReturn}
+\index{M\+X106@{M\+X106}!Goal\+Position@{Goal\+Position}}
+\index{Goal\+Position@{Goal\+Position}!M\+X106@{M\+X106}}
+\subsubsection[{\texorpdfstring{Goal\+Position(float degrees)}{GoalPosition(float degrees)}}]{\setlength{\rightskip}{0pt plus 5cm}int M\+X106\+::\+Goal\+Position (
+\begin{DoxyParamCaption}
+\item[{float}]{degrees}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_x106_afafe22d441e2073dea60acda999cc245}{}\label{class_m_x106_afafe22d441e2073dea60acda999cc245}
+
+
+Set the goal position that the motor will reach. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em degrees} & the position, in degree. \\
+\hline
+\end{DoxyParams}
+\index{M\+X106@{M\+X106}!Set\+Mode@{Set\+Mode}}
+\index{Set\+Mode@{Set\+Mode}!M\+X106@{M\+X106}}
+\subsubsection[{\texorpdfstring{Set\+Mode(int mode)}{SetMode(int mode)}}]{\setlength{\rightskip}{0pt plus 5cm}int M\+X106\+::\+Set\+Mode (
+\begin{DoxyParamCaption}
+\item[{int}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_x106_a7de70ad947eebbe398e4fcf18222a8de}{}\label{class_m_x106_a7de70ad947eebbe398e4fcf18222a8de}
+
+
+Set the motor mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & mode=0 wheel mode\+: continous rotaton, like speed control mode=1 joint mode\+: like position control, from 0 to 360 degrees mode=2 multiturn mode\+: like position control, allows multiple rotation, more than 360 degrees \\
+\hline
+\end{DoxyParams}
+\index{M\+X106@{M\+X106}!Set\+Speed@{Set\+Speed}}
+\index{Set\+Speed@{Set\+Speed}!M\+X106@{M\+X106}}
+\subsubsection[{\texorpdfstring{Set\+Speed(float goal\+\_\+speed)}{SetSpeed(float goal_speed)}}]{\setlength{\rightskip}{0pt plus 5cm}int M\+X106\+::\+Set\+Speed (
+\begin{DoxyParamCaption}
+\item[{float}]{goal\+\_\+speed}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_x106_ab347df7137e25c8a31d7c6b0c412ed76}{}\label{class_m_x106_ab347df7137e25c8a31d7c6b0c412ed76}
+
+
+Set the maximum speed used during movement. Motor will try to reach this speed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em goal\+\_\+speed} & speciefied as T\+O\+DO\+: specify \\
+\hline
+\end{DoxyParams}
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

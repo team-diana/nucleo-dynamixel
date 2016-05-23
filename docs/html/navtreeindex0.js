@@ -20,6 +20,8 @@ var NAVTREEINDEX0 =
 "dir_bc7a51f54d28d354fd0d867a59876e9c.html":[1,0,0,1],
 "dir_ee0d429b9685bdf80d0c7fea92658965.html":[1,0,0,0],
 "files.html":[1,0],
+"functions.html":[0,2,0],
+"functions_func.html":[0,2,1],
 "index.html":[],
 "pages.html":[]
 };

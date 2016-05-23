@@ -25,18 +25,43 @@
 
     public:
     
+        /** 
+        * \brief Create a MX106 instance
+        * \param ID unique ID of the dynamixel motor
+        * \param line communication_1 instance, used for communicating with the motor
+        * \param gear_train gear ratio
+				*/
         MX106(int ID, communication_1& line, float gear_train);
     
+        
+				/** \brief Set the motor mode
+				* \param mode  
+ 				* mode=0 wheel mode: continous rotaton, like speed control
+ 				* mode=1 joint mode: like position control, from 0 to 360 degrees
+ 				* mode=2 multiturn mode: like position control, allows multiple rotation, more than 360 degrees
+				*/
         int SetMode(int mode);  
         
         int SetCWLimit(float degrees);
         
         int SetCCWLimit(float degrees);
     
+				/**
+				* \brief Set the goal position that the motor will reach
+				* \param degrees the position, in degree.   
+				*/
         int GoalPosition(float degrees);
 
+				/** 
+        * \brief Set the maximum speed used during movement. Motor will try to reach this speed.
+				* \param goal_speed  speciefied as  TODO: specify
+				*/
         int SetSpeed(float goal_speed);
     
+				/** 
+				* \brief Get current temperature of the motor
+				* \return current temperature of the motor
+				*/
         float GetTemp(void);
             
     private:

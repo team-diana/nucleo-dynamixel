@@ -1,17 +1,55 @@
 \hypertarget{classcommunication__1}{}\section{communication\+\_\+1 Class Reference}
 \label{classcommunication__1}\index{communication\+\_\+1@{communication\+\_\+1}}
+
+
+This class handle communication with dynamixel products that use the Communication 1 protocol.  
+
+
+
+
+{\ttfamily \#include $<$communication\+\_\+1.\+h$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bfseries communication\+\_\+1} (Pin\+Name tx, Pin\+Name rx, int baud\+\_\+rate)\hypertarget{classcommunication__1_a03b0e85ad36aa9bac39d0fc7663c77ca}{}\label{classcommunication__1_a03b0e85ad36aa9bac39d0fc7663c77ca}
-
-\item 
+\hyperlink{classcommunication__1_a03b0e85ad36aa9bac39d0fc7663c77ca}{communication\+\_\+1} (Pin\+Name tx, Pin\+Name rx, int baud\+\_\+rate)
+\begin{DoxyCompactList}\small\item\em Create a \hyperlink{classcommunication__1}{communication\+\_\+1}. \end{DoxyCompactList}\item 
 int {\bfseries read} (int ID, int start, int length, char $\ast$data)\hypertarget{classcommunication__1_a81c6441018c25b1d7d3578a97fb0e712}{}\label{classcommunication__1_a81c6441018c25b1d7d3578a97fb0e712}
 
 \item 
 int {\bfseries write} (int ID, int start, int length, char $\ast$data, int flag=0)\hypertarget{classcommunication__1_a21d61cc68098426a4f916a1cd6504734}{}\label{classcommunication__1_a21d61cc68098426a4f916a1cd6504734}
 
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class handle communication with dynamixel products that use the Communication 1 protocol. 
+
+This class handle communication with dynamixel products that use the Communication 1 protocol \href{http://support.robotis.com/en/product/dynamixel/dxl_communication.htm}{\tt http\+://support.\+robotis.\+com/en/product/dynamixel/dxl\+\_\+communication.\+htm} It uses a Serial\+Half\+Duplex port. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{communication\+\_\+1@{communication\+\_\+1}!communication\+\_\+1@{communication\+\_\+1}}
+\index{communication\+\_\+1@{communication\+\_\+1}!communication\+\_\+1@{communication\+\_\+1}}
+\subsubsection[{\texorpdfstring{communication\+\_\+1(\+Pin\+Name tx, Pin\+Name rx, int baud\+\_\+rate)}{communication_1(PinName tx, PinName rx, int baud_rate)}}]{\setlength{\rightskip}{0pt plus 5cm}communication\+\_\+1\+::communication\+\_\+1 (
+\begin{DoxyParamCaption}
+\item[{Pin\+Name}]{tx, }
+\item[{Pin\+Name}]{rx, }
+\item[{int}]{baud\+\_\+rate}
+\end{DoxyParamCaption}
+)}\hypertarget{classcommunication__1_a03b0e85ad36aa9bac39d0fc7663c77ca}{}\label{classcommunication__1_a03b0e85ad36aa9bac39d0fc7663c77ca}
+
+
+Create a \hyperlink{classcommunication__1}{communication\+\_\+1}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tx} & pin for tx, elettrically connected to rx \\
+\hline
+{\em rx} & pin for rx, elettrically connected to tx \\
+\hline
+{\em baud\+\_\+rate} & as defined in the dynamixel documentation (e.\+g. 9600) \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
