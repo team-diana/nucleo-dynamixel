@@ -1,0 +1,40 @@
+\hypertarget{structarm__fir__instance__q15}{}\section{arm\+\_\+fir\+\_\+instance\+\_\+q15 Struct Reference}
+\label{structarm__fir__instance__q15}\index{arm\+\_\+fir\+\_\+instance\+\_\+q15@{arm\+\_\+fir\+\_\+instance\+\_\+q15}}
+
+
+Instance structure for the Q15 F\+IR filter.  
+
+
+
+
+{\ttfamily \#include $<$arm\+\_\+math.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \hyperlink{structarm__fir__instance__q15_a0e46f93cf51bfb18b1be808be9c5bfc9}{num\+Taps}
+\item 
+q15\+\_\+t $\ast$ \hyperlink{structarm__fir__instance__q15_aa8d25f44f45b6a6c4cf38c31569b8a01}{p\+State}
+\item 
+q15\+\_\+t $\ast$ \hyperlink{structarm__fir__instance__q15_a6d16db16a5f8f0db54938f2967244d9e}{p\+Coeffs}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Instance structure for the Q15 F\+IR filter. 
+
+\subsection{Member Data Documentation}
+\index{arm\+\_\+fir\+\_\+instance\+\_\+q15@{arm\+\_\+fir\+\_\+instance\+\_\+q15}!num\+Taps@{num\+Taps}}
+\index{num\+Taps@{num\+Taps}!arm\+\_\+fir\+\_\+instance\+\_\+q15@{arm\+\_\+fir\+\_\+instance\+\_\+q15}}
+\subsubsection[{\texorpdfstring{num\+Taps}{numTaps}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t arm\+\_\+fir\+\_\+instance\+\_\+q15\+::num\+Taps}\hypertarget{structarm__fir__instance__q15_a0e46f93cf51bfb18b1be808be9c5bfc9}{}\label{structarm__fir__instance__q15_a0e46f93cf51bfb18b1be808be9c5bfc9}
+number of filter coefficients in the filter. \index{arm\+\_\+fir\+\_\+instance\+\_\+q15@{arm\+\_\+fir\+\_\+instance\+\_\+q15}!p\+Coeffs@{p\+Coeffs}}
+\index{p\+Coeffs@{p\+Coeffs}!arm\+\_\+fir\+\_\+instance\+\_\+q15@{arm\+\_\+fir\+\_\+instance\+\_\+q15}}
+\subsubsection[{\texorpdfstring{p\+Coeffs}{pCoeffs}}]{\setlength{\rightskip}{0pt plus 5cm}q15\+\_\+t$\ast$ arm\+\_\+fir\+\_\+instance\+\_\+q15\+::p\+Coeffs}\hypertarget{structarm__fir__instance__q15_a6d16db16a5f8f0db54938f2967244d9e}{}\label{structarm__fir__instance__q15_a6d16db16a5f8f0db54938f2967244d9e}
+points to the coefficient array. The array is of length num\+Taps. \index{arm\+\_\+fir\+\_\+instance\+\_\+q15@{arm\+\_\+fir\+\_\+instance\+\_\+q15}!p\+State@{p\+State}}
+\index{p\+State@{p\+State}!arm\+\_\+fir\+\_\+instance\+\_\+q15@{arm\+\_\+fir\+\_\+instance\+\_\+q15}}
+\subsubsection[{\texorpdfstring{p\+State}{pState}}]{\setlength{\rightskip}{0pt plus 5cm}q15\+\_\+t$\ast$ arm\+\_\+fir\+\_\+instance\+\_\+q15\+::p\+State}\hypertarget{structarm__fir__instance__q15_aa8d25f44f45b6a6c4cf38c31569b8a01}{}\label{structarm__fir__instance__q15_aa8d25f44f45b6a6c4cf38c31569b8a01}
+points to the state variable array. The array is of length num\+Taps+block\+Size-\/1. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dynamixel-\/\+M\+X106/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+N\+U\+C\+L\+E\+O\+\_\+\+F446\+R\+E/arm\+\_\+math.\+h\end{DoxyCompactItemize}

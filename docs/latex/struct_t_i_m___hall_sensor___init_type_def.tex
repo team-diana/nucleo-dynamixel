@@ -1,0 +1,45 @@
+\hypertarget{struct_t_i_m___hall_sensor___init_type_def}{}\section{T\+I\+M\+\_\+\+Hall\+Sensor\+\_\+\+Init\+Type\+Def Struct Reference}
+\label{struct_t_i_m___hall_sensor___init_type_def}\index{T\+I\+M\+\_\+\+Hall\+Sensor\+\_\+\+Init\+Type\+Def@{T\+I\+M\+\_\+\+Hall\+Sensor\+\_\+\+Init\+Type\+Def}}
+
+
+T\+IM Hall sensor Configuration Structure definition.  
+
+
+
+
+{\ttfamily \#include $<$stm32f4xx\+\_\+hal\+\_\+tim\+\_\+ex.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{struct_t_i_m___hall_sensor___init_type_def_a08e8f098cb51159344135bab57d82d85}{I\+C1\+Polarity}
+\item 
+uint32\+\_\+t \hyperlink{struct_t_i_m___hall_sensor___init_type_def_ac6c54e891cbe5afec92676219978209e}{I\+C1\+Prescaler}
+\item 
+uint32\+\_\+t \hyperlink{struct_t_i_m___hall_sensor___init_type_def_a2d349ca17282be59dd09dc9b10948d24}{I\+C1\+Filter}
+\item 
+uint32\+\_\+t \hyperlink{struct_t_i_m___hall_sensor___init_type_def_a822efefca8a13af284e84070bd19bb91}{Commutation\+\_\+\+Delay}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+T\+IM Hall sensor Configuration Structure definition. 
+
+\subsection{Member Data Documentation}
+\index{T\+I\+M\+\_\+\+Hall\+Sensor\+\_\+\+Init\+Type\+Def@{T\+I\+M\+\_\+\+Hall\+Sensor\+\_\+\+Init\+Type\+Def}!Commutation\+\_\+\+Delay@{Commutation\+\_\+\+Delay}}
+\index{Commutation\+\_\+\+Delay@{Commutation\+\_\+\+Delay}!T\+I\+M\+\_\+\+Hall\+Sensor\+\_\+\+Init\+Type\+Def@{T\+I\+M\+\_\+\+Hall\+Sensor\+\_\+\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Commutation\+\_\+\+Delay}{Commutation_Delay}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t T\+I\+M\+\_\+\+Hall\+Sensor\+\_\+\+Init\+Type\+Def\+::\+Commutation\+\_\+\+Delay}\hypertarget{struct_t_i_m___hall_sensor___init_type_def_a822efefca8a13af284e84070bd19bb91}{}\label{struct_t_i_m___hall_sensor___init_type_def_a822efefca8a13af284e84070bd19bb91}
+Specifies the pulse value to be loaded into the Capture Compare Register. This parameter can be a number between Min\+\_\+\+Data = 0x0000 and Max\+\_\+\+Data = 0x\+F\+F\+FF \index{T\+I\+M\+\_\+\+Hall\+Sensor\+\_\+\+Init\+Type\+Def@{T\+I\+M\+\_\+\+Hall\+Sensor\+\_\+\+Init\+Type\+Def}!I\+C1\+Filter@{I\+C1\+Filter}}
+\index{I\+C1\+Filter@{I\+C1\+Filter}!T\+I\+M\+\_\+\+Hall\+Sensor\+\_\+\+Init\+Type\+Def@{T\+I\+M\+\_\+\+Hall\+Sensor\+\_\+\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{I\+C1\+Filter}{IC1Filter}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t T\+I\+M\+\_\+\+Hall\+Sensor\+\_\+\+Init\+Type\+Def\+::\+I\+C1\+Filter}\hypertarget{struct_t_i_m___hall_sensor___init_type_def_a2d349ca17282be59dd09dc9b10948d24}{}\label{struct_t_i_m___hall_sensor___init_type_def_a2d349ca17282be59dd09dc9b10948d24}
+Specifies the input capture filter. This parameter can be a number between Min\+\_\+\+Data = 0x0 and Max\+\_\+\+Data = 0xF \index{T\+I\+M\+\_\+\+Hall\+Sensor\+\_\+\+Init\+Type\+Def@{T\+I\+M\+\_\+\+Hall\+Sensor\+\_\+\+Init\+Type\+Def}!I\+C1\+Polarity@{I\+C1\+Polarity}}
+\index{I\+C1\+Polarity@{I\+C1\+Polarity}!T\+I\+M\+\_\+\+Hall\+Sensor\+\_\+\+Init\+Type\+Def@{T\+I\+M\+\_\+\+Hall\+Sensor\+\_\+\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{I\+C1\+Polarity}{IC1Polarity}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t T\+I\+M\+\_\+\+Hall\+Sensor\+\_\+\+Init\+Type\+Def\+::\+I\+C1\+Polarity}\hypertarget{struct_t_i_m___hall_sensor___init_type_def_a08e8f098cb51159344135bab57d82d85}{}\label{struct_t_i_m___hall_sensor___init_type_def_a08e8f098cb51159344135bab57d82d85}
+Specifies the active edge of the input signal. This parameter can be a value of \hyperlink{group___t_i_m___input___capture___polarity}{T\+IM Input Capture Polarity} \index{T\+I\+M\+\_\+\+Hall\+Sensor\+\_\+\+Init\+Type\+Def@{T\+I\+M\+\_\+\+Hall\+Sensor\+\_\+\+Init\+Type\+Def}!I\+C1\+Prescaler@{I\+C1\+Prescaler}}
+\index{I\+C1\+Prescaler@{I\+C1\+Prescaler}!T\+I\+M\+\_\+\+Hall\+Sensor\+\_\+\+Init\+Type\+Def@{T\+I\+M\+\_\+\+Hall\+Sensor\+\_\+\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{I\+C1\+Prescaler}{IC1Prescaler}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t T\+I\+M\+\_\+\+Hall\+Sensor\+\_\+\+Init\+Type\+Def\+::\+I\+C1\+Prescaler}\hypertarget{struct_t_i_m___hall_sensor___init_type_def_ac6c54e891cbe5afec92676219978209e}{}\label{struct_t_i_m___hall_sensor___init_type_def_ac6c54e891cbe5afec92676219978209e}
+Specifies the Input Capture Prescaler. This parameter can be a value of \hyperlink{group___t_i_m___input___capture___prescaler}{T\+IM Input Capture Prescaler} 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dynamixel-\/\+M\+X106/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+N\+U\+C\+L\+E\+O\+\_\+\+F446\+R\+E/\hyperlink{stm32f4xx__hal__tim__ex_8h}{stm32f4xx\+\_\+hal\+\_\+tim\+\_\+ex.\+h}\end{DoxyCompactItemize}

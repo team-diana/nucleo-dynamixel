@@ -1,0 +1,182 @@
+\hypertarget{classmbed_1_1_interrupt_manager}{}\section{mbed\+:\+:Interrupt\+Manager Class Reference}
+\label{classmbed_1_1_interrupt_manager}\index{mbed\+::\+Interrupt\+Manager@{mbed\+::\+Interrupt\+Manager}}
+
+
+{\ttfamily \#include $<$Interrupt\+Manager.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmbed_1_1_function_pointer_arg1}{p\+Function\+Pointer\+\_\+t} \hyperlink{classmbed_1_1_interrupt_manager_a17e717ff89d096a000f674b46ca7e849}{add\+\_\+handler} (void($\ast$function)(void), \hyperlink{group___peripheral__interrupt__number__definition_ga7e1129cd8a196f4284d41db3e82ad5c8}{I\+R\+Qn\+\_\+\+Type} irq)
+\item 
+\hyperlink{classmbed_1_1_function_pointer_arg1}{p\+Function\+Pointer\+\_\+t} \hyperlink{classmbed_1_1_interrupt_manager_ad7250442830a84d34ee2fcd84664fe9d}{add\+\_\+handler\+\_\+front} (void($\ast$function)(void), \hyperlink{group___peripheral__interrupt__number__definition_ga7e1129cd8a196f4284d41db3e82ad5c8}{I\+R\+Qn\+\_\+\+Type} irq)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classmbed_1_1_function_pointer_arg1}{p\+Function\+Pointer\+\_\+t} \hyperlink{classmbed_1_1_interrupt_manager_aa964e760de62ab08711dcaae40732649}{add\+\_\+handler} (T $\ast$tptr, void(T\+::$\ast$mptr)(void), \hyperlink{group___peripheral__interrupt__number__definition_ga7e1129cd8a196f4284d41db3e82ad5c8}{I\+R\+Qn\+\_\+\+Type} irq)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classmbed_1_1_function_pointer_arg1}{p\+Function\+Pointer\+\_\+t} \hyperlink{classmbed_1_1_interrupt_manager_a9fb2a44246203de940e58ed9f696d872}{add\+\_\+handler\+\_\+front} (T $\ast$tptr, void(T\+::$\ast$mptr)(void), \hyperlink{group___peripheral__interrupt__number__definition_ga7e1129cd8a196f4284d41db3e82ad5c8}{I\+R\+Qn\+\_\+\+Type} irq)
+\item 
+bool \hyperlink{classmbed_1_1_interrupt_manager_a298699ba52acb35e8ed07cff1c31744f}{remove\+\_\+handler} (\hyperlink{classmbed_1_1_function_pointer_arg1}{p\+Function\+Pointer\+\_\+t} handler, \hyperlink{group___peripheral__interrupt__number__definition_ga7e1129cd8a196f4284d41db3e82ad5c8}{I\+R\+Qn\+\_\+\+Type} irq)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classmbed_1_1_interrupt_manager}{Interrupt\+Manager} $\ast$ \hyperlink{classmbed_1_1_interrupt_manager_a02c7c6ec7c6a1ce0ec82d85b7648d28c}{get} ()
+\item 
+static void \hyperlink{classmbed_1_1_interrupt_manager_a39fe3c021afee8a248309a2a6034b8df}{destroy} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Use this singleton if you need to chain interrupt handlers.
+
+Example (for L\+P\+C1768)\+: 
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include "InterruptManager.h"}
+\textcolor{preprocessor}{#include "mbed.h"}
+
+Ticker flipper;
+DigitalOut led1(LED1);
+DigitalOut led2(LED2);
+
+\textcolor{keywordtype}{void} flip(\textcolor{keywordtype}{void}) \{
+    led1 = !led1;
+\}
+
+\textcolor{keywordtype}{void} handler(\textcolor{keywordtype}{void}) \{
+    led2 = !led1;
+\}
+
+\textcolor{keywordtype}{int} main() \{
+    led1 = led2 = 0;
+    flipper.attach(&flip, 1.0);
+    \hyperlink{classmbed_1_1_interrupt_manager_a02c7c6ec7c6a1ce0ec82d85b7648d28c}{InterruptManager::get}()->\hyperlink{classmbed_1_1_interrupt_manager_a17e717ff89d096a000f674b46ca7e849}{add\_handler}(handler, TIMER3\_IRQn);
+\}
+\end{DoxyCode}
+ 
+
+\subsection{Member Function Documentation}
+\index{mbed\+::\+Interrupt\+Manager@{mbed\+::\+Interrupt\+Manager}!add\+\_\+handler@{add\+\_\+handler}}
+\index{add\+\_\+handler@{add\+\_\+handler}!mbed\+::\+Interrupt\+Manager@{mbed\+::\+Interrupt\+Manager}}
+\subsubsection[{\texorpdfstring{add\+\_\+handler(void($\ast$function)(void), I\+R\+Qn\+\_\+\+Type irq)}{add_handler(void(*function)(void), IRQn_Type irq)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf p\+Function\+Pointer\+\_\+t} mbed\+::\+Interrupt\+Manager\+::add\+\_\+handler (
+\begin{DoxyParamCaption}
+\item[{void($\ast$)(void)}]{function, }
+\item[{{\bf I\+R\+Qn\+\_\+\+Type}}]{irq}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmbed_1_1_interrupt_manager_a17e717ff89d096a000f674b46ca7e849}{}\label{classmbed_1_1_interrupt_manager_a17e717ff89d096a000f674b46ca7e849}
+Add a handler for an interrupt at the end of the handler list
+
+
+\begin{DoxyParams}{Parameters}
+{\em function} & the handler to add \\
+\hline
+{\em irq} & interrupt number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function object created for \textquotesingle{}function\textquotesingle{} 
+\end{DoxyReturn}
+\index{mbed\+::\+Interrupt\+Manager@{mbed\+::\+Interrupt\+Manager}!add\+\_\+handler@{add\+\_\+handler}}
+\index{add\+\_\+handler@{add\+\_\+handler}!mbed\+::\+Interrupt\+Manager@{mbed\+::\+Interrupt\+Manager}}
+\subsubsection[{\texorpdfstring{add\+\_\+handler(\+T $\ast$tptr, void(\+T\+::$\ast$mptr)(void), I\+R\+Qn\+\_\+\+Type irq)}{add_handler(T *tptr, void(T::*mptr)(void), IRQn_Type irq)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf p\+Function\+Pointer\+\_\+t} mbed\+::\+Interrupt\+Manager\+::add\+\_\+handler (
+\begin{DoxyParamCaption}
+\item[{T $\ast$}]{tptr, }
+\item[{void(T\+::$\ast$)(void)}]{mptr, }
+\item[{{\bf I\+R\+Qn\+\_\+\+Type}}]{irq}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmbed_1_1_interrupt_manager_aa964e760de62ab08711dcaae40732649}{}\label{classmbed_1_1_interrupt_manager_aa964e760de62ab08711dcaae40732649}
+Add a handler for an interrupt at the end of the handler list
+
+
+\begin{DoxyParams}{Parameters}
+{\em tptr} & pointer to the object that has the handler function \\
+\hline
+{\em mptr} & pointer to the actual handler function \\
+\hline
+{\em irq} & interrupt number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function object created for \textquotesingle{}tptr\textquotesingle{} and \textquotesingle{}mptr\textquotesingle{} 
+\end{DoxyReturn}
+\index{mbed\+::\+Interrupt\+Manager@{mbed\+::\+Interrupt\+Manager}!add\+\_\+handler\+\_\+front@{add\+\_\+handler\+\_\+front}}
+\index{add\+\_\+handler\+\_\+front@{add\+\_\+handler\+\_\+front}!mbed\+::\+Interrupt\+Manager@{mbed\+::\+Interrupt\+Manager}}
+\subsubsection[{\texorpdfstring{add\+\_\+handler\+\_\+front(void($\ast$function)(void), I\+R\+Qn\+\_\+\+Type irq)}{add_handler_front(void(*function)(void), IRQn_Type irq)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf p\+Function\+Pointer\+\_\+t} mbed\+::\+Interrupt\+Manager\+::add\+\_\+handler\+\_\+front (
+\begin{DoxyParamCaption}
+\item[{void($\ast$)(void)}]{function, }
+\item[{{\bf I\+R\+Qn\+\_\+\+Type}}]{irq}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmbed_1_1_interrupt_manager_ad7250442830a84d34ee2fcd84664fe9d}{}\label{classmbed_1_1_interrupt_manager_ad7250442830a84d34ee2fcd84664fe9d}
+Add a handler for an interrupt at the beginning of the handler list
+
+
+\begin{DoxyParams}{Parameters}
+{\em function} & the handler to add \\
+\hline
+{\em irq} & interrupt number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function object created for \textquotesingle{}function\textquotesingle{} 
+\end{DoxyReturn}
+\index{mbed\+::\+Interrupt\+Manager@{mbed\+::\+Interrupt\+Manager}!add\+\_\+handler\+\_\+front@{add\+\_\+handler\+\_\+front}}
+\index{add\+\_\+handler\+\_\+front@{add\+\_\+handler\+\_\+front}!mbed\+::\+Interrupt\+Manager@{mbed\+::\+Interrupt\+Manager}}
+\subsubsection[{\texorpdfstring{add\+\_\+handler\+\_\+front(\+T $\ast$tptr, void(\+T\+::$\ast$mptr)(void), I\+R\+Qn\+\_\+\+Type irq)}{add_handler_front(T *tptr, void(T::*mptr)(void), IRQn_Type irq)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf p\+Function\+Pointer\+\_\+t} mbed\+::\+Interrupt\+Manager\+::add\+\_\+handler\+\_\+front (
+\begin{DoxyParamCaption}
+\item[{T $\ast$}]{tptr, }
+\item[{void(T\+::$\ast$)(void)}]{mptr, }
+\item[{{\bf I\+R\+Qn\+\_\+\+Type}}]{irq}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmbed_1_1_interrupt_manager_a9fb2a44246203de940e58ed9f696d872}{}\label{classmbed_1_1_interrupt_manager_a9fb2a44246203de940e58ed9f696d872}
+Add a handler for an interrupt at the beginning of the handler list
+
+
+\begin{DoxyParams}{Parameters}
+{\em tptr} & pointer to the object that has the handler function \\
+\hline
+{\em mptr} & pointer to the actual handler function \\
+\hline
+{\em irq} & interrupt number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function object created for \textquotesingle{}tptr\textquotesingle{} and \textquotesingle{}mptr\textquotesingle{} 
+\end{DoxyReturn}
+\index{mbed\+::\+Interrupt\+Manager@{mbed\+::\+Interrupt\+Manager}!destroy@{destroy}}
+\index{destroy@{destroy}!mbed\+::\+Interrupt\+Manager@{mbed\+::\+Interrupt\+Manager}}
+\subsubsection[{\texorpdfstring{destroy()}{destroy()}}]{\setlength{\rightskip}{0pt plus 5cm}static void mbed\+::\+Interrupt\+Manager\+::destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmbed_1_1_interrupt_manager_a39fe3c021afee8a248309a2a6034b8df}{}\label{classmbed_1_1_interrupt_manager_a39fe3c021afee8a248309a2a6034b8df}
+Destroy the current instance of the interrupt manager \index{mbed\+::\+Interrupt\+Manager@{mbed\+::\+Interrupt\+Manager}!get@{get}}
+\index{get@{get}!mbed\+::\+Interrupt\+Manager@{mbed\+::\+Interrupt\+Manager}}
+\subsubsection[{\texorpdfstring{get()}{get()}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Interrupt\+Manager}$\ast$ mbed\+::\+Interrupt\+Manager\+::get (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classmbed_1_1_interrupt_manager_a02c7c6ec7c6a1ce0ec82d85b7648d28c}{}\label{classmbed_1_1_interrupt_manager_a02c7c6ec7c6a1ce0ec82d85b7648d28c}
+Return the only instance of this class \index{mbed\+::\+Interrupt\+Manager@{mbed\+::\+Interrupt\+Manager}!remove\+\_\+handler@{remove\+\_\+handler}}
+\index{remove\+\_\+handler@{remove\+\_\+handler}!mbed\+::\+Interrupt\+Manager@{mbed\+::\+Interrupt\+Manager}}
+\subsubsection[{\texorpdfstring{remove\+\_\+handler(p\+Function\+Pointer\+\_\+t handler, I\+R\+Qn\+\_\+\+Type irq)}{remove_handler(pFunctionPointer_t handler, IRQn_Type irq)}}]{\setlength{\rightskip}{0pt plus 5cm}bool mbed\+::\+Interrupt\+Manager\+::remove\+\_\+handler (
+\begin{DoxyParamCaption}
+\item[{{\bf p\+Function\+Pointer\+\_\+t}}]{handler, }
+\item[{{\bf I\+R\+Qn\+\_\+\+Type}}]{irq}
+\end{DoxyParamCaption}
+)}\hypertarget{classmbed_1_1_interrupt_manager_a298699ba52acb35e8ed07cff1c31744f}{}\label{classmbed_1_1_interrupt_manager_a298699ba52acb35e8ed07cff1c31744f}
+Remove a handler from an interrupt
+
+
+\begin{DoxyParams}{Parameters}
+{\em handler} & the function object for the handler to remove \\
+\hline
+{\em irq} & the interrupt number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the handler was found and removed, false otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dynamixel-\/\+M\+X106/mbed/Interrupt\+Manager.\+h\end{DoxyCompactItemize}

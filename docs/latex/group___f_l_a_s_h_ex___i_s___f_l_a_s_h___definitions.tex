@@ -1,0 +1,171 @@
+\hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions}{}\section{F\+L\+A\+SH Private macros to check input parameters}
+\label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions}\index{F\+L\+A\+S\+H Private macros to check input parameters@{F\+L\+A\+S\+H Private macros to check input parameters}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries I\+S\+\_\+\+F\+L\+A\+S\+H\+\_\+\+T\+Y\+P\+E\+E\+R\+A\+SE}(V\+A\+L\+UE)
+\item 
+\#define {\bfseries I\+S\+\_\+\+V\+O\+L\+T\+A\+G\+E\+R\+A\+N\+GE}(R\+A\+N\+GE)
+\item 
+\#define {\bfseries I\+S\+\_\+\+W\+R\+P\+S\+T\+A\+TE}(V\+A\+L\+UE)
+\item 
+\#define {\bfseries I\+S\+\_\+\+O\+P\+T\+I\+O\+N\+B\+Y\+TE}(V\+A\+L\+UE)~(((V\+A\+L\+UE) $<$= (\hyperlink{group___f_l_a_s_h_ex___option___type_ga48712a166ea192ddcda0f2653679f9ec}{O\+P\+T\+I\+O\+N\+B\+Y\+T\+E\+\_\+\+W\+RP}$\vert$\hyperlink{group___f_l_a_s_h_ex___option___type_ga8f0bdb21ef13bae39d5d8b6619e2df06}{O\+P\+T\+I\+O\+N\+B\+Y\+T\+E\+\_\+\+R\+DP}$\vert$\hyperlink{group___f_l_a_s_h_ex___option___type_gac7d843e666e15c79688a1914e8ffe7a5}{O\+P\+T\+I\+O\+N\+B\+Y\+T\+E\+\_\+\+U\+S\+ER}$\vert$\hyperlink{group___f_l_a_s_h_ex___option___type_gaf4063216c8386467d187663190936c07}{O\+P\+T\+I\+O\+N\+B\+Y\+T\+E\+\_\+\+B\+OR})))\hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga87cd48c2373f47668470a38892ed07e3}{}\label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga87cd48c2373f47668470a38892ed07e3}
+
+\item 
+\#define {\bfseries I\+S\+\_\+\+O\+B\+\_\+\+R\+D\+P\+\_\+\+L\+E\+V\+EL}(L\+E\+V\+EL)
+\item 
+\#define {\bfseries I\+S\+\_\+\+O\+B\+\_\+\+I\+W\+D\+G\+\_\+\+S\+O\+U\+R\+CE}(S\+O\+U\+R\+CE)~(((S\+O\+U\+R\+CE) == \hyperlink{group___f_l_a_s_h_ex___option___bytes___i_watchdog_ga5a357e232c955444c3f2ccb9a937ffce}{O\+B\+\_\+\+I\+W\+D\+G\+\_\+\+SW}) $\vert$$\vert$ ((S\+O\+U\+R\+CE) == \hyperlink{group___f_l_a_s_h_ex___option___bytes___i_watchdog_gadfcbfa963d79c339ec8e2d5a7734e47a}{O\+B\+\_\+\+I\+W\+D\+G\+\_\+\+HW}))\hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gaf2871652c08e76499d9449be6556f12c}{}\label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gaf2871652c08e76499d9449be6556f12c}
+
+\item 
+\#define {\bfseries I\+S\+\_\+\+O\+B\+\_\+\+S\+T\+O\+P\+\_\+\+S\+O\+U\+R\+CE}(S\+O\+U\+R\+CE)~(((S\+O\+U\+R\+CE) == \hyperlink{group___f_l_a_s_h_ex___option___bytes__n_r_s_t___s_t_o_p_ga7344fe0ec25c5eb2d11db7c855325436}{O\+B\+\_\+\+S\+T\+O\+P\+\_\+\+N\+O\+\_\+\+R\+ST}) $\vert$$\vert$ ((S\+O\+U\+R\+CE) == \hyperlink{group___f_l_a_s_h_ex___option___bytes__n_r_s_t___s_t_o_p_gaef92c03b1f279c532bfa13d3bb074b57}{O\+B\+\_\+\+S\+T\+O\+P\+\_\+\+R\+ST}))\hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga131ae3434f300c8317dd6b3b349c7cab}{}\label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga131ae3434f300c8317dd6b3b349c7cab}
+
+\item 
+\#define {\bfseries I\+S\+\_\+\+O\+B\+\_\+\+S\+T\+D\+B\+Y\+\_\+\+S\+O\+U\+R\+CE}(S\+O\+U\+R\+CE)~(((S\+O\+U\+R\+CE) == \hyperlink{group___f_l_a_s_h_ex___option___bytes__n_r_s_t___s_t_d_b_y_gad776ed7b3b9a98013aac9976eedb7e94}{O\+B\+\_\+\+S\+T\+D\+B\+Y\+\_\+\+N\+O\+\_\+\+R\+ST}) $\vert$$\vert$ ((S\+O\+U\+R\+CE) == \hyperlink{group___f_l_a_s_h_ex___option___bytes__n_r_s_t___s_t_d_b_y_ga69451a6f69247528f58735c9c83499ce}{O\+B\+\_\+\+S\+T\+D\+B\+Y\+\_\+\+R\+ST}))\hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga8a05393df3a5e89551b4e2e1e8c5b884}{}\label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga8a05393df3a5e89551b4e2e1e8c5b884}
+
+\item 
+\#define {\bfseries I\+S\+\_\+\+O\+B\+\_\+\+B\+O\+R\+\_\+\+L\+E\+V\+EL}(L\+E\+V\+EL)
+\item 
+\#define {\bfseries I\+S\+\_\+\+P\+C\+R\+O\+P\+S\+T\+A\+TE}(V\+A\+L\+UE)
+\item 
+\#define {\bfseries I\+S\+\_\+\+O\+B\+EX}(V\+A\+L\+UE)~(((V\+A\+L\+UE) == \hyperlink{group___f_l_a_s_h_ex___advanced___option___type_gade16326e09bd923b54f1ec8622a7bc4b}{O\+P\+T\+I\+O\+N\+B\+Y\+T\+E\+\_\+\+P\+C\+R\+OP}))\hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gac5890fc0709a4b8112a314cb0e58c5c8}{}\label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gac5890fc0709a4b8112a314cb0e58c5c8}
+
+\item 
+\#define {\bfseries I\+S\+\_\+\+F\+L\+A\+S\+H\+\_\+\+L\+A\+T\+E\+N\+CY}(L\+A\+T\+E\+N\+CY)
+\item 
+\#define {\bfseries I\+S\+\_\+\+F\+L\+A\+S\+H\+\_\+\+B\+A\+NK}(B\+A\+NK)~(((B\+A\+NK) == \hyperlink{group___f_l_a_s_h_ex___banks_ga8ac3f24496e5de6a2f6bd3ff77f0ca53}{F\+L\+A\+S\+H\+\_\+\+B\+A\+N\+K\+\_\+1}))\hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga13845f67e09ef81901c6fa683f13f086}{}\label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga13845f67e09ef81901c6fa683f13f086}
+
+\item 
+\#define {\bfseries I\+S\+\_\+\+F\+L\+A\+S\+H\+\_\+\+S\+E\+C\+T\+OR}(S\+E\+C\+T\+OR)
+\item 
+\#define {\bfseries I\+S\+\_\+\+F\+L\+A\+S\+H\+\_\+\+A\+D\+D\+R\+E\+SS}(A\+D\+D\+R\+E\+SS)~(((A\+D\+D\+R\+E\+SS) $>$= \hyperlink{group___peripheral__memory__map_ga23a9099a5f8fc9c6e253c0eecb2be8db}{F\+L\+A\+S\+H\+\_\+\+B\+A\+SE}) \&\& ((A\+D\+D\+R\+E\+SS) $<$= \hyperlink{group___peripheral__memory__map_ga8be554f354e5aa65370f6db63d4f3ee4}{F\+L\+A\+S\+H\+\_\+\+E\+ND}))\hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gad0c8166ba15a0b8d458412a8bb74e2f0}{}\label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gad0c8166ba15a0b8d458412a8bb74e2f0}
+
+\item 
+\#define {\bfseries I\+S\+\_\+\+F\+L\+A\+S\+H\+\_\+\+N\+B\+S\+E\+C\+T\+O\+RS}(N\+B\+S\+E\+C\+T\+O\+RS)~(((N\+B\+S\+E\+C\+T\+O\+RS) != 0) \&\& ((N\+B\+S\+E\+C\+T\+O\+RS) $<$= F\+L\+A\+S\+H\+\_\+\+S\+E\+C\+T\+O\+R\+\_\+\+T\+O\+T\+AL))\hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga5b85e63e0066bf7ca518cb3790ad67e0}{}\label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga5b85e63e0066bf7ca518cb3790ad67e0}
+
+\item 
+\#define {\bfseries I\+S\+\_\+\+O\+B\+\_\+\+W\+R\+P\+\_\+\+S\+E\+C\+T\+OR}(S\+E\+C\+T\+OR)~((((S\+E\+C\+T\+OR) \& (uint32\+\_\+t)0x\+F\+F\+F\+F\+F000) == 0x00000000) \&\& ((\+S\+E\+C\+T\+O\+R) != 0x00000000))\hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gade36d0d5f5de92caf5a5e7ee22394b87}{}\label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gade36d0d5f5de92caf5a5e7ee22394b87}
+
+\item 
+\#define {\bfseries I\+S\+\_\+\+O\+B\+\_\+\+P\+C\+R\+OP}(S\+E\+C\+T\+OR)~((((S\+E\+C\+T\+OR) \& (uint32\+\_\+t)0x\+F\+F\+F\+F\+F000) == 0x00000000) \&\& ((\+S\+E\+C\+T\+O\+R) != 0x00000000))\hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga4366c6db141b2c0024429b5808eef6e8}{}\label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga4366c6db141b2c0024429b5808eef6e8}
+
+\item 
+\#define {\bfseries I\+S\+\_\+\+O\+B\+\_\+\+P\+C\+R\+O\+P\+\_\+\+S\+E\+L\+E\+CT}(P\+C\+R\+OP)~(((P\+C\+R\+OP) == \hyperlink{group___f_l_a_s_h_ex___selection___protection___mode_ga7de2d3d5fc3baa922d43850a2f140dfc}{O\+B\+\_\+\+P\+C\+R\+O\+P\+\_\+\+S\+E\+L\+E\+C\+T\+ED}) $\vert$$\vert$ ((P\+C\+R\+OP) == \hyperlink{group___f_l_a_s_h_ex___selection___protection___mode_gaa11bc40819552615d0618b0df99120b1}{O\+B\+\_\+\+P\+C\+R\+O\+P\+\_\+\+D\+E\+S\+E\+L\+E\+C\+T\+ED}))\hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga917bc3381ebf7106868915928c3eaa2e}{}\label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga917bc3381ebf7106868915928c3eaa2e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\index{F\+L\+A\+S\+H Private macros to check input parameters@{F\+L\+A\+S\+H Private macros to check input parameters}!I\+S\+\_\+\+F\+L\+A\+S\+H\+\_\+\+L\+A\+T\+E\+N\+CY@{I\+S\+\_\+\+F\+L\+A\+S\+H\+\_\+\+L\+A\+T\+E\+N\+CY}}
+\index{I\+S\+\_\+\+F\+L\+A\+S\+H\+\_\+\+L\+A\+T\+E\+N\+CY@{I\+S\+\_\+\+F\+L\+A\+S\+H\+\_\+\+L\+A\+T\+E\+N\+CY}!F\+L\+A\+S\+H Private macros to check input parameters@{F\+L\+A\+S\+H Private macros to check input parameters}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+F\+L\+A\+S\+H\+\_\+\+L\+A\+T\+E\+N\+CY}{IS_FLASH_LATENCY}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+F\+L\+A\+S\+H\+\_\+\+L\+A\+T\+E\+N\+CY(
+\begin{DoxyParamCaption}
+\item[{}]{L\+A\+T\+E\+N\+CY}
+\end{DoxyParamCaption}
+)}\hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gafcbd098d482318a622a58bf168547389}{}\label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gafcbd098d482318a622a58bf168547389}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((LATENCY) == \hyperlink{group___f_l_a_s_h___latency_ga1276f51e97dc9857ca261fae4eb890f3}{FLASH\_LATENCY\_0})  || \(\backslash\)
+                                   ((LATENCY) == \hyperlink{group___f_l_a_s_h___latency_ga28c611f2cb4a3772ab37c538357fd5f6}{FLASH\_LATENCY\_1})  || \(\backslash\)
+                                   ((LATENCY) == \hyperlink{group___f_l_a_s_h___latency_ga69d209f9cb4f625010d72555c8dceb03}{FLASH\_LATENCY\_2})  || \(\backslash\)
+                                   ((LATENCY) == \hyperlink{group___f_l_a_s_h___latency_ga2f607c9fa7bdcd53df0e98a7b1e67496}{FLASH\_LATENCY\_3})  || \(\backslash\)
+                                   ((LATENCY) == \hyperlink{group___f_l_a_s_h___latency_ga65fe32d2c25a3d5ee3dce89dee459fa5}{FLASH\_LATENCY\_4})  || \(\backslash\)
+                                   ((LATENCY) == \hyperlink{group___f_l_a_s_h___latency_ga2517d62fa71e27b3b53223bbaacd06f7}{FLASH\_LATENCY\_5})  || \(\backslash\)
+                                   ((LATENCY) == \hyperlink{group___f_l_a_s_h___latency_gad047485b4941997af3c55ad61ad9c13a}{FLASH\_LATENCY\_6})  || \(\backslash\)
+                                   ((LATENCY) == \hyperlink{group___f_l_a_s_h___latency_ga09e9f01dd2e6e361adc9c995a5a73510}{FLASH\_LATENCY\_7}))
+\end{DoxyCode}
+\index{F\+L\+A\+S\+H Private macros to check input parameters@{F\+L\+A\+S\+H Private macros to check input parameters}!I\+S\+\_\+\+F\+L\+A\+S\+H\+\_\+\+S\+E\+C\+T\+OR@{I\+S\+\_\+\+F\+L\+A\+S\+H\+\_\+\+S\+E\+C\+T\+OR}}
+\index{I\+S\+\_\+\+F\+L\+A\+S\+H\+\_\+\+S\+E\+C\+T\+OR@{I\+S\+\_\+\+F\+L\+A\+S\+H\+\_\+\+S\+E\+C\+T\+OR}!F\+L\+A\+S\+H Private macros to check input parameters@{F\+L\+A\+S\+H Private macros to check input parameters}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+F\+L\+A\+S\+H\+\_\+\+S\+E\+C\+T\+OR}{IS_FLASH_SECTOR}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+F\+L\+A\+S\+H\+\_\+\+S\+E\+C\+T\+OR(
+\begin{DoxyParamCaption}
+\item[{}]{S\+E\+C\+T\+OR}
+\end{DoxyParamCaption}
+)}\hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga9e7722ee983a9411f59c0fdb81bc0e08}{}\label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga9e7722ee983a9411f59c0fdb81bc0e08}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((SECTOR) == \hyperlink{group___f_l_a_s_h_ex___sectors_ga15a8729b9c5eb83d46d5f437cd46d874}{FLASH\_SECTOR\_0})   || ((SECTOR) == \hyperlink{group___f_l_a_s_h_ex___sectors_ga2a85d94366030ea8328796169c1bc300}{FLASH\_SECTOR\_1})   ||\(\backslash\)
+                                 ((SECTOR) == \hyperlink{group___f_l_a_s_h_ex___sectors_ga58999952d63fd45dd86b0817ad2a5bae}{FLASH\_SECTOR\_2})   || ((SECTOR) == 
+      \hyperlink{group___f_l_a_s_h_ex___sectors_gab0a0ce95752a56b430c809a88812fed2}{FLASH\_SECTOR\_3})   ||\(\backslash\)
+                                 ((SECTOR) == \hyperlink{group___f_l_a_s_h_ex___sectors_gac1338c8f4ab3ae74d212c59c7e9e4cc6}{FLASH\_SECTOR\_4})   || ((SECTOR) == 
+      \hyperlink{group___f_l_a_s_h_ex___sectors_gad8736215a8d3ce115f4281a6d026d0f8}{FLASH\_SECTOR\_5})   ||\(\backslash\)
+                                 ((SECTOR) == \hyperlink{group___f_l_a_s_h_ex___sectors_gaa0d1fc04e5918186ac9c228ab4172606}{FLASH\_SECTOR\_6})   || ((SECTOR) == 
+      \hyperlink{group___f_l_a_s_h_ex___sectors_ga99693b9e0816fdb8706218bc845724ad}{FLASH\_SECTOR\_7}))
+\end{DoxyCode}
+\index{F\+L\+A\+S\+H Private macros to check input parameters@{F\+L\+A\+S\+H Private macros to check input parameters}!I\+S\+\_\+\+F\+L\+A\+S\+H\+\_\+\+T\+Y\+P\+E\+E\+R\+A\+SE@{I\+S\+\_\+\+F\+L\+A\+S\+H\+\_\+\+T\+Y\+P\+E\+E\+R\+A\+SE}}
+\index{I\+S\+\_\+\+F\+L\+A\+S\+H\+\_\+\+T\+Y\+P\+E\+E\+R\+A\+SE@{I\+S\+\_\+\+F\+L\+A\+S\+H\+\_\+\+T\+Y\+P\+E\+E\+R\+A\+SE}!F\+L\+A\+S\+H Private macros to check input parameters@{F\+L\+A\+S\+H Private macros to check input parameters}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+F\+L\+A\+S\+H\+\_\+\+T\+Y\+P\+E\+E\+R\+A\+SE}{IS_FLASH_TYPEERASE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+F\+L\+A\+S\+H\+\_\+\+T\+Y\+P\+E\+E\+R\+A\+SE(
+\begin{DoxyParamCaption}
+\item[{}]{V\+A\+L\+UE}
+\end{DoxyParamCaption}
+)}\hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gaf15a6822d2421a33b6857059348ab476}{}\label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gaf15a6822d2421a33b6857059348ab476}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((VALUE) == \hyperlink{group___f_l_a_s_h_ex___type___erase_gaee700cbbc746cf72fca3ebf07ee20c4e}{FLASH\_TYPEERASE\_SECTORS}) || \(\backslash\)
+                                  ((VALUE) == \hyperlink{group___f_l_a_s_h_ex___type___erase_ga9bc03534e69c625e1b4f0f05c3852243}{FLASH\_TYPEERASE\_MASSERASE}))
+\end{DoxyCode}
+\index{F\+L\+A\+S\+H Private macros to check input parameters@{F\+L\+A\+S\+H Private macros to check input parameters}!I\+S\+\_\+\+O\+B\+\_\+\+B\+O\+R\+\_\+\+L\+E\+V\+EL@{I\+S\+\_\+\+O\+B\+\_\+\+B\+O\+R\+\_\+\+L\+E\+V\+EL}}
+\index{I\+S\+\_\+\+O\+B\+\_\+\+B\+O\+R\+\_\+\+L\+E\+V\+EL@{I\+S\+\_\+\+O\+B\+\_\+\+B\+O\+R\+\_\+\+L\+E\+V\+EL}!F\+L\+A\+S\+H Private macros to check input parameters@{F\+L\+A\+S\+H Private macros to check input parameters}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+O\+B\+\_\+\+B\+O\+R\+\_\+\+L\+E\+V\+EL}{IS_OB_BOR_LEVEL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+O\+B\+\_\+\+B\+O\+R\+\_\+\+L\+E\+V\+EL(
+\begin{DoxyParamCaption}
+\item[{}]{L\+E\+V\+EL}
+\end{DoxyParamCaption}
+)}\hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gac97ecd832fce5f4b4ff9ef7bc4493013}{}\label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gac97ecd832fce5f4b4ff9ef7bc4493013}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((LEVEL) == \hyperlink{group___f_l_a_s_h_ex___b_o_r___reset___level_ga3a888b788e75f0bc1f9add85c9ccd9d6}{OB\_BOR\_LEVEL1}) || ((LEVEL) == \hyperlink{group___f_l_a_s_h_ex___b_o_r___reset___level_gad678e849fcf817f6ed2d837538e8ebc2}{OB\_BOR\_LEVEL2}) ||\(\backslash\)
+                                ((LEVEL) == \hyperlink{group___f_l_a_s_h_ex___b_o_r___reset___level_ga3132b8202c0a345e9dd33d136714b046}{OB\_BOR\_LEVEL3}) || ((LEVEL) == 
+      \hyperlink{group___f_l_a_s_h_ex___b_o_r___reset___level_gaabc231cb1d05a94fe860f67bb5a37b12}{OB\_BOR\_OFF}))
+\end{DoxyCode}
+\index{F\+L\+A\+S\+H Private macros to check input parameters@{F\+L\+A\+S\+H Private macros to check input parameters}!I\+S\+\_\+\+O\+B\+\_\+\+R\+D\+P\+\_\+\+L\+E\+V\+EL@{I\+S\+\_\+\+O\+B\+\_\+\+R\+D\+P\+\_\+\+L\+E\+V\+EL}}
+\index{I\+S\+\_\+\+O\+B\+\_\+\+R\+D\+P\+\_\+\+L\+E\+V\+EL@{I\+S\+\_\+\+O\+B\+\_\+\+R\+D\+P\+\_\+\+L\+E\+V\+EL}!F\+L\+A\+S\+H Private macros to check input parameters@{F\+L\+A\+S\+H Private macros to check input parameters}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+O\+B\+\_\+\+R\+D\+P\+\_\+\+L\+E\+V\+EL}{IS_OB_RDP_LEVEL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+O\+B\+\_\+\+R\+D\+P\+\_\+\+L\+E\+V\+EL(
+\begin{DoxyParamCaption}
+\item[{}]{L\+E\+V\+EL}
+\end{DoxyParamCaption}
+)}\hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga8d602a97cd688390b3d1956d9970e712}{}\label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga8d602a97cd688390b3d1956d9970e712}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((LEVEL) == OB\_RDP\_LEVEL\_0) ||\(\backslash\)
+                                ((LEVEL) == OB\_RDP\_LEVEL\_1) ||\(\backslash\)
+                                ((LEVEL) == \hyperlink{group___f_l_a_s_h_ex___option___bytes___read___protection_ga2262afca565429ce2808d835c49e5ee6}{OB\_RDP\_LEVEL\_2}))
+\end{DoxyCode}
+\index{F\+L\+A\+S\+H Private macros to check input parameters@{F\+L\+A\+S\+H Private macros to check input parameters}!I\+S\+\_\+\+P\+C\+R\+O\+P\+S\+T\+A\+TE@{I\+S\+\_\+\+P\+C\+R\+O\+P\+S\+T\+A\+TE}}
+\index{I\+S\+\_\+\+P\+C\+R\+O\+P\+S\+T\+A\+TE@{I\+S\+\_\+\+P\+C\+R\+O\+P\+S\+T\+A\+TE}!F\+L\+A\+S\+H Private macros to check input parameters@{F\+L\+A\+S\+H Private macros to check input parameters}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+P\+C\+R\+O\+P\+S\+T\+A\+TE}{IS_PCROPSTATE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+P\+C\+R\+O\+P\+S\+T\+A\+TE(
+\begin{DoxyParamCaption}
+\item[{}]{V\+A\+L\+UE}
+\end{DoxyParamCaption}
+)}\hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gaaea947f0dfad099da5112bbe0449ed62}{}\label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gaaea947f0dfad099da5112bbe0449ed62}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((VALUE) == \hyperlink{group___f_l_a_s_h_ex___p_c_r_o_p___state_ga9e235dd15da1d1e73b71bd8d82004ca5}{OB\_PCROP\_STATE\_DISABLE}) || \(\backslash\)
+                             ((VALUE) == \hyperlink{group___f_l_a_s_h_ex___p_c_r_o_p___state_ga585627ceedceee7da01da4d3ca753108}{OB\_PCROP\_STATE\_ENABLE}))
+\end{DoxyCode}
+\index{F\+L\+A\+S\+H Private macros to check input parameters@{F\+L\+A\+S\+H Private macros to check input parameters}!I\+S\+\_\+\+V\+O\+L\+T\+A\+G\+E\+R\+A\+N\+GE@{I\+S\+\_\+\+V\+O\+L\+T\+A\+G\+E\+R\+A\+N\+GE}}
+\index{I\+S\+\_\+\+V\+O\+L\+T\+A\+G\+E\+R\+A\+N\+GE@{I\+S\+\_\+\+V\+O\+L\+T\+A\+G\+E\+R\+A\+N\+GE}!F\+L\+A\+S\+H Private macros to check input parameters@{F\+L\+A\+S\+H Private macros to check input parameters}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+V\+O\+L\+T\+A\+G\+E\+R\+A\+N\+GE}{IS_VOLTAGERANGE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+V\+O\+L\+T\+A\+G\+E\+R\+A\+N\+GE(
+\begin{DoxyParamCaption}
+\item[{}]{R\+A\+N\+GE}
+\end{DoxyParamCaption}
+)}\hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gaa9682aea9d9ceebca83c48e53f9f6028}{}\label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_gaa9682aea9d9ceebca83c48e53f9f6028}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((RANGE) == \hyperlink{group___f_l_a_s_h_ex___voltage___range_ga5cadf49a63c968cde3b980e5139d398e}{FLASH\_VOLTAGE\_RANGE\_1}) || \(\backslash\)
+                               ((RANGE) == \hyperlink{group___f_l_a_s_h_ex___voltage___range_gad047be2bc7aa9be946b5b0c6b3062ef3}{FLASH\_VOLTAGE\_RANGE\_2}) || \(\backslash\)
+                               ((RANGE) == \hyperlink{group___f_l_a_s_h_ex___voltage___range_ga50950407a789684eec9216f49e0831a0}{FLASH\_VOLTAGE\_RANGE\_3}) || \(\backslash\)
+                               ((RANGE) == \hyperlink{group___f_l_a_s_h_ex___voltage___range_gabf8037a482f18815c5a67f287223a658}{FLASH\_VOLTAGE\_RANGE\_4}))
+\end{DoxyCode}
+\index{F\+L\+A\+S\+H Private macros to check input parameters@{F\+L\+A\+S\+H Private macros to check input parameters}!I\+S\+\_\+\+W\+R\+P\+S\+T\+A\+TE@{I\+S\+\_\+\+W\+R\+P\+S\+T\+A\+TE}}
+\index{I\+S\+\_\+\+W\+R\+P\+S\+T\+A\+TE@{I\+S\+\_\+\+W\+R\+P\+S\+T\+A\+TE}!F\+L\+A\+S\+H Private macros to check input parameters@{F\+L\+A\+S\+H Private macros to check input parameters}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+W\+R\+P\+S\+T\+A\+TE}{IS_WRPSTATE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+W\+R\+P\+S\+T\+A\+TE(
+\begin{DoxyParamCaption}
+\item[{}]{V\+A\+L\+UE}
+\end{DoxyParamCaption}
+)}\hypertarget{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga8164622401a6cacf006679166de93c21}{}\label{group___f_l_a_s_h_ex___i_s___f_l_a_s_h___definitions_ga8164622401a6cacf006679166de93c21}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((VALUE) == \hyperlink{group___f_l_a_s_h_ex___w_r_p___state_gaa34eb6205fe554f65a311ee974d5a4ab}{OB\_WRPSTATE\_DISABLE}) || \(\backslash\)
+                           ((VALUE) == \hyperlink{group___f_l_a_s_h_ex___w_r_p___state_ga9fc463145ab57616baa36d95523186a1}{OB\_WRPSTATE\_ENABLE}))
+\end{DoxyCode}

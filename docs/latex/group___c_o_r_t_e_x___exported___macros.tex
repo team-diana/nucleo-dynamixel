@@ -1,0 +1,49 @@
+\hypertarget{group___c_o_r_t_e_x___exported___macros}{}\section{C\+O\+R\+T\+EX Exported Macros}
+\label{group___c_o_r_t_e_x___exported___macros}\index{C\+O\+R\+T\+E\+X Exported Macros@{C\+O\+R\+T\+E\+X Exported Macros}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___c_o_r_t_e_x___exported___macros_gab704eebbb577afcfeae5d8e18cff7867}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+C\+O\+R\+T\+E\+X\+\_\+\+S\+Y\+S\+T\+I\+C\+K\+C\+L\+K\+\_\+\+C\+O\+N\+F\+IG}(\+\_\+\+\_\+\+C\+L\+K\+S\+R\+C\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Configures the Sys\+Tick clock source. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\index{C\+O\+R\+T\+E\+X Exported Macros@{C\+O\+R\+T\+E\+X Exported Macros}!\+\_\+\+\_\+\+H\+A\+L\+\_\+\+C\+O\+R\+T\+E\+X\+\_\+\+S\+Y\+S\+T\+I\+C\+K\+C\+L\+K\+\_\+\+C\+O\+N\+F\+IG@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+C\+O\+R\+T\+E\+X\+\_\+\+S\+Y\+S\+T\+I\+C\+K\+C\+L\+K\+\_\+\+C\+O\+N\+F\+IG}}
+\index{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+C\+O\+R\+T\+E\+X\+\_\+\+S\+Y\+S\+T\+I\+C\+K\+C\+L\+K\+\_\+\+C\+O\+N\+F\+IG@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+C\+O\+R\+T\+E\+X\+\_\+\+S\+Y\+S\+T\+I\+C\+K\+C\+L\+K\+\_\+\+C\+O\+N\+F\+IG}!C\+O\+R\+T\+E\+X Exported Macros@{C\+O\+R\+T\+E\+X Exported Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+C\+O\+R\+T\+E\+X\+\_\+\+S\+Y\+S\+T\+I\+C\+K\+C\+L\+K\+\_\+\+C\+O\+N\+F\+IG}{__HAL_CORTEX_SYSTICKCLK_CONFIG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+H\+A\+L\+\_\+\+C\+O\+R\+T\+E\+X\+\_\+\+S\+Y\+S\+T\+I\+C\+K\+C\+L\+K\+\_\+\+C\+O\+N\+F\+IG(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+C\+L\+K\+S\+R\+C\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)}\hypertarget{group___c_o_r_t_e_x___exported___macros_gab704eebbb577afcfeae5d8e18cff7867}{}\label{group___c_o_r_t_e_x___exported___macros_gab704eebbb577afcfeae5d8e18cff7867}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{                                               \(\backslash\)
+                                 if ((\_\_CLKSRC\_\_) == SYSTICK\_CLKSOURCE\_HCLK)   \(\backslash\)
+                                  \{                                            \hyperlink{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}{\(\backslash\)}
+\hyperlink{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}{                                    SysTick}->CTRL |= 
+      SYSTICK\_CLKSOURCE\_HCLK;   \(\backslash\)
+                                  \}                                            \hyperlink{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}{\(\backslash\)}
+\hyperlink{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}{                                 else                                          \(\backslash\)}
+\hyperlink{group___c_m_s_i_s__core__base_gacd96c53beeaff8f603fcda425eb295de}{                                    SysTick}->CTRL &= ~
+      SYSTICK\_CLKSOURCE\_HCLK;  \(\backslash\)
+                                \} \textcolor{keywordflow}{while}(0)
+\end{DoxyCode}
+
+
+Configures the Sys\+Tick clock source. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$strong$>$\+C\+L\+K\+S\+R\+C$<$/strong$>$} & specifies the Sys\+Tick clock source. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item S\+Y\+S\+T\+I\+C\+K\+\_\+\+C\+L\+K\+S\+O\+U\+R\+C\+E\+\_\+\+H\+C\+L\+K\+\_\+\+D\+I\+V8\+: A\+HB clock divided by 8 selected as Sys\+Tick clock source. \item S\+Y\+S\+T\+I\+C\+K\+\_\+\+C\+L\+K\+S\+O\+U\+R\+C\+E\+\_\+\+H\+C\+LK\+: A\+HB clock selected as Sys\+Tick clock source. \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}

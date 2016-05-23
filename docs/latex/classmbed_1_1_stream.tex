@@ -1,0 +1,200 @@
+\hypertarget{classmbed_1_1_stream}{}\section{mbed\+:\+:Stream Class Reference}
+\label{classmbed_1_1_stream}\index{mbed\+::\+Stream@{mbed\+::\+Stream}}
+Inheritance diagram for mbed\+:\+:Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classmbed_1_1_stream}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Stream} (const char $\ast$name=N\+U\+LL)\hypertarget{classmbed_1_1_stream_a32d590dce747212c986b9c8fa8f626f8}{}\label{classmbed_1_1_stream_a32d590dce747212c986b9c8fa8f626f8}
+
+\item 
+int {\bfseries putc} (int c)\hypertarget{classmbed_1_1_stream_ae948b0f3eaf7736ca0f6a1648e9390d6}{}\label{classmbed_1_1_stream_ae948b0f3eaf7736ca0f6a1648e9390d6}
+
+\item 
+int {\bfseries puts} (const char $\ast$s)\hypertarget{classmbed_1_1_stream_aaf7d4a2bb6c38f35d369f51cb2e3ba36}{}\label{classmbed_1_1_stream_aaf7d4a2bb6c38f35d369f51cb2e3ba36}
+
+\item 
+int {\bfseries getc} ()\hypertarget{classmbed_1_1_stream_a6167659331a6d841b0f766c4db1333e5}{}\label{classmbed_1_1_stream_a6167659331a6d841b0f766c4db1333e5}
+
+\item 
+char $\ast$ {\bfseries gets} (char $\ast$s, int size)\hypertarget{classmbed_1_1_stream_ab5157ace501d836fba9fd3f40b8865d1}{}\label{classmbed_1_1_stream_ab5157ace501d836fba9fd3f40b8865d1}
+
+\item 
+int {\bfseries printf} (const char $\ast$format,...)\hypertarget{classmbed_1_1_stream_adca0a93ea6add55996848e0f4e148533}{}\label{classmbed_1_1_stream_adca0a93ea6add55996848e0f4e148533}
+
+\item 
+int {\bfseries scanf} (const char $\ast$format,...)\hypertarget{classmbed_1_1_stream_a07d45029be0f9cab42572f717d3d6e09}{}\label{classmbed_1_1_stream_a07d45029be0f9cab42572f717d3d6e09}
+
+\item 
+int {\bfseries vprintf} (const char $\ast$format, std\+::va\+\_\+list args)\hypertarget{classmbed_1_1_stream_a8eb2f574cd3dcee5064392b88367d0d7}{}\label{classmbed_1_1_stream_a8eb2f574cd3dcee5064392b88367d0d7}
+
+\item 
+int {\bfseries vscanf} (const char $\ast$format, std\+::va\+\_\+list args)\hypertarget{classmbed_1_1_stream_ae15610f53c542f3555c4614001c2c2f8}{}\label{classmbed_1_1_stream_ae15610f53c542f3555c4614001c2c2f8}
+
+\item 
+{\bfseries operator std\+::\+F\+I\+L\+E $\ast$} ()\hypertarget{classmbed_1_1_stream_ac18fba9194addd424fe10b7f7cb6376d}{}\label{classmbed_1_1_stream_ac18fba9194addd424fe10b7f7cb6376d}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \hyperlink{classmbed_1_1_stream_af6289a4ebd6e3e39e713434ee0b5ae1a}{close} ()
+\item 
+virtual ssize\+\_\+t \hyperlink{classmbed_1_1_stream_a1da24e639462b324eaf9a7fa4ebbe9c5}{write} (const void $\ast$buffer, size\+\_\+t length)
+\item 
+virtual ssize\+\_\+t \hyperlink{classmbed_1_1_stream_a23d92c19945db06a616481bfdad5b41b}{read} (void $\ast$buffer, size\+\_\+t length)
+\item 
+virtual off\+\_\+t \hyperlink{classmbed_1_1_stream_ab5d71558dfc46985f9b3ca66099f845e}{lseek} (off\+\_\+t offset, int whence)
+\item 
+virtual int \hyperlink{classmbed_1_1_stream_a1ad0b3f218c68d8f7aeb24f4878b6347}{isatty} ()
+\item 
+virtual int \hyperlink{classmbed_1_1_stream_a9964211822494845a9ef8fe514aa5bbd}{fsync} ()
+\item 
+virtual off\+\_\+t {\bfseries flen} ()\hypertarget{classmbed_1_1_stream_a33cb53db6b3d6182d2acdd6d3c1a072b}{}\label{classmbed_1_1_stream_a33cb53db6b3d6182d2acdd6d3c1a072b}
+
+\item 
+virtual int {\bfseries \+\_\+putc} (int c)=0\hypertarget{classmbed_1_1_stream_a28fbd18ed2335b37b896ce73f3cf9941}{}\label{classmbed_1_1_stream_a28fbd18ed2335b37b896ce73f3cf9941}
+
+\item 
+virtual int {\bfseries \+\_\+getc} ()=0\hypertarget{classmbed_1_1_stream_a262e3791dc36a057eb1a6a7461bacc8f}{}\label{classmbed_1_1_stream_a262e3791dc36a057eb1a6a7461bacc8f}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::\+F\+I\+LE $\ast$ {\bfseries \+\_\+file}\hypertarget{classmbed_1_1_stream_ae4ee478b704c5cc1e55fed9b17398875}{}\label{classmbed_1_1_stream_ae4ee478b704c5cc1e55fed9b17398875}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{mbed\+::\+Stream@{mbed\+::\+Stream}!close@{close}}
+\index{close@{close}!mbed\+::\+Stream@{mbed\+::\+Stream}}
+\subsubsection[{\texorpdfstring{close()}{close()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual int mbed\+::\+Stream\+::close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classmbed_1_1_stream_af6289a4ebd6e3e39e713434ee0b5ae1a}{}\label{classmbed_1_1_stream_af6289a4ebd6e3e39e713434ee0b5ae1a}
+Close the file
+
+\begin{DoxyReturn}{Returns}
+Zero on success, -\/1 on error. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classmbed_1_1_file_handle_ac1b885028d295f74d73ff40bf6a352a2}{mbed\+::\+File\+Handle}.
+
+\index{mbed\+::\+Stream@{mbed\+::\+Stream}!fsync@{fsync}}
+\index{fsync@{fsync}!mbed\+::\+Stream@{mbed\+::\+Stream}}
+\subsubsection[{\texorpdfstring{fsync()}{fsync()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual int mbed\+::\+Stream\+::fsync (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classmbed_1_1_stream_a9964211822494845a9ef8fe514aa5bbd}{}\label{classmbed_1_1_stream_a9964211822494845a9ef8fe514aa5bbd}
+Flush any buffers associated with the \hyperlink{classmbed_1_1_file_handle}{File\+Handle}, ensuring it is up to date on disk
+
+\begin{DoxyReturn}{Returns}
+0 on success or un-\/needed, -\/1 on error 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classmbed_1_1_file_handle_a125e7fa0507f9b935f28852ca79190b7}{mbed\+::\+File\+Handle}.
+
+\index{mbed\+::\+Stream@{mbed\+::\+Stream}!isatty@{isatty}}
+\index{isatty@{isatty}!mbed\+::\+Stream@{mbed\+::\+Stream}}
+\subsubsection[{\texorpdfstring{isatty()}{isatty()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual int mbed\+::\+Stream\+::isatty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classmbed_1_1_stream_a1ad0b3f218c68d8f7aeb24f4878b6347}{}\label{classmbed_1_1_stream_a1ad0b3f218c68d8f7aeb24f4878b6347}
+Check if the handle is for a interactive terminal device. If so, line buffered behaviour is used by default
+
+\begin{DoxyReturn}{Returns}
+1 if it is a terminal, 0 otherwise 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classmbed_1_1_file_handle_a7e7936ba41fb44a4f98795fba1d92e83}{mbed\+::\+File\+Handle}.
+
+\index{mbed\+::\+Stream@{mbed\+::\+Stream}!lseek@{lseek}}
+\index{lseek@{lseek}!mbed\+::\+Stream@{mbed\+::\+Stream}}
+\subsubsection[{\texorpdfstring{lseek(off\+\_\+t offset, int whence)}{lseek(off_t offset, int whence)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual off\+\_\+t mbed\+::\+Stream\+::lseek (
+\begin{DoxyParamCaption}
+\item[{off\+\_\+t}]{offset, }
+\item[{int}]{whence}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classmbed_1_1_stream_ab5d71558dfc46985f9b3ca66099f845e}{}\label{classmbed_1_1_stream_ab5d71558dfc46985f9b3ca66099f845e}
+Move the file position to a given offset from a given location.
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & The offset from whence to move to \\
+\hline
+{\em whence} & S\+E\+E\+K\+\_\+\+S\+ET for the start of the file, S\+E\+E\+K\+\_\+\+C\+UR for the current file position, or S\+E\+E\+K\+\_\+\+E\+ND for the end of the file.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new file position on success, -\/1 on failure or unsupported 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classmbed_1_1_file_handle_a75046a7181de9902af9256302d57316a}{mbed\+::\+File\+Handle}.
+
+\index{mbed\+::\+Stream@{mbed\+::\+Stream}!read@{read}}
+\index{read@{read}!mbed\+::\+Stream@{mbed\+::\+Stream}}
+\subsubsection[{\texorpdfstring{read(void $\ast$buffer, size\+\_\+t length)}{read(void *buffer, size_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual ssize\+\_\+t mbed\+::\+Stream\+::read (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{buffer, }
+\item[{size\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classmbed_1_1_stream_a23d92c19945db06a616481bfdad5b41b}{}\label{classmbed_1_1_stream_a23d92c19945db06a616481bfdad5b41b}
+Function read Reads the contents of the file into a buffer
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & the buffer to read in to \\
+\hline
+{\em length} & the number of characters to read\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of characters read (zero at end of file) on success, -\/1 on error. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classmbed_1_1_file_handle_ae51be2d8f51d767ba8cd8c646f211f24}{mbed\+::\+File\+Handle}.
+
+\index{mbed\+::\+Stream@{mbed\+::\+Stream}!write@{write}}
+\index{write@{write}!mbed\+::\+Stream@{mbed\+::\+Stream}}
+\subsubsection[{\texorpdfstring{write(const void $\ast$buffer, size\+\_\+t length)}{write(const void *buffer, size_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual ssize\+\_\+t mbed\+::\+Stream\+::write (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{buffer, }
+\item[{size\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classmbed_1_1_stream_a1da24e639462b324eaf9a7fa4ebbe9c5}{}\label{classmbed_1_1_stream_a1da24e639462b324eaf9a7fa4ebbe9c5}
+Write the contents of a buffer to the file
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & the buffer to write from \\
+\hline
+{\em length} & the number of characters to write\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of characters written (possibly 0) on success, -\/1 on error. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classmbed_1_1_file_handle_afecb50bd072d06e2a56dbc4f4e68bbf5}{mbed\+::\+File\+Handle}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dynamixel-\/\+M\+X106/mbed/Stream.\+h\end{DoxyCompactItemize}

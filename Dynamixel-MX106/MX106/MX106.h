@@ -15,6 +15,12 @@
 #define REG_MOVING 0x2E
 #define REG_POSITION 0x24
 
+/**
+ * \brief Control a single MX106 motor
+ *
+ * This class controls a single MX106 motor. Using this class you can control position, movement, and other parameters.
+ */
+
  class MX106 {
 
     public:

@@ -1,0 +1,238 @@
+\hypertarget{group___r_t_c___i_s___r_t_c___definitions}{}\section{R\+TC Private macros to check input parameters}
+\label{group___r_t_c___i_s___r_t_c___definitions}\index{R\+T\+C Private macros to check input parameters@{R\+T\+C Private macros to check input parameters}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries I\+S\+\_\+\+R\+T\+C\+\_\+\+H\+O\+U\+R\+\_\+\+F\+O\+R\+M\+AT}(F\+O\+R\+M\+AT)
+\item 
+\#define {\bfseries I\+S\+\_\+\+R\+T\+C\+\_\+\+O\+U\+T\+P\+UT}(O\+U\+T\+P\+UT)
+\item 
+\#define {\bfseries I\+S\+\_\+\+R\+T\+C\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+P\+OL}(P\+OL)
+\item 
+\#define {\bfseries I\+S\+\_\+\+R\+T\+C\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+T\+Y\+PE}(T\+Y\+PE)
+\item 
+\#define {\bfseries I\+S\+\_\+\+R\+T\+C\+\_\+\+H\+O\+U\+R12}(H\+O\+UR)~(((H\+O\+UR) $>$ (uint32\+\_\+t)0) \&\& ((H\+O\+UR) $<$= (uint32\+\_\+t)12))\hypertarget{group___r_t_c___i_s___r_t_c___definitions_ga6bdfe3bed0a57dfafc2d1de785d48a62}{}\label{group___r_t_c___i_s___r_t_c___definitions_ga6bdfe3bed0a57dfafc2d1de785d48a62}
+
+\item 
+\#define {\bfseries I\+S\+\_\+\+R\+T\+C\+\_\+\+H\+O\+U\+R24}(H\+O\+UR)~((H\+O\+UR) $<$= (uint32\+\_\+t)23)\hypertarget{group___r_t_c___i_s___r_t_c___definitions_ga4883613bec76074ac62608b89e3f48a8}{}\label{group___r_t_c___i_s___r_t_c___definitions_ga4883613bec76074ac62608b89e3f48a8}
+
+\item 
+\#define {\bfseries I\+S\+\_\+\+R\+T\+C\+\_\+\+A\+S\+Y\+N\+C\+H\+\_\+\+P\+R\+E\+D\+IV}(P\+R\+E\+D\+IV)~((P\+R\+E\+D\+IV) $<$= (uint32\+\_\+t)0x7\+F)\hypertarget{group___r_t_c___i_s___r_t_c___definitions_gac20f6c94ede2d474df8ba4acb7328d93}{}\label{group___r_t_c___i_s___r_t_c___definitions_gac20f6c94ede2d474df8ba4acb7328d93}
+
+\item 
+\#define {\bfseries I\+S\+\_\+\+R\+T\+C\+\_\+\+S\+Y\+N\+C\+H\+\_\+\+P\+R\+E\+D\+IV}(P\+R\+E\+D\+IV)~((P\+R\+E\+D\+IV) $<$= (uint32\+\_\+t)0x7\+F\+F\+F)\hypertarget{group___r_t_c___i_s___r_t_c___definitions_ga32fccaa6ec65f9fceb3e6e4f31ab11cf}{}\label{group___r_t_c___i_s___r_t_c___definitions_ga32fccaa6ec65f9fceb3e6e4f31ab11cf}
+
+\item 
+\#define {\bfseries I\+S\+\_\+\+R\+T\+C\+\_\+\+M\+I\+N\+U\+T\+ES}(M\+I\+N\+U\+T\+ES)~((M\+I\+N\+U\+T\+ES) $<$= (uint32\+\_\+t)59)\hypertarget{group___r_t_c___i_s___r_t_c___definitions_ga8475ceaf2d35d98be0b3401812aef445}{}\label{group___r_t_c___i_s___r_t_c___definitions_ga8475ceaf2d35d98be0b3401812aef445}
+
+\item 
+\#define {\bfseries I\+S\+\_\+\+R\+T\+C\+\_\+\+S\+E\+C\+O\+N\+DS}(S\+E\+C\+O\+N\+DS)~((S\+E\+C\+O\+N\+DS) $<$= (uint32\+\_\+t)59)\hypertarget{group___r_t_c___i_s___r_t_c___definitions_gadb5a39d98fc906a8ea035bd29308bc5c}{}\label{group___r_t_c___i_s___r_t_c___definitions_gadb5a39d98fc906a8ea035bd29308bc5c}
+
+\item 
+\#define {\bfseries I\+S\+\_\+\+R\+T\+C\+\_\+\+H\+O\+U\+R\+F\+O\+R\+M\+A\+T12}(PM)~(((PM) == R\+T\+C\+\_\+\+H\+O\+U\+R\+F\+O\+R\+M\+A\+T12\+\_\+\+AM) $\vert$$\vert$ ((PM) == R\+T\+C\+\_\+\+H\+O\+U\+R\+F\+O\+R\+M\+A\+T12\+\_\+\+PM))\hypertarget{group___r_t_c___i_s___r_t_c___definitions_gaac5777b612cdee4c43d4399f40b1bd3a}{}\label{group___r_t_c___i_s___r_t_c___definitions_gaac5777b612cdee4c43d4399f40b1bd3a}
+
+\item 
+\#define {\bfseries I\+S\+\_\+\+R\+T\+C\+\_\+\+D\+A\+Y\+L\+I\+G\+H\+T\+\_\+\+S\+A\+V\+I\+NG}(S\+A\+VE)
+\item 
+\#define {\bfseries I\+S\+\_\+\+R\+T\+C\+\_\+\+S\+T\+O\+R\+E\+\_\+\+O\+P\+E\+R\+A\+T\+I\+ON}(O\+P\+E\+R\+A\+T\+I\+ON)
+\item 
+\#define {\bfseries I\+S\+\_\+\+R\+T\+C\+\_\+\+F\+O\+R\+M\+AT}(F\+O\+R\+M\+AT)~(((F\+O\+R\+M\+AT) == R\+T\+C\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+B\+IN) $\vert$$\vert$ ((F\+O\+R\+M\+AT) == R\+T\+C\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+B\+CD))\hypertarget{group___r_t_c___i_s___r_t_c___definitions_ga05a1ca8558058d71322ccf1045b8fb1c}{}\label{group___r_t_c___i_s___r_t_c___definitions_ga05a1ca8558058d71322ccf1045b8fb1c}
+
+\item 
+\#define {\bfseries I\+S\+\_\+\+R\+T\+C\+\_\+\+Y\+E\+AR}(Y\+E\+AR)~((Y\+E\+AR) $<$= (uint32\+\_\+t)99)\hypertarget{group___r_t_c___i_s___r_t_c___definitions_gae59c9cfe6f9532ab26d74c25bcbe814b}{}\label{group___r_t_c___i_s___r_t_c___definitions_gae59c9cfe6f9532ab26d74c25bcbe814b}
+
+\item 
+\#define {\bfseries I\+S\+\_\+\+R\+T\+C\+\_\+\+M\+O\+N\+TH}(M\+O\+N\+TH)~(((M\+O\+N\+TH) $>$= (uint32\+\_\+t)1) \&\& ((M\+O\+N\+TH) $<$= (uint32\+\_\+t)12))\hypertarget{group___r_t_c___i_s___r_t_c___definitions_ga7fa60f17b2ae529c35b1fa3dd4d6853f}{}\label{group___r_t_c___i_s___r_t_c___definitions_ga7fa60f17b2ae529c35b1fa3dd4d6853f}
+
+\item 
+\#define {\bfseries I\+S\+\_\+\+R\+T\+C\+\_\+\+D\+A\+TE}(D\+A\+TE)~(((D\+A\+TE) $>$= (uint32\+\_\+t)1) \&\& ((D\+A\+TE) $<$= (uint32\+\_\+t)31))\hypertarget{group___r_t_c___i_s___r_t_c___definitions_ga3b6e966e144cb0495563ef0283d16510}{}\label{group___r_t_c___i_s___r_t_c___definitions_ga3b6e966e144cb0495563ef0283d16510}
+
+\item 
+\#define {\bfseries I\+S\+\_\+\+R\+T\+C\+\_\+\+W\+E\+E\+K\+D\+AY}(W\+E\+E\+K\+D\+AY)
+\item 
+\#define {\bfseries I\+S\+\_\+\+R\+T\+C\+\_\+\+A\+L\+A\+R\+M\+\_\+\+D\+A\+T\+E\+\_\+\+W\+E\+E\+K\+D\+A\+Y\+\_\+\+D\+A\+TE}(D\+A\+TE)~(((D\+A\+TE) $>$(uint32\+\_\+t) 0) \&\& ((D\+A\+TE) $<$= (uint32\+\_\+t)31))\hypertarget{group___r_t_c___i_s___r_t_c___definitions_ga8b6cb39fac113de7c5d2b05a93093243}{}\label{group___r_t_c___i_s___r_t_c___definitions_ga8b6cb39fac113de7c5d2b05a93093243}
+
+\item 
+\#define {\bfseries I\+S\+\_\+\+R\+T\+C\+\_\+\+A\+L\+A\+R\+M\+\_\+\+D\+A\+T\+E\+\_\+\+W\+E\+E\+K\+D\+A\+Y\+\_\+\+W\+E\+E\+K\+D\+AY}(W\+E\+E\+K\+D\+AY)
+\item 
+\#define {\bfseries I\+S\+\_\+\+R\+T\+C\+\_\+\+A\+L\+A\+R\+M\+\_\+\+D\+A\+T\+E\+\_\+\+W\+E\+E\+K\+D\+A\+Y\+\_\+\+S\+EL}(S\+EL)
+\item 
+\#define {\bfseries I\+S\+\_\+\+R\+T\+C\+\_\+\+A\+L\+A\+R\+M\+\_\+\+M\+A\+SK}(M\+A\+SK)~(((M\+A\+SK) \& 0x7\+F7\+F7\+F7\+F) == (uint32\+\_\+t)\+R\+E\+S\+E\+T)\hypertarget{group___r_t_c___i_s___r_t_c___definitions_ga166108e7bf226d4ea345822eb81ea358}{}\label{group___r_t_c___i_s___r_t_c___definitions_ga166108e7bf226d4ea345822eb81ea358}
+
+\item 
+\#define {\bfseries I\+S\+\_\+\+R\+T\+C\+\_\+\+A\+L\+A\+RM}(A\+L\+A\+RM)~(((A\+L\+A\+RM) == R\+T\+C\+\_\+\+A\+L\+A\+R\+M\+\_\+A) $\vert$$\vert$ ((A\+L\+A\+RM) == R\+T\+C\+\_\+\+A\+L\+A\+R\+M\+\_\+B))\hypertarget{group___r_t_c___i_s___r_t_c___definitions_gab101ad18b0bcde557eb8caac469d7725}{}\label{group___r_t_c___i_s___r_t_c___definitions_gab101ad18b0bcde557eb8caac469d7725}
+
+\item 
+\#define {\bfseries I\+S\+\_\+\+R\+T\+C\+\_\+\+A\+L\+A\+R\+M\+\_\+\+S\+U\+B\+\_\+\+S\+E\+C\+O\+N\+D\+\_\+\+V\+A\+L\+UE}(V\+A\+L\+UE)~((V\+A\+L\+UE) $<$= (uint32\+\_\+t)0x00007\+F\+F\+F)\hypertarget{group___r_t_c___i_s___r_t_c___definitions_gae7cd07c18cdb2946a2b06f6606ede93c}{}\label{group___r_t_c___i_s___r_t_c___definitions_gae7cd07c18cdb2946a2b06f6606ede93c}
+
+\item 
+\#define {\bfseries I\+S\+\_\+\+R\+T\+C\+\_\+\+A\+L\+A\+R\+M\+\_\+\+S\+U\+B\+\_\+\+S\+E\+C\+O\+N\+D\+\_\+\+M\+A\+SK}(M\+A\+SK)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\index{R\+T\+C Private macros to check input parameters@{R\+T\+C Private macros to check input parameters}!I\+S\+\_\+\+R\+T\+C\+\_\+\+A\+L\+A\+R\+M\+\_\+\+D\+A\+T\+E\+\_\+\+W\+E\+E\+K\+D\+A\+Y\+\_\+\+S\+EL@{I\+S\+\_\+\+R\+T\+C\+\_\+\+A\+L\+A\+R\+M\+\_\+\+D\+A\+T\+E\+\_\+\+W\+E\+E\+K\+D\+A\+Y\+\_\+\+S\+EL}}
+\index{I\+S\+\_\+\+R\+T\+C\+\_\+\+A\+L\+A\+R\+M\+\_\+\+D\+A\+T\+E\+\_\+\+W\+E\+E\+K\+D\+A\+Y\+\_\+\+S\+EL@{I\+S\+\_\+\+R\+T\+C\+\_\+\+A\+L\+A\+R\+M\+\_\+\+D\+A\+T\+E\+\_\+\+W\+E\+E\+K\+D\+A\+Y\+\_\+\+S\+EL}!R\+T\+C Private macros to check input parameters@{R\+T\+C Private macros to check input parameters}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+R\+T\+C\+\_\+\+A\+L\+A\+R\+M\+\_\+\+D\+A\+T\+E\+\_\+\+W\+E\+E\+K\+D\+A\+Y\+\_\+\+S\+EL}{IS_RTC_ALARM_DATE_WEEKDAY_SEL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+R\+T\+C\+\_\+\+A\+L\+A\+R\+M\+\_\+\+D\+A\+T\+E\+\_\+\+W\+E\+E\+K\+D\+A\+Y\+\_\+\+S\+EL(
+\begin{DoxyParamCaption}
+\item[{}]{S\+EL}
+\end{DoxyParamCaption}
+)}\hypertarget{group___r_t_c___i_s___r_t_c___definitions_gac5d3e2182217ad6c5a75eba5c88cb335}{}\label{group___r_t_c___i_s___r_t_c___definitions_gac5d3e2182217ad6c5a75eba5c88cb335}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((SEL) == RTC\_ALARMDATEWEEKDAYSEL\_DATE) || \(\backslash\)
+                                            ((SEL) == RTC\_ALARMDATEWEEKDAYSEL\_WEEKDAY))
+\end{DoxyCode}
+\index{R\+T\+C Private macros to check input parameters@{R\+T\+C Private macros to check input parameters}!I\+S\+\_\+\+R\+T\+C\+\_\+\+A\+L\+A\+R\+M\+\_\+\+D\+A\+T\+E\+\_\+\+W\+E\+E\+K\+D\+A\+Y\+\_\+\+W\+E\+E\+K\+D\+AY@{I\+S\+\_\+\+R\+T\+C\+\_\+\+A\+L\+A\+R\+M\+\_\+\+D\+A\+T\+E\+\_\+\+W\+E\+E\+K\+D\+A\+Y\+\_\+\+W\+E\+E\+K\+D\+AY}}
+\index{I\+S\+\_\+\+R\+T\+C\+\_\+\+A\+L\+A\+R\+M\+\_\+\+D\+A\+T\+E\+\_\+\+W\+E\+E\+K\+D\+A\+Y\+\_\+\+W\+E\+E\+K\+D\+AY@{I\+S\+\_\+\+R\+T\+C\+\_\+\+A\+L\+A\+R\+M\+\_\+\+D\+A\+T\+E\+\_\+\+W\+E\+E\+K\+D\+A\+Y\+\_\+\+W\+E\+E\+K\+D\+AY}!R\+T\+C Private macros to check input parameters@{R\+T\+C Private macros to check input parameters}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+R\+T\+C\+\_\+\+A\+L\+A\+R\+M\+\_\+\+D\+A\+T\+E\+\_\+\+W\+E\+E\+K\+D\+A\+Y\+\_\+\+W\+E\+E\+K\+D\+AY}{IS_RTC_ALARM_DATE_WEEKDAY_WEEKDAY}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+R\+T\+C\+\_\+\+A\+L\+A\+R\+M\+\_\+\+D\+A\+T\+E\+\_\+\+W\+E\+E\+K\+D\+A\+Y\+\_\+\+W\+E\+E\+K\+D\+AY(
+\begin{DoxyParamCaption}
+\item[{}]{W\+E\+E\+K\+D\+AY}
+\end{DoxyParamCaption}
+)}\hypertarget{group___r_t_c___i_s___r_t_c___definitions_gabc968cd70cf33e06b8e2886c98099021}{}\label{group___r_t_c___i_s___r_t_c___definitions_gabc968cd70cf33e06b8e2886c98099021}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((WEEKDAY) == RTC\_WEEKDAY\_MONDAY)    || \(\backslash\)
+                                                    ((WEEKDAY) == RTC\_WEEKDAY\_TUESDAY)   || \(\backslash\)
+                                                    ((WEEKDAY) == RTC\_WEEKDAY\_WEDNESDAY) || \(\backslash\)
+                                                    ((WEEKDAY) == RTC\_WEEKDAY\_THURSDAY)  || \(\backslash\)
+                                                    ((WEEKDAY) == RTC\_WEEKDAY\_FRIDAY)    || \(\backslash\)
+                                                    ((WEEKDAY) == RTC\_WEEKDAY\_SATURDAY)  || \(\backslash\)
+                                                    ((WEEKDAY) == RTC\_WEEKDAY\_SUNDAY))
+\end{DoxyCode}
+\index{R\+T\+C Private macros to check input parameters@{R\+T\+C Private macros to check input parameters}!I\+S\+\_\+\+R\+T\+C\+\_\+\+A\+L\+A\+R\+M\+\_\+\+S\+U\+B\+\_\+\+S\+E\+C\+O\+N\+D\+\_\+\+M\+A\+SK@{I\+S\+\_\+\+R\+T\+C\+\_\+\+A\+L\+A\+R\+M\+\_\+\+S\+U\+B\+\_\+\+S\+E\+C\+O\+N\+D\+\_\+\+M\+A\+SK}}
+\index{I\+S\+\_\+\+R\+T\+C\+\_\+\+A\+L\+A\+R\+M\+\_\+\+S\+U\+B\+\_\+\+S\+E\+C\+O\+N\+D\+\_\+\+M\+A\+SK@{I\+S\+\_\+\+R\+T\+C\+\_\+\+A\+L\+A\+R\+M\+\_\+\+S\+U\+B\+\_\+\+S\+E\+C\+O\+N\+D\+\_\+\+M\+A\+SK}!R\+T\+C Private macros to check input parameters@{R\+T\+C Private macros to check input parameters}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+R\+T\+C\+\_\+\+A\+L\+A\+R\+M\+\_\+\+S\+U\+B\+\_\+\+S\+E\+C\+O\+N\+D\+\_\+\+M\+A\+SK}{IS_RTC_ALARM_SUB_SECOND_MASK}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+R\+T\+C\+\_\+\+A\+L\+A\+R\+M\+\_\+\+S\+U\+B\+\_\+\+S\+E\+C\+O\+N\+D\+\_\+\+M\+A\+SK(
+\begin{DoxyParamCaption}
+\item[{}]{M\+A\+SK}
+\end{DoxyParamCaption}
+)}\hypertarget{group___r_t_c___i_s___r_t_c___definitions_gae6814af31d0cc72b784bc85f63ec4de7}{}\label{group___r_t_c___i_s___r_t_c___definitions_gae6814af31d0cc72b784bc85f63ec4de7}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((MASK) == \hyperlink{group___r_t_c___alarm___sub___seconds___masks___definitions_gaf96ae2bcfc62e92473372c4510d517d5}{RTC\_ALARMSUBSECONDMASK\_ALL}) || \(\backslash\)
+                                              ((MASK) == 
+      \hyperlink{group___r_t_c___alarm___sub___seconds___masks___definitions_ga382ddfaca27c4b547c69878a320aab43}{RTC\_ALARMSUBSECONDMASK\_SS14\_1}) || \(\backslash\)
+                                              ((MASK) == 
+      \hyperlink{group___r_t_c___alarm___sub___seconds___masks___definitions_gad627f4e6c83537e1d5b8c657f91d6bcf}{RTC\_ALARMSUBSECONDMASK\_SS14\_2}) || \(\backslash\)
+                                              ((MASK) == 
+      \hyperlink{group___r_t_c___alarm___sub___seconds___masks___definitions_gaeb5fb21c4ef0d54ca1515564563c0487}{RTC\_ALARMSUBSECONDMASK\_SS14\_3}) || \(\backslash\)
+                                              ((MASK) == 
+      \hyperlink{group___r_t_c___alarm___sub___seconds___masks___definitions_ga6f9b0a78f9723a20b1f94b5581e04194}{RTC\_ALARMSUBSECONDMASK\_SS14\_4}) || \(\backslash\)
+                                              ((MASK) == 
+      \hyperlink{group___r_t_c___alarm___sub___seconds___masks___definitions_gafc0252b2f8a935811dadd3d6b8ea3574}{RTC\_ALARMSUBSECONDMASK\_SS14\_5}) || \(\backslash\)
+                                              ((MASK) == 
+      \hyperlink{group___r_t_c___alarm___sub___seconds___masks___definitions_ga60fab8d647e6f8500926a0db2dff94d8}{RTC\_ALARMSUBSECONDMASK\_SS14\_6}) || \(\backslash\)
+                                              ((MASK) == 
+      \hyperlink{group___r_t_c___alarm___sub___seconds___masks___definitions_gac0f57cb99c0a40708e3dd44eafa7f8e6}{RTC\_ALARMSUBSECONDMASK\_SS14\_7}) || \(\backslash\)
+                                              ((MASK) == 
+      \hyperlink{group___r_t_c___alarm___sub___seconds___masks___definitions_ga0f7cdfed3ad8bbe33fc2c4c2b8d5d2ce}{RTC\_ALARMSUBSECONDMASK\_SS14\_8}) || \(\backslash\)
+                                              ((MASK) == 
+      \hyperlink{group___r_t_c___alarm___sub___seconds___masks___definitions_ga173d153f6543cd34062d8ca14fb04975}{RTC\_ALARMSUBSECONDMASK\_SS14\_9}) || \(\backslash\)
+                                              ((MASK) == 
+      \hyperlink{group___r_t_c___alarm___sub___seconds___masks___definitions_ga7cb4d4abdac134b508cbb6e9b5d21638}{RTC\_ALARMSUBSECONDMASK\_SS14\_10}) || \(\backslash\)
+                                              ((MASK) == 
+      \hyperlink{group___r_t_c___alarm___sub___seconds___masks___definitions_gaf67fcaa5c58e46e47d97be746c9dec24}{RTC\_ALARMSUBSECONDMASK\_SS14\_11}) || \(\backslash\)
+                                              ((MASK) == 
+      \hyperlink{group___r_t_c___alarm___sub___seconds___masks___definitions_ga37c03d1ef098287fa559af1a28bd8ba5}{RTC\_ALARMSUBSECONDMASK\_SS14\_12}) || \(\backslash\)
+                                              ((MASK) == 
+      \hyperlink{group___r_t_c___alarm___sub___seconds___masks___definitions_gada3b5b45dbdabf604340b0c09bdbdc2c}{RTC\_ALARMSUBSECONDMASK\_SS14\_13}) || \(\backslash\)
+                                              ((MASK) == 
+      \hyperlink{group___r_t_c___alarm___sub___seconds___masks___definitions_ga91e1225dc11de4ce4bd74eb18fc155f7}{RTC\_ALARMSUBSECONDMASK\_SS14}) || \(\backslash\)
+                                              ((MASK) == 
+      \hyperlink{group___r_t_c___alarm___sub___seconds___masks___definitions_ga2c3802d48626766a3fc85ad910caea02}{RTC\_ALARMSUBSECONDMASK\_NONE}))
+\end{DoxyCode}
+\index{R\+T\+C Private macros to check input parameters@{R\+T\+C Private macros to check input parameters}!I\+S\+\_\+\+R\+T\+C\+\_\+\+D\+A\+Y\+L\+I\+G\+H\+T\+\_\+\+S\+A\+V\+I\+NG@{I\+S\+\_\+\+R\+T\+C\+\_\+\+D\+A\+Y\+L\+I\+G\+H\+T\+\_\+\+S\+A\+V\+I\+NG}}
+\index{I\+S\+\_\+\+R\+T\+C\+\_\+\+D\+A\+Y\+L\+I\+G\+H\+T\+\_\+\+S\+A\+V\+I\+NG@{I\+S\+\_\+\+R\+T\+C\+\_\+\+D\+A\+Y\+L\+I\+G\+H\+T\+\_\+\+S\+A\+V\+I\+NG}!R\+T\+C Private macros to check input parameters@{R\+T\+C Private macros to check input parameters}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+R\+T\+C\+\_\+\+D\+A\+Y\+L\+I\+G\+H\+T\+\_\+\+S\+A\+V\+I\+NG}{IS_RTC_DAYLIGHT_SAVING}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+R\+T\+C\+\_\+\+D\+A\+Y\+L\+I\+G\+H\+T\+\_\+\+S\+A\+V\+I\+NG(
+\begin{DoxyParamCaption}
+\item[{}]{S\+A\+VE}
+\end{DoxyParamCaption}
+)}\hypertarget{group___r_t_c___i_s___r_t_c___definitions_ga4922f8f31df54481bc002b16bc1effc3}{}\label{group___r_t_c___i_s___r_t_c___definitions_ga4922f8f31df54481bc002b16bc1effc3}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((SAVE) == RTC\_DAYLIGHTSAVING\_SUB1H) || \(\backslash\)
+                                      ((SAVE) == RTC\_DAYLIGHTSAVING\_ADD1H) || \(\backslash\)
+                                      ((SAVE) == RTC\_DAYLIGHTSAVING\_NONE))
+\end{DoxyCode}
+\index{R\+T\+C Private macros to check input parameters@{R\+T\+C Private macros to check input parameters}!I\+S\+\_\+\+R\+T\+C\+\_\+\+H\+O\+U\+R\+\_\+\+F\+O\+R\+M\+AT@{I\+S\+\_\+\+R\+T\+C\+\_\+\+H\+O\+U\+R\+\_\+\+F\+O\+R\+M\+AT}}
+\index{I\+S\+\_\+\+R\+T\+C\+\_\+\+H\+O\+U\+R\+\_\+\+F\+O\+R\+M\+AT@{I\+S\+\_\+\+R\+T\+C\+\_\+\+H\+O\+U\+R\+\_\+\+F\+O\+R\+M\+AT}!R\+T\+C Private macros to check input parameters@{R\+T\+C Private macros to check input parameters}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+R\+T\+C\+\_\+\+H\+O\+U\+R\+\_\+\+F\+O\+R\+M\+AT}{IS_RTC_HOUR_FORMAT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+R\+T\+C\+\_\+\+H\+O\+U\+R\+\_\+\+F\+O\+R\+M\+AT(
+\begin{DoxyParamCaption}
+\item[{}]{F\+O\+R\+M\+AT}
+\end{DoxyParamCaption}
+)}\hypertarget{group___r_t_c___i_s___r_t_c___definitions_ga597042eec4479e028c32973bc69f4a26}{}\label{group___r_t_c___i_s___r_t_c___definitions_ga597042eec4479e028c32973bc69f4a26}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((FORMAT) == RTC\_HOURFORMAT\_12) || \(\backslash\)
+                                        ((FORMAT) == RTC\_HOURFORMAT\_24))
+\end{DoxyCode}
+\index{R\+T\+C Private macros to check input parameters@{R\+T\+C Private macros to check input parameters}!I\+S\+\_\+\+R\+T\+C\+\_\+\+O\+U\+T\+P\+UT@{I\+S\+\_\+\+R\+T\+C\+\_\+\+O\+U\+T\+P\+UT}}
+\index{I\+S\+\_\+\+R\+T\+C\+\_\+\+O\+U\+T\+P\+UT@{I\+S\+\_\+\+R\+T\+C\+\_\+\+O\+U\+T\+P\+UT}!R\+T\+C Private macros to check input parameters@{R\+T\+C Private macros to check input parameters}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+R\+T\+C\+\_\+\+O\+U\+T\+P\+UT}{IS_RTC_OUTPUT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+R\+T\+C\+\_\+\+O\+U\+T\+P\+UT(
+\begin{DoxyParamCaption}
+\item[{}]{O\+U\+T\+P\+UT}
+\end{DoxyParamCaption}
+)}\hypertarget{group___r_t_c___i_s___r_t_c___definitions_gabc8a868f360abe629c8d8de8b44b3b63}{}\label{group___r_t_c___i_s___r_t_c___definitions_gabc8a868f360abe629c8d8de8b44b3b63}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((OUTPUT) == RTC\_OUTPUT\_DISABLE) || \(\backslash\)
+                               ((OUTPUT) == RTC\_OUTPUT\_ALARMA)  || \(\backslash\)
+                               ((OUTPUT) == RTC\_OUTPUT\_ALARMB)  || \(\backslash\)
+                               ((OUTPUT) == RTC\_OUTPUT\_WAKEUP))
+\end{DoxyCode}
+\index{R\+T\+C Private macros to check input parameters@{R\+T\+C Private macros to check input parameters}!I\+S\+\_\+\+R\+T\+C\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+P\+OL@{I\+S\+\_\+\+R\+T\+C\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+P\+OL}}
+\index{I\+S\+\_\+\+R\+T\+C\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+P\+OL@{I\+S\+\_\+\+R\+T\+C\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+P\+OL}!R\+T\+C Private macros to check input parameters@{R\+T\+C Private macros to check input parameters}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+R\+T\+C\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+P\+OL}{IS_RTC_OUTPUT_POL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+R\+T\+C\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+P\+OL(
+\begin{DoxyParamCaption}
+\item[{}]{P\+OL}
+\end{DoxyParamCaption}
+)}\hypertarget{group___r_t_c___i_s___r_t_c___definitions_ga1bc0fee899de25a9c1bcbb6c2b21b35d}{}\label{group___r_t_c___i_s___r_t_c___definitions_ga1bc0fee899de25a9c1bcbb6c2b21b35d}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((POL) == RTC\_OUTPUT\_POLARITY\_HIGH) || \(\backslash\)
+                                ((POL) == RTC\_OUTPUT\_POLARITY\_LOW))
+\end{DoxyCode}
+\index{R\+T\+C Private macros to check input parameters@{R\+T\+C Private macros to check input parameters}!I\+S\+\_\+\+R\+T\+C\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+T\+Y\+PE@{I\+S\+\_\+\+R\+T\+C\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+T\+Y\+PE}}
+\index{I\+S\+\_\+\+R\+T\+C\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+T\+Y\+PE@{I\+S\+\_\+\+R\+T\+C\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+T\+Y\+PE}!R\+T\+C Private macros to check input parameters@{R\+T\+C Private macros to check input parameters}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+R\+T\+C\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+T\+Y\+PE}{IS_RTC_OUTPUT_TYPE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+R\+T\+C\+\_\+\+O\+U\+T\+P\+U\+T\+\_\+\+T\+Y\+PE(
+\begin{DoxyParamCaption}
+\item[{}]{T\+Y\+PE}
+\end{DoxyParamCaption}
+)}\hypertarget{group___r_t_c___i_s___r_t_c___definitions_ga69e263212d90ca91ccfc72e930f26cd8}{}\label{group___r_t_c___i_s___r_t_c___definitions_ga69e263212d90ca91ccfc72e930f26cd8}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((TYPE) == RTC\_OUTPUT\_TYPE\_OPENDRAIN) || \(\backslash\)
+                                  ((TYPE) == RTC\_OUTPUT\_TYPE\_PUSHPULL))
+\end{DoxyCode}
+\index{R\+T\+C Private macros to check input parameters@{R\+T\+C Private macros to check input parameters}!I\+S\+\_\+\+R\+T\+C\+\_\+\+S\+T\+O\+R\+E\+\_\+\+O\+P\+E\+R\+A\+T\+I\+ON@{I\+S\+\_\+\+R\+T\+C\+\_\+\+S\+T\+O\+R\+E\+\_\+\+O\+P\+E\+R\+A\+T\+I\+ON}}
+\index{I\+S\+\_\+\+R\+T\+C\+\_\+\+S\+T\+O\+R\+E\+\_\+\+O\+P\+E\+R\+A\+T\+I\+ON@{I\+S\+\_\+\+R\+T\+C\+\_\+\+S\+T\+O\+R\+E\+\_\+\+O\+P\+E\+R\+A\+T\+I\+ON}!R\+T\+C Private macros to check input parameters@{R\+T\+C Private macros to check input parameters}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+R\+T\+C\+\_\+\+S\+T\+O\+R\+E\+\_\+\+O\+P\+E\+R\+A\+T\+I\+ON}{IS_RTC_STORE_OPERATION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+R\+T\+C\+\_\+\+S\+T\+O\+R\+E\+\_\+\+O\+P\+E\+R\+A\+T\+I\+ON(
+\begin{DoxyParamCaption}
+\item[{}]{O\+P\+E\+R\+A\+T\+I\+ON}
+\end{DoxyParamCaption}
+)}\hypertarget{group___r_t_c___i_s___r_t_c___definitions_ga550da5c8a2382badcb391507fd6f07f4}{}\label{group___r_t_c___i_s___r_t_c___definitions_ga550da5c8a2382badcb391507fd6f07f4}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((OPERATION) == RTC\_STOREOPERATION\_RESET) || \(\backslash\)
+                                           ((OPERATION) == RTC\_STOREOPERATION\_SET))
+\end{DoxyCode}
+\index{R\+T\+C Private macros to check input parameters@{R\+T\+C Private macros to check input parameters}!I\+S\+\_\+\+R\+T\+C\+\_\+\+W\+E\+E\+K\+D\+AY@{I\+S\+\_\+\+R\+T\+C\+\_\+\+W\+E\+E\+K\+D\+AY}}
+\index{I\+S\+\_\+\+R\+T\+C\+\_\+\+W\+E\+E\+K\+D\+AY@{I\+S\+\_\+\+R\+T\+C\+\_\+\+W\+E\+E\+K\+D\+AY}!R\+T\+C Private macros to check input parameters@{R\+T\+C Private macros to check input parameters}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+R\+T\+C\+\_\+\+W\+E\+E\+K\+D\+AY}{IS_RTC_WEEKDAY}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+R\+T\+C\+\_\+\+W\+E\+E\+K\+D\+AY(
+\begin{DoxyParamCaption}
+\item[{}]{W\+E\+E\+K\+D\+AY}
+\end{DoxyParamCaption}
+)}\hypertarget{group___r_t_c___i_s___r_t_c___definitions_gaf17712ffb0834287f23c19235d53c7ec}{}\label{group___r_t_c___i_s___r_t_c___definitions_gaf17712ffb0834287f23c19235d53c7ec}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((WEEKDAY) == RTC\_WEEKDAY\_MONDAY)    || \(\backslash\)
+                                 ((WEEKDAY) == RTC\_WEEKDAY\_TUESDAY)   || \(\backslash\)
+                                 ((WEEKDAY) == RTC\_WEEKDAY\_WEDNESDAY) || \(\backslash\)
+                                 ((WEEKDAY) == RTC\_WEEKDAY\_THURSDAY)  || \(\backslash\)
+                                 ((WEEKDAY) == RTC\_WEEKDAY\_FRIDAY)    || \(\backslash\)
+                                 ((WEEKDAY) == RTC\_WEEKDAY\_SATURDAY)  || \(\backslash\)
+                                 ((WEEKDAY) == RTC\_WEEKDAY\_SUNDAY))
+\end{DoxyCode}

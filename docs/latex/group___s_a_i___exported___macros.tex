@@ -1,0 +1,162 @@
+\hypertarget{group___s_a_i___exported___macros}{}\section{S\+AI Exported Macros}
+\label{group___s_a_i___exported___macros}\index{S\+A\+I Exported Macros@{S\+A\+I Exported Macros}}
+
+
+macros to handle interrupts and specific configurations  
+
+
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___s_a_i___exported___macros_ga45b0ef0710229953f17d04ff7764f620}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+R\+E\+S\+E\+T\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+S\+T\+A\+TE}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)~((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$State = \hyperlink{group___s_a_i___exported___types_ggac758df9679f0ee29c77d9b1b66289589a4c5621e3b54c74b9f1f1ddfb1258c40d}{H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+S\+ET})
+\begin{DoxyCompactList}\small\item\em Reset S\+AI handle state. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___s_a_i___exported___macros_gaa95d2cf8b2104cc1a51d71cd4e809d37}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+IT}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+,  \+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+)~((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$Instance-\/$>$I\+MR $\vert$= (\+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+))
+\begin{DoxyCompactList}\small\item\em Enable or disable the specified S\+AI interrupts. \end{DoxyCompactList}\item 
+\#define {\bfseries \+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+IT}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+,  \+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+)~((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$Instance-\/$>$I\+MR \&= ($\sim$(\+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+)))\hypertarget{group___s_a_i___exported___macros_ga75f5b39f3d8044d21510fbf9bb416317}{}\label{group___s_a_i___exported___macros_ga75f5b39f3d8044d21510fbf9bb416317}
+
+\item 
+\#define \hyperlink{group___s_a_i___exported___macros_ga0afa781d3932905dd3916078a99abd48}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+G\+E\+T\+\_\+\+I\+T\+\_\+\+S\+O\+U\+R\+CE}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+,  \+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+)~((((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$Instance-\/$>$I\+MR \& (\+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+)) == (\+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+)) ? S\+ET \+: R\+E\+S\+ET)
+\begin{DoxyCompactList}\small\item\em Check if the specified S\+AI interrupt source is enabled or disabled. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___s_a_i___exported___macros_ga47950261a8f24947541c014189eb34d8}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+,  \+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+)~((((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$Instance-\/$>$SR) \& (\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+)) == (\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+))
+\begin{DoxyCompactList}\small\item\em Check whether the specified S\+AI flag is set or not. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___s_a_i___exported___macros_ga6ddbe8cd04c21fa5b97346cbcd91ccae}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+,  \+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+)~((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$Instance-\/$>$C\+L\+R\+FR = (\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+))
+\begin{DoxyCompactList}\small\item\em Clears the specified S\+AI pending flag. \end{DoxyCompactList}\item 
+\#define {\bfseries \+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+E\+N\+A\+B\+LE}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)~((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$Instance-\/$>$C\+R1 $\vert$=  \hyperlink{group___peripheral___registers___bits___definition_ga7916f81ebe07b5109b0ca405d41eb95b}{S\+A\+I\+\_\+x\+C\+R1\+\_\+\+S\+A\+I\+EN})\hypertarget{group___s_a_i___exported___macros_ga8568947265caaaa934bdf78ce781049f}{}\label{group___s_a_i___exported___macros_ga8568947265caaaa934bdf78ce781049f}
+
+\item 
+\#define {\bfseries \+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+D\+I\+S\+A\+B\+LE}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)~((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$Instance-\/$>$C\+R1 \&=  $\sim$\hyperlink{group___peripheral___registers___bits___definition_ga7916f81ebe07b5109b0ca405d41eb95b}{S\+A\+I\+\_\+x\+C\+R1\+\_\+\+S\+A\+I\+EN})\hypertarget{group___s_a_i___exported___macros_gaa345d21ea570e79efa758bfbe289d1d9}{}\label{group___s_a_i___exported___macros_gaa345d21ea570e79efa758bfbe289d1d9}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+macros to handle interrupts and specific configurations 
+
+
+
+\subsection{Macro Definition Documentation}
+\index{S\+A\+I Exported Macros@{S\+A\+I Exported Macros}!\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG}}
+\index{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG}!S\+A\+I Exported Macros@{S\+A\+I Exported Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG}{__HAL_SAI_CLEAR_FLAG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+, }
+\item[{}]{\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)~((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$Instance-\/$>$C\+L\+R\+FR = (\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+))}\hypertarget{group___s_a_i___exported___macros_ga6ddbe8cd04c21fa5b97346cbcd91ccae}{}\label{group___s_a_i___exported___macros_ga6ddbe8cd04c21fa5b97346cbcd91ccae}
+
+
+Clears the specified S\+AI pending flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$strong$>$\+H\+A\+N\+D\+L\+E$<$/strong$>$} & specifies the S\+AI Handle. \\
+\hline
+{\em $<$strong$>$\+F\+L\+A\+G$<$/strong$>$} & specifies the flag to check. This parameter can be any combination of the following values\+: \begin{DoxyItemize}
+\item S\+A\+I\+\_\+\+F\+L\+A\+G\+\_\+\+O\+V\+R\+U\+DR\+: Clear Overrun underrun \item S\+A\+I\+\_\+\+F\+L\+A\+G\+\_\+\+M\+U\+T\+E\+D\+ET\+: Clear Mute detection \item S\+A\+I\+\_\+\+F\+L\+A\+G\+\_\+\+W\+C\+K\+C\+FG\+: Clear Wrong Clock Configuration \item S\+A\+I\+\_\+\+F\+L\+A\+G\+\_\+\+F\+R\+EQ\+: Clear F\+I\+FO request \item S\+A\+I\+\_\+\+F\+L\+A\+G\+\_\+\+C\+N\+R\+DY\+: Clear Codec not ready \item S\+A\+I\+\_\+\+F\+L\+A\+G\+\_\+\+A\+F\+S\+D\+ET\+: Clear Anticipated frame synchronization detection \item S\+A\+I\+\_\+\+F\+L\+A\+G\+\_\+\+L\+F\+S\+D\+ET\+: Clear Late frame synchronization detection\end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\index{S\+A\+I Exported Macros@{S\+A\+I Exported Macros}!\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+IT@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+IT}}
+\index{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+IT@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+IT}!S\+A\+I Exported Macros@{S\+A\+I Exported Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+IT}{__HAL_SAI_ENABLE_IT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+IT(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+, }
+\item[{}]{\+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)~((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$Instance-\/$>$I\+MR $\vert$= (\+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+))}\hypertarget{group___s_a_i___exported___macros_gaa95d2cf8b2104cc1a51d71cd4e809d37}{}\label{group___s_a_i___exported___macros_gaa95d2cf8b2104cc1a51d71cd4e809d37}
+
+
+Enable or disable the specified S\+AI interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$strong$>$\+H\+A\+N\+D\+L\+E$<$/strong$>$} & specifies the S\+AI Handle. \\
+\hline
+{\em $<$strong$>$\+I\+N\+T\+E\+R\+R\+U\+P\+T$<$/strong$>$} & specifies the interrupt source to enable or disable. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item S\+A\+I\+\_\+\+I\+T\+\_\+\+O\+V\+R\+U\+DR\+: Overrun underrun interrupt enable \item S\+A\+I\+\_\+\+I\+T\+\_\+\+M\+U\+T\+E\+D\+ET\+: Mute detection interrupt enable \item S\+A\+I\+\_\+\+I\+T\+\_\+\+W\+C\+K\+C\+FG\+: Wrong Clock Configuration interrupt enable \item S\+A\+I\+\_\+\+I\+T\+\_\+\+F\+R\+EQ\+: F\+I\+FO request interrupt enable \item S\+A\+I\+\_\+\+I\+T\+\_\+\+C\+N\+R\+DY\+: Codec not ready interrupt enable \item S\+A\+I\+\_\+\+I\+T\+\_\+\+A\+F\+S\+D\+ET\+: Anticipated frame synchronization detection interrupt enable \item S\+A\+I\+\_\+\+I\+T\+\_\+\+L\+F\+S\+D\+ET\+: Late frame synchronization detection interrupt enabl \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\index{S\+A\+I Exported Macros@{S\+A\+I Exported Macros}!\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG}}
+\index{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG}!S\+A\+I Exported Macros@{S\+A\+I Exported Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG}{__HAL_SAI_GET_FLAG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+, }
+\item[{}]{\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)~((((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$Instance-\/$>$SR) \& (\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+)) == (\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+))}\hypertarget{group___s_a_i___exported___macros_ga47950261a8f24947541c014189eb34d8}{}\label{group___s_a_i___exported___macros_ga47950261a8f24947541c014189eb34d8}
+
+
+Check whether the specified S\+AI flag is set or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$strong$>$\+H\+A\+N\+D\+L\+E$<$/strong$>$} & specifies the S\+AI Handle. \\
+\hline
+{\em $<$strong$>$\+F\+L\+A\+G$<$/strong$>$} & specifies the flag to check. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item S\+A\+I\+\_\+\+F\+L\+A\+G\+\_\+\+O\+V\+R\+U\+DR\+: Overrun underrun flag. \item S\+A\+I\+\_\+\+F\+L\+A\+G\+\_\+\+M\+U\+T\+E\+D\+ET\+: Mute detection flag. \item S\+A\+I\+\_\+\+F\+L\+A\+G\+\_\+\+W\+C\+K\+C\+FG\+: Wrong Clock Configuration flag. \item S\+A\+I\+\_\+\+F\+L\+A\+G\+\_\+\+F\+R\+EQ\+: F\+I\+FO request flag. \item S\+A\+I\+\_\+\+F\+L\+A\+G\+\_\+\+C\+N\+R\+DY\+: Codec not ready flag. \item S\+A\+I\+\_\+\+F\+L\+A\+G\+\_\+\+A\+F\+S\+D\+ET\+: Anticipated frame synchronization detection flag. \item S\+A\+I\+\_\+\+F\+L\+A\+G\+\_\+\+L\+F\+S\+D\+ET\+: Late frame synchronization detection flag. \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of {\bfseries F\+L\+AG} (T\+R\+UE or F\+A\+L\+SE). \\
+\hline
+\end{DoxyRetVals}
+\index{S\+A\+I Exported Macros@{S\+A\+I Exported Macros}!\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+G\+E\+T\+\_\+\+I\+T\+\_\+\+S\+O\+U\+R\+CE@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+G\+E\+T\+\_\+\+I\+T\+\_\+\+S\+O\+U\+R\+CE}}
+\index{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+G\+E\+T\+\_\+\+I\+T\+\_\+\+S\+O\+U\+R\+CE@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+G\+E\+T\+\_\+\+I\+T\+\_\+\+S\+O\+U\+R\+CE}!S\+A\+I Exported Macros@{S\+A\+I Exported Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+G\+E\+T\+\_\+\+I\+T\+\_\+\+S\+O\+U\+R\+CE}{__HAL_SAI_GET_IT_SOURCE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+G\+E\+T\+\_\+\+I\+T\+\_\+\+S\+O\+U\+R\+CE(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+, }
+\item[{}]{\+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)~((((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$Instance-\/$>$I\+MR \& (\+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+)) == (\+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+)) ? S\+ET \+: R\+E\+S\+ET)}\hypertarget{group___s_a_i___exported___macros_ga0afa781d3932905dd3916078a99abd48}{}\label{group___s_a_i___exported___macros_ga0afa781d3932905dd3916078a99abd48}
+
+
+Check if the specified S\+AI interrupt source is enabled or disabled. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$strong$>$\+H\+A\+N\+D\+L\+E$<$/strong$>$} & specifies the S\+AI Handle. This parameter can be S\+AI where x\+: 1, 2, or 3 to select the S\+AI peripheral. \\
+\hline
+{\em $<$strong$>$\+I\+N\+T\+E\+R\+R\+U\+P\+T$<$/strong$>$} & specifies the S\+AI interrupt source to check. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item S\+A\+I\+\_\+\+I\+T\+\_\+\+T\+XE\+: Tx buffer empty interrupt enable. \item S\+A\+I\+\_\+\+I\+T\+\_\+\+R\+X\+NE\+: Rx buffer not empty interrupt enable. \item S\+A\+I\+\_\+\+I\+T\+\_\+\+E\+RR\+: Error interrupt enable. \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of {\bfseries I\+N\+T\+E\+R\+R\+U\+PT} (T\+R\+UE or F\+A\+L\+SE). \\
+\hline
+\end{DoxyRetVals}
+\index{S\+A\+I Exported Macros@{S\+A\+I Exported Macros}!\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+R\+E\+S\+E\+T\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+S\+T\+A\+TE@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+R\+E\+S\+E\+T\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+S\+T\+A\+TE}}
+\index{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+R\+E\+S\+E\+T\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+S\+T\+A\+TE@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+R\+E\+S\+E\+T\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+S\+T\+A\+TE}!S\+A\+I Exported Macros@{S\+A\+I Exported Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+R\+E\+S\+E\+T\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+S\+T\+A\+TE}{__HAL_SAI_RESET_HANDLE_STATE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+R\+E\+S\+E\+T\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+S\+T\+A\+TE(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)~((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$State = {\bf H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+S\+ET})}\hypertarget{group___s_a_i___exported___macros_ga45b0ef0710229953f17d04ff7764f620}{}\label{group___s_a_i___exported___macros_ga45b0ef0710229953f17d04ff7764f620}
+
+
+Reset S\+AI handle state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$strong$>$\+H\+A\+N\+D\+L\+E$<$/strong$>$} & specifies the S\+AI Handle. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}

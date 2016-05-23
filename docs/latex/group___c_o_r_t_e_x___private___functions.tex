@@ -1,0 +1,61 @@
+\hypertarget{group___c_o_r_t_e_x___private___functions}{}\section{C\+O\+R\+T\+EX Private Functions}
+\label{group___c_o_r_t_e_x___private___functions}\index{C\+O\+R\+T\+E\+X Private Functions@{C\+O\+R\+T\+E\+X Private Functions}}
+
+
+C\+O\+R\+T\+EX private functions.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE void \hyperlink{group___c_o_r_t_e_x___private___functions_gace6314fb5349d13d72fd54acaadeaccc}{H\+A\+L\+\_\+\+M\+P\+U\+\_\+\+Disable} (void)
+\begin{DoxyCompactList}\small\item\em Disables the M\+PU. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE void \hyperlink{group___c_o_r_t_e_x___private___functions_ga03a0803ed046d1245ce42e47d6b34838}{H\+A\+L\+\_\+\+M\+P\+U\+\_\+\+Enable} (uint32\+\_\+t M\+P\+U\+\_\+\+Control)
+\begin{DoxyCompactList}\small\item\em Enables the M\+PU. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C\+O\+R\+T\+EX private functions. 
+
+
+
+\subsection{Function Documentation}
+\index{C\+O\+R\+T\+E\+X Private Functions@{C\+O\+R\+T\+E\+X Private Functions}!H\+A\+L\+\_\+\+M\+P\+U\+\_\+\+Disable@{H\+A\+L\+\_\+\+M\+P\+U\+\_\+\+Disable}}
+\index{H\+A\+L\+\_\+\+M\+P\+U\+\_\+\+Disable@{H\+A\+L\+\_\+\+M\+P\+U\+\_\+\+Disable}!C\+O\+R\+T\+E\+X Private Functions@{C\+O\+R\+T\+E\+X Private Functions}}
+\subsubsection[{\texorpdfstring{H\+A\+L\+\_\+\+M\+P\+U\+\_\+\+Disable(void)}{HAL_MPU_Disable(void)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE void H\+A\+L\+\_\+\+M\+P\+U\+\_\+\+Disable (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___c_o_r_t_e_x___private___functions_gace6314fb5349d13d72fd54acaadeaccc}{}\label{group___c_o_r_t_e_x___private___functions_gace6314fb5349d13d72fd54acaadeaccc}
+
+
+Disables the M\+PU. 
+
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\index{C\+O\+R\+T\+E\+X Private Functions@{C\+O\+R\+T\+E\+X Private Functions}!H\+A\+L\+\_\+\+M\+P\+U\+\_\+\+Enable@{H\+A\+L\+\_\+\+M\+P\+U\+\_\+\+Enable}}
+\index{H\+A\+L\+\_\+\+M\+P\+U\+\_\+\+Enable@{H\+A\+L\+\_\+\+M\+P\+U\+\_\+\+Enable}!C\+O\+R\+T\+E\+X Private Functions@{C\+O\+R\+T\+E\+X Private Functions}}
+\subsubsection[{\texorpdfstring{H\+A\+L\+\_\+\+M\+P\+U\+\_\+\+Enable(uint32\+\_\+t M\+P\+U\+\_\+\+Control)}{HAL_MPU_Enable(uint32_t MPU_Control)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE void H\+A\+L\+\_\+\+M\+P\+U\+\_\+\+Enable (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{M\+P\+U\+\_\+\+Control}
+\end{DoxyParamCaption}
+)}\hypertarget{group___c_o_r_t_e_x___private___functions_ga03a0803ed046d1245ce42e47d6b34838}{}\label{group___c_o_r_t_e_x___private___functions_ga03a0803ed046d1245ce42e47d6b34838}
+
+
+Enables the M\+PU. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em M\+P\+U\+\_\+\+Control} & Specifies the control mode of the M\+PU during hard fault, N\+MI, F\+A\+U\+L\+T\+M\+A\+SK and privileged access to the default memory This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item M\+P\+U\+\_\+\+H\+F\+N\+M\+I\+\_\+\+P\+R\+I\+V\+D\+E\+F\+\_\+\+N\+O\+NE \item M\+P\+U\+\_\+\+H\+A\+R\+D\+F\+A\+U\+L\+T\+\_\+\+N\+MI \item M\+P\+U\+\_\+\+P\+R\+I\+V\+I\+L\+E\+G\+E\+D\+\_\+\+D\+E\+F\+A\+U\+LT \item M\+P\+U\+\_\+\+H\+F\+N\+M\+I\+\_\+\+P\+R\+I\+V\+D\+EF \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}

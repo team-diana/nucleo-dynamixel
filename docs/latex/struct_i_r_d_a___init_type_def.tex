@@ -1,0 +1,62 @@
+\hypertarget{struct_i_r_d_a___init_type_def}{}\section{I\+R\+D\+A\+\_\+\+Init\+Type\+Def Struct Reference}
+\label{struct_i_r_d_a___init_type_def}\index{I\+R\+D\+A\+\_\+\+Init\+Type\+Def@{I\+R\+D\+A\+\_\+\+Init\+Type\+Def}}
+
+
+I\+R\+DA Init Structure definition.  
+
+
+
+
+{\ttfamily \#include $<$stm32f4xx\+\_\+hal\+\_\+irda.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{struct_i_r_d_a___init_type_def_a3a96057c13882e04fde01040b18a0eec}{Baud\+Rate}
+\item 
+uint32\+\_\+t \hyperlink{struct_i_r_d_a___init_type_def_a0a9bfafe2a9b00be86cd7b75788391ed}{Word\+Length}
+\item 
+uint32\+\_\+t \hyperlink{struct_i_r_d_a___init_type_def_ac8a66f175e3502bba61409c7c08649b0}{Parity}
+\item 
+uint32\+\_\+t \hyperlink{struct_i_r_d_a___init_type_def_ad10e4fcdb63d30534ce771d57c0f3ffb}{Mode}
+\item 
+uint8\+\_\+t \hyperlink{struct_i_r_d_a___init_type_def_afb7e30279f08cd39a40ec49e8887fe36}{Prescaler}
+\item 
+uint32\+\_\+t \hyperlink{struct_i_r_d_a___init_type_def_a88f1b73ae470fddd4e75b70cf5175040}{Ir\+D\+A\+Mode}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+I\+R\+DA Init Structure definition. 
+
+\subsection{Member Data Documentation}
+\index{I\+R\+D\+A\+\_\+\+Init\+Type\+Def@{I\+R\+D\+A\+\_\+\+Init\+Type\+Def}!Baud\+Rate@{Baud\+Rate}}
+\index{Baud\+Rate@{Baud\+Rate}!I\+R\+D\+A\+\_\+\+Init\+Type\+Def@{I\+R\+D\+A\+\_\+\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Baud\+Rate}{BaudRate}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t I\+R\+D\+A\+\_\+\+Init\+Type\+Def\+::\+Baud\+Rate}\hypertarget{struct_i_r_d_a___init_type_def_a3a96057c13882e04fde01040b18a0eec}{}\label{struct_i_r_d_a___init_type_def_a3a96057c13882e04fde01040b18a0eec}
+This member configures the I\+R\+DA communication baud rate. The baud rate is computed using the following formula\+:
+\begin{DoxyItemize}
+\item Integer\+Divider = ((P\+C\+L\+Kx) / (8 $\ast$ (hirda-\/$>$Init.\+Baud\+Rate)))
+\item Fractional\+Divider = ((Integer\+Divider -\/ ((uint32\+\_\+t) Integer\+Divider)) $\ast$ 8) + 0.\+5 
+\end{DoxyItemize}\index{I\+R\+D\+A\+\_\+\+Init\+Type\+Def@{I\+R\+D\+A\+\_\+\+Init\+Type\+Def}!Ir\+D\+A\+Mode@{Ir\+D\+A\+Mode}}
+\index{Ir\+D\+A\+Mode@{Ir\+D\+A\+Mode}!I\+R\+D\+A\+\_\+\+Init\+Type\+Def@{I\+R\+D\+A\+\_\+\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Ir\+D\+A\+Mode}{IrDAMode}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t I\+R\+D\+A\+\_\+\+Init\+Type\+Def\+::\+Ir\+D\+A\+Mode}\hypertarget{struct_i_r_d_a___init_type_def_a88f1b73ae470fddd4e75b70cf5175040}{}\label{struct_i_r_d_a___init_type_def_a88f1b73ae470fddd4e75b70cf5175040}
+Specifies the Ir\+DA mode This parameter can be a value of \hyperlink{group___i_r_d_a___low___power}{I\+R\+DA Low Power} \index{I\+R\+D\+A\+\_\+\+Init\+Type\+Def@{I\+R\+D\+A\+\_\+\+Init\+Type\+Def}!Mode@{Mode}}
+\index{Mode@{Mode}!I\+R\+D\+A\+\_\+\+Init\+Type\+Def@{I\+R\+D\+A\+\_\+\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Mode}{Mode}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t I\+R\+D\+A\+\_\+\+Init\+Type\+Def\+::\+Mode}\hypertarget{struct_i_r_d_a___init_type_def_ad10e4fcdb63d30534ce771d57c0f3ffb}{}\label{struct_i_r_d_a___init_type_def_ad10e4fcdb63d30534ce771d57c0f3ffb}
+Specifies wether the Receive or Transmit mode is enabled or disabled. This parameter can be a value of \hyperlink{group___i_r_d_a___mode}{I\+R\+DA Transfer Mode} \index{I\+R\+D\+A\+\_\+\+Init\+Type\+Def@{I\+R\+D\+A\+\_\+\+Init\+Type\+Def}!Parity@{Parity}}
+\index{Parity@{Parity}!I\+R\+D\+A\+\_\+\+Init\+Type\+Def@{I\+R\+D\+A\+\_\+\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Parity}{Parity}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t I\+R\+D\+A\+\_\+\+Init\+Type\+Def\+::\+Parity}\hypertarget{struct_i_r_d_a___init_type_def_ac8a66f175e3502bba61409c7c08649b0}{}\label{struct_i_r_d_a___init_type_def_ac8a66f175e3502bba61409c7c08649b0}
+Specifies the parity mode. This parameter can be a value of \hyperlink{group___i_r_d_a___parity}{I\+R\+DA Parity} \begin{DoxyNote}{Note}
+When parity is enabled, the computed parity is inserted at the M\+SB position of the transmitted data (9th bit when the word length is set to 9 data bits; 8th bit when the word length is set to 8 data bits). 
+\end{DoxyNote}
+\index{I\+R\+D\+A\+\_\+\+Init\+Type\+Def@{I\+R\+D\+A\+\_\+\+Init\+Type\+Def}!Prescaler@{Prescaler}}
+\index{Prescaler@{Prescaler}!I\+R\+D\+A\+\_\+\+Init\+Type\+Def@{I\+R\+D\+A\+\_\+\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Prescaler}{Prescaler}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t I\+R\+D\+A\+\_\+\+Init\+Type\+Def\+::\+Prescaler}\hypertarget{struct_i_r_d_a___init_type_def_afb7e30279f08cd39a40ec49e8887fe36}{}\label{struct_i_r_d_a___init_type_def_afb7e30279f08cd39a40ec49e8887fe36}
+Specifies the Prescaler \index{I\+R\+D\+A\+\_\+\+Init\+Type\+Def@{I\+R\+D\+A\+\_\+\+Init\+Type\+Def}!Word\+Length@{Word\+Length}}
+\index{Word\+Length@{Word\+Length}!I\+R\+D\+A\+\_\+\+Init\+Type\+Def@{I\+R\+D\+A\+\_\+\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Word\+Length}{WordLength}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t I\+R\+D\+A\+\_\+\+Init\+Type\+Def\+::\+Word\+Length}\hypertarget{struct_i_r_d_a___init_type_def_a0a9bfafe2a9b00be86cd7b75788391ed}{}\label{struct_i_r_d_a___init_type_def_a0a9bfafe2a9b00be86cd7b75788391ed}
+Specifies the number of data bits transmitted or received in a frame. This parameter can be a value of \hyperlink{group___i_r_d_a___word___length}{I\+R\+DA Word Length} 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dynamixel-\/\+M\+X106/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+N\+U\+C\+L\+E\+O\+\_\+\+F446\+R\+E/\hyperlink{stm32f4xx__hal__irda_8h}{stm32f4xx\+\_\+hal\+\_\+irda.\+h}\end{DoxyCompactItemize}

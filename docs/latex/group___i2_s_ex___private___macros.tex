@@ -1,0 +1,30 @@
+\hypertarget{group___i2_s_ex___private___macros}{}\section{I2S Private Macros}
+\label{group___i2_s_ex___private___macros}\index{I2\+S Private Macros@{I2\+S Private Macros}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries I\+S\+\_\+\+I2\+S\+\_\+\+C\+L\+O\+C\+K\+S\+O\+U\+R\+CE}(C\+L\+O\+CK)
+\item 
+\#define {\bfseries I2\+Sx\+E\+XT}(\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+)~((\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+) == (S\+P\+I2)? (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$)(I2\+S2ext\+\_\+\+B\+A\+SE)\+: (\hyperlink{struct_s_p_i___type_def}{S\+P\+I\+\_\+\+Type\+Def} $\ast$)(I2\+S3ext\+\_\+\+B\+A\+SE))\hypertarget{group___i2_s_ex___private___macros_ga7f7ad7e03f972cf5f24f4842fe28beca}{}\label{group___i2_s_ex___private___macros_ga7f7ad7e03f972cf5f24f4842fe28beca}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\index{I2\+S Private Macros@{I2\+S Private Macros}!I\+S\+\_\+\+I2\+S\+\_\+\+C\+L\+O\+C\+K\+S\+O\+U\+R\+CE@{I\+S\+\_\+\+I2\+S\+\_\+\+C\+L\+O\+C\+K\+S\+O\+U\+R\+CE}}
+\index{I\+S\+\_\+\+I2\+S\+\_\+\+C\+L\+O\+C\+K\+S\+O\+U\+R\+CE@{I\+S\+\_\+\+I2\+S\+\_\+\+C\+L\+O\+C\+K\+S\+O\+U\+R\+CE}!I2\+S Private Macros@{I2\+S Private Macros}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+I2\+S\+\_\+\+C\+L\+O\+C\+K\+S\+O\+U\+R\+CE}{IS_I2S_CLOCKSOURCE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+I2\+S\+\_\+\+C\+L\+O\+C\+K\+S\+O\+U\+R\+CE(
+\begin{DoxyParamCaption}
+\item[{}]{C\+L\+O\+CK}
+\end{DoxyParamCaption}
+)}\hypertarget{group___i2_s_ex___private___macros_ga2728627931f0e5febb9e584a60199543}{}\label{group___i2_s_ex___private___macros_ga2728627931f0e5febb9e584a60199543}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((CLOCK) == I2S\_CLOCK\_EXTERNAL) ||\(\backslash\)
+                                   ((CLOCK) == I2S\_CLOCK\_PLL)      ||\(\backslash\)
+                                   ((CLOCK) == I2S\_CLOCK\_PLLSRC)   ||\(\backslash\)
+                                   ((CLOCK) == I2S\_CLOCK\_PLLR))
+\end{DoxyCode}

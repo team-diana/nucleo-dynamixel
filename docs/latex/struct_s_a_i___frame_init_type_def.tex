@@ -1,0 +1,53 @@
+\hypertarget{struct_s_a_i___frame_init_type_def}{}\section{S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def Struct Reference}
+\label{struct_s_a_i___frame_init_type_def}\index{S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def@{S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def}}
+
+
+S\+AI Block Frame Init structure definition.  
+
+
+
+
+{\ttfamily \#include $<$stm32f4xx\+\_\+hal\+\_\+sai.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{struct_s_a_i___frame_init_type_def_a904049acbd621e7e737e113489278b60}{Frame\+Length}
+\item 
+uint32\+\_\+t \hyperlink{struct_s_a_i___frame_init_type_def_a3ca18b96223b5d7778b56d22e206ca02}{Active\+Frame\+Length}
+\item 
+uint32\+\_\+t \hyperlink{struct_s_a_i___frame_init_type_def_a7a73667f43364ab89f20dcac482ed911}{F\+S\+Definition}
+\item 
+uint32\+\_\+t \hyperlink{struct_s_a_i___frame_init_type_def_a5afca722951634a6e86a4453a0899cc5}{F\+S\+Polarity}
+\item 
+uint32\+\_\+t \hyperlink{struct_s_a_i___frame_init_type_def_ab226d4d8ac8167cf9a4b12786ac18c2b}{F\+S\+Offset}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+AI Block Frame Init structure definition. 
+
+\subsection{Member Data Documentation}
+\index{S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def@{S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def}!Active\+Frame\+Length@{Active\+Frame\+Length}}
+\index{Active\+Frame\+Length@{Active\+Frame\+Length}!S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def@{S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Active\+Frame\+Length}{ActiveFrameLength}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def\+::\+Active\+Frame\+Length}\hypertarget{struct_s_a_i___frame_init_type_def_a3ca18b96223b5d7778b56d22e206ca02}{}\label{struct_s_a_i___frame_init_type_def_a3ca18b96223b5d7778b56d22e206ca02}
+Specifies the Frame synchronization active level length. This Parameter specifies the length in number of bit clock (S\+CK + 1) of the active level of FS signal in audio frame. This parameter must be a number between Min\+\_\+\+Data = 1 and Max\+\_\+\+Data = 128 \index{S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def@{S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def}!Frame\+Length@{Frame\+Length}}
+\index{Frame\+Length@{Frame\+Length}!S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def@{S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Frame\+Length}{FrameLength}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def\+::\+Frame\+Length}\hypertarget{struct_s_a_i___frame_init_type_def_a904049acbd621e7e737e113489278b60}{}\label{struct_s_a_i___frame_init_type_def_a904049acbd621e7e737e113489278b60}
+Specifies the Frame length, the number of S\+CK clocks for each audio frame. This parameter must be a number between Min\+\_\+\+Data = 8 and Max\+\_\+\+Data = 256. \begin{DoxyNote}{Note}
+\+: If master clock M\+C\+L\+K\+\_\+x pin is declared as an output, the frame length should be aligned to a number equal to power of 2 in order to keep in an audio frame, an integer number of M\+C\+LK pulses by bit Clock. 
+\end{DoxyNote}
+\index{S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def@{S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def}!F\+S\+Definition@{F\+S\+Definition}}
+\index{F\+S\+Definition@{F\+S\+Definition}!S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def@{S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{F\+S\+Definition}{FSDefinition}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def\+::\+F\+S\+Definition}\hypertarget{struct_s_a_i___frame_init_type_def_a7a73667f43364ab89f20dcac482ed911}{}\label{struct_s_a_i___frame_init_type_def_a7a73667f43364ab89f20dcac482ed911}
+Specifies the Frame synchronization definition. This parameter can be a value of \hyperlink{group___s_a_i___block___f_s___definition}{S\+AI Block FS Definition} \index{S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def@{S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def}!F\+S\+Offset@{F\+S\+Offset}}
+\index{F\+S\+Offset@{F\+S\+Offset}!S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def@{S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{F\+S\+Offset}{FSOffset}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def\+::\+F\+S\+Offset}\hypertarget{struct_s_a_i___frame_init_type_def_ab226d4d8ac8167cf9a4b12786ac18c2b}{}\label{struct_s_a_i___frame_init_type_def_ab226d4d8ac8167cf9a4b12786ac18c2b}
+Specifies the Frame synchronization Offset. This parameter can be a value of \hyperlink{group___s_a_i___block___f_s___offset}{S\+AI Block FS Offset} \index{S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def@{S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def}!F\+S\+Polarity@{F\+S\+Polarity}}
+\index{F\+S\+Polarity@{F\+S\+Polarity}!S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def@{S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{F\+S\+Polarity}{FSPolarity}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def\+::\+F\+S\+Polarity}\hypertarget{struct_s_a_i___frame_init_type_def_a5afca722951634a6e86a4453a0899cc5}{}\label{struct_s_a_i___frame_init_type_def_a5afca722951634a6e86a4453a0899cc5}
+Specifies the Frame synchronization Polarity. This parameter can be a value of \hyperlink{group___s_a_i___block___f_s___polarity}{S\+AI Block FS Polarity} 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dynamixel-\/\+M\+X106/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+N\+U\+C\+L\+E\+O\+\_\+\+F446\+R\+E/\hyperlink{stm32f4xx__hal__sai_8h}{stm32f4xx\+\_\+hal\+\_\+sai.\+h}\end{DoxyCompactItemize}

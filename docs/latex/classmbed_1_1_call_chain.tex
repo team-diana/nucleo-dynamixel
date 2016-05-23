@@ -1,0 +1,195 @@
+\hypertarget{classmbed_1_1_call_chain}{}\section{mbed\+:\+:Call\+Chain Class Reference}
+\label{classmbed_1_1_call_chain}\index{mbed\+::\+Call\+Chain@{mbed\+::\+Call\+Chain}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmbed_1_1_call_chain_a01b2b14e23b60c4d81522b19ef04cd9b}{Call\+Chain} (int \hyperlink{classmbed_1_1_call_chain_ac2231dfa186291dbe64f7756be5f78fb}{size}=4)
+\item 
+\hyperlink{classmbed_1_1_function_pointer_arg1}{p\+Function\+Pointer\+\_\+t} \hyperlink{classmbed_1_1_call_chain_a232d59392bfaff0d3950a240f2fee952}{add} (void($\ast$function)(void))
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classmbed_1_1_function_pointer_arg1}{p\+Function\+Pointer\+\_\+t} \hyperlink{classmbed_1_1_call_chain_a9bd78a3e92768bfafb562d0257297247}{add} (T $\ast$tptr, void(T\+::$\ast$mptr)(void))
+\item 
+\hyperlink{classmbed_1_1_function_pointer_arg1}{p\+Function\+Pointer\+\_\+t} \hyperlink{classmbed_1_1_call_chain_a050f0042e62f8271a507ca57d19e6846}{add\+\_\+front} (void($\ast$function)(void))
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classmbed_1_1_function_pointer_arg1}{p\+Function\+Pointer\+\_\+t} \hyperlink{classmbed_1_1_call_chain_ae7f7fe79166ad44e24131a4609a61a14}{add\+\_\+front} (T $\ast$tptr, void(T\+::$\ast$mptr)(void))
+\item 
+int \hyperlink{classmbed_1_1_call_chain_ac2231dfa186291dbe64f7756be5f78fb}{size} () const 
+\item 
+\hyperlink{classmbed_1_1_function_pointer_arg1}{p\+Function\+Pointer\+\_\+t} \hyperlink{classmbed_1_1_call_chain_aed5a10fb63c039c7163472bff18a18a0}{get} (int i) const 
+\item 
+int \hyperlink{classmbed_1_1_call_chain_a124e1ee11cac95565e2b3e69453ac9e1}{find} (\hyperlink{classmbed_1_1_function_pointer_arg1}{p\+Function\+Pointer\+\_\+t} f) const 
+\item 
+void \hyperlink{classmbed_1_1_call_chain_a65693758d2e75e3390e64d27b98556c2}{clear} ()
+\item 
+bool \hyperlink{classmbed_1_1_call_chain_a4396b8d6374b95f13c95775bd8e0137a}{remove} (\hyperlink{classmbed_1_1_function_pointer_arg1}{p\+Function\+Pointer\+\_\+t} f)
+\item 
+void \hyperlink{classmbed_1_1_call_chain_ac911bd44ea0a14da0b0dd46187bf1081}{call} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{mbed\+::\+Call\+Chain@{mbed\+::\+Call\+Chain}!Call\+Chain@{Call\+Chain}}
+\index{Call\+Chain@{Call\+Chain}!mbed\+::\+Call\+Chain@{mbed\+::\+Call\+Chain}}
+\subsubsection[{\texorpdfstring{Call\+Chain(int size=4)}{CallChain(int size=4)}}]{\setlength{\rightskip}{0pt plus 5cm}mbed\+::\+Call\+Chain\+::\+Call\+Chain (
+\begin{DoxyParamCaption}
+\item[{int}]{size = {\ttfamily 4}}
+\end{DoxyParamCaption}
+)}\hypertarget{classmbed_1_1_call_chain_a01b2b14e23b60c4d81522b19ef04cd9b}{}\label{classmbed_1_1_call_chain_a01b2b14e23b60c4d81522b19ef04cd9b}
+Create an empty chain
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & (optional) Initial size of the chain \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{mbed\+::\+Call\+Chain@{mbed\+::\+Call\+Chain}!add@{add}}
+\index{add@{add}!mbed\+::\+Call\+Chain@{mbed\+::\+Call\+Chain}}
+\subsubsection[{\texorpdfstring{add(void($\ast$function)(void))}{add(void(*function)(void))}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf p\+Function\+Pointer\+\_\+t} mbed\+::\+Call\+Chain\+::add (
+\begin{DoxyParamCaption}
+\item[{void($\ast$)(void)}]{function}
+\end{DoxyParamCaption}
+)}\hypertarget{classmbed_1_1_call_chain_a232d59392bfaff0d3950a240f2fee952}{}\label{classmbed_1_1_call_chain_a232d59392bfaff0d3950a240f2fee952}
+Add a function at the end of the chain
+
+
+\begin{DoxyParams}{Parameters}
+{\em function} & A pointer to a void function\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function object created for \textquotesingle{}function\textquotesingle{} 
+\end{DoxyReturn}
+\index{mbed\+::\+Call\+Chain@{mbed\+::\+Call\+Chain}!add@{add}}
+\index{add@{add}!mbed\+::\+Call\+Chain@{mbed\+::\+Call\+Chain}}
+\subsubsection[{\texorpdfstring{add(\+T $\ast$tptr, void(\+T\+::$\ast$mptr)(void))}{add(T *tptr, void(T::*mptr)(void))}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf p\+Function\+Pointer\+\_\+t} mbed\+::\+Call\+Chain\+::add (
+\begin{DoxyParamCaption}
+\item[{T $\ast$}]{tptr, }
+\item[{void(T\+::$\ast$)(void)}]{mptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmbed_1_1_call_chain_a9bd78a3e92768bfafb562d0257297247}{}\label{classmbed_1_1_call_chain_a9bd78a3e92768bfafb562d0257297247}
+Add a function at the end of the chain
+
+
+\begin{DoxyParams}{Parameters}
+{\em tptr} & pointer to the object to call the member function on \\
+\hline
+{\em mptr} & pointer to the member function to be called\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function object created for \textquotesingle{}tptr\textquotesingle{} and \textquotesingle{}mptr\textquotesingle{} 
+\end{DoxyReturn}
+\index{mbed\+::\+Call\+Chain@{mbed\+::\+Call\+Chain}!add\+\_\+front@{add\+\_\+front}}
+\index{add\+\_\+front@{add\+\_\+front}!mbed\+::\+Call\+Chain@{mbed\+::\+Call\+Chain}}
+\subsubsection[{\texorpdfstring{add\+\_\+front(void($\ast$function)(void))}{add_front(void(*function)(void))}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf p\+Function\+Pointer\+\_\+t} mbed\+::\+Call\+Chain\+::add\+\_\+front (
+\begin{DoxyParamCaption}
+\item[{void($\ast$)(void)}]{function}
+\end{DoxyParamCaption}
+)}\hypertarget{classmbed_1_1_call_chain_a050f0042e62f8271a507ca57d19e6846}{}\label{classmbed_1_1_call_chain_a050f0042e62f8271a507ca57d19e6846}
+Add a function at the beginning of the chain
+
+
+\begin{DoxyParams}{Parameters}
+{\em function} & A pointer to a void function\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function object created for \textquotesingle{}function\textquotesingle{} 
+\end{DoxyReturn}
+\index{mbed\+::\+Call\+Chain@{mbed\+::\+Call\+Chain}!add\+\_\+front@{add\+\_\+front}}
+\index{add\+\_\+front@{add\+\_\+front}!mbed\+::\+Call\+Chain@{mbed\+::\+Call\+Chain}}
+\subsubsection[{\texorpdfstring{add\+\_\+front(\+T $\ast$tptr, void(\+T\+::$\ast$mptr)(void))}{add_front(T *tptr, void(T::*mptr)(void))}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf p\+Function\+Pointer\+\_\+t} mbed\+::\+Call\+Chain\+::add\+\_\+front (
+\begin{DoxyParamCaption}
+\item[{T $\ast$}]{tptr, }
+\item[{void(T\+::$\ast$)(void)}]{mptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmbed_1_1_call_chain_ae7f7fe79166ad44e24131a4609a61a14}{}\label{classmbed_1_1_call_chain_ae7f7fe79166ad44e24131a4609a61a14}
+Add a function at the beginning of the chain
+
+
+\begin{DoxyParams}{Parameters}
+{\em tptr} & pointer to the object to call the member function on \\
+\hline
+{\em mptr} & pointer to the member function to be called\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function object created for \textquotesingle{}tptr\textquotesingle{} and \textquotesingle{}mptr\textquotesingle{} 
+\end{DoxyReturn}
+\index{mbed\+::\+Call\+Chain@{mbed\+::\+Call\+Chain}!call@{call}}
+\index{call@{call}!mbed\+::\+Call\+Chain@{mbed\+::\+Call\+Chain}}
+\subsubsection[{\texorpdfstring{call()}{call()}}]{\setlength{\rightskip}{0pt plus 5cm}void mbed\+::\+Call\+Chain\+::call (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmbed_1_1_call_chain_ac911bd44ea0a14da0b0dd46187bf1081}{}\label{classmbed_1_1_call_chain_ac911bd44ea0a14da0b0dd46187bf1081}
+Call all the functions in the chain in sequence \index{mbed\+::\+Call\+Chain@{mbed\+::\+Call\+Chain}!clear@{clear}}
+\index{clear@{clear}!mbed\+::\+Call\+Chain@{mbed\+::\+Call\+Chain}}
+\subsubsection[{\texorpdfstring{clear()}{clear()}}]{\setlength{\rightskip}{0pt plus 5cm}void mbed\+::\+Call\+Chain\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmbed_1_1_call_chain_a65693758d2e75e3390e64d27b98556c2}{}\label{classmbed_1_1_call_chain_a65693758d2e75e3390e64d27b98556c2}
+Clear the call chain (remove all functions in the chain). \index{mbed\+::\+Call\+Chain@{mbed\+::\+Call\+Chain}!find@{find}}
+\index{find@{find}!mbed\+::\+Call\+Chain@{mbed\+::\+Call\+Chain}}
+\subsubsection[{\texorpdfstring{find(p\+Function\+Pointer\+\_\+t f) const }{find(pFunctionPointer_t f) const }}]{\setlength{\rightskip}{0pt plus 5cm}int mbed\+::\+Call\+Chain\+::find (
+\begin{DoxyParamCaption}
+\item[{{\bf p\+Function\+Pointer\+\_\+t}}]{f}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmbed_1_1_call_chain_a124e1ee11cac95565e2b3e69453ac9e1}{}\label{classmbed_1_1_call_chain_a124e1ee11cac95565e2b3e69453ac9e1}
+Look for a function object in the call chain
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & the function object to search\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The index of the function object if found, -\/1 otherwise. 
+\end{DoxyReturn}
+\index{mbed\+::\+Call\+Chain@{mbed\+::\+Call\+Chain}!get@{get}}
+\index{get@{get}!mbed\+::\+Call\+Chain@{mbed\+::\+Call\+Chain}}
+\subsubsection[{\texorpdfstring{get(int i) const }{get(int i) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf p\+Function\+Pointer\+\_\+t} mbed\+::\+Call\+Chain\+::get (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmbed_1_1_call_chain_aed5a10fb63c039c7163472bff18a18a0}{}\label{classmbed_1_1_call_chain_aed5a10fb63c039c7163472bff18a18a0}
+Get a function object from the chain
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & function object index\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The function object at position \textquotesingle{}i\textquotesingle{} in the chain 
+\end{DoxyReturn}
+\index{mbed\+::\+Call\+Chain@{mbed\+::\+Call\+Chain}!remove@{remove}}
+\index{remove@{remove}!mbed\+::\+Call\+Chain@{mbed\+::\+Call\+Chain}}
+\subsubsection[{\texorpdfstring{remove(p\+Function\+Pointer\+\_\+t f)}{remove(pFunctionPointer_t f)}}]{\setlength{\rightskip}{0pt plus 5cm}bool mbed\+::\+Call\+Chain\+::remove (
+\begin{DoxyParamCaption}
+\item[{{\bf p\+Function\+Pointer\+\_\+t}}]{f}
+\end{DoxyParamCaption}
+)}\hypertarget{classmbed_1_1_call_chain_a4396b8d6374b95f13c95775bd8e0137a}{}\label{classmbed_1_1_call_chain_a4396b8d6374b95f13c95775bd8e0137a}
+Remove a function object from the chain
+
+\begin{DoxyItemize}
+\item f the function object to remove\end{DoxyItemize}
+\begin{DoxyReturn}{Returns}
+true if the function object was found and removed, false otherwise. 
+\end{DoxyReturn}
+\index{mbed\+::\+Call\+Chain@{mbed\+::\+Call\+Chain}!size@{size}}
+\index{size@{size}!mbed\+::\+Call\+Chain@{mbed\+::\+Call\+Chain}}
+\subsubsection[{\texorpdfstring{size() const }{size() const }}]{\setlength{\rightskip}{0pt plus 5cm}int mbed\+::\+Call\+Chain\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmbed_1_1_call_chain_ac2231dfa186291dbe64f7756be5f78fb}{}\label{classmbed_1_1_call_chain_ac2231dfa186291dbe64f7756be5f78fb}
+Get the number of functions in the chain 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dynamixel-\/\+M\+X106/mbed/Call\+Chain.\+h\end{DoxyCompactItemize}

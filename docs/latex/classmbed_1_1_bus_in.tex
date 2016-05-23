@@ -1,0 +1,136 @@
+\hypertarget{classmbed_1_1_bus_in}{}\section{mbed\+:\+:Bus\+In Class Reference}
+\label{classmbed_1_1_bus_in}\index{mbed\+::\+Bus\+In@{mbed\+::\+Bus\+In}}
+
+
+{\ttfamily \#include $<$Bus\+In.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmbed_1_1_bus_in_a60e8a1d93b93bb565d7f6fafacdf6a4b}{Bus\+In} (Pin\+Name p0, Pin\+Name p1=NC, Pin\+Name p2=NC, Pin\+Name p3=NC, Pin\+Name p4=NC, Pin\+Name p5=NC, Pin\+Name p6=NC, Pin\+Name p7=NC, Pin\+Name p8=NC, Pin\+Name p9=NC, Pin\+Name p10=NC, Pin\+Name p11=NC, Pin\+Name p12=NC, Pin\+Name p13=NC, Pin\+Name p14=NC, Pin\+Name p15=NC)
+\item 
+{\bfseries Bus\+In} (Pin\+Name pins\mbox{[}16\mbox{]})\hypertarget{classmbed_1_1_bus_in_ae48033f85c46aa99f9693a0b890e65b8}{}\label{classmbed_1_1_bus_in_ae48033f85c46aa99f9693a0b890e65b8}
+
+\item 
+int \hyperlink{classmbed_1_1_bus_in_aad43475895a43bca659aef8a81dc4478}{read} ()
+\item 
+void \hyperlink{classmbed_1_1_bus_in_a93eed47467fec29854399cb7606a123b}{mode} (Pin\+Mode pull)
+\item 
+int \hyperlink{classmbed_1_1_bus_in_a22dfbea3293e2acda246d88d3545f346}{mask} ()
+\item 
+\hyperlink{classmbed_1_1_bus_in_adb47444fdd5d8928923b39edaa247963}{operator int} ()
+\item 
+\hyperlink{classmbed_1_1_digital_in}{Digital\+In} \& \hyperlink{classmbed_1_1_bus_in_aa967bad9cca45f21e55385c2ba413236}{operator\mbox{[}$\,$\mbox{]}} (int index)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmbed_1_1_digital_in}{Digital\+In} $\ast$ {\bfseries \+\_\+pin} \mbox{[}16\mbox{]}\hypertarget{classmbed_1_1_bus_in_a44b9ec611a79d62de2be00c04ee034a1}{}\label{classmbed_1_1_bus_in_a44b9ec611a79d62de2be00c04ee034a1}
+
+\item 
+int \hyperlink{classmbed_1_1_bus_in_a3ccecbfabfbc7bcf74034264be551c3e}{\+\_\+nc\+\_\+mask}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A digital input bus, used for reading the state of a collection of pins 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{mbed\+::\+Bus\+In@{mbed\+::\+Bus\+In}!Bus\+In@{Bus\+In}}
+\index{Bus\+In@{Bus\+In}!mbed\+::\+Bus\+In@{mbed\+::\+Bus\+In}}
+\subsubsection[{\texorpdfstring{Bus\+In(\+Pin\+Name p0, Pin\+Name p1=\+N\+C, Pin\+Name p2=\+N\+C, Pin\+Name p3=\+N\+C, Pin\+Name p4=\+N\+C, Pin\+Name p5=\+N\+C, Pin\+Name p6=\+N\+C, Pin\+Name p7=\+N\+C, Pin\+Name p8=\+N\+C, Pin\+Name p9=\+N\+C, Pin\+Name p10=\+N\+C, Pin\+Name p11=\+N\+C, Pin\+Name p12=\+N\+C, Pin\+Name p13=\+N\+C, Pin\+Name p14=\+N\+C, Pin\+Name p15=\+N\+C)}{BusIn(PinName p0, PinName p1=NC, PinName p2=NC, PinName p3=NC, PinName p4=NC, PinName p5=NC, PinName p6=NC, PinName p7=NC, PinName p8=NC, PinName p9=NC, PinName p10=NC, PinName p11=NC, PinName p12=NC, PinName p13=NC, PinName p14=NC, PinName p15=NC)}}]{\setlength{\rightskip}{0pt plus 5cm}mbed\+::\+Bus\+In\+::\+Bus\+In (
+\begin{DoxyParamCaption}
+\item[{Pin\+Name}]{p0, }
+\item[{Pin\+Name}]{p1 = {\ttfamily NC}, }
+\item[{Pin\+Name}]{p2 = {\ttfamily NC}, }
+\item[{Pin\+Name}]{p3 = {\ttfamily NC}, }
+\item[{Pin\+Name}]{p4 = {\ttfamily NC}, }
+\item[{Pin\+Name}]{p5 = {\ttfamily NC}, }
+\item[{Pin\+Name}]{p6 = {\ttfamily NC}, }
+\item[{Pin\+Name}]{p7 = {\ttfamily NC}, }
+\item[{Pin\+Name}]{p8 = {\ttfamily NC}, }
+\item[{Pin\+Name}]{p9 = {\ttfamily NC}, }
+\item[{Pin\+Name}]{p10 = {\ttfamily NC}, }
+\item[{Pin\+Name}]{p11 = {\ttfamily NC}, }
+\item[{Pin\+Name}]{p12 = {\ttfamily NC}, }
+\item[{Pin\+Name}]{p13 = {\ttfamily NC}, }
+\item[{Pin\+Name}]{p14 = {\ttfamily NC}, }
+\item[{Pin\+Name}]{p15 = {\ttfamily NC}}
+\end{DoxyParamCaption}
+)}\hypertarget{classmbed_1_1_bus_in_a60e8a1d93b93bb565d7f6fafacdf6a4b}{}\label{classmbed_1_1_bus_in_a60e8a1d93b93bb565d7f6fafacdf6a4b}
+Create an \hyperlink{classmbed_1_1_bus_in}{Bus\+In}, connected to the specified pins
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$n$>$} & \hyperlink{classmbed_1_1_digital_in}{Digital\+In} pin to connect to bus bit $<$n$>$ (p5-\/p30, NC)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+It is only required to specify as many pin variables as is required for the bus; the rest will default to NC (not connected) 
+\end{DoxyNote}
+
+
+\subsection{Member Function Documentation}
+\index{mbed\+::\+Bus\+In@{mbed\+::\+Bus\+In}!mask@{mask}}
+\index{mask@{mask}!mbed\+::\+Bus\+In@{mbed\+::\+Bus\+In}}
+\subsubsection[{\texorpdfstring{mask()}{mask()}}]{\setlength{\rightskip}{0pt plus 5cm}int mbed\+::\+Bus\+In\+::mask (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmbed_1_1_bus_in_a22dfbea3293e2acda246d88d3545f346}{}\label{classmbed_1_1_bus_in_a22dfbea3293e2acda246d88d3545f346}
+Binary mask of bus pins connected to actual pins (not NC pins) If bus pin is in NC state make corresponding bit will be cleared (set to 0), else bit will be set to 1
+
+\begin{DoxyReturn}{Returns}
+Binary mask of connected pins 
+\end{DoxyReturn}
+\index{mbed\+::\+Bus\+In@{mbed\+::\+Bus\+In}!mode@{mode}}
+\index{mode@{mode}!mbed\+::\+Bus\+In@{mbed\+::\+Bus\+In}}
+\subsubsection[{\texorpdfstring{mode(\+Pin\+Mode pull)}{mode(PinMode pull)}}]{\setlength{\rightskip}{0pt plus 5cm}void mbed\+::\+Bus\+In\+::mode (
+\begin{DoxyParamCaption}
+\item[{Pin\+Mode}]{pull}
+\end{DoxyParamCaption}
+)}\hypertarget{classmbed_1_1_bus_in_a93eed47467fec29854399cb7606a123b}{}\label{classmbed_1_1_bus_in_a93eed47467fec29854399cb7606a123b}
+Set the input pin mode
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & Pull\+Up, Pull\+Down, Pull\+None \\
+\hline
+\end{DoxyParams}
+\index{mbed\+::\+Bus\+In@{mbed\+::\+Bus\+In}!operator int@{operator int}}
+\index{operator int@{operator int}!mbed\+::\+Bus\+In@{mbed\+::\+Bus\+In}}
+\subsubsection[{\texorpdfstring{operator int()}{operator int()}}]{\setlength{\rightskip}{0pt plus 5cm}mbed\+::\+Bus\+In\+::operator int (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmbed_1_1_bus_in_adb47444fdd5d8928923b39edaa247963}{}\label{classmbed_1_1_bus_in_adb47444fdd5d8928923b39edaa247963}
+A shorthand for \hyperlink{classmbed_1_1_bus_in_aad43475895a43bca659aef8a81dc4478}{read()} \index{mbed\+::\+Bus\+In@{mbed\+::\+Bus\+In}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!mbed\+::\+Bus\+In@{mbed\+::\+Bus\+In}}
+\subsubsection[{\texorpdfstring{operator[](int index)}{operator[](int index)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Digital\+In}\& mbed\+::\+Bus\+In\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{classmbed_1_1_bus_in_aa967bad9cca45f21e55385c2ba413236}{}\label{classmbed_1_1_bus_in_aa967bad9cca45f21e55385c2ba413236}
+Access to particular bit in random-\/iterator fashion \index{mbed\+::\+Bus\+In@{mbed\+::\+Bus\+In}!read@{read}}
+\index{read@{read}!mbed\+::\+Bus\+In@{mbed\+::\+Bus\+In}}
+\subsubsection[{\texorpdfstring{read()}{read()}}]{\setlength{\rightskip}{0pt plus 5cm}int mbed\+::\+Bus\+In\+::read (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmbed_1_1_bus_in_aad43475895a43bca659aef8a81dc4478}{}\label{classmbed_1_1_bus_in_aad43475895a43bca659aef8a81dc4478}
+Read the value of the input bus
+
+\begin{DoxyReturn}{Returns}
+An integer with each bit corresponding to the value read from the associated \hyperlink{classmbed_1_1_digital_in}{Digital\+In} pin 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{mbed\+::\+Bus\+In@{mbed\+::\+Bus\+In}!\+\_\+nc\+\_\+mask@{\+\_\+nc\+\_\+mask}}
+\index{\+\_\+nc\+\_\+mask@{\+\_\+nc\+\_\+mask}!mbed\+::\+Bus\+In@{mbed\+::\+Bus\+In}}
+\subsubsection[{\texorpdfstring{\+\_\+nc\+\_\+mask}{_nc_mask}}]{\setlength{\rightskip}{0pt plus 5cm}int mbed\+::\+Bus\+In\+::\+\_\+nc\+\_\+mask\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classmbed_1_1_bus_in_a3ccecbfabfbc7bcf74034264be551c3e}{}\label{classmbed_1_1_bus_in_a3ccecbfabfbc7bcf74034264be551c3e}
+Mask of bus\textquotesingle{}s NC pins If bit\mbox{[}n\mbox{]} is set to 1 -\/ pin is connected if bit\mbox{[}n\mbox{]} is cleared -\/ pin is not connected (NC) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dynamixel-\/\+M\+X106/mbed/Bus\+In.\+h\end{DoxyCompactItemize}

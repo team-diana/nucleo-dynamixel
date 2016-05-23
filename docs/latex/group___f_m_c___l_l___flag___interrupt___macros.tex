@@ -1,0 +1,254 @@
+\hypertarget{group___f_m_c___l_l___flag___interrupt___macros}{}\section{F\+MC Flag\&Interrupt Macros}
+\label{group___f_m_c___l_l___flag___interrupt___macros}\index{F\+M\+C Flag\&\+Interrupt Macros@{F\+M\+C Flag\&\+Interrupt Macros}}
+
+
+macros to handle F\+MC flags and interrupts  
+
+
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___f_m_c___l_l___flag___interrupt___macros_ga5f9a33c729df22a3c698bf0378a6b33a}{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+IT}(\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+,  \+\_\+\+\_\+\+B\+A\+N\+K\+\_\+\+\_\+,  \+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+)~((\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+)-\/$>$SR $\vert$= (\+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+))
+\begin{DoxyCompactList}\small\item\em Enable the N\+A\+ND device interrupt. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___f_m_c___l_l___flag___interrupt___macros_gab221145b137dc9c0f9af406baf7a7256}{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+IT}(\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+,  \+\_\+\+\_\+\+B\+A\+N\+K\+\_\+\+\_\+,  \+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+)~((\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+)-\/$>$SR \&= $\sim$(\+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+))
+\begin{DoxyCompactList}\small\item\em Disable the N\+A\+ND device interrupt. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___f_m_c___l_l___flag___interrupt___macros_ga2d5410e74f47125ccd059b590c250aaa}{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG}(\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+,  \+\_\+\+\_\+\+B\+A\+N\+K\+\_\+\+\_\+,  \+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+)~(((\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+)-\/$>$SR \&(\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+)) == (\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+))
+\begin{DoxyCompactList}\small\item\em Get flag status of the N\+A\+ND device. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___f_m_c___l_l___flag___interrupt___macros_ga56022a23569bc5aed85a277a6c2bcde7}{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG}(\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+,  \+\_\+\+\_\+\+B\+A\+N\+K\+\_\+\+\_\+,  \+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+)~((\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+)-\/$>$SR \&= $\sim$(\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+))
+\begin{DoxyCompactList}\small\item\em Clear flag status of the N\+A\+ND device. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___f_m_c___l_l___flag___interrupt___macros_gad1855e98b4d5300dc74042fa65f248be}{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+IT}(\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+,  \+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+)~((\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+)-\/$>$S\+D\+R\+TR $\vert$= (\+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+))
+\begin{DoxyCompactList}\small\item\em Enable the S\+D\+R\+AM device interrupt. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___f_m_c___l_l___flag___interrupt___macros_ga61bc780f3e521a19d21dcb581c7e8fb8}{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+IT}(\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+,  \+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+)~((\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+)-\/$>$S\+D\+R\+TR \&= $\sim$(\+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+))
+\begin{DoxyCompactList}\small\item\em Disable the S\+D\+R\+AM device interrupt. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___f_m_c___l_l___flag___interrupt___macros_gabc8c6163b78fd62615941cb42cb731fc}{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG}(\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+,  \+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+)~(((\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+)-\/$>$S\+D\+SR \&(\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+)) == (\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+))
+\begin{DoxyCompactList}\small\item\em Get flag status of the S\+D\+R\+AM device. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___f_m_c___l_l___flag___interrupt___macros_ga86544f5ed4b78b20e59121e9f7c75d2d}{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG}(\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+,  \+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+)~((\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+)-\/$>$S\+D\+R\+TR $\vert$= (\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+))
+\begin{DoxyCompactList}\small\item\em Clear flag status of the S\+D\+R\+AM device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+macros to handle F\+MC flags and interrupts 
+
+
+
+\subsection{Macro Definition Documentation}
+\index{F\+M\+C Flag\&\+Interrupt Macros@{F\+M\+C Flag\&\+Interrupt Macros}!\+\_\+\+\_\+\+F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG@{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG}}
+\index{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG@{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG}!F\+M\+C Flag\&\+Interrupt Macros@{F\+M\+C Flag\&\+Interrupt Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG}{__FMC_NAND_CLEAR_FLAG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+, }
+\item[{}]{\+\_\+\+\_\+\+B\+A\+N\+K\+\_\+\+\_\+, }
+\item[{}]{\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)~((\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+)-\/$>$SR \&= $\sim$(\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+))}\hypertarget{group___f_m_c___l_l___flag___interrupt___macros_ga56022a23569bc5aed85a277a6c2bcde7}{}\label{group___f_m_c___l_l___flag___interrupt___macros_ga56022a23569bc5aed85a277a6c2bcde7}
+
+
+Clear flag status of the N\+A\+ND device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$strong$>$\+I\+N\+S\+T\+A\+N\+C\+E$<$/strong$>$} & F\+M\+C\+\_\+\+N\+A\+ND Instance \\
+\hline
+{\em $<$strong$>$\+B\+A\+N\+K$<$/strong$>$} & F\+M\+C\+\_\+\+N\+A\+ND Bank \\
+\hline
+{\em $<$strong$>$\+F\+L\+A\+G$<$/strong$>$} & F\+M\+C\+\_\+\+N\+A\+ND flag This parameter can be any combination of the following values\+: \begin{DoxyItemize}
+\item F\+M\+C\+\_\+\+F\+L\+A\+G\+\_\+\+R\+I\+S\+I\+N\+G\+\_\+\+E\+D\+GE\+: Interrupt rising edge flag. \item F\+M\+C\+\_\+\+F\+L\+A\+G\+\_\+\+L\+E\+V\+EL\+: Interrupt level edge flag. \item F\+M\+C\+\_\+\+F\+L\+A\+G\+\_\+\+F\+A\+L\+L\+I\+N\+G\+\_\+\+E\+D\+GE\+: Interrupt falling edge flag. \item F\+M\+C\+\_\+\+F\+L\+A\+G\+\_\+\+F\+E\+M\+PT\+: F\+I\+FO empty flag. \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\index{F\+M\+C Flag\&\+Interrupt Macros@{F\+M\+C Flag\&\+Interrupt Macros}!\+\_\+\+\_\+\+F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+IT@{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+IT}}
+\index{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+IT@{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+IT}!F\+M\+C Flag\&\+Interrupt Macros@{F\+M\+C Flag\&\+Interrupt Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+IT}{__FMC_NAND_DISABLE_IT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+IT(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+, }
+\item[{}]{\+\_\+\+\_\+\+B\+A\+N\+K\+\_\+\+\_\+, }
+\item[{}]{\+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)~((\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+)-\/$>$SR \&= $\sim$(\+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+))}\hypertarget{group___f_m_c___l_l___flag___interrupt___macros_gab221145b137dc9c0f9af406baf7a7256}{}\label{group___f_m_c___l_l___flag___interrupt___macros_gab221145b137dc9c0f9af406baf7a7256}
+
+
+Disable the N\+A\+ND device interrupt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$strong$>$\+I\+N\+S\+T\+A\+N\+C\+E$<$/strong$>$} & F\+M\+C\+\_\+\+N\+A\+ND Instance \\
+\hline
+{\em $<$strong$>$\+B\+A\+N\+K$<$/strong$>$} & F\+M\+C\+\_\+\+N\+A\+ND Bank \\
+\hline
+{\em $<$strong$>$\+I\+N\+T\+E\+R\+R\+U\+P\+T$<$/strong$>$} & F\+M\+C\+\_\+\+N\+A\+ND interrupt This parameter can be any combination of the following values\+: \begin{DoxyItemize}
+\item F\+M\+C\+\_\+\+I\+T\+\_\+\+R\+I\+S\+I\+N\+G\+\_\+\+E\+D\+GE\+: Interrupt rising edge. \item F\+M\+C\+\_\+\+I\+T\+\_\+\+L\+E\+V\+EL\+: Interrupt level. \item F\+M\+C\+\_\+\+I\+T\+\_\+\+F\+A\+L\+L\+I\+N\+G\+\_\+\+E\+D\+GE\+: Interrupt falling edge. \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\index{F\+M\+C Flag\&\+Interrupt Macros@{F\+M\+C Flag\&\+Interrupt Macros}!\+\_\+\+\_\+\+F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+IT@{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+IT}}
+\index{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+IT@{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+IT}!F\+M\+C Flag\&\+Interrupt Macros@{F\+M\+C Flag\&\+Interrupt Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+IT}{__FMC_NAND_ENABLE_IT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+IT(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+, }
+\item[{}]{\+\_\+\+\_\+\+B\+A\+N\+K\+\_\+\+\_\+, }
+\item[{}]{\+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)~((\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+)-\/$>$SR $\vert$= (\+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+))}\hypertarget{group___f_m_c___l_l___flag___interrupt___macros_ga5f9a33c729df22a3c698bf0378a6b33a}{}\label{group___f_m_c___l_l___flag___interrupt___macros_ga5f9a33c729df22a3c698bf0378a6b33a}
+
+
+Enable the N\+A\+ND device interrupt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$strong$>$\+I\+N\+S\+T\+A\+N\+C\+E$<$/strong$>$} & F\+M\+C\+\_\+\+N\+A\+ND instance \\
+\hline
+{\em $<$strong$>$\+B\+A\+N\+K$<$/strong$>$} & F\+M\+C\+\_\+\+N\+A\+ND Bank \\
+\hline
+{\em $<$strong$>$\+I\+N\+T\+E\+R\+R\+U\+P\+T$<$/strong$>$} & F\+M\+C\+\_\+\+N\+A\+ND interrupt This parameter can be any combination of the following values\+: \begin{DoxyItemize}
+\item F\+M\+C\+\_\+\+I\+T\+\_\+\+R\+I\+S\+I\+N\+G\+\_\+\+E\+D\+GE\+: Interrupt rising edge. \item F\+M\+C\+\_\+\+I\+T\+\_\+\+L\+E\+V\+EL\+: Interrupt level. \item F\+M\+C\+\_\+\+I\+T\+\_\+\+F\+A\+L\+L\+I\+N\+G\+\_\+\+E\+D\+GE\+: Interrupt falling edge. \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\index{F\+M\+C Flag\&\+Interrupt Macros@{F\+M\+C Flag\&\+Interrupt Macros}!\+\_\+\+\_\+\+F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG@{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG}}
+\index{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG@{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG}!F\+M\+C Flag\&\+Interrupt Macros@{F\+M\+C Flag\&\+Interrupt Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG}{__FMC_NAND_GET_FLAG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+, }
+\item[{}]{\+\_\+\+\_\+\+B\+A\+N\+K\+\_\+\+\_\+, }
+\item[{}]{\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)~(((\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+)-\/$>$SR \&(\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+)) == (\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+))}\hypertarget{group___f_m_c___l_l___flag___interrupt___macros_ga2d5410e74f47125ccd059b590c250aaa}{}\label{group___f_m_c___l_l___flag___interrupt___macros_ga2d5410e74f47125ccd059b590c250aaa}
+
+
+Get flag status of the N\+A\+ND device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$strong$>$\+I\+N\+S\+T\+A\+N\+C\+E$<$/strong$>$} & F\+M\+C\+\_\+\+N\+A\+ND Instance \\
+\hline
+{\em $<$strong$>$\+B\+A\+N\+K$<$/strong$>$} & F\+M\+C\+\_\+\+N\+A\+ND Bank \\
+\hline
+{\em $<$strong$>$\+F\+L\+A\+G$<$/strong$>$} & F\+M\+C\+\_\+\+N\+A\+ND flag This parameter can be any combination of the following values\+: \begin{DoxyItemize}
+\item F\+M\+C\+\_\+\+F\+L\+A\+G\+\_\+\+R\+I\+S\+I\+N\+G\+\_\+\+E\+D\+GE\+: Interrupt rising edge flag. \item F\+M\+C\+\_\+\+F\+L\+A\+G\+\_\+\+L\+E\+V\+EL\+: Interrupt level edge flag. \item F\+M\+C\+\_\+\+F\+L\+A\+G\+\_\+\+F\+A\+L\+L\+I\+N\+G\+\_\+\+E\+D\+GE\+: Interrupt falling edge flag. \item F\+M\+C\+\_\+\+F\+L\+A\+G\+\_\+\+F\+E\+M\+PT\+: F\+I\+FO empty flag. \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & state of F\+L\+AG (S\+ET or R\+E\+S\+ET). \\
+\hline
+\end{DoxyRetVals}
+\index{F\+M\+C Flag\&\+Interrupt Macros@{F\+M\+C Flag\&\+Interrupt Macros}!\+\_\+\+\_\+\+F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG@{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG}}
+\index{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG@{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG}!F\+M\+C Flag\&\+Interrupt Macros@{F\+M\+C Flag\&\+Interrupt Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG}{__FMC_SDRAM_CLEAR_FLAG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+, }
+\item[{}]{\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)~((\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+)-\/$>$S\+D\+R\+TR $\vert$= (\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+))}\hypertarget{group___f_m_c___l_l___flag___interrupt___macros_ga86544f5ed4b78b20e59121e9f7c75d2d}{}\label{group___f_m_c___l_l___flag___interrupt___macros_ga86544f5ed4b78b20e59121e9f7c75d2d}
+
+
+Clear flag status of the S\+D\+R\+AM device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$strong$>$\+I\+N\+S\+T\+A\+N\+C\+E$<$/strong$>$} & F\+M\+C\+\_\+\+S\+D\+R\+AM instance \\
+\hline
+{\em $<$strong$>$\+F\+L\+A\+G$<$/strong$>$} & F\+M\+C\+\_\+\+S\+D\+R\+AM flag This parameter can be any combination of the following values\+: \begin{DoxyItemize}
+\item F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+F\+L\+A\+G\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+E\+R\+R\+OR \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\index{F\+M\+C Flag\&\+Interrupt Macros@{F\+M\+C Flag\&\+Interrupt Macros}!\+\_\+\+\_\+\+F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+IT@{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+IT}}
+\index{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+IT@{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+IT}!F\+M\+C Flag\&\+Interrupt Macros@{F\+M\+C Flag\&\+Interrupt Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+IT}{__FMC_SDRAM_DISABLE_IT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+IT(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+, }
+\item[{}]{\+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)~((\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+)-\/$>$S\+D\+R\+TR \&= $\sim$(\+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+))}\hypertarget{group___f_m_c___l_l___flag___interrupt___macros_ga61bc780f3e521a19d21dcb581c7e8fb8}{}\label{group___f_m_c___l_l___flag___interrupt___macros_ga61bc780f3e521a19d21dcb581c7e8fb8}
+
+
+Disable the S\+D\+R\+AM device interrupt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$strong$>$\+I\+N\+S\+T\+A\+N\+C\+E$<$/strong$>$} & F\+M\+C\+\_\+\+S\+D\+R\+AM instance \\
+\hline
+{\em $<$strong$>$\+I\+N\+T\+E\+R\+R\+U\+P\+T$<$/strong$>$} & F\+M\+C\+\_\+\+S\+D\+R\+AM interrupt This parameter can be any combination of the following values\+: \begin{DoxyItemize}
+\item F\+M\+C\+\_\+\+I\+T\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+E\+R\+R\+OR\+: Interrupt refresh error \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\index{F\+M\+C Flag\&\+Interrupt Macros@{F\+M\+C Flag\&\+Interrupt Macros}!\+\_\+\+\_\+\+F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+IT@{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+IT}}
+\index{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+IT@{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+IT}!F\+M\+C Flag\&\+Interrupt Macros@{F\+M\+C Flag\&\+Interrupt Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+IT}{__FMC_SDRAM_ENABLE_IT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+IT(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+, }
+\item[{}]{\+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)~((\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+)-\/$>$S\+D\+R\+TR $\vert$= (\+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+))}\hypertarget{group___f_m_c___l_l___flag___interrupt___macros_gad1855e98b4d5300dc74042fa65f248be}{}\label{group___f_m_c___l_l___flag___interrupt___macros_gad1855e98b4d5300dc74042fa65f248be}
+
+
+Enable the S\+D\+R\+AM device interrupt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$strong$>$\+I\+N\+S\+T\+A\+N\+C\+E$<$/strong$>$} & F\+M\+C\+\_\+\+S\+D\+R\+AM instance \\
+\hline
+{\em $<$strong$>$\+I\+N\+T\+E\+R\+R\+U\+P\+T$<$/strong$>$} & F\+M\+C\+\_\+\+S\+D\+R\+AM interrupt This parameter can be any combination of the following values\+: \begin{DoxyItemize}
+\item F\+M\+C\+\_\+\+I\+T\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+E\+R\+R\+OR\+: Interrupt refresh error \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\index{F\+M\+C Flag\&\+Interrupt Macros@{F\+M\+C Flag\&\+Interrupt Macros}!\+\_\+\+\_\+\+F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG@{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG}}
+\index{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG@{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG}!F\+M\+C Flag\&\+Interrupt Macros@{F\+M\+C Flag\&\+Interrupt Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG}{__FMC_SDRAM_GET_FLAG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+, }
+\item[{}]{\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)~(((\+\_\+\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+\_\+)-\/$>$S\+D\+SR \&(\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+)) == (\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+))}\hypertarget{group___f_m_c___l_l___flag___interrupt___macros_gabc8c6163b78fd62615941cb42cb731fc}{}\label{group___f_m_c___l_l___flag___interrupt___macros_gabc8c6163b78fd62615941cb42cb731fc}
+
+
+Get flag status of the S\+D\+R\+AM device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$strong$>$\+I\+N\+S\+T\+A\+N\+C\+E$<$/strong$>$} & F\+M\+C\+\_\+\+S\+D\+R\+AM instance \\
+\hline
+{\em $<$strong$>$\+F\+L\+A\+G$<$/strong$>$} & F\+M\+C\+\_\+\+S\+D\+R\+AM flag This parameter can be any combination of the following values\+: \begin{DoxyItemize}
+\item F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+F\+L\+A\+G\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+IT\+: Interrupt refresh error. \item F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+F\+L\+A\+G\+\_\+\+B\+U\+SY\+: S\+D\+R\+AM busy flag. \item F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+F\+L\+A\+G\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+E\+R\+R\+OR\+: Refresh error flag. \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & state of F\+L\+AG (S\+ET or R\+E\+S\+ET). \\
+\hline
+\end{DoxyRetVals}

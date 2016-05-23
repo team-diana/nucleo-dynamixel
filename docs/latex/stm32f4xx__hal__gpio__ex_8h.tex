@@ -1,0 +1,154 @@
+\hypertarget{stm32f4xx__hal__gpio__ex_8h}{}\section{Dynamixel-\/\+M\+X106/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+N\+U\+C\+L\+E\+O\+\_\+\+F446\+R\+E/stm32f4xx\+\_\+hal\+\_\+gpio\+\_\+ex.h File Reference}
+\label{stm32f4xx__hal__gpio__ex_8h}\index{Dynamixel-\/\+M\+X106/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+N\+U\+C\+L\+E\+O\+\_\+\+F446\+R\+E/stm32f4xx\+\_\+hal\+\_\+gpio\+\_\+ex.\+h@{Dynamixel-\/\+M\+X106/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+N\+U\+C\+L\+E\+O\+\_\+\+F446\+R\+E/stm32f4xx\+\_\+hal\+\_\+gpio\+\_\+ex.\+h}}
+
+
+Header file of G\+P\+IO H\+AL Extension module.  
+
+
+{\ttfamily \#include \char`\"{}stm32f4xx\+\_\+hal\+\_\+def.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___g_p_i_o___alternate__function__selection_ga93a65e75bfe22810f2e8f8eff9b3618b}{G\+P\+I\+O\+\_\+\+A\+F0\+\_\+\+R\+T\+C\+\_\+50\+Hz}~((uint8\+\_\+t)0x00)  /$\ast$ R\+T\+C\+\_\+50\+Hz Alternate Function mapping                       $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 0 selection. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F0\+\_\+\+M\+CO}~((uint8\+\_\+t)0x00)  /$\ast$ M\+C\+O (\+M\+C\+O1 and M\+C\+O2) Alternate Function mapping            $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F0\+\_\+\+T\+A\+M\+P\+ER}~((uint8\+\_\+t)0x00)  /$\ast$ T\+A\+M\+P\+E\+R (\+T\+A\+M\+P\+E\+R\+\_\+1 and T\+A\+M\+P\+E\+R\+\_\+2) Alternate Function mapping $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F0\+\_\+\+S\+WJ}~((uint8\+\_\+t)0x00)  /$\ast$ S\+W\+J (\+S\+W\+D and J\+T\+A\+G) Alternate Function mapping             $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F0\+\_\+\+T\+R\+A\+CE}~((uint8\+\_\+t)0x00)  /$\ast$ T\+R\+A\+C\+E Alternate Function mapping                          $\ast$/
+\item 
+\#define \hyperlink{group___g_p_i_o___alternate__function__selection_ga232695759304748cda241cc00e0680e5}{G\+P\+I\+O\+\_\+\+A\+F1\+\_\+\+T\+I\+M1}~((uint8\+\_\+t)0x01)  /$\ast$ T\+I\+M1 Alternate Function mapping $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 1 selection. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F1\+\_\+\+T\+I\+M2}~((uint8\+\_\+t)0x01)  /$\ast$ T\+I\+M2 Alternate Function mapping $\ast$/
+\item 
+\#define \hyperlink{group___g_p_i_o___alternate__function__selection_ga41e7dab432740a5fff4084890764242f}{G\+P\+I\+O\+\_\+\+A\+F2\+\_\+\+T\+I\+M3}~((uint8\+\_\+t)0x02)  /$\ast$ T\+I\+M3 Alternate Function mapping $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 2 selection. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F2\+\_\+\+T\+I\+M4}~((uint8\+\_\+t)0x02)  /$\ast$ T\+I\+M4 Alternate Function mapping $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F2\+\_\+\+T\+I\+M5}~((uint8\+\_\+t)0x02)  /$\ast$ T\+I\+M5 Alternate Function mapping $\ast$/
+\item 
+\#define \hyperlink{group___g_p_i_o___alternate__function__selection_gaf090cae245bfae075661c330c470c3f4}{G\+P\+I\+O\+\_\+\+A\+F3\+\_\+\+T\+I\+M8}~((uint8\+\_\+t)0x03)  /$\ast$ T\+I\+M8 Alternate Function mapping  $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 3 selection. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F3\+\_\+\+T\+I\+M9}~((uint8\+\_\+t)0x03)  /$\ast$ T\+I\+M9 Alternate Function mapping  $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F3\+\_\+\+T\+I\+M10}~((uint8\+\_\+t)0x03)  /$\ast$ T\+I\+M10 Alternate Function mapping $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F3\+\_\+\+T\+I\+M11}~((uint8\+\_\+t)0x03)  /$\ast$ T\+I\+M11 Alternate Function mapping $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F3\+\_\+\+C\+EC}~((uint8\+\_\+t)0x03)  /$\ast$ C\+E\+C Alternate Function mapping   $\ast$/
+\item 
+\#define \hyperlink{group___g_p_i_o___alternate__function__selection_ga756e49236633954d1e86cc01c03fb518}{G\+P\+I\+O\+\_\+\+A\+F4\+\_\+\+I2\+C1}~((uint8\+\_\+t)0x04)  /$\ast$ I2\+C1 Alternate Function mapping $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 4 selection. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F4\+\_\+\+I2\+C2}~((uint8\+\_\+t)0x04)  /$\ast$ I2\+C2 Alternate Function mapping $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F4\+\_\+\+I2\+C3}~((uint8\+\_\+t)0x04)  /$\ast$ I2\+C3 Alternate Function mapping $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F4\+\_\+\+F\+M\+P\+I2\+C1}~((uint8\+\_\+t)0x04)  /$\ast$ F\+M\+P\+I2\+C1 Alternate Function mapping $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F4\+\_\+\+C\+EC}~((uint8\+\_\+t)0x04)  /$\ast$ C\+E\+C Alternate Function mapping  $\ast$/
+\item 
+\#define \hyperlink{group___g_p_i_o___alternate__function__selection_gafb369e90efa49bcc298fd354b79cf11a}{G\+P\+I\+O\+\_\+\+A\+F5\+\_\+\+S\+P\+I1}~((uint8\+\_\+t)0x05)  /$\ast$ S\+P\+I1/\+I2\+S1 Alternate Function mapping   $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 5 selection. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F5\+\_\+\+S\+P\+I2}~((uint8\+\_\+t)0x05)  /$\ast$ S\+P\+I2/\+I2\+S2 Alternate Function mapping   $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F5\+\_\+\+S\+P\+I3}~((uint8\+\_\+t)0x05)  /$\ast$ S\+P\+I3/\+I2\+S3 Alternate Function mapping   $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F5\+\_\+\+S\+P\+I4}~((uint8\+\_\+t)0x05)  /$\ast$ S\+P\+I4 Alternate Function mapping        $\ast$/
+\item 
+\#define \hyperlink{group___g_p_i_o___alternate__function__selection_ga1da9c47feac80dcd9b9b9e3ca0d8f07e}{G\+P\+I\+O\+\_\+\+A\+F6\+\_\+\+S\+P\+I2}~((uint8\+\_\+t)0x06)  /$\ast$ S\+P\+I2/\+I2\+S2 Alternate Function mapping  $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 6 selection. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F6\+\_\+\+S\+P\+I3}~((uint8\+\_\+t)0x06)  /$\ast$ S\+P\+I3/\+I2\+S3 Alternate Function mapping  $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F6\+\_\+\+S\+P\+I4}~((uint8\+\_\+t)0x06)  /$\ast$ S\+P\+I4 Alternate Function mapping       $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F6\+\_\+\+S\+A\+I1}~((uint8\+\_\+t)0x06)  /$\ast$ S\+A\+I1 Alternate Function mapping       $\ast$/
+\item 
+\#define \hyperlink{group___g_p_i_o___alternate__function__selection_gaac2ed5738651fabba7e3163c4c06c410}{G\+P\+I\+O\+\_\+\+A\+F7\+\_\+\+U\+S\+A\+R\+T1}~((uint8\+\_\+t)0x07)  /$\ast$ U\+S\+A\+R\+T1 Alternate Function mapping     $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 7 selection. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F7\+\_\+\+U\+S\+A\+R\+T2}~((uint8\+\_\+t)0x07)  /$\ast$ U\+S\+A\+R\+T2 Alternate Function mapping     $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F7\+\_\+\+U\+S\+A\+R\+T3}~((uint8\+\_\+t)0x07)  /$\ast$ U\+S\+A\+R\+T3 Alternate Function mapping     $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F7\+\_\+\+U\+A\+R\+T5}~((uint8\+\_\+t)0x07)  /$\ast$ U\+A\+R\+T5 Alternate Function mapping      $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F7\+\_\+\+S\+P\+I2}~((uint8\+\_\+t)0x07)  /$\ast$ S\+P\+I2/\+I2\+S2 Alternate Function mapping  $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F7\+\_\+\+S\+P\+I3}~((uint8\+\_\+t)0x07)  /$\ast$ S\+P\+I3/\+I2\+S3 Alternate Function mapping  $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F7\+\_\+\+S\+P\+D\+I\+F\+RX}~((uint8\+\_\+t)0x07)  /$\ast$ S\+P\+D\+I\+F\+R\+X Alternate Function mapping      $\ast$/
+\item 
+\#define \hyperlink{group___g_p_i_o___alternate__function__selection_gae634fa0570cb4bc20217130da41737e1}{G\+P\+I\+O\+\_\+\+A\+F8\+\_\+\+U\+A\+R\+T4}~((uint8\+\_\+t)0x08)  /$\ast$ U\+A\+R\+T4 Alternate Function mapping  $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 8 selection. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F8\+\_\+\+U\+A\+R\+T5}~((uint8\+\_\+t)0x08)  /$\ast$ U\+A\+R\+T5 Alternate Function mapping  $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F8\+\_\+\+U\+S\+A\+R\+T6}~((uint8\+\_\+t)0x08)  /$\ast$ U\+S\+A\+R\+T6 Alternate Function mapping $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F8\+\_\+\+S\+P\+D\+I\+F\+RX}~((uint8\+\_\+t)0x08)  /$\ast$ S\+P\+D\+I\+F\+R\+X Alternate Function mapping  $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F8\+\_\+\+S\+A\+I2}~((uint8\+\_\+t)0x08)  /$\ast$ S\+A\+I2 Alternate Function mapping   $\ast$/
+\item 
+\#define \hyperlink{group___g_p_i_o___alternate__function__selection_gaf4de931f6e3550743de69176a7f2935a}{G\+P\+I\+O\+\_\+\+A\+F9\+\_\+\+C\+A\+N1}~((uint8\+\_\+t)0x09)  /$\ast$ C\+A\+N1 Alternate Function mapping  $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 9 selection. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F9\+\_\+\+C\+A\+N2}~((uint8\+\_\+t)0x09)  /$\ast$ C\+A\+N2 Alternate Function mapping  $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F9\+\_\+\+T\+I\+M12}~((uint8\+\_\+t)0x09)  /$\ast$ T\+I\+M12 Alternate Function mapping $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F9\+\_\+\+T\+I\+M13}~((uint8\+\_\+t)0x09)  /$\ast$ T\+I\+M13 Alternate Function mapping $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F9\+\_\+\+T\+I\+M14}~((uint8\+\_\+t)0x09)  /$\ast$ T\+I\+M14 Alternate Function mapping $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F9\+\_\+\+Q\+S\+PI}~((uint8\+\_\+t)0x09)  /$\ast$ Q\+S\+P\+I Alternate Function mapping  $\ast$/
+\item 
+\#define \hyperlink{group___g_p_i_o___alternate__function__selection_ga0c727c03ab97a835f283684de45fbcdb}{G\+P\+I\+O\+\_\+\+A\+F10\+\_\+\+O\+T\+G\+\_\+\+FS}~((uint8\+\_\+t)0x\+A)  /$\ast$ O\+T\+G\+\_\+\+F\+S Alternate Function mapping $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 10 selection. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F10\+\_\+\+O\+T\+G\+\_\+\+HS}~((uint8\+\_\+t)0x\+A)  /$\ast$ O\+T\+G\+\_\+\+H\+S Alternate Function mapping $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F10\+\_\+\+S\+A\+I2}~((uint8\+\_\+t)0x\+A)  /$\ast$ S\+A\+I2 Alternate Function mapping   $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F10\+\_\+\+Q\+S\+PI}~((uint8\+\_\+t)0x\+A)  /$\ast$ Q\+S\+P\+I Alternate Function mapping  $\ast$/
+\item 
+\#define \hyperlink{group___g_p_i_o___alternate__function__selection_gab9bfa13073fb15e839b71653b51c864a}{G\+P\+I\+O\+\_\+\+A\+F11\+\_\+\+E\+TH}~((uint8\+\_\+t)0x0\+B)  /$\ast$ E\+T\+H\+E\+R\+N\+E\+T Alternate Function mapping $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 11 selection. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___g_p_i_o___alternate__function__selection_ga56d7cc07c907d85e043eb44e4b9b4540}{G\+P\+I\+O\+\_\+\+A\+F12\+\_\+\+F\+MC}~((uint8\+\_\+t)0x\+C)  /$\ast$ F\+M\+C Alternate Function mapping                      $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 12 selection. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F12\+\_\+\+O\+T\+G\+\_\+\+H\+S\+\_\+\+FS}~((uint8\+\_\+t)0x\+C)  /$\ast$ O\+T\+G H\+S configured in F\+S, Alternate Function mapping $\ast$/
+\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+A\+F12\+\_\+\+S\+D\+IO}~((uint8\+\_\+t)0x\+C)  /$\ast$ S\+D\+I\+O Alternate Function mapping                     $\ast$/
+\item 
+\#define \hyperlink{group___g_p_i_o___alternate__function__selection_gac7ccbdfe96d75805d7fc7dcd821d0fb4}{G\+P\+I\+O\+\_\+\+A\+F13\+\_\+\+D\+C\+MI}~((uint8\+\_\+t)0x0\+D)  /$\ast$ D\+C\+M\+I Alternate Function mapping $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 13 selection. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___g_p_i_o___alternate__function__selection_ga6a9e7cd61d906b36a1044acef59d245e}{G\+P\+I\+O\+\_\+\+A\+F15\+\_\+\+E\+V\+E\+N\+T\+O\+UT}~((uint8\+\_\+t)0x0\+F)  /$\ast$ E\+V\+E\+N\+T\+O\+U\+T Alternate Function mapping $\ast$/
+\begin{DoxyCompactList}\small\item\em AF 15 selection. \end{DoxyCompactList}\item 
+\#define {\bfseries G\+P\+I\+O\+\_\+\+G\+E\+T\+\_\+\+I\+N\+D\+EX}(\+\_\+\+\_\+\+G\+P\+I\+Ox\+\_\+\+\_\+)
+\item 
+\#define {\bfseries I\+S\+\_\+\+G\+P\+I\+O\+\_\+\+AF}(AF)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Header file of G\+P\+IO H\+AL Extension module. 
+
+\begin{DoxyAuthor}{Author}
+M\+CD Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V1.\+4.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+09-\/\+October-\/2015 
+\end{DoxyDate}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\subsubsection*{\begin{center}\copyright{} C\+O\+P\+Y\+R\+I\+G\+H\+T(c) 2015 S\+T\+Microelectronics\end{center} }
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met\+:
+\begin{DoxyEnumerate}
+\item Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+\item Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+\item Neither the name of S\+T\+Microelectronics nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+\end{DoxyEnumerate}
+
+T\+H\+IS S\+O\+F\+T\+W\+A\+RE IS P\+R\+O\+V\+I\+D\+ED BY T\+HE C\+O\+P\+Y\+R\+I\+G\+HT H\+O\+L\+D\+E\+RS A\+ND C\+O\+N\+T\+R\+I\+B\+U\+T\+O\+RS \char`\"{}\+A\+S I\+S\char`\"{} A\+ND A\+NY E\+X\+P\+R\+E\+SS OR I\+M\+P\+L\+I\+ED W\+A\+R\+R\+A\+N\+T\+I\+ES, I\+N\+C\+L\+U\+D\+I\+NG, B\+UT N\+OT L\+I\+M\+I\+T\+ED TO, T\+HE I\+M\+P\+L\+I\+ED W\+A\+R\+R\+A\+N\+T\+I\+ES OF M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY A\+ND F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE A\+RE D\+I\+S\+C\+L\+A\+I\+M\+ED. IN NO E\+V\+E\+NT S\+H\+A\+LL T\+HE C\+O\+P\+Y\+R\+I\+G\+HT H\+O\+L\+D\+ER OR C\+O\+N\+T\+R\+I\+B\+U\+T\+O\+RS BE L\+I\+A\+B\+LE F\+OR A\+NY D\+I\+R\+E\+CT, I\+N\+D\+I\+R\+E\+CT, I\+N\+C\+I\+D\+E\+N\+T\+AL, S\+P\+E\+C\+I\+AL, E\+X\+E\+M\+P\+L\+A\+RY, OR C\+O\+N\+S\+E\+Q\+U\+E\+N\+T\+I\+AL D\+A\+M\+A\+G\+ES (I\+N\+C\+L\+U\+D\+I\+NG, B\+UT N\+OT L\+I\+M\+I\+T\+ED TO, P\+R\+O\+C\+U\+R\+E\+M\+E\+NT OF S\+U\+B\+S\+T\+I\+T\+U\+TE G\+O\+O\+DS OR S\+E\+R\+V\+I\+C\+ES; L\+O\+SS OF U\+SE, D\+A\+TA, OR P\+R\+O\+F\+I\+TS; OR B\+U\+S\+I\+N\+E\+SS I\+N\+T\+E\+R\+R\+U\+P\+T\+I\+ON) H\+O\+W\+E\+V\+ER C\+A\+U\+S\+ED A\+ND ON A\+NY T\+H\+E\+O\+RY OF L\+I\+A\+B\+I\+L\+I\+TY, W\+H\+E\+T\+H\+ER IN C\+O\+N\+T\+R\+A\+CT, S\+T\+R\+I\+CT L\+I\+A\+B\+I\+L\+I\+TY, OR T\+O\+RT (I\+N\+C\+L\+U\+D\+I\+NG N\+E\+G\+L\+I\+G\+E\+N\+CE OR O\+T\+H\+E\+R\+W\+I\+SE) A\+R\+I\+S\+I\+NG IN A\+NY W\+AY O\+UT OF T\+HE U\+SE OF T\+H\+IS S\+O\+F\+T\+W\+A\+RE, E\+V\+EN IF A\+D\+V\+I\+S\+ED OF T\+HE P\+O\+S\+S\+I\+B\+I\+L\+I\+TY OF S\+U\+CH D\+A\+M\+A\+GE. 

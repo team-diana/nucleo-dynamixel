@@ -1,0 +1,45 @@
+\hypertarget{struct_s_a_i___slot_init_type_def}{}\section{S\+A\+I\+\_\+\+Slot\+Init\+Type\+Def Struct Reference}
+\label{struct_s_a_i___slot_init_type_def}\index{S\+A\+I\+\_\+\+Slot\+Init\+Type\+Def@{S\+A\+I\+\_\+\+Slot\+Init\+Type\+Def}}
+
+
+S\+AI Block Slot Init Structure definition.  
+
+
+
+
+{\ttfamily \#include $<$stm32f4xx\+\_\+hal\+\_\+sai.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{struct_s_a_i___slot_init_type_def_ad5a6f1864d8ce23f0fc262d362dc4d4e}{First\+Bit\+Offset}
+\item 
+uint32\+\_\+t \hyperlink{struct_s_a_i___slot_init_type_def_adebc14a2c9d30a8c13d2685bdb22d7af}{Slot\+Size}
+\item 
+uint32\+\_\+t \hyperlink{struct_s_a_i___slot_init_type_def_a476fd97f54e692d634222720d4d4ad6a}{Slot\+Number}
+\item 
+uint32\+\_\+t \hyperlink{struct_s_a_i___slot_init_type_def_ab507a029fad3a8a181d87c4d603b9952}{Slot\+Active}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+AI Block Slot Init Structure definition. 
+
+\subsection{Member Data Documentation}
+\index{S\+A\+I\+\_\+\+Slot\+Init\+Type\+Def@{S\+A\+I\+\_\+\+Slot\+Init\+Type\+Def}!First\+Bit\+Offset@{First\+Bit\+Offset}}
+\index{First\+Bit\+Offset@{First\+Bit\+Offset}!S\+A\+I\+\_\+\+Slot\+Init\+Type\+Def@{S\+A\+I\+\_\+\+Slot\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{First\+Bit\+Offset}{FirstBitOffset}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t S\+A\+I\+\_\+\+Slot\+Init\+Type\+Def\+::\+First\+Bit\+Offset}\hypertarget{struct_s_a_i___slot_init_type_def_ad5a6f1864d8ce23f0fc262d362dc4d4e}{}\label{struct_s_a_i___slot_init_type_def_ad5a6f1864d8ce23f0fc262d362dc4d4e}
+Specifies the position of first data transfer bit in the slot. This parameter must be a number between Min\+\_\+\+Data = 0 and Max\+\_\+\+Data = 24 \index{S\+A\+I\+\_\+\+Slot\+Init\+Type\+Def@{S\+A\+I\+\_\+\+Slot\+Init\+Type\+Def}!Slot\+Active@{Slot\+Active}}
+\index{Slot\+Active@{Slot\+Active}!S\+A\+I\+\_\+\+Slot\+Init\+Type\+Def@{S\+A\+I\+\_\+\+Slot\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Slot\+Active}{SlotActive}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t S\+A\+I\+\_\+\+Slot\+Init\+Type\+Def\+::\+Slot\+Active}\hypertarget{struct_s_a_i___slot_init_type_def_ab507a029fad3a8a181d87c4d603b9952}{}\label{struct_s_a_i___slot_init_type_def_ab507a029fad3a8a181d87c4d603b9952}
+Specifies the slots in audio frame that will be activated. This parameter can be a value of \hyperlink{group___s_a_i___block___slot___active}{S\+AI Block Slot Active} \index{S\+A\+I\+\_\+\+Slot\+Init\+Type\+Def@{S\+A\+I\+\_\+\+Slot\+Init\+Type\+Def}!Slot\+Number@{Slot\+Number}}
+\index{Slot\+Number@{Slot\+Number}!S\+A\+I\+\_\+\+Slot\+Init\+Type\+Def@{S\+A\+I\+\_\+\+Slot\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Slot\+Number}{SlotNumber}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t S\+A\+I\+\_\+\+Slot\+Init\+Type\+Def\+::\+Slot\+Number}\hypertarget{struct_s_a_i___slot_init_type_def_a476fd97f54e692d634222720d4d4ad6a}{}\label{struct_s_a_i___slot_init_type_def_a476fd97f54e692d634222720d4d4ad6a}
+Specifies the number of slot in the audio frame. This parameter must be a number between Min\+\_\+\+Data = 1 and Max\+\_\+\+Data = 16 \index{S\+A\+I\+\_\+\+Slot\+Init\+Type\+Def@{S\+A\+I\+\_\+\+Slot\+Init\+Type\+Def}!Slot\+Size@{Slot\+Size}}
+\index{Slot\+Size@{Slot\+Size}!S\+A\+I\+\_\+\+Slot\+Init\+Type\+Def@{S\+A\+I\+\_\+\+Slot\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Slot\+Size}{SlotSize}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t S\+A\+I\+\_\+\+Slot\+Init\+Type\+Def\+::\+Slot\+Size}\hypertarget{struct_s_a_i___slot_init_type_def_adebc14a2c9d30a8c13d2685bdb22d7af}{}\label{struct_s_a_i___slot_init_type_def_adebc14a2c9d30a8c13d2685bdb22d7af}
+Specifies the Slot Size. This parameter can be a value of \hyperlink{group___s_a_i___block___slot___size}{S\+AI Block Slot Size} 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dynamixel-\/\+M\+X106/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+N\+U\+C\+L\+E\+O\+\_\+\+F446\+R\+E/\hyperlink{stm32f4xx__hal__sai_8h}{stm32f4xx\+\_\+hal\+\_\+sai.\+h}\end{DoxyCompactItemize}

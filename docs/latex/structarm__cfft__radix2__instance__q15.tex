@@ -1,0 +1,60 @@
+\hypertarget{structarm__cfft__radix2__instance__q15}{}\section{arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15 Struct Reference}
+\label{structarm__cfft__radix2__instance__q15}\index{arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15@{arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15}}
+
+
+Instance structure for the Q15 C\+F\+F\+T/\+C\+I\+F\+FT function.  
+
+
+
+
+{\ttfamily \#include $<$arm\+\_\+math.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \hyperlink{structarm__cfft__radix2__instance__q15_a874085647351dcf3f0de39d2b1d49744}{fft\+Len}
+\item 
+uint8\+\_\+t \hyperlink{structarm__cfft__radix2__instance__q15_ab5c073286bdd2f6e2bf783ced36bf1de}{ifft\+Flag}
+\item 
+uint8\+\_\+t \hyperlink{structarm__cfft__radix2__instance__q15_af8300c1f60caa21e6b44b9240ab5af19}{bit\+Reverse\+Flag}
+\item 
+q15\+\_\+t $\ast$ \hyperlink{structarm__cfft__radix2__instance__q15_a3809dd15e7cbf1a054c728cfbbb0cc5a}{p\+Twiddle}
+\item 
+uint16\+\_\+t $\ast$ \hyperlink{structarm__cfft__radix2__instance__q15_ab88afeff6493be3c8b5e4530efa82d51}{p\+Bit\+Rev\+Table}
+\item 
+uint16\+\_\+t \hyperlink{structarm__cfft__radix2__instance__q15_a6f2ab87fb4c568656e1f92f687b5c850}{twid\+Coef\+Modifier}
+\item 
+uint16\+\_\+t \hyperlink{structarm__cfft__radix2__instance__q15_a8722720c542cabd41df83fe88ef4f4cb}{bit\+Rev\+Factor}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Instance structure for the Q15 C\+F\+F\+T/\+C\+I\+F\+FT function. 
+
+\subsection{Member Data Documentation}
+\index{arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15@{arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15}!bit\+Reverse\+Flag@{bit\+Reverse\+Flag}}
+\index{bit\+Reverse\+Flag@{bit\+Reverse\+Flag}!arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15@{arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15}}
+\subsubsection[{\texorpdfstring{bit\+Reverse\+Flag}{bitReverseFlag}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15\+::bit\+Reverse\+Flag}\hypertarget{structarm__cfft__radix2__instance__q15_af8300c1f60caa21e6b44b9240ab5af19}{}\label{structarm__cfft__radix2__instance__q15_af8300c1f60caa21e6b44b9240ab5af19}
+flag that enables (bit\+Reverse\+Flag=1) or disables (bit\+Reverse\+Flag=0) bit reversal of output. \index{arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15@{arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15}!bit\+Rev\+Factor@{bit\+Rev\+Factor}}
+\index{bit\+Rev\+Factor@{bit\+Rev\+Factor}!arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15@{arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15}}
+\subsubsection[{\texorpdfstring{bit\+Rev\+Factor}{bitRevFactor}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15\+::bit\+Rev\+Factor}\hypertarget{structarm__cfft__radix2__instance__q15_a8722720c542cabd41df83fe88ef4f4cb}{}\label{structarm__cfft__radix2__instance__q15_a8722720c542cabd41df83fe88ef4f4cb}
+bit reversal modifier that supports different size F\+F\+Ts with the same bit reversal table. \index{arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15@{arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15}!fft\+Len@{fft\+Len}}
+\index{fft\+Len@{fft\+Len}!arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15@{arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15}}
+\subsubsection[{\texorpdfstring{fft\+Len}{fftLen}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15\+::fft\+Len}\hypertarget{structarm__cfft__radix2__instance__q15_a874085647351dcf3f0de39d2b1d49744}{}\label{structarm__cfft__radix2__instance__q15_a874085647351dcf3f0de39d2b1d49744}
+length of the F\+FT. \index{arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15@{arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15}!ifft\+Flag@{ifft\+Flag}}
+\index{ifft\+Flag@{ifft\+Flag}!arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15@{arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15}}
+\subsubsection[{\texorpdfstring{ifft\+Flag}{ifftFlag}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15\+::ifft\+Flag}\hypertarget{structarm__cfft__radix2__instance__q15_ab5c073286bdd2f6e2bf783ced36bf1de}{}\label{structarm__cfft__radix2__instance__q15_ab5c073286bdd2f6e2bf783ced36bf1de}
+flag that selects forward (ifft\+Flag=0) or inverse (ifft\+Flag=1) transform. \index{arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15@{arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15}!p\+Bit\+Rev\+Table@{p\+Bit\+Rev\+Table}}
+\index{p\+Bit\+Rev\+Table@{p\+Bit\+Rev\+Table}!arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15@{arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15}}
+\subsubsection[{\texorpdfstring{p\+Bit\+Rev\+Table}{pBitRevTable}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t$\ast$ arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15\+::p\+Bit\+Rev\+Table}\hypertarget{structarm__cfft__radix2__instance__q15_ab88afeff6493be3c8b5e4530efa82d51}{}\label{structarm__cfft__radix2__instance__q15_ab88afeff6493be3c8b5e4530efa82d51}
+points to the bit reversal table. \index{arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15@{arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15}!p\+Twiddle@{p\+Twiddle}}
+\index{p\+Twiddle@{p\+Twiddle}!arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15@{arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15}}
+\subsubsection[{\texorpdfstring{p\+Twiddle}{pTwiddle}}]{\setlength{\rightskip}{0pt plus 5cm}q15\+\_\+t$\ast$ arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15\+::p\+Twiddle}\hypertarget{structarm__cfft__radix2__instance__q15_a3809dd15e7cbf1a054c728cfbbb0cc5a}{}\label{structarm__cfft__radix2__instance__q15_a3809dd15e7cbf1a054c728cfbbb0cc5a}
+points to the Sin twiddle factor table. \index{arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15@{arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15}!twid\+Coef\+Modifier@{twid\+Coef\+Modifier}}
+\index{twid\+Coef\+Modifier@{twid\+Coef\+Modifier}!arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15@{arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15}}
+\subsubsection[{\texorpdfstring{twid\+Coef\+Modifier}{twidCoefModifier}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t arm\+\_\+cfft\+\_\+radix2\+\_\+instance\+\_\+q15\+::twid\+Coef\+Modifier}\hypertarget{structarm__cfft__radix2__instance__q15_a6f2ab87fb4c568656e1f92f687b5c850}{}\label{structarm__cfft__radix2__instance__q15_a6f2ab87fb4c568656e1f92f687b5c850}
+twiddle coefficient modifier that supports different size F\+F\+Ts with the same twiddle factor table. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dynamixel-\/\+M\+X106/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+N\+U\+C\+L\+E\+O\+\_\+\+F446\+R\+E/arm\+\_\+math.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,54 @@
+\hypertarget{group___r_c_c_ex___bit_address___alias_region}{}\section{R\+CC Bit\+Address Alias\+Region}
+\label{group___r_c_c_ex___bit_address___alias_region}\index{R\+C\+C Bit\+Address Alias\+Region@{R\+C\+C Bit\+Address Alias\+Region}}
+
+
+R\+CC registers bit address in the alias region.  
+
+
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries R\+C\+C\+\_\+\+P\+L\+L\+S\+A\+I\+O\+N\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+ER}~0x1C\hypertarget{group___r_c_c_ex___bit_address___alias_region_ga501d54424aaf471494be473eeccc08dd}{}\label{group___r_c_c_ex___bit_address___alias_region_ga501d54424aaf471494be473eeccc08dd}
+
+\item 
+\#define {\bfseries R\+C\+C\+\_\+\+C\+R\+\_\+\+P\+L\+L\+S\+A\+I\+O\+N\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (R\+C\+C\+\_\+\+C\+R\+\_\+\+O\+F\+F\+S\+ET $\ast$ 32) + (R\+C\+C\+\_\+\+P\+L\+L\+S\+A\+I\+O\+N\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+ER $\ast$ 4))\hypertarget{group___r_c_c_ex___bit_address___alias_region_ga11c2e56618cd2ae7db99eabce96f00bd}{}\label{group___r_c_c_ex___bit_address___alias_region_ga11c2e56618cd2ae7db99eabce96f00bd}
+
+\item 
+\#define {\bfseries P\+L\+L\+S\+A\+I\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+V\+A\+L\+UE}~((uint32\+\_\+t)100)  /$\ast$ Timeout value fixed to 100 ms  $\ast$/\hypertarget{group___r_c_c_ex___bit_address___alias_region_gaa798e797ccefa001aff2218b06b6e448}{}\label{group___r_c_c_ex___bit_address___alias_region_gaa798e797ccefa001aff2218b06b6e448}
+
+\item 
+\#define {\bfseries R\+C\+C\+\_\+\+P\+L\+L\+I2\+S\+O\+N\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+ER}~0x1A\hypertarget{group___r_c_c_ex___bit_address___alias_region_gae49dcc8957cc802342748396c2fd4616}{}\label{group___r_c_c_ex___bit_address___alias_region_gae49dcc8957cc802342748396c2fd4616}
+
+\item 
+\#define {\bfseries R\+C\+C\+\_\+\+C\+R\+\_\+\+P\+L\+L\+I2\+S\+O\+N\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (R\+C\+C\+\_\+\+C\+R\+\_\+\+O\+F\+F\+S\+ET $\ast$ 32) + (R\+C\+C\+\_\+\+P\+L\+L\+I2\+S\+O\+N\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+ER $\ast$ 4))\hypertarget{group___r_c_c_ex___bit_address___alias_region_gaba1aa8936828d49aab102dd1fcc1ce22}{}\label{group___r_c_c_ex___bit_address___alias_region_gaba1aa8936828d49aab102dd1fcc1ce22}
+
+\item 
+\#define {\bfseries R\+C\+C\+\_\+\+D\+C\+K\+C\+F\+G\+R\+\_\+\+O\+F\+F\+S\+ET}~(R\+C\+C\+\_\+\+O\+F\+F\+S\+ET + 0x8\+C)\hypertarget{group___r_c_c_ex___bit_address___alias_region_gad444c5c356f3c3294fd6a2d73fafdaa7}{}\label{group___r_c_c_ex___bit_address___alias_region_gad444c5c356f3c3294fd6a2d73fafdaa7}
+
+\item 
+\#define {\bfseries R\+C\+C\+\_\+\+T\+I\+M\+P\+R\+E\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+ER}~0x18\hypertarget{group___r_c_c_ex___bit_address___alias_region_ga6af1cc5d0984efa0af27af520a29a1e7}{}\label{group___r_c_c_ex___bit_address___alias_region_ga6af1cc5d0984efa0af27af520a29a1e7}
+
+\item 
+\#define {\bfseries R\+C\+C\+\_\+\+D\+C\+K\+C\+F\+G\+R\+\_\+\+T\+I\+M\+P\+R\+E\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (R\+C\+C\+\_\+\+D\+C\+K\+C\+F\+G\+R\+\_\+\+O\+F\+F\+S\+ET $\ast$ 32) + (R\+C\+C\+\_\+\+T\+I\+M\+P\+R\+E\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+ER $\ast$ 4))\hypertarget{group___r_c_c_ex___bit_address___alias_region_ga170ba1aa6143f4b2b8824e371b9c29e7}{}\label{group___r_c_c_ex___bit_address___alias_region_ga170ba1aa6143f4b2b8824e371b9c29e7}
+
+\item 
+\#define {\bfseries R\+C\+C\+\_\+\+C\+F\+G\+R\+\_\+\+O\+F\+F\+S\+ET}~(R\+C\+C\+\_\+\+O\+F\+F\+S\+ET + 0x08)\hypertarget{group___r_c_c_ex___bit_address___alias_region_gafb1e90a88869585b970749de3c16ce4a}{}\label{group___r_c_c_ex___bit_address___alias_region_gafb1e90a88869585b970749de3c16ce4a}
+
+\item 
+\#define {\bfseries R\+C\+C\+\_\+\+I2\+S\+S\+R\+C\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+ER}~0x17\hypertarget{group___r_c_c_ex___bit_address___alias_region_gadf344d1efa4f3116800d74ab2fc0f0c5}{}\label{group___r_c_c_ex___bit_address___alias_region_gadf344d1efa4f3116800d74ab2fc0f0c5}
+
+\item 
+\#define {\bfseries R\+C\+C\+\_\+\+C\+F\+G\+R\+\_\+\+I2\+S\+S\+R\+C\+\_\+\+BB}~(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (R\+C\+C\+\_\+\+C\+F\+G\+R\+\_\+\+O\+F\+F\+S\+ET $\ast$ 32) + (R\+C\+C\+\_\+\+I2\+S\+S\+R\+C\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+ER $\ast$ 4))\hypertarget{group___r_c_c_ex___bit_address___alias_region_ga2773df79f99911154b083d82e49ceff9}{}\label{group___r_c_c_ex___bit_address___alias_region_ga2773df79f99911154b083d82e49ceff9}
+
+\item 
+\#define {\bfseries P\+L\+L\+I2\+S\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+V\+A\+L\+UE}~((uint32\+\_\+t)100)  /$\ast$ Timeout value fixed to 100 ms  $\ast$/\hypertarget{group___r_c_c_ex___bit_address___alias_region_ga50ad77d63441cb945dd630964285cc07}{}\label{group___r_c_c_ex___bit_address___alias_region_ga50ad77d63441cb945dd630964285cc07}
+
+\item 
+\#define {\bfseries P\+L\+L\+\_\+\+T\+I\+M\+E\+O\+U\+T\+\_\+\+V\+A\+L\+UE}~((uint32\+\_\+t)100)  /$\ast$ 100 ms $\ast$/\hypertarget{group___r_c_c_ex___bit_address___alias_region_gad54d8ad9b3511329efee38b3ad0665de}{}\label{group___r_c_c_ex___bit_address___alias_region_gad54d8ad9b3511329efee38b3ad0665de}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+R\+CC registers bit address in the alias region. 
+

@@ -1,0 +1,117 @@
+\hypertarget{group___i2_s___private___macros}{}\section{I2S Private Macros}
+\label{group___i2_s___private___macros}\index{I2\+S Private Macros@{I2\+S Private Macros}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries I\+S\+\_\+\+I2\+S\+\_\+\+M\+O\+DE}(M\+O\+DE)
+\item 
+\#define {\bfseries I\+S\+\_\+\+I2\+S\+\_\+\+S\+T\+A\+N\+D\+A\+RD}(S\+T\+A\+N\+D\+A\+RD)
+\item 
+\#define {\bfseries I\+S\+\_\+\+I2\+S\+\_\+\+D\+A\+T\+A\+\_\+\+F\+O\+R\+M\+AT}(F\+O\+R\+M\+AT)
+\item 
+\#define {\bfseries I\+S\+\_\+\+I2\+S\+\_\+\+M\+C\+L\+K\+\_\+\+O\+U\+T\+P\+UT}(O\+U\+T\+P\+UT)
+\item 
+\#define {\bfseries I\+S\+\_\+\+I2\+S\+\_\+\+A\+U\+D\+I\+O\+\_\+\+F\+R\+EQ}(F\+R\+EQ)
+\item 
+\#define {\bfseries I\+S\+\_\+\+I2\+S\+\_\+\+F\+U\+L\+L\+D\+U\+P\+L\+E\+X\+\_\+\+M\+O\+DE}(M\+O\+DE)
+\item 
+\#define {\bfseries I\+S\+\_\+\+I2\+S\+\_\+\+C\+P\+OL}(C\+P\+OL)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\index{I2\+S Private Macros@{I2\+S Private Macros}!I\+S\+\_\+\+I2\+S\+\_\+\+A\+U\+D\+I\+O\+\_\+\+F\+R\+EQ@{I\+S\+\_\+\+I2\+S\+\_\+\+A\+U\+D\+I\+O\+\_\+\+F\+R\+EQ}}
+\index{I\+S\+\_\+\+I2\+S\+\_\+\+A\+U\+D\+I\+O\+\_\+\+F\+R\+EQ@{I\+S\+\_\+\+I2\+S\+\_\+\+A\+U\+D\+I\+O\+\_\+\+F\+R\+EQ}!I2\+S Private Macros@{I2\+S Private Macros}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+I2\+S\+\_\+\+A\+U\+D\+I\+O\+\_\+\+F\+R\+EQ}{IS_I2S_AUDIO_FREQ}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+I2\+S\+\_\+\+A\+U\+D\+I\+O\+\_\+\+F\+R\+EQ(
+\begin{DoxyParamCaption}
+\item[{}]{F\+R\+EQ}
+\end{DoxyParamCaption}
+)}\hypertarget{group___i2_s___private___macros_gaf39d917f4a38fd9916ec347fb055391c}{}\label{group___i2_s___private___macros_gaf39d917f4a38fd9916ec347fb055391c}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+((((FREQ) >= I2S\_AUDIOFREQ\_8K) && \(\backslash\)
+                                  ((FREQ) <= I2S\_AUDIOFREQ\_192K)) || \(\backslash\)
+                                  ((FREQ) == I2S\_AUDIOFREQ\_DEFAULT))
+\end{DoxyCode}
+\index{I2\+S Private Macros@{I2\+S Private Macros}!I\+S\+\_\+\+I2\+S\+\_\+\+C\+P\+OL@{I\+S\+\_\+\+I2\+S\+\_\+\+C\+P\+OL}}
+\index{I\+S\+\_\+\+I2\+S\+\_\+\+C\+P\+OL@{I\+S\+\_\+\+I2\+S\+\_\+\+C\+P\+OL}!I2\+S Private Macros@{I2\+S Private Macros}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+I2\+S\+\_\+\+C\+P\+OL}{IS_I2S_CPOL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+I2\+S\+\_\+\+C\+P\+OL(
+\begin{DoxyParamCaption}
+\item[{}]{C\+P\+OL}
+\end{DoxyParamCaption}
+)}\hypertarget{group___i2_s___private___macros_ga6323375bf0b6fa6e2ee2a9ce6f9ef82f}{}\label{group___i2_s___private___macros_ga6323375bf0b6fa6e2ee2a9ce6f9ef82f}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((CPOL) == I2S\_CPOL\_LOW) || \(\backslash\)
+                           ((CPOL) == I2S\_CPOL\_HIGH))
+\end{DoxyCode}
+\index{I2\+S Private Macros@{I2\+S Private Macros}!I\+S\+\_\+\+I2\+S\+\_\+\+D\+A\+T\+A\+\_\+\+F\+O\+R\+M\+AT@{I\+S\+\_\+\+I2\+S\+\_\+\+D\+A\+T\+A\+\_\+\+F\+O\+R\+M\+AT}}
+\index{I\+S\+\_\+\+I2\+S\+\_\+\+D\+A\+T\+A\+\_\+\+F\+O\+R\+M\+AT@{I\+S\+\_\+\+I2\+S\+\_\+\+D\+A\+T\+A\+\_\+\+F\+O\+R\+M\+AT}!I2\+S Private Macros@{I2\+S Private Macros}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+I2\+S\+\_\+\+D\+A\+T\+A\+\_\+\+F\+O\+R\+M\+AT}{IS_I2S_DATA_FORMAT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+I2\+S\+\_\+\+D\+A\+T\+A\+\_\+\+F\+O\+R\+M\+AT(
+\begin{DoxyParamCaption}
+\item[{}]{F\+O\+R\+M\+AT}
+\end{DoxyParamCaption}
+)}\hypertarget{group___i2_s___private___macros_gac467da829eca4a5c4ce41a6abd2d8e81}{}\label{group___i2_s___private___macros_gac467da829eca4a5c4ce41a6abd2d8e81}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((FORMAT) == I2S\_DATAFORMAT\_16B)          || \(\backslash\)
+                                    ((FORMAT) == I2S\_DATAFORMAT\_16B\_EXTENDED) || \(\backslash\)
+                                    ((FORMAT) == I2S\_DATAFORMAT\_24B)          || \(\backslash\)
+                                    ((FORMAT) == I2S\_DATAFORMAT\_32B))
+\end{DoxyCode}
+\index{I2\+S Private Macros@{I2\+S Private Macros}!I\+S\+\_\+\+I2\+S\+\_\+\+F\+U\+L\+L\+D\+U\+P\+L\+E\+X\+\_\+\+M\+O\+DE@{I\+S\+\_\+\+I2\+S\+\_\+\+F\+U\+L\+L\+D\+U\+P\+L\+E\+X\+\_\+\+M\+O\+DE}}
+\index{I\+S\+\_\+\+I2\+S\+\_\+\+F\+U\+L\+L\+D\+U\+P\+L\+E\+X\+\_\+\+M\+O\+DE@{I\+S\+\_\+\+I2\+S\+\_\+\+F\+U\+L\+L\+D\+U\+P\+L\+E\+X\+\_\+\+M\+O\+DE}!I2\+S Private Macros@{I2\+S Private Macros}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+I2\+S\+\_\+\+F\+U\+L\+L\+D\+U\+P\+L\+E\+X\+\_\+\+M\+O\+DE}{IS_I2S_FULLDUPLEX_MODE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+I2\+S\+\_\+\+F\+U\+L\+L\+D\+U\+P\+L\+E\+X\+\_\+\+M\+O\+DE(
+\begin{DoxyParamCaption}
+\item[{}]{M\+O\+DE}
+\end{DoxyParamCaption}
+)}\hypertarget{group___i2_s___private___macros_ga5be53aa8147cb6b018f9e4529a317938}{}\label{group___i2_s___private___macros_ga5be53aa8147cb6b018f9e4529a317938}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((MODE) == I2S\_FULLDUPLEXMODE\_DISABLE) || \(\backslash\)
+                                      ((MODE) == I2S\_FULLDUPLEXMODE\_ENABLE))
+\end{DoxyCode}
+\index{I2\+S Private Macros@{I2\+S Private Macros}!I\+S\+\_\+\+I2\+S\+\_\+\+M\+C\+L\+K\+\_\+\+O\+U\+T\+P\+UT@{I\+S\+\_\+\+I2\+S\+\_\+\+M\+C\+L\+K\+\_\+\+O\+U\+T\+P\+UT}}
+\index{I\+S\+\_\+\+I2\+S\+\_\+\+M\+C\+L\+K\+\_\+\+O\+U\+T\+P\+UT@{I\+S\+\_\+\+I2\+S\+\_\+\+M\+C\+L\+K\+\_\+\+O\+U\+T\+P\+UT}!I2\+S Private Macros@{I2\+S Private Macros}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+I2\+S\+\_\+\+M\+C\+L\+K\+\_\+\+O\+U\+T\+P\+UT}{IS_I2S_MCLK_OUTPUT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+I2\+S\+\_\+\+M\+C\+L\+K\+\_\+\+O\+U\+T\+P\+UT(
+\begin{DoxyParamCaption}
+\item[{}]{O\+U\+T\+P\+UT}
+\end{DoxyParamCaption}
+)}\hypertarget{group___i2_s___private___macros_ga829ae526d1d11f14592e881f800fbb8a}{}\label{group___i2_s___private___macros_ga829ae526d1d11f14592e881f800fbb8a}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((OUTPUT) == I2S\_MCLKOUTPUT\_ENABLE) || \(\backslash\)
+                                    ((OUTPUT) == I2S\_MCLKOUTPUT\_DISABLE))
+\end{DoxyCode}
+\index{I2\+S Private Macros@{I2\+S Private Macros}!I\+S\+\_\+\+I2\+S\+\_\+\+M\+O\+DE@{I\+S\+\_\+\+I2\+S\+\_\+\+M\+O\+DE}}
+\index{I\+S\+\_\+\+I2\+S\+\_\+\+M\+O\+DE@{I\+S\+\_\+\+I2\+S\+\_\+\+M\+O\+DE}!I2\+S Private Macros@{I2\+S Private Macros}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+I2\+S\+\_\+\+M\+O\+DE}{IS_I2S_MODE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+I2\+S\+\_\+\+M\+O\+DE(
+\begin{DoxyParamCaption}
+\item[{}]{M\+O\+DE}
+\end{DoxyParamCaption}
+)}\hypertarget{group___i2_s___private___macros_ga942c37b2c1274c4c5773ddcf8b46d9b5}{}\label{group___i2_s___private___macros_ga942c37b2c1274c4c5773ddcf8b46d9b5}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((MODE) == I2S\_MODE\_SLAVE\_TX)  || \(\backslash\)
+                           ((MODE) == I2S\_MODE\_SLAVE\_RX)  || \(\backslash\)
+                           ((MODE) == I2S\_MODE\_MASTER\_TX) || \(\backslash\)
+                           ((MODE) == I2S\_MODE\_MASTER\_RX))
+\end{DoxyCode}
+\index{I2\+S Private Macros@{I2\+S Private Macros}!I\+S\+\_\+\+I2\+S\+\_\+\+S\+T\+A\+N\+D\+A\+RD@{I\+S\+\_\+\+I2\+S\+\_\+\+S\+T\+A\+N\+D\+A\+RD}}
+\index{I\+S\+\_\+\+I2\+S\+\_\+\+S\+T\+A\+N\+D\+A\+RD@{I\+S\+\_\+\+I2\+S\+\_\+\+S\+T\+A\+N\+D\+A\+RD}!I2\+S Private Macros@{I2\+S Private Macros}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+I2\+S\+\_\+\+S\+T\+A\+N\+D\+A\+RD}{IS_I2S_STANDARD}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+I2\+S\+\_\+\+S\+T\+A\+N\+D\+A\+RD(
+\begin{DoxyParamCaption}
+\item[{}]{S\+T\+A\+N\+D\+A\+RD}
+\end{DoxyParamCaption}
+)}\hypertarget{group___i2_s___private___macros_ga826b9ddb34520b8fa64c2b65c9bfd528}{}\label{group___i2_s___private___macros_ga826b9ddb34520b8fa64c2b65c9bfd528}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((STANDARD) == I2S\_STANDARD\_PHILIPS)   || \(\backslash\)
+                                   ((STANDARD) == I2S\_STANDARD\_MSB)       || \(\backslash\)
+                                   ((STANDARD) == I2S\_STANDARD\_LSB)       || \(\backslash\)
+                                   ((STANDARD) == I2S\_STANDARD\_PCM\_SHORT) || \(\backslash\)
+                                   ((STANDARD) == I2S\_STANDARD\_PCM\_LONG))
+\end{DoxyCode}

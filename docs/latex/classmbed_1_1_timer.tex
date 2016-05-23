@@ -1,0 +1,123 @@
+\hypertarget{classmbed_1_1_timer}{}\section{mbed\+:\+:Timer Class Reference}
+\label{classmbed_1_1_timer}\index{mbed\+::\+Timer@{mbed\+::\+Timer}}
+
+
+{\ttfamily \#include $<$Timer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Timer} (const \hyperlink{structticker__data__t}{ticker\+\_\+data\+\_\+t} $\ast$data)\hypertarget{classmbed_1_1_timer_aa660af6717dea877c88df8c3b9444de7}{}\label{classmbed_1_1_timer_aa660af6717dea877c88df8c3b9444de7}
+
+\item 
+void \hyperlink{classmbed_1_1_timer_aa9e4096c9e6a416f42e0ae3a85604caa}{start} ()
+\item 
+void \hyperlink{classmbed_1_1_timer_a4a687e8a871c6fd29d4b74bdef3c52a2}{stop} ()
+\item 
+void \hyperlink{classmbed_1_1_timer_a6b7f2334eb9533efb72fc29314f4fa02}{reset} ()
+\item 
+float \hyperlink{classmbed_1_1_timer_a121d69d1b058f0ac809dea2df5143bfc}{read} ()
+\item 
+int \hyperlink{classmbed_1_1_timer_a2bc063758527437192a555b35ca73d6c}{read\+\_\+ms} ()
+\item 
+int \hyperlink{classmbed_1_1_timer_a97735f708d71171d2905df675dc64091}{read\+\_\+us} ()
+\item 
+{\bfseries operator float} ()\hypertarget{classmbed_1_1_timer_a10b28607779c2ef84f880577fe13209f}{}\label{classmbed_1_1_timer_a10b28607779c2ef84f880577fe13209f}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries slicetime} ()\hypertarget{classmbed_1_1_timer_aed61c2655fe5ac72eb0231e4e2bdb480}{}\label{classmbed_1_1_timer_aed61c2655fe5ac72eb0231e4e2bdb480}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries \+\_\+running}\hypertarget{classmbed_1_1_timer_a4d3e749708de44d051e90d49d58ac4b4}{}\label{classmbed_1_1_timer_a4d3e749708de44d051e90d49d58ac4b4}
+
+\item 
+unsigned int {\bfseries \+\_\+start}\hypertarget{classmbed_1_1_timer_a5a1304be7ee97acd4a532be2ca565fcc}{}\label{classmbed_1_1_timer_a5a1304be7ee97acd4a532be2ca565fcc}
+
+\item 
+int {\bfseries \+\_\+time}\hypertarget{classmbed_1_1_timer_a63b5673835238bd5a6ba309a55712d78}{}\label{classmbed_1_1_timer_a63b5673835238bd5a6ba309a55712d78}
+
+\item 
+const \hyperlink{structticker__data__t}{ticker\+\_\+data\+\_\+t} $\ast$ {\bfseries \+\_\+ticker\+\_\+data}\hypertarget{classmbed_1_1_timer_a7e3f16c5747dd07da0980f6107d4e7de}{}\label{classmbed_1_1_timer_a7e3f16c5747dd07da0980f6107d4e7de}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A general purpose timer
+
+Example\+: 
+\begin{DoxyCode}
+\textcolor{comment}{// Count the time to toggle a LED}
+
+\textcolor{preprocessor}{#include "mbed.h"}
+
+Timer timer;
+DigitalOut led(LED1);
+\textcolor{keywordtype}{int} begin, end;
+
+\textcolor{keywordtype}{int} main() \{
+    timer.start();
+    begin = timer.read\_us();
+    led = !led;
+    end = timer.read\_us();
+    printf(\textcolor{stringliteral}{"Toggle the led takes %d us"}, end - begin);
+\}
+\end{DoxyCode}
+ 
+
+\subsection{Member Function Documentation}
+\index{mbed\+::\+Timer@{mbed\+::\+Timer}!read@{read}}
+\index{read@{read}!mbed\+::\+Timer@{mbed\+::\+Timer}}
+\subsubsection[{\texorpdfstring{read()}{read()}}]{\setlength{\rightskip}{0pt plus 5cm}float mbed\+::\+Timer\+::read (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmbed_1_1_timer_a121d69d1b058f0ac809dea2df5143bfc}{}\label{classmbed_1_1_timer_a121d69d1b058f0ac809dea2df5143bfc}
+Get the time passed in seconds \index{mbed\+::\+Timer@{mbed\+::\+Timer}!read\+\_\+ms@{read\+\_\+ms}}
+\index{read\+\_\+ms@{read\+\_\+ms}!mbed\+::\+Timer@{mbed\+::\+Timer}}
+\subsubsection[{\texorpdfstring{read\+\_\+ms()}{read_ms()}}]{\setlength{\rightskip}{0pt plus 5cm}int mbed\+::\+Timer\+::read\+\_\+ms (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmbed_1_1_timer_a2bc063758527437192a555b35ca73d6c}{}\label{classmbed_1_1_timer_a2bc063758527437192a555b35ca73d6c}
+Get the time passed in mili-\/seconds \index{mbed\+::\+Timer@{mbed\+::\+Timer}!read\+\_\+us@{read\+\_\+us}}
+\index{read\+\_\+us@{read\+\_\+us}!mbed\+::\+Timer@{mbed\+::\+Timer}}
+\subsubsection[{\texorpdfstring{read\+\_\+us()}{read_us()}}]{\setlength{\rightskip}{0pt plus 5cm}int mbed\+::\+Timer\+::read\+\_\+us (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmbed_1_1_timer_a97735f708d71171d2905df675dc64091}{}\label{classmbed_1_1_timer_a97735f708d71171d2905df675dc64091}
+Get the time passed in micro-\/seconds \index{mbed\+::\+Timer@{mbed\+::\+Timer}!reset@{reset}}
+\index{reset@{reset}!mbed\+::\+Timer@{mbed\+::\+Timer}}
+\subsubsection[{\texorpdfstring{reset()}{reset()}}]{\setlength{\rightskip}{0pt plus 5cm}void mbed\+::\+Timer\+::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmbed_1_1_timer_a6b7f2334eb9533efb72fc29314f4fa02}{}\label{classmbed_1_1_timer_a6b7f2334eb9533efb72fc29314f4fa02}
+Reset the timer to 0.
+
+If it was already counting, it will continue \index{mbed\+::\+Timer@{mbed\+::\+Timer}!start@{start}}
+\index{start@{start}!mbed\+::\+Timer@{mbed\+::\+Timer}}
+\subsubsection[{\texorpdfstring{start()}{start()}}]{\setlength{\rightskip}{0pt plus 5cm}void mbed\+::\+Timer\+::start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmbed_1_1_timer_aa9e4096c9e6a416f42e0ae3a85604caa}{}\label{classmbed_1_1_timer_aa9e4096c9e6a416f42e0ae3a85604caa}
+Start the timer \index{mbed\+::\+Timer@{mbed\+::\+Timer}!stop@{stop}}
+\index{stop@{stop}!mbed\+::\+Timer@{mbed\+::\+Timer}}
+\subsubsection[{\texorpdfstring{stop()}{stop()}}]{\setlength{\rightskip}{0pt plus 5cm}void mbed\+::\+Timer\+::stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classmbed_1_1_timer_a4a687e8a871c6fd29d4b74bdef3c52a2}{}\label{classmbed_1_1_timer_a4a687e8a871c6fd29d4b74bdef3c52a2}
+Stop the timer 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dynamixel-\/\+M\+X106/mbed/Timer.\+h\end{DoxyCompactItemize}

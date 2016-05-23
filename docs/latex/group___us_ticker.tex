@@ -1,0 +1,91 @@
+\hypertarget{group___us_ticker}{}\section{Microseconds Ticker Functions}
+\label{group___us_ticker}\index{Microseconds Ticker Functions@{Microseconds Ticker Functions}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{structticker__data__t}{ticker\+\_\+data\+\_\+t} $\ast$ \hyperlink{group___us_ticker_ga47032859c2f9f4b8591abc99ce332380}{get\+\_\+us\+\_\+ticker\+\_\+data} (void)
+\item 
+void \hyperlink{group___us_ticker_ga52d2b2c47d792442573e34403f9a10b1}{us\+\_\+ticker\+\_\+irq\+\_\+handler} (void)
+\item 
+void \hyperlink{group___us_ticker_ga829955267433ca8d04ac71f4e89c0404}{us\+\_\+ticker\+\_\+init} (void)
+\item 
+uint32\+\_\+t \hyperlink{group___us_ticker_ga023920c1e5030a84aa39d0be1de0aa0b}{us\+\_\+ticker\+\_\+read} (void)
+\item 
+void \hyperlink{group___us_ticker_gae7b69978fcf8ce8054597c87072896ce}{us\+\_\+ticker\+\_\+set\+\_\+interrupt} (timestamp\+\_\+t timestamp)
+\item 
+void \hyperlink{group___us_ticker_ga75e46157b1bbfe4f5594e33b49ff2605}{us\+\_\+ticker\+\_\+disable\+\_\+interrupt} (void)
+\item 
+void \hyperlink{group___us_ticker_ga373846a3122f86d7decbea5fab0590a9}{us\+\_\+ticker\+\_\+clear\+\_\+interrupt} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\index{Microseconds Ticker Functions@{Microseconds Ticker Functions}!get\+\_\+us\+\_\+ticker\+\_\+data@{get\+\_\+us\+\_\+ticker\+\_\+data}}
+\index{get\+\_\+us\+\_\+ticker\+\_\+data@{get\+\_\+us\+\_\+ticker\+\_\+data}!Microseconds Ticker Functions@{Microseconds Ticker Functions}}
+\subsubsection[{\texorpdfstring{get\+\_\+us\+\_\+ticker\+\_\+data(void)}{get_us_ticker_data(void)}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf ticker\+\_\+data\+\_\+t}$\ast$ get\+\_\+us\+\_\+ticker\+\_\+data (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___us_ticker_ga47032859c2f9f4b8591abc99ce332380}{}\label{group___us_ticker_ga47032859c2f9f4b8591abc99ce332380}
+Get ticker\textquotesingle{}s data
+
+\begin{DoxyReturn}{Returns}
+The low power ticker data 
+\end{DoxyReturn}
+\index{Microseconds Ticker Functions@{Microseconds Ticker Functions}!us\+\_\+ticker\+\_\+clear\+\_\+interrupt@{us\+\_\+ticker\+\_\+clear\+\_\+interrupt}}
+\index{us\+\_\+ticker\+\_\+clear\+\_\+interrupt@{us\+\_\+ticker\+\_\+clear\+\_\+interrupt}!Microseconds Ticker Functions@{Microseconds Ticker Functions}}
+\subsubsection[{\texorpdfstring{us\+\_\+ticker\+\_\+clear\+\_\+interrupt(void)}{us_ticker_clear_interrupt(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void us\+\_\+ticker\+\_\+clear\+\_\+interrupt (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___us_ticker_ga373846a3122f86d7decbea5fab0590a9}{}\label{group___us_ticker_ga373846a3122f86d7decbea5fab0590a9}
+Clear us ticker interrupt \index{Microseconds Ticker Functions@{Microseconds Ticker Functions}!us\+\_\+ticker\+\_\+disable\+\_\+interrupt@{us\+\_\+ticker\+\_\+disable\+\_\+interrupt}}
+\index{us\+\_\+ticker\+\_\+disable\+\_\+interrupt@{us\+\_\+ticker\+\_\+disable\+\_\+interrupt}!Microseconds Ticker Functions@{Microseconds Ticker Functions}}
+\subsubsection[{\texorpdfstring{us\+\_\+ticker\+\_\+disable\+\_\+interrupt(void)}{us_ticker_disable_interrupt(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void us\+\_\+ticker\+\_\+disable\+\_\+interrupt (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___us_ticker_ga75e46157b1bbfe4f5594e33b49ff2605}{}\label{group___us_ticker_ga75e46157b1bbfe4f5594e33b49ff2605}
+Disable us ticker interrupt \index{Microseconds Ticker Functions@{Microseconds Ticker Functions}!us\+\_\+ticker\+\_\+init@{us\+\_\+ticker\+\_\+init}}
+\index{us\+\_\+ticker\+\_\+init@{us\+\_\+ticker\+\_\+init}!Microseconds Ticker Functions@{Microseconds Ticker Functions}}
+\subsubsection[{\texorpdfstring{us\+\_\+ticker\+\_\+init(void)}{us_ticker_init(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void us\+\_\+ticker\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___us_ticker_ga829955267433ca8d04ac71f4e89c0404}{}\label{group___us_ticker_ga829955267433ca8d04ac71f4e89c0404}
+Initialize the ticker \index{Microseconds Ticker Functions@{Microseconds Ticker Functions}!us\+\_\+ticker\+\_\+irq\+\_\+handler@{us\+\_\+ticker\+\_\+irq\+\_\+handler}}
+\index{us\+\_\+ticker\+\_\+irq\+\_\+handler@{us\+\_\+ticker\+\_\+irq\+\_\+handler}!Microseconds Ticker Functions@{Microseconds Ticker Functions}}
+\subsubsection[{\texorpdfstring{us\+\_\+ticker\+\_\+irq\+\_\+handler(void)}{us_ticker_irq_handler(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void us\+\_\+ticker\+\_\+irq\+\_\+handler (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___us_ticker_ga52d2b2c47d792442573e34403f9a10b1}{}\label{group___us_ticker_ga52d2b2c47d792442573e34403f9a10b1}
+The wrapper for ticker\+\_\+irq\+\_\+handler, to pass us ticker\textquotesingle{}s data \index{Microseconds Ticker Functions@{Microseconds Ticker Functions}!us\+\_\+ticker\+\_\+read@{us\+\_\+ticker\+\_\+read}}
+\index{us\+\_\+ticker\+\_\+read@{us\+\_\+ticker\+\_\+read}!Microseconds Ticker Functions@{Microseconds Ticker Functions}}
+\subsubsection[{\texorpdfstring{us\+\_\+ticker\+\_\+read(void)}{us_ticker_read(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t us\+\_\+ticker\+\_\+read (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{group___us_ticker_ga023920c1e5030a84aa39d0be1de0aa0b}{}\label{group___us_ticker_ga023920c1e5030a84aa39d0be1de0aa0b}
+Read the current counter
+
+\begin{DoxyReturn}{Returns}
+The current timer\textquotesingle{}s counter value in microseconds 
+\end{DoxyReturn}
+\index{Microseconds Ticker Functions@{Microseconds Ticker Functions}!us\+\_\+ticker\+\_\+set\+\_\+interrupt@{us\+\_\+ticker\+\_\+set\+\_\+interrupt}}
+\index{us\+\_\+ticker\+\_\+set\+\_\+interrupt@{us\+\_\+ticker\+\_\+set\+\_\+interrupt}!Microseconds Ticker Functions@{Microseconds Ticker Functions}}
+\subsubsection[{\texorpdfstring{us\+\_\+ticker\+\_\+set\+\_\+interrupt(timestamp\+\_\+t timestamp)}{us_ticker_set_interrupt(timestamp_t timestamp)}}]{\setlength{\rightskip}{0pt plus 5cm}void us\+\_\+ticker\+\_\+set\+\_\+interrupt (
+\begin{DoxyParamCaption}
+\item[{timestamp\+\_\+t}]{timestamp}
+\end{DoxyParamCaption}
+)}\hypertarget{group___us_ticker_gae7b69978fcf8ce8054597c87072896ce}{}\label{group___us_ticker_gae7b69978fcf8ce8054597c87072896ce}
+Set interrupt for specified timestamp
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestamp} & The time in microseconds to be set \\
+\hline
+\end{DoxyParams}

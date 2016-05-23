@@ -1,0 +1,60 @@
+\hypertarget{struct_r_c_c___osc_init_type_def}{}\section{R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def Struct Reference}
+\label{struct_r_c_c___osc_init_type_def}\index{R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def@{R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def}}
+
+
+R\+CC Internal/\+External Oscillator (H\+SE, H\+SI, L\+SE and L\+SI) configuration structure definition.  
+
+
+
+
+{\ttfamily \#include $<$stm32f4xx\+\_\+hal\+\_\+rcc.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{struct_r_c_c___osc_init_type_def_af9e7bc89cab81c1705d94c74c7a81088}{Oscillator\+Type}
+\item 
+uint32\+\_\+t \hyperlink{struct_r_c_c___osc_init_type_def_a7e05d6eec98ed8cdaba00ca3d167ff72}{H\+S\+E\+State}
+\item 
+uint32\+\_\+t \hyperlink{struct_r_c_c___osc_init_type_def_a7c1294e9407e69e80fe034caf35fe7ea}{L\+S\+E\+State}
+\item 
+uint32\+\_\+t \hyperlink{struct_r_c_c___osc_init_type_def_a39b62cae65fe7a251000354e5bba8cb6}{H\+S\+I\+State}
+\item 
+uint32\+\_\+t \hyperlink{struct_r_c_c___osc_init_type_def_a9b2e48e452d0c334f2b9473216064560}{H\+S\+I\+Calibration\+Value}
+\item 
+uint32\+\_\+t \hyperlink{struct_r_c_c___osc_init_type_def_a955de90db8882fde02c4fb59c7c000f0}{L\+S\+I\+State}
+\item 
+\hyperlink{struct_r_c_c___p_l_l_init_type_def}{R\+C\+C\+\_\+\+P\+L\+L\+Init\+Type\+Def} \hyperlink{struct_r_c_c___osc_init_type_def_af76de5ee86798f0c3a4c83c84dfa58be}{P\+LL}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+R\+CC Internal/\+External Oscillator (H\+SE, H\+SI, L\+SE and L\+SI) configuration structure definition. 
+
+\subsection{Member Data Documentation}
+\index{R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def@{R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def}!H\+S\+E\+State@{H\+S\+E\+State}}
+\index{H\+S\+E\+State@{H\+S\+E\+State}!R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def@{R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{H\+S\+E\+State}{HSEState}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def\+::\+H\+S\+E\+State}\hypertarget{struct_r_c_c___osc_init_type_def_a7e05d6eec98ed8cdaba00ca3d167ff72}{}\label{struct_r_c_c___osc_init_type_def_a7e05d6eec98ed8cdaba00ca3d167ff72}
+The new state of the H\+SE. This parameter can be a value of \hyperlink{group___r_c_c___h_s_e___config}{H\+SE Config} \index{R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def@{R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def}!H\+S\+I\+Calibration\+Value@{H\+S\+I\+Calibration\+Value}}
+\index{H\+S\+I\+Calibration\+Value@{H\+S\+I\+Calibration\+Value}!R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def@{R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{H\+S\+I\+Calibration\+Value}{HSICalibrationValue}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def\+::\+H\+S\+I\+Calibration\+Value}\hypertarget{struct_r_c_c___osc_init_type_def_a9b2e48e452d0c334f2b9473216064560}{}\label{struct_r_c_c___osc_init_type_def_a9b2e48e452d0c334f2b9473216064560}
+The calibration trimming value. This parameter must be a number between Min\+\_\+\+Data = 0x00 and Max\+\_\+\+Data = 0x1F \index{R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def@{R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def}!H\+S\+I\+State@{H\+S\+I\+State}}
+\index{H\+S\+I\+State@{H\+S\+I\+State}!R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def@{R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{H\+S\+I\+State}{HSIState}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def\+::\+H\+S\+I\+State}\hypertarget{struct_r_c_c___osc_init_type_def_a39b62cae65fe7a251000354e5bba8cb6}{}\label{struct_r_c_c___osc_init_type_def_a39b62cae65fe7a251000354e5bba8cb6}
+The new state of the H\+SI. This parameter can be a value of \hyperlink{group___r_c_c___h_s_i___config}{H\+SI Config} \index{R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def@{R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def}!L\+S\+E\+State@{L\+S\+E\+State}}
+\index{L\+S\+E\+State@{L\+S\+E\+State}!R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def@{R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{L\+S\+E\+State}{LSEState}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def\+::\+L\+S\+E\+State}\hypertarget{struct_r_c_c___osc_init_type_def_a7c1294e9407e69e80fe034caf35fe7ea}{}\label{struct_r_c_c___osc_init_type_def_a7c1294e9407e69e80fe034caf35fe7ea}
+The new state of the L\+SE. This parameter can be a value of \hyperlink{group___r_c_c___l_s_e___config}{L\+SE Config} \index{R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def@{R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def}!L\+S\+I\+State@{L\+S\+I\+State}}
+\index{L\+S\+I\+State@{L\+S\+I\+State}!R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def@{R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{L\+S\+I\+State}{LSIState}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def\+::\+L\+S\+I\+State}\hypertarget{struct_r_c_c___osc_init_type_def_a955de90db8882fde02c4fb59c7c000f0}{}\label{struct_r_c_c___osc_init_type_def_a955de90db8882fde02c4fb59c7c000f0}
+The new state of the L\+SI. This parameter can be a value of \hyperlink{group___r_c_c___l_s_i___config}{L\+SI Config} \index{R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def@{R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def}!Oscillator\+Type@{Oscillator\+Type}}
+\index{Oscillator\+Type@{Oscillator\+Type}!R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def@{R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Oscillator\+Type}{OscillatorType}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def\+::\+Oscillator\+Type}\hypertarget{struct_r_c_c___osc_init_type_def_af9e7bc89cab81c1705d94c74c7a81088}{}\label{struct_r_c_c___osc_init_type_def_af9e7bc89cab81c1705d94c74c7a81088}
+The oscillators to be configured. This parameter can be a value of \hyperlink{group___r_c_c___oscillator___type}{Oscillator Type} \index{R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def@{R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def}!P\+LL@{P\+LL}}
+\index{P\+LL@{P\+LL}!R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def@{R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{P\+LL}{PLL}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\+C\+C\+\_\+\+P\+L\+L\+Init\+Type\+Def} R\+C\+C\+\_\+\+Osc\+Init\+Type\+Def\+::\+P\+LL}\hypertarget{struct_r_c_c___osc_init_type_def_af76de5ee86798f0c3a4c83c84dfa58be}{}\label{struct_r_c_c___osc_init_type_def_af76de5ee86798f0c3a4c83c84dfa58be}
+P\+LL structure parameters 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dynamixel-\/\+M\+X106/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+N\+U\+C\+L\+E\+O\+\_\+\+F446\+R\+E/\hyperlink{stm32f4xx__hal__rcc_8h}{stm32f4xx\+\_\+hal\+\_\+rcc.\+h}\end{DoxyCompactItemize}

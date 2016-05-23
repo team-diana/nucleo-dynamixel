@@ -1,0 +1,51 @@
+\hypertarget{hal__tick_8h}{}\section{Dynamixel-\/\+M\+X106/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+N\+U\+C\+L\+E\+O\+\_\+\+F446\+R\+E/hal\+\_\+tick.h File Reference}
+\label{hal__tick_8h}\index{Dynamixel-\/\+M\+X106/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+N\+U\+C\+L\+E\+O\+\_\+\+F446\+R\+E/hal\+\_\+tick.\+h@{Dynamixel-\/\+M\+X106/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+N\+U\+C\+L\+E\+O\+\_\+\+F446\+R\+E/hal\+\_\+tick.\+h}}
+
+
+Initialization of H\+AL tick.  
+
+
+{\ttfamily \#include \char`\"{}stm32f4xx.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}cmsis\+\_\+nvic.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries T\+I\+M\+\_\+\+M\+ST}~T\+I\+M5\hypertarget{hal__tick_8h_ad2b99757a526068ad1844e1ad922819b}{}\label{hal__tick_8h_ad2b99757a526068ad1844e1ad922819b}
+
+\item 
+\#define {\bfseries T\+I\+M\+\_\+\+M\+S\+T\+\_\+\+I\+RQ}~\hyperlink{group___peripheral__interrupt__number__definition_gga7e1129cd8a196f4284d41db3e82ad5c8aed2eb3f4bb721d55fcc1003125956645}{T\+I\+M5\+\_\+\+I\+R\+Qn}\hypertarget{hal__tick_8h_acf115d485a4f16d7054e9f9eeefd6829}{}\label{hal__tick_8h_acf115d485a4f16d7054e9f9eeefd6829}
+
+\item 
+\#define {\bfseries T\+I\+M\+\_\+\+M\+S\+T\+\_\+\+R\+CC}~\+\_\+\+\_\+\+T\+I\+M5\+\_\+\+C\+L\+K\+\_\+\+E\+N\+A\+B\+LE()\hypertarget{hal__tick_8h_a0e271dbcf7843b6e1c9e3166e31dfbf4}{}\label{hal__tick_8h_a0e271dbcf7843b6e1c9e3166e31dfbf4}
+
+\item 
+\#define {\bfseries T\+I\+M\+\_\+\+M\+S\+T\+\_\+\+R\+E\+S\+E\+T\+\_\+\+ON}~\+\_\+\+\_\+\+T\+I\+M5\+\_\+\+F\+O\+R\+C\+E\+\_\+\+R\+E\+S\+ET()\hypertarget{hal__tick_8h_a1ccbe995990c4491505333e9344427a7}{}\label{hal__tick_8h_a1ccbe995990c4491505333e9344427a7}
+
+\item 
+\#define {\bfseries T\+I\+M\+\_\+\+M\+S\+T\+\_\+\+R\+E\+S\+E\+T\+\_\+\+O\+FF}~\+\_\+\+\_\+\+T\+I\+M5\+\_\+\+R\+E\+L\+E\+A\+S\+E\+\_\+\+R\+E\+S\+ET()\hypertarget{hal__tick_8h_ae077c54e7078e604f0e846744498f540}{}\label{hal__tick_8h_ae077c54e7078e604f0e846744498f540}
+
+\item 
+\#define {\bfseries H\+A\+L\+\_\+\+T\+I\+C\+K\+\_\+\+D\+E\+L\+AY}~(1000)\hypertarget{hal__tick_8h_a9df533781a3f6b1dc447313e50f618fd}{}\label{hal__tick_8h_a9df533781a3f6b1dc447313e50f618fd}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Initialization of H\+AL tick. 
+
+\begin{DoxyAuthor}{Author}
+M\+CD Application Team 
+\end{DoxyAuthor}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\subsubsection*{\begin{center}\copyright{} C\+O\+P\+Y\+R\+I\+G\+H\+T(c) 2015 S\+T\+Microelectronics\end{center} }
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met\+:
+\begin{DoxyEnumerate}
+\item Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+\item Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+\item Neither the name of S\+T\+Microelectronics nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+\end{DoxyEnumerate}
+
+T\+H\+IS S\+O\+F\+T\+W\+A\+RE IS P\+R\+O\+V\+I\+D\+ED BY T\+HE C\+O\+P\+Y\+R\+I\+G\+HT H\+O\+L\+D\+E\+RS A\+ND C\+O\+N\+T\+R\+I\+B\+U\+T\+O\+RS \char`\"{}\+A\+S I\+S\char`\"{} A\+ND A\+NY E\+X\+P\+R\+E\+SS OR I\+M\+P\+L\+I\+ED W\+A\+R\+R\+A\+N\+T\+I\+ES, I\+N\+C\+L\+U\+D\+I\+NG, B\+UT N\+OT L\+I\+M\+I\+T\+ED TO, T\+HE I\+M\+P\+L\+I\+ED W\+A\+R\+R\+A\+N\+T\+I\+ES OF M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY A\+ND F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE A\+RE D\+I\+S\+C\+L\+A\+I\+M\+ED. IN NO E\+V\+E\+NT S\+H\+A\+LL T\+HE C\+O\+P\+Y\+R\+I\+G\+HT H\+O\+L\+D\+ER OR C\+O\+N\+T\+R\+I\+B\+U\+T\+O\+RS BE L\+I\+A\+B\+LE F\+OR A\+NY D\+I\+R\+E\+CT, I\+N\+D\+I\+R\+E\+CT, I\+N\+C\+I\+D\+E\+N\+T\+AL, S\+P\+E\+C\+I\+AL, E\+X\+E\+M\+P\+L\+A\+RY, OR C\+O\+N\+S\+E\+Q\+U\+E\+N\+T\+I\+AL D\+A\+M\+A\+G\+ES (I\+N\+C\+L\+U\+D\+I\+NG, B\+UT N\+OT L\+I\+M\+I\+T\+ED TO, P\+R\+O\+C\+U\+R\+E\+M\+E\+NT OF S\+U\+B\+S\+T\+I\+T\+U\+TE G\+O\+O\+DS OR S\+E\+R\+V\+I\+C\+ES; L\+O\+SS OF U\+SE, D\+A\+TA, OR P\+R\+O\+F\+I\+TS; OR B\+U\+S\+I\+N\+E\+SS I\+N\+T\+E\+R\+R\+U\+P\+T\+I\+ON) H\+O\+W\+E\+V\+ER C\+A\+U\+S\+ED A\+ND ON A\+NY T\+H\+E\+O\+RY OF L\+I\+A\+B\+I\+L\+I\+TY, W\+H\+E\+T\+H\+ER IN C\+O\+N\+T\+R\+A\+CT, S\+T\+R\+I\+CT L\+I\+A\+B\+I\+L\+I\+TY, OR T\+O\+RT (I\+N\+C\+L\+U\+D\+I\+NG N\+E\+G\+L\+I\+G\+E\+N\+CE OR O\+T\+H\+E\+R\+W\+I\+SE) A\+R\+I\+S\+I\+NG IN A\+NY W\+AY O\+UT OF T\+HE U\+SE OF T\+H\+IS S\+O\+F\+T\+W\+A\+RE, E\+V\+EN IF A\+D\+V\+I\+S\+ED OF T\+HE P\+O\+S\+S\+I\+B\+I\+L\+I\+TY OF S\+U\+CH D\+A\+M\+A\+GE. 

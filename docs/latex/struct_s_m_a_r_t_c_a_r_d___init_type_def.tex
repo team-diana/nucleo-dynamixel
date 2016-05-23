@@ -1,0 +1,87 @@
+\hypertarget{struct_s_m_a_r_t_c_a_r_d___init_type_def}{}\section{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def Struct Reference}
+\label{struct_s_m_a_r_t_c_a_r_d___init_type_def}\index{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def@{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def}}
+
+
+S\+M\+A\+R\+T\+C\+A\+RD Init Structure definition.  
+
+
+
+
+{\ttfamily \#include $<$stm32f4xx\+\_\+hal\+\_\+smartcard.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{struct_s_m_a_r_t_c_a_r_d___init_type_def_ab7fd32cfbfc629344b4e4d5844e798cd}{Baud\+Rate}
+\item 
+uint32\+\_\+t \hyperlink{struct_s_m_a_r_t_c_a_r_d___init_type_def_a16a8ba82fbc742510824bb0d8e85fbbc}{Word\+Length}
+\item 
+uint32\+\_\+t \hyperlink{struct_s_m_a_r_t_c_a_r_d___init_type_def_ac0eb966bac71de17ace31fa5214c23f9}{Stop\+Bits}
+\item 
+uint32\+\_\+t \hyperlink{struct_s_m_a_r_t_c_a_r_d___init_type_def_aaefc9fdd7fd84b066ded393a3830743f}{Parity}
+\item 
+uint32\+\_\+t \hyperlink{struct_s_m_a_r_t_c_a_r_d___init_type_def_acf1faf22e7003550470b97b9f77425f9}{Mode}
+\item 
+uint32\+\_\+t \hyperlink{struct_s_m_a_r_t_c_a_r_d___init_type_def_abb3ca75bd370b08fcdf0d47c00741b0a}{C\+L\+K\+Polarity}
+\item 
+uint32\+\_\+t \hyperlink{struct_s_m_a_r_t_c_a_r_d___init_type_def_aea57d654156ac6b3eff7dae2bc4d6c5d}{C\+L\+K\+Phase}
+\item 
+uint32\+\_\+t \hyperlink{struct_s_m_a_r_t_c_a_r_d___init_type_def_a484c956dcdfc4e604758698b3541c128}{C\+L\+K\+Last\+Bit}
+\item 
+uint32\+\_\+t \hyperlink{struct_s_m_a_r_t_c_a_r_d___init_type_def_a7ff96c14ecfbe219a2773a1a2cf897a4}{Prescaler}
+\item 
+uint32\+\_\+t \hyperlink{struct_s_m_a_r_t_c_a_r_d___init_type_def_a5bfb799c3c7ee1faed6b1eda12c79f1a}{Guard\+Time}
+\item 
+uint32\+\_\+t \hyperlink{struct_s_m_a_r_t_c_a_r_d___init_type_def_a3be795a888d187da69f8dcdfab38da74}{N\+A\+C\+K\+State}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+M\+A\+R\+T\+C\+A\+RD Init Structure definition. 
+
+\subsection{Member Data Documentation}
+\index{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def@{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def}!Baud\+Rate@{Baud\+Rate}}
+\index{Baud\+Rate@{Baud\+Rate}!S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def@{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Baud\+Rate}{BaudRate}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def\+::\+Baud\+Rate}\hypertarget{struct_s_m_a_r_t_c_a_r_d___init_type_def_ab7fd32cfbfc629344b4e4d5844e798cd}{}\label{struct_s_m_a_r_t_c_a_r_d___init_type_def_ab7fd32cfbfc629344b4e4d5844e798cd}
+This member configures the Smart\+Card communication baud rate. The baud rate is computed using the following formula\+:
+\begin{DoxyItemize}
+\item Integer\+Divider = ((P\+C\+L\+Kx) / (8 $\ast$ (hirda-\/$>$Init.\+Baud\+Rate)))
+\item Fractional\+Divider = ((Integer\+Divider -\/ ((uint32\+\_\+t) Integer\+Divider)) $\ast$ 8) + 0.\+5 
+\end{DoxyItemize}\index{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def@{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def}!C\+L\+K\+Last\+Bit@{C\+L\+K\+Last\+Bit}}
+\index{C\+L\+K\+Last\+Bit@{C\+L\+K\+Last\+Bit}!S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def@{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{C\+L\+K\+Last\+Bit}{CLKLastBit}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def\+::\+C\+L\+K\+Last\+Bit}\hypertarget{struct_s_m_a_r_t_c_a_r_d___init_type_def_a484c956dcdfc4e604758698b3541c128}{}\label{struct_s_m_a_r_t_c_a_r_d___init_type_def_a484c956dcdfc4e604758698b3541c128}
+Specifies whether the clock pulse corresponding to the last transmitted data bit (M\+SB) has to be output on the S\+C\+LK pin in synchronous mode. This parameter can be a value of \hyperlink{group___s_m_a_r_t_c_a_r_d___last___bit}{S\+M\+A\+R\+T\+C\+A\+RD Last Bit} \index{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def@{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def}!C\+L\+K\+Phase@{C\+L\+K\+Phase}}
+\index{C\+L\+K\+Phase@{C\+L\+K\+Phase}!S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def@{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{C\+L\+K\+Phase}{CLKPhase}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def\+::\+C\+L\+K\+Phase}\hypertarget{struct_s_m_a_r_t_c_a_r_d___init_type_def_aea57d654156ac6b3eff7dae2bc4d6c5d}{}\label{struct_s_m_a_r_t_c_a_r_d___init_type_def_aea57d654156ac6b3eff7dae2bc4d6c5d}
+Specifies the clock transition on which the bit capture is made. This parameter can be a value of \hyperlink{group___s_m_a_r_t_c_a_r_d___clock___phase}{S\+M\+A\+R\+T\+C\+A\+RD Clock Phase} \index{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def@{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def}!C\+L\+K\+Polarity@{C\+L\+K\+Polarity}}
+\index{C\+L\+K\+Polarity@{C\+L\+K\+Polarity}!S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def@{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{C\+L\+K\+Polarity}{CLKPolarity}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def\+::\+C\+L\+K\+Polarity}\hypertarget{struct_s_m_a_r_t_c_a_r_d___init_type_def_abb3ca75bd370b08fcdf0d47c00741b0a}{}\label{struct_s_m_a_r_t_c_a_r_d___init_type_def_abb3ca75bd370b08fcdf0d47c00741b0a}
+Specifies the steady state of the serial clock. This parameter can be a value of \hyperlink{group___s_m_a_r_t_c_a_r_d___clock___polarity}{S\+M\+A\+R\+T\+C\+A\+RD Clock Polarity} \index{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def@{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def}!Guard\+Time@{Guard\+Time}}
+\index{Guard\+Time@{Guard\+Time}!S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def@{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Guard\+Time}{GuardTime}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def\+::\+Guard\+Time}\hypertarget{struct_s_m_a_r_t_c_a_r_d___init_type_def_a5bfb799c3c7ee1faed6b1eda12c79f1a}{}\label{struct_s_m_a_r_t_c_a_r_d___init_type_def_a5bfb799c3c7ee1faed6b1eda12c79f1a}
+Specifies the Smart\+Card Guard Time value in terms of number of baud clocks The value given in the register (5 significant bits) is multiplied by 2 to give the division factor of the source clock frequency \index{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def@{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def}!Mode@{Mode}}
+\index{Mode@{Mode}!S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def@{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Mode}{Mode}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def\+::\+Mode}\hypertarget{struct_s_m_a_r_t_c_a_r_d___init_type_def_acf1faf22e7003550470b97b9f77425f9}{}\label{struct_s_m_a_r_t_c_a_r_d___init_type_def_acf1faf22e7003550470b97b9f77425f9}
+Specifies whether the Receive or Transmit mode is enabled or disabled. This parameter can be a value of \hyperlink{group___s_m_a_r_t_c_a_r_d___mode}{S\+M\+A\+R\+T\+C\+A\+RD Mode} \index{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def@{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def}!N\+A\+C\+K\+State@{N\+A\+C\+K\+State}}
+\index{N\+A\+C\+K\+State@{N\+A\+C\+K\+State}!S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def@{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{N\+A\+C\+K\+State}{NACKState}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def\+::\+N\+A\+C\+K\+State}\hypertarget{struct_s_m_a_r_t_c_a_r_d___init_type_def_a3be795a888d187da69f8dcdfab38da74}{}\label{struct_s_m_a_r_t_c_a_r_d___init_type_def_a3be795a888d187da69f8dcdfab38da74}
+Specifies the Smart\+Card N\+A\+CK Transmission state. This parameter can be a value of \hyperlink{group___smart_card___n_a_c_k___state}{S\+M\+A\+R\+T\+C\+A\+RD N\+A\+CK State} \index{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def@{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def}!Parity@{Parity}}
+\index{Parity@{Parity}!S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def@{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Parity}{Parity}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def\+::\+Parity}\hypertarget{struct_s_m_a_r_t_c_a_r_d___init_type_def_aaefc9fdd7fd84b066ded393a3830743f}{}\label{struct_s_m_a_r_t_c_a_r_d___init_type_def_aaefc9fdd7fd84b066ded393a3830743f}
+Specifies the parity mode. This parameter can be a value of \hyperlink{group___s_m_a_r_t_c_a_r_d___parity}{S\+M\+A\+R\+T\+C\+A\+RD Parity} \begin{DoxyNote}{Note}
+When parity is enabled, the computed parity is inserted at the M\+SB position of the transmitted data (9th bit when the word length is set to 9 data bits; 8th bit when the word length is set to 8 data bits). 
+\end{DoxyNote}
+\index{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def@{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def}!Prescaler@{Prescaler}}
+\index{Prescaler@{Prescaler}!S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def@{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Prescaler}{Prescaler}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def\+::\+Prescaler}\hypertarget{struct_s_m_a_r_t_c_a_r_d___init_type_def_a7ff96c14ecfbe219a2773a1a2cf897a4}{}\label{struct_s_m_a_r_t_c_a_r_d___init_type_def_a7ff96c14ecfbe219a2773a1a2cf897a4}
+Specifies the Smart\+Card Prescaler value used for dividing the system clock to provide the smartcard clock This parameter can be a value of \hyperlink{group___s_m_a_r_t_c_a_r_d___prescaler}{S\+M\+A\+R\+T\+C\+A\+RD Prescaler} \index{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def@{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def}!Stop\+Bits@{Stop\+Bits}}
+\index{Stop\+Bits@{Stop\+Bits}!S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def@{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Stop\+Bits}{StopBits}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def\+::\+Stop\+Bits}\hypertarget{struct_s_m_a_r_t_c_a_r_d___init_type_def_ac0eb966bac71de17ace31fa5214c23f9}{}\label{struct_s_m_a_r_t_c_a_r_d___init_type_def_ac0eb966bac71de17ace31fa5214c23f9}
+Specifies the number of stop bits transmitted. This parameter can be a value of \hyperlink{group___s_m_a_r_t_c_a_r_d___stop___bits}{S\+M\+A\+R\+T\+C\+A\+RD Number of Stop Bits} \index{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def@{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def}!Word\+Length@{Word\+Length}}
+\index{Word\+Length@{Word\+Length}!S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def@{S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Word\+Length}{WordLength}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t S\+M\+A\+R\+T\+C\+A\+R\+D\+\_\+\+Init\+Type\+Def\+::\+Word\+Length}\hypertarget{struct_s_m_a_r_t_c_a_r_d___init_type_def_a16a8ba82fbc742510824bb0d8e85fbbc}{}\label{struct_s_m_a_r_t_c_a_r_d___init_type_def_a16a8ba82fbc742510824bb0d8e85fbbc}
+Specifies the number of data bits transmitted or received in a frame. This parameter can be a value of \hyperlink{group___s_m_a_r_t_c_a_r_d___word___length}{S\+M\+A\+R\+T\+C\+A\+RD Word Length} 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dynamixel-\/\+M\+X106/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+N\+U\+C\+L\+E\+O\+\_\+\+F446\+R\+E/\hyperlink{stm32f4xx__hal__smartcard_8h}{stm32f4xx\+\_\+hal\+\_\+smartcard.\+h}\end{DoxyCompactItemize}

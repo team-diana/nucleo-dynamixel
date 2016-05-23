@@ -1,0 +1,85 @@
+\hypertarget{struct_____d_m_a___handle_type_def}{}\section{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def Struct Reference}
+\label{struct_____d_m_a___handle_type_def}\index{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def}}
+
+
+D\+MA handle Structure definition.  
+
+
+
+
+{\ttfamily \#include $<$stm32f4xx\+\_\+hal\+\_\+dma.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_d_m_a___stream___type_def}{D\+M\+A\+\_\+\+Stream\+\_\+\+Type\+Def} $\ast$ \hyperlink{struct_____d_m_a___handle_type_def_ac4b645b1c2beb1107dbec7dae98747e1}{Instance}
+\item 
+\hyperlink{struct_d_m_a___init_type_def}{D\+M\+A\+\_\+\+Init\+Type\+Def} \hyperlink{struct_____d_m_a___handle_type_def_a3792cb34cedb0e2ab204e41b53ef75ad}{Init}
+\item 
+\hyperlink{stm32f4xx__hal__def_8h_ab367482e943333a1299294eadaad284b}{H\+A\+L\+\_\+\+Lock\+Type\+Def} \hyperlink{struct_____d_m_a___handle_type_def_a005e867f695aa4b85aca665af7345b51}{Lock}
+\item 
+\hyperlink{core__sc300_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO} \hyperlink{group___d_m_a___exported___types_ga9c012af359987a240826f29073bbe463}{H\+A\+L\+\_\+\+D\+M\+A\+\_\+\+State\+Type\+Def} \hyperlink{struct_____d_m_a___handle_type_def_a9759b676141bec799cdab94c3e08e6e4}{State}
+\item 
+void $\ast$ \hyperlink{struct_____d_m_a___handle_type_def_af42684decd26b1c5d49a529fcf99be30}{Parent}
+\item 
+void($\ast$ \hyperlink{struct_____d_m_a___handle_type_def_a4f323d8234b3f5f454a639e9df3cba23}{Xfer\+Cplt\+Callback} )(struct \hyperlink{struct_____d_m_a___handle_type_def}{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def} $\ast$hdma)
+\item 
+void($\ast$ \hyperlink{struct_____d_m_a___handle_type_def_a2e343c6a9135222a8efb8ca5bb5dad8c}{Xfer\+Half\+Cplt\+Callback} )(struct \hyperlink{struct_____d_m_a___handle_type_def}{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def} $\ast$hdma)
+\item 
+void($\ast$ \hyperlink{struct_____d_m_a___handle_type_def_a5968053a3674b44460c1aa150499e01d}{Xfer\+M1\+Cplt\+Callback} )(struct \hyperlink{struct_____d_m_a___handle_type_def}{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def} $\ast$hdma)
+\item 
+void($\ast$ \hyperlink{struct_____d_m_a___handle_type_def_a5905bba1de7dc9d803a50dfb44d0a9e8}{Xfer\+Error\+Callback} )(struct \hyperlink{struct_____d_m_a___handle_type_def}{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def} $\ast$hdma)
+\item 
+\hyperlink{core__sc300_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO} uint32\+\_\+t \hyperlink{struct_____d_m_a___handle_type_def_a67a2a8b907bc9b5c0af87f9de2bffc29}{Error\+Code}
+\item 
+uint32\+\_\+t \hyperlink{struct_____d_m_a___handle_type_def_ab9250d33bdf9de7b87fa4325382518c4}{Stream\+Base\+Address}
+\item 
+uint32\+\_\+t \hyperlink{struct_____d_m_a___handle_type_def_a3ada2bc091757d7b92ab8ca70211ccae}{Stream\+Index}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+D\+MA handle Structure definition. 
+
+\subsection{Member Data Documentation}
+\index{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def}!Error\+Code@{Error\+Code}}
+\index{Error\+Code@{Error\+Code}!\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Error\+Code}{ErrorCode}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \+\_\+\+\_\+\+IO} uint32\+\_\+t \+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def\+::\+Error\+Code}\hypertarget{struct_____d_m_a___handle_type_def_a67a2a8b907bc9b5c0af87f9de2bffc29}{}\label{struct_____d_m_a___handle_type_def_a67a2a8b907bc9b5c0af87f9de2bffc29}
+D\+MA Error code \index{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def}!Init@{Init}}
+\index{Init@{Init}!\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Init}{Init}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+M\+A\+\_\+\+Init\+Type\+Def} \+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def\+::\+Init}\hypertarget{struct_____d_m_a___handle_type_def_a3792cb34cedb0e2ab204e41b53ef75ad}{}\label{struct_____d_m_a___handle_type_def_a3792cb34cedb0e2ab204e41b53ef75ad}
+D\+MA communication parameters \index{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def}!Instance@{Instance}}
+\index{Instance@{Instance}!\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Instance}{Instance}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+M\+A\+\_\+\+Stream\+\_\+\+Type\+Def}$\ast$ \+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def\+::\+Instance}\hypertarget{struct_____d_m_a___handle_type_def_ac4b645b1c2beb1107dbec7dae98747e1}{}\label{struct_____d_m_a___handle_type_def_ac4b645b1c2beb1107dbec7dae98747e1}
+Register base address \index{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def}!Lock@{Lock}}
+\index{Lock@{Lock}!\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Lock}{Lock}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf H\+A\+L\+\_\+\+Lock\+Type\+Def} \+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def\+::\+Lock}\hypertarget{struct_____d_m_a___handle_type_def_a005e867f695aa4b85aca665af7345b51}{}\label{struct_____d_m_a___handle_type_def_a005e867f695aa4b85aca665af7345b51}
+D\+MA locking object \index{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def}!Parent@{Parent}}
+\index{Parent@{Parent}!\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Parent}{Parent}}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ \+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def\+::\+Parent}\hypertarget{struct_____d_m_a___handle_type_def_af42684decd26b1c5d49a529fcf99be30}{}\label{struct_____d_m_a___handle_type_def_af42684decd26b1c5d49a529fcf99be30}
+Parent object state \index{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def}!State@{State}}
+\index{State@{State}!\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def}}
+\subsubsection[{\texorpdfstring{State}{State}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \+\_\+\+\_\+\+IO} {\bf H\+A\+L\+\_\+\+D\+M\+A\+\_\+\+State\+Type\+Def} \+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def\+::\+State}\hypertarget{struct_____d_m_a___handle_type_def_a9759b676141bec799cdab94c3e08e6e4}{}\label{struct_____d_m_a___handle_type_def_a9759b676141bec799cdab94c3e08e6e4}
+D\+MA transfer state \index{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def}!Stream\+Base\+Address@{Stream\+Base\+Address}}
+\index{Stream\+Base\+Address@{Stream\+Base\+Address}!\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Stream\+Base\+Address}{StreamBaseAddress}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t \+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def\+::\+Stream\+Base\+Address}\hypertarget{struct_____d_m_a___handle_type_def_ab9250d33bdf9de7b87fa4325382518c4}{}\label{struct_____d_m_a___handle_type_def_ab9250d33bdf9de7b87fa4325382518c4}
+D\+MA Stream Base Address \index{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def}!Stream\+Index@{Stream\+Index}}
+\index{Stream\+Index@{Stream\+Index}!\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Stream\+Index}{StreamIndex}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t \+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def\+::\+Stream\+Index}\hypertarget{struct_____d_m_a___handle_type_def_a3ada2bc091757d7b92ab8ca70211ccae}{}\label{struct_____d_m_a___handle_type_def_a3ada2bc091757d7b92ab8ca70211ccae}
+D\+MA Stream Index \index{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def}!Xfer\+Cplt\+Callback@{Xfer\+Cplt\+Callback}}
+\index{Xfer\+Cplt\+Callback@{Xfer\+Cplt\+Callback}!\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Xfer\+Cplt\+Callback}{XferCpltCallback}}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$  \+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def\+::\+Xfer\+Cplt\+Callback) (struct {\bf \+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def} $\ast$hdma)}\hypertarget{struct_____d_m_a___handle_type_def_a4f323d8234b3f5f454a639e9df3cba23}{}\label{struct_____d_m_a___handle_type_def_a4f323d8234b3f5f454a639e9df3cba23}
+D\+MA transfer complete callback \index{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def}!Xfer\+Error\+Callback@{Xfer\+Error\+Callback}}
+\index{Xfer\+Error\+Callback@{Xfer\+Error\+Callback}!\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Xfer\+Error\+Callback}{XferErrorCallback}}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$  \+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def\+::\+Xfer\+Error\+Callback) (struct {\bf \+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def} $\ast$hdma)}\hypertarget{struct_____d_m_a___handle_type_def_a5905bba1de7dc9d803a50dfb44d0a9e8}{}\label{struct_____d_m_a___handle_type_def_a5905bba1de7dc9d803a50dfb44d0a9e8}
+D\+MA transfer error callback \index{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def}!Xfer\+Half\+Cplt\+Callback@{Xfer\+Half\+Cplt\+Callback}}
+\index{Xfer\+Half\+Cplt\+Callback@{Xfer\+Half\+Cplt\+Callback}!\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Xfer\+Half\+Cplt\+Callback}{XferHalfCpltCallback}}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$  \+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def\+::\+Xfer\+Half\+Cplt\+Callback) (struct {\bf \+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def} $\ast$hdma)}\hypertarget{struct_____d_m_a___handle_type_def_a2e343c6a9135222a8efb8ca5bb5dad8c}{}\label{struct_____d_m_a___handle_type_def_a2e343c6a9135222a8efb8ca5bb5dad8c}
+D\+MA Half transfer complete callback \index{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def}!Xfer\+M1\+Cplt\+Callback@{Xfer\+M1\+Cplt\+Callback}}
+\index{Xfer\+M1\+Cplt\+Callback@{Xfer\+M1\+Cplt\+Callback}!\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Xfer\+M1\+Cplt\+Callback}{XferM1CpltCallback}}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$  \+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def\+::\+Xfer\+M1\+Cplt\+Callback) (struct {\bf \+\_\+\+\_\+\+D\+M\+A\+\_\+\+Handle\+Type\+Def} $\ast$hdma)}\hypertarget{struct_____d_m_a___handle_type_def_a5968053a3674b44460c1aa150499e01d}{}\label{struct_____d_m_a___handle_type_def_a5968053a3674b44460c1aa150499e01d}
+D\+MA transfer complete Memory1 callback 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dynamixel-\/\+M\+X106/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+N\+U\+C\+L\+E\+O\+\_\+\+F446\+R\+E/\hyperlink{stm32f4xx__hal__dma_8h}{stm32f4xx\+\_\+hal\+\_\+dma.\+h}\end{DoxyCompactItemize}

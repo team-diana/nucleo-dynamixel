@@ -1,0 +1,80 @@
+\hypertarget{struct_f_m_c___n_o_r_s_r_a_m___timing_type_def}{}\section{F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def Struct Reference}
+\label{struct_f_m_c___n_o_r_s_r_a_m___timing_type_def}\index{F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def}}
+
+
+F\+MC N\+O\+R\+S\+R\+AM Timing parameters structure definition.  
+
+
+
+
+{\ttfamily \#include $<$stm32f4xx\+\_\+ll\+\_\+fmc.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{struct_f_m_c___n_o_r_s_r_a_m___timing_type_def_a3a22f760a9ddd85f0e256efa6d8ff8dd}{Address\+Setup\+Time}
+\item 
+uint32\+\_\+t \hyperlink{struct_f_m_c___n_o_r_s_r_a_m___timing_type_def_a93fe36daa1ceddc36ea168542dcdd010}{Address\+Hold\+Time}
+\item 
+uint32\+\_\+t \hyperlink{struct_f_m_c___n_o_r_s_r_a_m___timing_type_def_a6d98531021e36edf901d6cb01d6adaaa}{Data\+Setup\+Time}
+\item 
+uint32\+\_\+t \hyperlink{struct_f_m_c___n_o_r_s_r_a_m___timing_type_def_a430810aecc228ce17dd109c7a709da58}{Bus\+Turn\+Around\+Duration}
+\item 
+uint32\+\_\+t \hyperlink{struct_f_m_c___n_o_r_s_r_a_m___timing_type_def_a093fa589f174cde14dbc2c6caeee08ff}{C\+L\+K\+Division}
+\item 
+uint32\+\_\+t \hyperlink{struct_f_m_c___n_o_r_s_r_a_m___timing_type_def_ad747ab03382954e5b7db99c1448f8a88}{Data\+Latency}
+\item 
+uint32\+\_\+t \hyperlink{struct_f_m_c___n_o_r_s_r_a_m___timing_type_def_a749d0d44b1fd4e711b0a6897edc3ccfc}{Access\+Mode}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+F\+MC N\+O\+R\+S\+R\+AM Timing parameters structure definition. 
+
+\subsection{Member Data Documentation}
+\index{F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def}!Access\+Mode@{Access\+Mode}}
+\index{Access\+Mode@{Access\+Mode}!F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Access\+Mode}{AccessMode}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def\+::\+Access\+Mode}\hypertarget{struct_f_m_c___n_o_r_s_r_a_m___timing_type_def_a749d0d44b1fd4e711b0a6897edc3ccfc}{}\label{struct_f_m_c___n_o_r_s_r_a_m___timing_type_def_a749d0d44b1fd4e711b0a6897edc3ccfc}
+Specifies the asynchronous access mode. This parameter can be a value of \hyperlink{group___f_m_c___access___mode}{F\+MC Access Mode} \index{F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def}!Address\+Hold\+Time@{Address\+Hold\+Time}}
+\index{Address\+Hold\+Time@{Address\+Hold\+Time}!F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Address\+Hold\+Time}{AddressHoldTime}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def\+::\+Address\+Hold\+Time}\hypertarget{struct_f_m_c___n_o_r_s_r_a_m___timing_type_def_a93fe36daa1ceddc36ea168542dcdd010}{}\label{struct_f_m_c___n_o_r_s_r_a_m___timing_type_def_a93fe36daa1ceddc36ea168542dcdd010}
+Defines the number of H\+C\+LK cycles to configure the duration of the address hold time. This parameter can be a value between Min\+\_\+\+Data = 1 and Max\+\_\+\+Data = 15. \begin{DoxyNote}{Note}
+This parameter is not used with synchronous N\+OR Flash memories. 
+\end{DoxyNote}
+\index{F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def}!Address\+Setup\+Time@{Address\+Setup\+Time}}
+\index{Address\+Setup\+Time@{Address\+Setup\+Time}!F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Address\+Setup\+Time}{AddressSetupTime}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def\+::\+Address\+Setup\+Time}\hypertarget{struct_f_m_c___n_o_r_s_r_a_m___timing_type_def_a3a22f760a9ddd85f0e256efa6d8ff8dd}{}\label{struct_f_m_c___n_o_r_s_r_a_m___timing_type_def_a3a22f760a9ddd85f0e256efa6d8ff8dd}
+Defines the number of H\+C\+LK cycles to configure the duration of the address setup time. This parameter can be a value between Min\+\_\+\+Data = 0 and Max\+\_\+\+Data = 15. \begin{DoxyNote}{Note}
+This parameter is not used with synchronous N\+OR Flash memories. 
+\end{DoxyNote}
+\index{F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def}!Bus\+Turn\+Around\+Duration@{Bus\+Turn\+Around\+Duration}}
+\index{Bus\+Turn\+Around\+Duration@{Bus\+Turn\+Around\+Duration}!F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Bus\+Turn\+Around\+Duration}{BusTurnAroundDuration}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def\+::\+Bus\+Turn\+Around\+Duration}\hypertarget{struct_f_m_c___n_o_r_s_r_a_m___timing_type_def_a430810aecc228ce17dd109c7a709da58}{}\label{struct_f_m_c___n_o_r_s_r_a_m___timing_type_def_a430810aecc228ce17dd109c7a709da58}
+Defines the number of H\+C\+LK cycles to configure the duration of the bus turnaround. This parameter can be a value between Min\+\_\+\+Data = 0 and Max\+\_\+\+Data = 15. \begin{DoxyNote}{Note}
+This parameter is only used for multiplexed N\+OR Flash memories. 
+\end{DoxyNote}
+\index{F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def}!C\+L\+K\+Division@{C\+L\+K\+Division}}
+\index{C\+L\+K\+Division@{C\+L\+K\+Division}!F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def}}
+\subsubsection[{\texorpdfstring{C\+L\+K\+Division}{CLKDivision}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def\+::\+C\+L\+K\+Division}\hypertarget{struct_f_m_c___n_o_r_s_r_a_m___timing_type_def_a093fa589f174cde14dbc2c6caeee08ff}{}\label{struct_f_m_c___n_o_r_s_r_a_m___timing_type_def_a093fa589f174cde14dbc2c6caeee08ff}
+Defines the period of C\+LK clock output signal, expressed in number of H\+C\+LK cycles. This parameter can be a value between Min\+\_\+\+Data = 2 and Max\+\_\+\+Data = 16. \begin{DoxyNote}{Note}
+This parameter is not used for asynchronous N\+OR Flash, S\+R\+AM or R\+OM accesses. 
+\end{DoxyNote}
+\index{F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def}!Data\+Latency@{Data\+Latency}}
+\index{Data\+Latency@{Data\+Latency}!F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Data\+Latency}{DataLatency}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def\+::\+Data\+Latency}\hypertarget{struct_f_m_c___n_o_r_s_r_a_m___timing_type_def_ad747ab03382954e5b7db99c1448f8a88}{}\label{struct_f_m_c___n_o_r_s_r_a_m___timing_type_def_ad747ab03382954e5b7db99c1448f8a88}
+Defines the number of memory clock cycles to issue to the memory before getting the first data. The parameter value depends on the memory type as shown below\+:
+\begin{DoxyItemize}
+\item It must be set to 0 in case of a C\+R\+AM
+\item It is don\textquotesingle{}t care in asynchronous N\+OR, S\+R\+AM or R\+OM accesses
+\item It may assume a value between Min\+\_\+\+Data = 2 and Max\+\_\+\+Data = 17 in N\+OR Flash memories with synchronous burst mode enable 
+\end{DoxyItemize}\index{F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def}!Data\+Setup\+Time@{Data\+Setup\+Time}}
+\index{Data\+Setup\+Time@{Data\+Setup\+Time}!F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Data\+Setup\+Time}{DataSetupTime}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t F\+M\+C\+\_\+\+N\+O\+R\+S\+R\+A\+M\+\_\+\+Timing\+Type\+Def\+::\+Data\+Setup\+Time}\hypertarget{struct_f_m_c___n_o_r_s_r_a_m___timing_type_def_a6d98531021e36edf901d6cb01d6adaaa}{}\label{struct_f_m_c___n_o_r_s_r_a_m___timing_type_def_a6d98531021e36edf901d6cb01d6adaaa}
+Defines the number of H\+C\+LK cycles to configure the duration of the data setup time. This parameter can be a value between Min\+\_\+\+Data = 1 and Max\+\_\+\+Data = 255. \begin{DoxyNote}{Note}
+This parameter is used for S\+R\+A\+Ms, R\+O\+Ms and asynchronous multiplexed N\+OR Flash memories. 
+\end{DoxyNote}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dynamixel-\/\+M\+X106/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+N\+U\+C\+L\+E\+O\+\_\+\+F446\+R\+E/\hyperlink{stm32f4xx__ll__fmc_8h}{stm32f4xx\+\_\+ll\+\_\+fmc.\+h}\end{DoxyCompactItemize}

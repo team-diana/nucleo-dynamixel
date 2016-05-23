@@ -1,0 +1,684 @@
+\hypertarget{group___m_m_u___functions}{}\section{M\+MU Functions Interface}
+\label{group___m_m_u___functions}\index{M\+M\+U Functions Interface@{M\+M\+U Functions Interface}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_region_struct}{Region\+Struct}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct_region_struct}{Region\+Struct} {\bfseries mmu\+\_\+region\+\_\+attributes\+\_\+\+Type}\hypertarget{group___m_m_u___functions_gad9e25908bfe54c82c1757bfbde67315e}{}\label{group___m_m_u___functions_gad9e25908bfe54c82c1757bfbde67315e}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries mmu\+\_\+region\+\_\+size\+\_\+\+Type} \{ {\bfseries S\+E\+C\+T\+I\+ON}, 
+{\bfseries P\+A\+G\+E\+\_\+4k}, 
+{\bfseries P\+A\+G\+E\+\_\+64k}
+ \}\hypertarget{group___m_m_u___functions_gab184b824a6d7cb728bd46c6abcd0c21a}{}\label{group___m_m_u___functions_gab184b824a6d7cb728bd46c6abcd0c21a}
+
+\item 
+enum {\bfseries mmu\+\_\+memory\+\_\+\+Type} \{ \\*
+{\bfseries N\+O\+R\+M\+AL}, 
+{\bfseries D\+E\+V\+I\+CE}, 
+{\bfseries S\+H\+A\+R\+E\+D\+\_\+\+D\+E\+V\+I\+CE}, 
+{\bfseries N\+O\+N\+\_\+\+S\+H\+A\+R\+E\+D\+\_\+\+D\+E\+V\+I\+CE}, 
+\\*
+{\bfseries S\+T\+R\+O\+N\+G\+L\+Y\+\_\+\+O\+R\+D\+E\+R\+ED}
+ \}\hypertarget{group___m_m_u___functions_ga83ac8de9263f89879079da521e86d5f2}{}\label{group___m_m_u___functions_ga83ac8de9263f89879079da521e86d5f2}
+
+\item 
+enum {\bfseries mmu\+\_\+cacheability\+\_\+\+Type} \{ {\bfseries N\+O\+N\+\_\+\+C\+A\+C\+H\+E\+A\+B\+LE}, 
+{\bfseries W\+B\+\_\+\+WA}, 
+{\bfseries WT}, 
+{\bfseries W\+B\+\_\+\+N\+O\+\_\+\+WA}
+ \}\hypertarget{group___m_m_u___functions_ga11c86b7b193efb2c59b6a2179a02f584}{}\label{group___m_m_u___functions_ga11c86b7b193efb2c59b6a2179a02f584}
+
+\item 
+enum {\bfseries mmu\+\_\+ecc\+\_\+check\+\_\+\+Type} \{ {\bfseries E\+C\+C\+\_\+\+D\+I\+S\+A\+B\+L\+ED}, 
+{\bfseries E\+C\+C\+\_\+\+E\+N\+A\+B\+L\+ED}
+ \}\hypertarget{group___m_m_u___functions_ga06d94c0eaa22d713636acaff81485409}{}\label{group___m_m_u___functions_ga06d94c0eaa22d713636acaff81485409}
+
+\item 
+enum {\bfseries mmu\+\_\+execute\+\_\+\+Type} \{ {\bfseries E\+X\+E\+C\+U\+TE}, 
+{\bfseries N\+O\+N\+\_\+\+E\+X\+E\+C\+U\+TE}
+ \}\hypertarget{group___m_m_u___functions_ga2fe1157deda82e66b9a1b19772309b63}{}\label{group___m_m_u___functions_ga2fe1157deda82e66b9a1b19772309b63}
+
+\item 
+enum {\bfseries mmu\+\_\+global\+\_\+\+Type} \{ {\bfseries G\+L\+O\+B\+AL}, 
+{\bfseries N\+O\+N\+\_\+\+G\+L\+O\+B\+AL}
+ \}\hypertarget{group___m_m_u___functions_ga04160605fbe20914c8ef020430684a30}{}\label{group___m_m_u___functions_ga04160605fbe20914c8ef020430684a30}
+
+\item 
+enum {\bfseries mmu\+\_\+shared\+\_\+\+Type} \{ {\bfseries N\+O\+N\+\_\+\+S\+H\+A\+R\+ED}, 
+{\bfseries S\+H\+A\+R\+ED}
+ \}\hypertarget{group___m_m_u___functions_gab884a11fa8d094573ab77fb1c0f8d8a7}{}\label{group___m_m_u___functions_gab884a11fa8d094573ab77fb1c0f8d8a7}
+
+\item 
+enum {\bfseries mmu\+\_\+secure\+\_\+\+Type} \{ {\bfseries S\+E\+C\+U\+RE}, 
+{\bfseries N\+O\+N\+\_\+\+S\+E\+C\+U\+RE}
+ \}\hypertarget{group___m_m_u___functions_gac3d277641df9fb3bb3b555e2e79dd639}{}\label{group___m_m_u___functions_gac3d277641df9fb3bb3b555e2e79dd639}
+
+\item 
+enum {\bfseries mmu\+\_\+access\+\_\+\+Type} \{ {\bfseries N\+O\+\_\+\+A\+C\+C\+E\+SS}, 
+{\bfseries RW}, 
+{\bfseries R\+E\+AD}
+ \}\hypertarget{group___m_m_u___functions_ga2ee598252f996e4f96640b096291d280}{}\label{group___m_m_u___functions_ga2ee598252f996e4f96640b096291d280}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \hyperlink{group___m_m_u___functions_gaac58bd6af8c207174df553059a28263e}{\+\_\+\+\_\+xn\+\_\+section} (uint32\+\_\+t $\ast$descriptor\+\_\+l1, mmu\+\_\+execute\+\_\+\+Type xn)
+\begin{DoxyCompactList}\small\item\em Set section execution-\/never attribute. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \hyperlink{group___m_m_u___functions_gab9c5062b00045439b84362310c3bc5d0}{\+\_\+\+\_\+domain\+\_\+section} (uint32\+\_\+t $\ast$descriptor\+\_\+l1, uint8\+\_\+t domain)
+\begin{DoxyCompactList}\small\item\em Set section domain. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \hyperlink{group___m_m_u___functions_ga47d76089fa83ddf1ad420f37c2787f8e}{\+\_\+\+\_\+p\+\_\+section} (uint32\+\_\+t $\ast$descriptor\+\_\+l1, mmu\+\_\+ecc\+\_\+check\+\_\+\+Type p\+\_\+bit)
+\begin{DoxyCompactList}\small\item\em Set section parity check. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \hyperlink{group___m_m_u___functions_ga5f069f471adb154153051c570c3a6ab2}{\+\_\+\+\_\+ap\+\_\+section} (uint32\+\_\+t $\ast$descriptor\+\_\+l1, mmu\+\_\+access\+\_\+\+Type user, mmu\+\_\+access\+\_\+\+Type priv, uint32\+\_\+t afe)
+\begin{DoxyCompactList}\small\item\em Set section access privileges. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \hyperlink{group___m_m_u___functions_ga9913b6ac45889fea12f9caa6292b89b3}{\+\_\+\+\_\+shared\+\_\+section} (uint32\+\_\+t $\ast$descriptor\+\_\+l1, mmu\+\_\+shared\+\_\+\+Type s\+\_\+bit)
+\begin{DoxyCompactList}\small\item\em Set section shareability. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \hyperlink{group___m_m_u___functions_gab9ebaae8d22bfbff6ce2909c778ca43a}{\+\_\+\+\_\+global\+\_\+section} (uint32\+\_\+t $\ast$descriptor\+\_\+l1, mmu\+\_\+global\+\_\+\+Type g\+\_\+bit)
+\begin{DoxyCompactList}\small\item\em Set section Global attribute. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \hyperlink{group___m_m_u___functions_gac1430230710ffbf0f3f279f118b0f8b3}{\+\_\+\+\_\+secure\+\_\+section} (uint32\+\_\+t $\ast$descriptor\+\_\+l1, mmu\+\_\+secure\+\_\+\+Type s\+\_\+bit)
+\begin{DoxyCompactList}\small\item\em Set section Security attribute. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \hyperlink{group___m_m_u___functions_ga29333191c243fead911c3a25586583ef}{\+\_\+\+\_\+xn\+\_\+page} (uint32\+\_\+t $\ast$descriptor\+\_\+l2, mmu\+\_\+execute\+\_\+\+Type xn, mmu\+\_\+region\+\_\+size\+\_\+\+Type page)
+\begin{DoxyCompactList}\small\item\em Set 4k/64k page execution-\/never attribute. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \hyperlink{group___m_m_u___functions_gaf6ade9af49080e011c6ac9ad46b4993f}{\+\_\+\+\_\+domain\+\_\+page} (uint32\+\_\+t $\ast$descriptor\+\_\+l1, uint8\+\_\+t domain)
+\begin{DoxyCompactList}\small\item\em Set 4k/64k page domain. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \hyperlink{group___m_m_u___functions_gad99cf050a448feeb534988003e38b861}{\+\_\+\+\_\+p\+\_\+page} (uint32\+\_\+t $\ast$descriptor\+\_\+l1, mmu\+\_\+ecc\+\_\+check\+\_\+\+Type p\+\_\+bit)
+\begin{DoxyCompactList}\small\item\em Set 4k/64k page parity check. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \hyperlink{group___m_m_u___functions_gaf87456022881530f30354c3e84955bf8}{\+\_\+\+\_\+ap\+\_\+page} (uint32\+\_\+t $\ast$descriptor\+\_\+l2, mmu\+\_\+access\+\_\+\+Type user, mmu\+\_\+access\+\_\+\+Type priv, uint32\+\_\+t afe)
+\begin{DoxyCompactList}\small\item\em Set 4k/64k page access privileges. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \hyperlink{group___m_m_u___functions_gae48e2237412f51af7bdbd7d4d3d5125d}{\+\_\+\+\_\+shared\+\_\+page} (uint32\+\_\+t $\ast$descriptor\+\_\+l2, mmu\+\_\+shared\+\_\+\+Type s\+\_\+bit)
+\begin{DoxyCompactList}\small\item\em Set 4k/64k page shareability. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \hyperlink{group___m_m_u___functions_ga941feca37d9210110e090dc4ecd43ca5}{\+\_\+\+\_\+global\+\_\+page} (uint32\+\_\+t $\ast$descriptor\+\_\+l2, mmu\+\_\+global\+\_\+\+Type g\+\_\+bit)
+\begin{DoxyCompactList}\small\item\em Set 4k/64k page Global attribute. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \hyperlink{group___m_m_u___functions_ga27417dca4e862ec314c09fd2b89383ff}{\+\_\+\+\_\+secure\+\_\+page} (uint32\+\_\+t $\ast$descriptor\+\_\+l1, mmu\+\_\+secure\+\_\+\+Type s\+\_\+bit)
+\begin{DoxyCompactList}\small\item\em Set 4k/64k page Security attribute. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \hyperlink{group___m_m_u___functions_ga3883e7cea429d89d07e32fe69b241565}{\+\_\+\+\_\+memory\+\_\+section} (uint32\+\_\+t $\ast$descriptor\+\_\+l1, mmu\+\_\+memory\+\_\+\+Type mem, mmu\+\_\+cacheability\+\_\+\+Type outer, mmu\+\_\+cacheability\+\_\+\+Type inner)
+\begin{DoxyCompactList}\small\item\em Set Section memory attributes. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \hyperlink{group___m_m_u___functions_ga3eb167ca2d2e63c53a62ac1fb7cde793}{\+\_\+\+\_\+memory\+\_\+page} (uint32\+\_\+t $\ast$descriptor\+\_\+l2, mmu\+\_\+memory\+\_\+\+Type mem, mmu\+\_\+cacheability\+\_\+\+Type outer, mmu\+\_\+cacheability\+\_\+\+Type inner, mmu\+\_\+region\+\_\+size\+\_\+\+Type page)
+\begin{DoxyCompactList}\small\item\em Set 4k/64k page memory attributes. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \hyperlink{group___m_m_u___functions_gaba0a8d570464881118b1594d32237547}{\+\_\+\+\_\+get\+\_\+section\+\_\+descriptor} (uint32\+\_\+t $\ast$descriptor, \hyperlink{struct_region_struct}{mmu\+\_\+region\+\_\+attributes\+\_\+\+Type} reg)
+\begin{DoxyCompactList}\small\item\em Create a L1 section descriptor. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \hyperlink{group___m_m_u___functions_ga8ebe9d61b0b1e139068fd24e61f042b0}{\+\_\+\+\_\+get\+\_\+page\+\_\+descriptor} (uint32\+\_\+t $\ast$descriptor, uint32\+\_\+t $\ast$descriptor2, \hyperlink{struct_region_struct}{mmu\+\_\+region\+\_\+attributes\+\_\+\+Type} reg)
+\begin{DoxyCompactList}\small\item\em Create a L1 and L2 4k/64k page descriptor. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE void \hyperlink{group___m_m_u___functions_gafb0322c3afe9d9b67411eb1e5d093d2e}{\+\_\+\+\_\+\+T\+T\+Section} (uint32\+\_\+t $\ast$ttb, uint32\+\_\+t base\+\_\+address, uint32\+\_\+t count, uint32\+\_\+t descriptor\+\_\+l1)
+\begin{DoxyCompactList}\small\item\em Create a 1\+MB Section. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE void \hyperlink{group___m_m_u___functions_gab749bcf38edf77ab4112682e0e34834c}{\+\_\+\+\_\+\+T\+T\+Page\+\_\+4k} (uint32\+\_\+t $\ast$ttb, uint32\+\_\+t base\+\_\+address, uint32\+\_\+t count, uint32\+\_\+t descriptor\+\_\+l1, uint32\+\_\+t $\ast$ttb\+\_\+l2, uint32\+\_\+t descriptor\+\_\+l2)
+\begin{DoxyCompactList}\small\item\em Create a 4k page entry. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE void \hyperlink{group___m_m_u___functions_gacf942453d586ba20dd49c7d7d2e073a3}{\+\_\+\+\_\+\+T\+T\+Page\+\_\+64k} (uint32\+\_\+t $\ast$ttb, uint32\+\_\+t base\+\_\+address, uint32\+\_\+t count, uint32\+\_\+t descriptor\+\_\+l1, uint32\+\_\+t $\ast$ttb\+\_\+l2, uint32\+\_\+t descriptor\+\_\+l2)
+\begin{DoxyCompactList}\small\item\em Create a 64k page entry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\index{M\+M\+U Functions Interface@{M\+M\+U Functions Interface}!\+\_\+\+\_\+ap\+\_\+page@{\+\_\+\+\_\+ap\+\_\+page}}
+\index{\+\_\+\+\_\+ap\+\_\+page@{\+\_\+\+\_\+ap\+\_\+page}!M\+M\+U Functions Interface@{M\+M\+U Functions Interface}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+ap\+\_\+page(uint32\+\_\+t $\ast$descriptor\+\_\+l2, mmu\+\_\+access\+\_\+\+Type user, mmu\+\_\+access\+\_\+\+Type priv, uint32\+\_\+t afe)}{__ap_page(uint32_t *descriptor_l2, mmu_access_Type user, mmu_access_Type priv, uint32_t afe)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \+\_\+\+\_\+ap\+\_\+page (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t $\ast$}]{descriptor\+\_\+l2, }
+\item[{mmu\+\_\+access\+\_\+\+Type}]{user, }
+\item[{mmu\+\_\+access\+\_\+\+Type}]{priv, }
+\item[{uint32\+\_\+t}]{afe}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_m_u___functions_gaf87456022881530f30354c3e84955bf8}{}\label{group___m_m_u___functions_gaf87456022881530f30354c3e84955bf8}
+
+
+Set 4k/64k page access privileges. 
+
+The function sets 4k/64k page access privileges
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em descriptor\+\_\+l2} & L2 descriptor. \\
+\hline
+\mbox{\tt in}  & {\em user} & User Level Access\+: N\+O\+\_\+\+A\+C\+C\+E\+SS, RW, R\+E\+AD \\
+\hline
+\mbox{\tt in}  & {\em priv} & Privilege Level Access\+: N\+O\+\_\+\+A\+C\+C\+E\+SS, RW, R\+E\+AD \\
+\hline
+\mbox{\tt in}  & {\em afe} & Access flag enable\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}
+\index{M\+M\+U Functions Interface@{M\+M\+U Functions Interface}!\+\_\+\+\_\+ap\+\_\+section@{\+\_\+\+\_\+ap\+\_\+section}}
+\index{\+\_\+\+\_\+ap\+\_\+section@{\+\_\+\+\_\+ap\+\_\+section}!M\+M\+U Functions Interface@{M\+M\+U Functions Interface}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+ap\+\_\+section(uint32\+\_\+t $\ast$descriptor\+\_\+l1, mmu\+\_\+access\+\_\+\+Type user, mmu\+\_\+access\+\_\+\+Type priv, uint32\+\_\+t afe)}{__ap_section(uint32_t *descriptor_l1, mmu_access_Type user, mmu_access_Type priv, uint32_t afe)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \+\_\+\+\_\+ap\+\_\+section (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t $\ast$}]{descriptor\+\_\+l1, }
+\item[{mmu\+\_\+access\+\_\+\+Type}]{user, }
+\item[{mmu\+\_\+access\+\_\+\+Type}]{priv, }
+\item[{uint32\+\_\+t}]{afe}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_m_u___functions_ga5f069f471adb154153051c570c3a6ab2}{}\label{group___m_m_u___functions_ga5f069f471adb154153051c570c3a6ab2}
+
+
+Set section access privileges. 
+
+The function sets section access privileges
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em descriptor\+\_\+l1} & L1 descriptor. \\
+\hline
+\mbox{\tt in}  & {\em user} & User Level Access\+: N\+O\+\_\+\+A\+C\+C\+E\+SS, RW, R\+E\+AD \\
+\hline
+\mbox{\tt in}  & {\em priv} & Privilege Level Access\+: N\+O\+\_\+\+A\+C\+C\+E\+SS, RW, R\+E\+AD \\
+\hline
+\mbox{\tt in}  & {\em afe} & Access flag enable\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}
+\index{M\+M\+U Functions Interface@{M\+M\+U Functions Interface}!\+\_\+\+\_\+domain\+\_\+page@{\+\_\+\+\_\+domain\+\_\+page}}
+\index{\+\_\+\+\_\+domain\+\_\+page@{\+\_\+\+\_\+domain\+\_\+page}!M\+M\+U Functions Interface@{M\+M\+U Functions Interface}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+domain\+\_\+page(uint32\+\_\+t $\ast$descriptor\+\_\+l1, uint8\+\_\+t domain)}{__domain_page(uint32_t *descriptor_l1, uint8_t domain)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \+\_\+\+\_\+domain\+\_\+page (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t $\ast$}]{descriptor\+\_\+l1, }
+\item[{uint8\+\_\+t}]{domain}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_m_u___functions_gaf6ade9af49080e011c6ac9ad46b4993f}{}\label{group___m_m_u___functions_gaf6ade9af49080e011c6ac9ad46b4993f}
+
+
+Set 4k/64k page domain. 
+
+The function sets 4k/64k page domain
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em descriptor\+\_\+l1} & L1 descriptor. \\
+\hline
+\mbox{\tt in}  & {\em domain} & Page domain\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}
+\index{M\+M\+U Functions Interface@{M\+M\+U Functions Interface}!\+\_\+\+\_\+domain\+\_\+section@{\+\_\+\+\_\+domain\+\_\+section}}
+\index{\+\_\+\+\_\+domain\+\_\+section@{\+\_\+\+\_\+domain\+\_\+section}!M\+M\+U Functions Interface@{M\+M\+U Functions Interface}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+domain\+\_\+section(uint32\+\_\+t $\ast$descriptor\+\_\+l1, uint8\+\_\+t domain)}{__domain_section(uint32_t *descriptor_l1, uint8_t domain)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \+\_\+\+\_\+domain\+\_\+section (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t $\ast$}]{descriptor\+\_\+l1, }
+\item[{uint8\+\_\+t}]{domain}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_m_u___functions_gab9c5062b00045439b84362310c3bc5d0}{}\label{group___m_m_u___functions_gab9c5062b00045439b84362310c3bc5d0}
+
+
+Set section domain. 
+
+The function sets section domain
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em descriptor\+\_\+l1} & L1 descriptor. \\
+\hline
+\mbox{\tt in}  & {\em domain} & Section domain\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}
+\index{M\+M\+U Functions Interface@{M\+M\+U Functions Interface}!\+\_\+\+\_\+get\+\_\+page\+\_\+descriptor@{\+\_\+\+\_\+get\+\_\+page\+\_\+descriptor}}
+\index{\+\_\+\+\_\+get\+\_\+page\+\_\+descriptor@{\+\_\+\+\_\+get\+\_\+page\+\_\+descriptor}!M\+M\+U Functions Interface@{M\+M\+U Functions Interface}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+get\+\_\+page\+\_\+descriptor(uint32\+\_\+t $\ast$descriptor, uint32\+\_\+t $\ast$descriptor2, mmu\+\_\+region\+\_\+attributes\+\_\+\+Type reg)}{__get_page_descriptor(uint32_t *descriptor, uint32_t *descriptor2, mmu_region_attributes_Type reg)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \+\_\+\+\_\+get\+\_\+page\+\_\+descriptor (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t $\ast$}]{descriptor, }
+\item[{uint32\+\_\+t $\ast$}]{descriptor2, }
+\item[{{\bf mmu\+\_\+region\+\_\+attributes\+\_\+\+Type}}]{reg}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_m_u___functions_ga8ebe9d61b0b1e139068fd24e61f042b0}{}\label{group___m_m_u___functions_ga8ebe9d61b0b1e139068fd24e61f042b0}
+
+
+Create a L1 and L2 4k/64k page descriptor. 
+
+The function creates a 4k/64k page descriptor. Assumptions\+:
+\begin{DoxyItemize}
+\item T\+EX remap disabled, so memory type and attributes are described directly by bits in the descriptor
+\item Functions always return 0
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em descriptor} & L1 descriptor \\
+\hline
+\mbox{\tt out}  & {\em descriptor2} & L2 descriptor \\
+\hline
+\mbox{\tt in}  & {\em reg} & 4k/64k page attributes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}
+\index{M\+M\+U Functions Interface@{M\+M\+U Functions Interface}!\+\_\+\+\_\+get\+\_\+section\+\_\+descriptor@{\+\_\+\+\_\+get\+\_\+section\+\_\+descriptor}}
+\index{\+\_\+\+\_\+get\+\_\+section\+\_\+descriptor@{\+\_\+\+\_\+get\+\_\+section\+\_\+descriptor}!M\+M\+U Functions Interface@{M\+M\+U Functions Interface}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+get\+\_\+section\+\_\+descriptor(uint32\+\_\+t $\ast$descriptor, mmu\+\_\+region\+\_\+attributes\+\_\+\+Type reg)}{__get_section_descriptor(uint32_t *descriptor, mmu_region_attributes_Type reg)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \+\_\+\+\_\+get\+\_\+section\+\_\+descriptor (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t $\ast$}]{descriptor, }
+\item[{{\bf mmu\+\_\+region\+\_\+attributes\+\_\+\+Type}}]{reg}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_m_u___functions_gaba0a8d570464881118b1594d32237547}{}\label{group___m_m_u___functions_gaba0a8d570464881118b1594d32237547}
+
+
+Create a L1 section descriptor. 
+
+The function creates a section descriptor.
+
+Assumptions\+:
+\begin{DoxyItemize}
+\item 16\+MB super sections not supported
+\item T\+EX remap disabled, so memory type and attributes are described directly by bits in the descriptor
+\item Functions always return 0
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em descriptor} & L1 descriptor \\
+\hline
+\mbox{\tt out}  & {\em descriptor2} & L2 descriptor \\
+\hline
+\mbox{\tt in}  & {\em reg} & Section attributes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}
+\index{M\+M\+U Functions Interface@{M\+M\+U Functions Interface}!\+\_\+\+\_\+global\+\_\+page@{\+\_\+\+\_\+global\+\_\+page}}
+\index{\+\_\+\+\_\+global\+\_\+page@{\+\_\+\+\_\+global\+\_\+page}!M\+M\+U Functions Interface@{M\+M\+U Functions Interface}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+global\+\_\+page(uint32\+\_\+t $\ast$descriptor\+\_\+l2, mmu\+\_\+global\+\_\+\+Type g\+\_\+bit)}{__global_page(uint32_t *descriptor_l2, mmu_global_Type g_bit)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \+\_\+\+\_\+global\+\_\+page (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t $\ast$}]{descriptor\+\_\+l2, }
+\item[{mmu\+\_\+global\+\_\+\+Type}]{g\+\_\+bit}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_m_u___functions_ga941feca37d9210110e090dc4ecd43ca5}{}\label{group___m_m_u___functions_ga941feca37d9210110e090dc4ecd43ca5}
+
+
+Set 4k/64k page Global attribute. 
+
+The function sets 4k/64k page Global attribute
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em descriptor\+\_\+l2} & L2 descriptor. \\
+\hline
+\mbox{\tt in}  & {\em g\+\_\+bit} & 4k/64k page attribute\+: G\+L\+O\+B\+AL, N\+O\+N\+\_\+\+G\+L\+O\+B\+AL\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}
+\index{M\+M\+U Functions Interface@{M\+M\+U Functions Interface}!\+\_\+\+\_\+global\+\_\+section@{\+\_\+\+\_\+global\+\_\+section}}
+\index{\+\_\+\+\_\+global\+\_\+section@{\+\_\+\+\_\+global\+\_\+section}!M\+M\+U Functions Interface@{M\+M\+U Functions Interface}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+global\+\_\+section(uint32\+\_\+t $\ast$descriptor\+\_\+l1, mmu\+\_\+global\+\_\+\+Type g\+\_\+bit)}{__global_section(uint32_t *descriptor_l1, mmu_global_Type g_bit)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \+\_\+\+\_\+global\+\_\+section (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t $\ast$}]{descriptor\+\_\+l1, }
+\item[{mmu\+\_\+global\+\_\+\+Type}]{g\+\_\+bit}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_m_u___functions_gab9ebaae8d22bfbff6ce2909c778ca43a}{}\label{group___m_m_u___functions_gab9ebaae8d22bfbff6ce2909c778ca43a}
+
+
+Set section Global attribute. 
+
+The function sets section Global attribute
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em descriptor\+\_\+l1} & L1 descriptor. \\
+\hline
+\mbox{\tt in}  & {\em g\+\_\+bit} & Section attribute\+: G\+L\+O\+B\+AL, N\+O\+N\+\_\+\+G\+L\+O\+B\+AL\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}
+\index{M\+M\+U Functions Interface@{M\+M\+U Functions Interface}!\+\_\+\+\_\+memory\+\_\+page@{\+\_\+\+\_\+memory\+\_\+page}}
+\index{\+\_\+\+\_\+memory\+\_\+page@{\+\_\+\+\_\+memory\+\_\+page}!M\+M\+U Functions Interface@{M\+M\+U Functions Interface}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+memory\+\_\+page(uint32\+\_\+t $\ast$descriptor\+\_\+l2, mmu\+\_\+memory\+\_\+\+Type mem, mmu\+\_\+cacheability\+\_\+\+Type outer, mmu\+\_\+cacheability\+\_\+\+Type inner, mmu\+\_\+region\+\_\+size\+\_\+\+Type page)}{__memory_page(uint32_t *descriptor_l2, mmu_memory_Type mem, mmu_cacheability_Type outer, mmu_cacheability_Type inner, mmu_region_size_Type page)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \+\_\+\+\_\+memory\+\_\+page (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t $\ast$}]{descriptor\+\_\+l2, }
+\item[{mmu\+\_\+memory\+\_\+\+Type}]{mem, }
+\item[{mmu\+\_\+cacheability\+\_\+\+Type}]{outer, }
+\item[{mmu\+\_\+cacheability\+\_\+\+Type}]{inner, }
+\item[{mmu\+\_\+region\+\_\+size\+\_\+\+Type}]{page}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_m_u___functions_ga3eb167ca2d2e63c53a62ac1fb7cde793}{}\label{group___m_m_u___functions_ga3eb167ca2d2e63c53a62ac1fb7cde793}
+
+
+Set 4k/64k page memory attributes. 
+
+The function sets 4k/64k page memory attributes
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em descriptor\+\_\+l2} & L2 descriptor. \\
+\hline
+\mbox{\tt in}  & {\em mem} & 4k/64k page memory type\+: N\+O\+R\+M\+AL, D\+E\+V\+I\+CE, S\+H\+A\+R\+E\+D\+\_\+\+D\+E\+V\+I\+CE, N\+O\+N\+\_\+\+S\+H\+A\+R\+E\+D\+\_\+\+D\+E\+V\+I\+CE, S\+T\+R\+O\+N\+G\+L\+Y\+\_\+\+O\+R\+D\+E\+R\+ED \\
+\hline
+\mbox{\tt in}  & {\em outer} & Outer cacheability\+: N\+O\+N\+\_\+\+C\+A\+C\+H\+E\+A\+B\+LE, W\+B\+\_\+\+WA, WT, W\+B\+\_\+\+N\+O\+\_\+\+WA, \\
+\hline
+\mbox{\tt in}  & {\em inner} & Inner cacheability\+: N\+O\+N\+\_\+\+C\+A\+C\+H\+E\+A\+B\+LE, W\+B\+\_\+\+WA, WT, W\+B\+\_\+\+N\+O\+\_\+\+WA,\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}
+\index{M\+M\+U Functions Interface@{M\+M\+U Functions Interface}!\+\_\+\+\_\+memory\+\_\+section@{\+\_\+\+\_\+memory\+\_\+section}}
+\index{\+\_\+\+\_\+memory\+\_\+section@{\+\_\+\+\_\+memory\+\_\+section}!M\+M\+U Functions Interface@{M\+M\+U Functions Interface}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+memory\+\_\+section(uint32\+\_\+t $\ast$descriptor\+\_\+l1, mmu\+\_\+memory\+\_\+\+Type mem, mmu\+\_\+cacheability\+\_\+\+Type outer, mmu\+\_\+cacheability\+\_\+\+Type inner)}{__memory_section(uint32_t *descriptor_l1, mmu_memory_Type mem, mmu_cacheability_Type outer, mmu_cacheability_Type inner)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \+\_\+\+\_\+memory\+\_\+section (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t $\ast$}]{descriptor\+\_\+l1, }
+\item[{mmu\+\_\+memory\+\_\+\+Type}]{mem, }
+\item[{mmu\+\_\+cacheability\+\_\+\+Type}]{outer, }
+\item[{mmu\+\_\+cacheability\+\_\+\+Type}]{inner}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_m_u___functions_ga3883e7cea429d89d07e32fe69b241565}{}\label{group___m_m_u___functions_ga3883e7cea429d89d07e32fe69b241565}
+
+
+Set Section memory attributes. 
+
+The function sets section memory attributes
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em descriptor\+\_\+l1} & L1 descriptor. \\
+\hline
+\mbox{\tt in}  & {\em mem} & Section memory type\+: N\+O\+R\+M\+AL, D\+E\+V\+I\+CE, S\+H\+A\+R\+E\+D\+\_\+\+D\+E\+V\+I\+CE, N\+O\+N\+\_\+\+S\+H\+A\+R\+E\+D\+\_\+\+D\+E\+V\+I\+CE, S\+T\+R\+O\+N\+G\+L\+Y\+\_\+\+O\+R\+D\+E\+R\+ED \\
+\hline
+\mbox{\tt in}  & {\em outer} & Outer cacheability\+: N\+O\+N\+\_\+\+C\+A\+C\+H\+E\+A\+B\+LE, W\+B\+\_\+\+WA, WT, W\+B\+\_\+\+N\+O\+\_\+\+WA, \\
+\hline
+\mbox{\tt in}  & {\em inner} & Inner cacheability\+: N\+O\+N\+\_\+\+C\+A\+C\+H\+E\+A\+B\+LE, W\+B\+\_\+\+WA, WT, W\+B\+\_\+\+N\+O\+\_\+\+WA,\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}
+\index{M\+M\+U Functions Interface@{M\+M\+U Functions Interface}!\+\_\+\+\_\+p\+\_\+page@{\+\_\+\+\_\+p\+\_\+page}}
+\index{\+\_\+\+\_\+p\+\_\+page@{\+\_\+\+\_\+p\+\_\+page}!M\+M\+U Functions Interface@{M\+M\+U Functions Interface}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+p\+\_\+page(uint32\+\_\+t $\ast$descriptor\+\_\+l1, mmu\+\_\+ecc\+\_\+check\+\_\+\+Type p\+\_\+bit)}{__p_page(uint32_t *descriptor_l1, mmu_ecc_check_Type p_bit)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \+\_\+\+\_\+p\+\_\+page (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t $\ast$}]{descriptor\+\_\+l1, }
+\item[{mmu\+\_\+ecc\+\_\+check\+\_\+\+Type}]{p\+\_\+bit}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_m_u___functions_gad99cf050a448feeb534988003e38b861}{}\label{group___m_m_u___functions_gad99cf050a448feeb534988003e38b861}
+
+
+Set 4k/64k page parity check. 
+
+The function sets 4k/64k page parity check
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em descriptor\+\_\+l1} & L1 descriptor. \\
+\hline
+\mbox{\tt in}  & {\em p\+\_\+bit} & Parity check\+: E\+C\+C\+\_\+\+D\+I\+S\+A\+B\+L\+ED, E\+C\+C\+\_\+\+E\+N\+A\+B\+L\+ED\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}
+\index{M\+M\+U Functions Interface@{M\+M\+U Functions Interface}!\+\_\+\+\_\+p\+\_\+section@{\+\_\+\+\_\+p\+\_\+section}}
+\index{\+\_\+\+\_\+p\+\_\+section@{\+\_\+\+\_\+p\+\_\+section}!M\+M\+U Functions Interface@{M\+M\+U Functions Interface}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+p\+\_\+section(uint32\+\_\+t $\ast$descriptor\+\_\+l1, mmu\+\_\+ecc\+\_\+check\+\_\+\+Type p\+\_\+bit)}{__p_section(uint32_t *descriptor_l1, mmu_ecc_check_Type p_bit)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \+\_\+\+\_\+p\+\_\+section (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t $\ast$}]{descriptor\+\_\+l1, }
+\item[{mmu\+\_\+ecc\+\_\+check\+\_\+\+Type}]{p\+\_\+bit}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_m_u___functions_ga47d76089fa83ddf1ad420f37c2787f8e}{}\label{group___m_m_u___functions_ga47d76089fa83ddf1ad420f37c2787f8e}
+
+
+Set section parity check. 
+
+The function sets section parity check
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em descriptor\+\_\+l1} & L1 descriptor. \\
+\hline
+\mbox{\tt in}  & {\em p\+\_\+bit} & Parity check\+: E\+C\+C\+\_\+\+D\+I\+S\+A\+B\+L\+ED, E\+C\+C\+\_\+\+E\+N\+A\+B\+L\+ED\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}
+\index{M\+M\+U Functions Interface@{M\+M\+U Functions Interface}!\+\_\+\+\_\+secure\+\_\+page@{\+\_\+\+\_\+secure\+\_\+page}}
+\index{\+\_\+\+\_\+secure\+\_\+page@{\+\_\+\+\_\+secure\+\_\+page}!M\+M\+U Functions Interface@{M\+M\+U Functions Interface}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+secure\+\_\+page(uint32\+\_\+t $\ast$descriptor\+\_\+l1, mmu\+\_\+secure\+\_\+\+Type s\+\_\+bit)}{__secure_page(uint32_t *descriptor_l1, mmu_secure_Type s_bit)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \+\_\+\+\_\+secure\+\_\+page (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t $\ast$}]{descriptor\+\_\+l1, }
+\item[{mmu\+\_\+secure\+\_\+\+Type}]{s\+\_\+bit}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_m_u___functions_ga27417dca4e862ec314c09fd2b89383ff}{}\label{group___m_m_u___functions_ga27417dca4e862ec314c09fd2b89383ff}
+
+
+Set 4k/64k page Security attribute. 
+
+The function sets 4k/64k page Global attribute
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em descriptor\+\_\+l1} & L1 descriptor. \\
+\hline
+\mbox{\tt in}  & {\em s\+\_\+bit} & 4k/64k page Security attribute\+: S\+E\+C\+U\+RE, N\+O\+N\+\_\+\+S\+E\+C\+U\+RE\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}
+\index{M\+M\+U Functions Interface@{M\+M\+U Functions Interface}!\+\_\+\+\_\+secure\+\_\+section@{\+\_\+\+\_\+secure\+\_\+section}}
+\index{\+\_\+\+\_\+secure\+\_\+section@{\+\_\+\+\_\+secure\+\_\+section}!M\+M\+U Functions Interface@{M\+M\+U Functions Interface}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+secure\+\_\+section(uint32\+\_\+t $\ast$descriptor\+\_\+l1, mmu\+\_\+secure\+\_\+\+Type s\+\_\+bit)}{__secure_section(uint32_t *descriptor_l1, mmu_secure_Type s_bit)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \+\_\+\+\_\+secure\+\_\+section (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t $\ast$}]{descriptor\+\_\+l1, }
+\item[{mmu\+\_\+secure\+\_\+\+Type}]{s\+\_\+bit}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_m_u___functions_gac1430230710ffbf0f3f279f118b0f8b3}{}\label{group___m_m_u___functions_gac1430230710ffbf0f3f279f118b0f8b3}
+
+
+Set section Security attribute. 
+
+The function sets section Global attribute
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em descriptor\+\_\+l1} & L1 descriptor. \\
+\hline
+\mbox{\tt in}  & {\em s\+\_\+bit} & Section Security attribute\+: S\+E\+C\+U\+RE, N\+O\+N\+\_\+\+S\+E\+C\+U\+RE\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}
+\index{M\+M\+U Functions Interface@{M\+M\+U Functions Interface}!\+\_\+\+\_\+shared\+\_\+page@{\+\_\+\+\_\+shared\+\_\+page}}
+\index{\+\_\+\+\_\+shared\+\_\+page@{\+\_\+\+\_\+shared\+\_\+page}!M\+M\+U Functions Interface@{M\+M\+U Functions Interface}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+shared\+\_\+page(uint32\+\_\+t $\ast$descriptor\+\_\+l2, mmu\+\_\+shared\+\_\+\+Type s\+\_\+bit)}{__shared_page(uint32_t *descriptor_l2, mmu_shared_Type s_bit)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \+\_\+\+\_\+shared\+\_\+page (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t $\ast$}]{descriptor\+\_\+l2, }
+\item[{mmu\+\_\+shared\+\_\+\+Type}]{s\+\_\+bit}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_m_u___functions_gae48e2237412f51af7bdbd7d4d3d5125d}{}\label{group___m_m_u___functions_gae48e2237412f51af7bdbd7d4d3d5125d}
+
+
+Set 4k/64k page shareability. 
+
+The function sets 4k/64k page shareability
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em descriptor\+\_\+l2} & L2 descriptor. \\
+\hline
+\mbox{\tt in}  & {\em s\+\_\+bit} & 4k/64k page shareability\+: N\+O\+N\+\_\+\+S\+H\+A\+R\+ED, S\+H\+A\+R\+ED\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}
+\index{M\+M\+U Functions Interface@{M\+M\+U Functions Interface}!\+\_\+\+\_\+shared\+\_\+section@{\+\_\+\+\_\+shared\+\_\+section}}
+\index{\+\_\+\+\_\+shared\+\_\+section@{\+\_\+\+\_\+shared\+\_\+section}!M\+M\+U Functions Interface@{M\+M\+U Functions Interface}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+shared\+\_\+section(uint32\+\_\+t $\ast$descriptor\+\_\+l1, mmu\+\_\+shared\+\_\+\+Type s\+\_\+bit)}{__shared_section(uint32_t *descriptor_l1, mmu_shared_Type s_bit)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \+\_\+\+\_\+shared\+\_\+section (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t $\ast$}]{descriptor\+\_\+l1, }
+\item[{mmu\+\_\+shared\+\_\+\+Type}]{s\+\_\+bit}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_m_u___functions_ga9913b6ac45889fea12f9caa6292b89b3}{}\label{group___m_m_u___functions_ga9913b6ac45889fea12f9caa6292b89b3}
+
+
+Set section shareability. 
+
+The function sets section shareability
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em descriptor\+\_\+l1} & L1 descriptor. \\
+\hline
+\mbox{\tt in}  & {\em s\+\_\+bit} & Section shareability\+: N\+O\+N\+\_\+\+S\+H\+A\+R\+ED, S\+H\+A\+R\+ED\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}
+\index{M\+M\+U Functions Interface@{M\+M\+U Functions Interface}!\+\_\+\+\_\+\+T\+T\+Page\+\_\+4k@{\+\_\+\+\_\+\+T\+T\+Page\+\_\+4k}}
+\index{\+\_\+\+\_\+\+T\+T\+Page\+\_\+4k@{\+\_\+\+\_\+\+T\+T\+Page\+\_\+4k}!M\+M\+U Functions Interface@{M\+M\+U Functions Interface}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+T\+T\+Page\+\_\+4k(uint32\+\_\+t $\ast$ttb, uint32\+\_\+t base\+\_\+address, uint32\+\_\+t count, uint32\+\_\+t descriptor\+\_\+l1, uint32\+\_\+t $\ast$ttb\+\_\+l2, uint32\+\_\+t descriptor\+\_\+l2)}{__TTPage_4k(uint32_t *ttb, uint32_t base_address, uint32_t count, uint32_t descriptor_l1, uint32_t *ttb_l2, uint32_t descriptor_l2)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE void \+\_\+\+\_\+\+T\+T\+Page\+\_\+4k (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t $\ast$}]{ttb, }
+\item[{uint32\+\_\+t}]{base\+\_\+address, }
+\item[{uint32\+\_\+t}]{count, }
+\item[{uint32\+\_\+t}]{descriptor\+\_\+l1, }
+\item[{uint32\+\_\+t $\ast$}]{ttb\+\_\+l2, }
+\item[{uint32\+\_\+t}]{descriptor\+\_\+l2}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_m_u___functions_gab749bcf38edf77ab4112682e0e34834c}{}\label{group___m_m_u___functions_gab749bcf38edf77ab4112682e0e34834c}
+
+
+Create a 4k page entry. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ttb} & L1 table base address \\
+\hline
+\mbox{\tt in}  & {\em base\+\_\+address} & 4k base address \\
+\hline
+\mbox{\tt in}  & {\em count} & Number of 4k pages to create \\
+\hline
+\mbox{\tt in}  & {\em descriptor\+\_\+l1} & L1 descriptor (region attributes) \\
+\hline
+\mbox{\tt in}  & {\em ttb\+\_\+l2} & L2 table base address \\
+\hline
+\mbox{\tt in}  & {\em descriptor\+\_\+l2} & L2 descriptor (region attributes) \\
+\hline
+\end{DoxyParams}
+\index{M\+M\+U Functions Interface@{M\+M\+U Functions Interface}!\+\_\+\+\_\+\+T\+T\+Page\+\_\+64k@{\+\_\+\+\_\+\+T\+T\+Page\+\_\+64k}}
+\index{\+\_\+\+\_\+\+T\+T\+Page\+\_\+64k@{\+\_\+\+\_\+\+T\+T\+Page\+\_\+64k}!M\+M\+U Functions Interface@{M\+M\+U Functions Interface}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+T\+T\+Page\+\_\+64k(uint32\+\_\+t $\ast$ttb, uint32\+\_\+t base\+\_\+address, uint32\+\_\+t count, uint32\+\_\+t descriptor\+\_\+l1, uint32\+\_\+t $\ast$ttb\+\_\+l2, uint32\+\_\+t descriptor\+\_\+l2)}{__TTPage_64k(uint32_t *ttb, uint32_t base_address, uint32_t count, uint32_t descriptor_l1, uint32_t *ttb_l2, uint32_t descriptor_l2)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE void \+\_\+\+\_\+\+T\+T\+Page\+\_\+64k (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t $\ast$}]{ttb, }
+\item[{uint32\+\_\+t}]{base\+\_\+address, }
+\item[{uint32\+\_\+t}]{count, }
+\item[{uint32\+\_\+t}]{descriptor\+\_\+l1, }
+\item[{uint32\+\_\+t $\ast$}]{ttb\+\_\+l2, }
+\item[{uint32\+\_\+t}]{descriptor\+\_\+l2}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_m_u___functions_gacf942453d586ba20dd49c7d7d2e073a3}{}\label{group___m_m_u___functions_gacf942453d586ba20dd49c7d7d2e073a3}
+
+
+Create a 64k page entry. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ttb} & L1 table base address \\
+\hline
+\mbox{\tt in}  & {\em base\+\_\+address} & 64k base address \\
+\hline
+\mbox{\tt in}  & {\em count} & Number of 64k pages to create \\
+\hline
+\mbox{\tt in}  & {\em descriptor\+\_\+l1} & L1 descriptor (region attributes) \\
+\hline
+\mbox{\tt in}  & {\em ttb\+\_\+l2} & L2 table base address \\
+\hline
+\mbox{\tt in}  & {\em descriptor\+\_\+l2} & L2 descriptor (region attributes) \\
+\hline
+\end{DoxyParams}
+\index{M\+M\+U Functions Interface@{M\+M\+U Functions Interface}!\+\_\+\+\_\+\+T\+T\+Section@{\+\_\+\+\_\+\+T\+T\+Section}}
+\index{\+\_\+\+\_\+\+T\+T\+Section@{\+\_\+\+\_\+\+T\+T\+Section}!M\+M\+U Functions Interface@{M\+M\+U Functions Interface}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+T\+T\+Section(uint32\+\_\+t $\ast$ttb, uint32\+\_\+t base\+\_\+address, uint32\+\_\+t count, uint32\+\_\+t descriptor\+\_\+l1)}{__TTSection(uint32_t *ttb, uint32_t base_address, uint32_t count, uint32_t descriptor_l1)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE void \+\_\+\+\_\+\+T\+T\+Section (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t $\ast$}]{ttb, }
+\item[{uint32\+\_\+t}]{base\+\_\+address, }
+\item[{uint32\+\_\+t}]{count, }
+\item[{uint32\+\_\+t}]{descriptor\+\_\+l1}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_m_u___functions_gafb0322c3afe9d9b67411eb1e5d093d2e}{}\label{group___m_m_u___functions_gafb0322c3afe9d9b67411eb1e5d093d2e}
+
+
+Create a 1\+MB Section. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ttb} & Translation table base address \\
+\hline
+\mbox{\tt in}  & {\em base\+\_\+address} & Section base address \\
+\hline
+\mbox{\tt in}  & {\em count} & Number of sections to create \\
+\hline
+\mbox{\tt in}  & {\em descriptor\+\_\+l1} & L1 descriptor (region attributes) \\
+\hline
+\end{DoxyParams}
+\index{M\+M\+U Functions Interface@{M\+M\+U Functions Interface}!\+\_\+\+\_\+xn\+\_\+page@{\+\_\+\+\_\+xn\+\_\+page}}
+\index{\+\_\+\+\_\+xn\+\_\+page@{\+\_\+\+\_\+xn\+\_\+page}!M\+M\+U Functions Interface@{M\+M\+U Functions Interface}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+xn\+\_\+page(uint32\+\_\+t $\ast$descriptor\+\_\+l2, mmu\+\_\+execute\+\_\+\+Type xn, mmu\+\_\+region\+\_\+size\+\_\+\+Type page)}{__xn_page(uint32_t *descriptor_l2, mmu_execute_Type xn, mmu_region_size_Type page)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \+\_\+\+\_\+xn\+\_\+page (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t $\ast$}]{descriptor\+\_\+l2, }
+\item[{mmu\+\_\+execute\+\_\+\+Type}]{xn, }
+\item[{mmu\+\_\+region\+\_\+size\+\_\+\+Type}]{page}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_m_u___functions_ga29333191c243fead911c3a25586583ef}{}\label{group___m_m_u___functions_ga29333191c243fead911c3a25586583ef}
+
+
+Set 4k/64k page execution-\/never attribute. 
+
+The function sets 4k/64k page execution-\/never attribute
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em descriptor\+\_\+l2} & L2 descriptor. \\
+\hline
+\mbox{\tt in}  & {\em xn} & Page execution-\/never attribute \+: E\+X\+E\+C\+U\+TE , N\+O\+N\+\_\+\+E\+X\+E\+C\+U\+TE. \\
+\hline
+\mbox{\tt in}  & {\em page} & Page size\+: P\+A\+G\+E\+\_\+4k, P\+A\+G\+E\+\_\+64k,\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}
+\index{M\+M\+U Functions Interface@{M\+M\+U Functions Interface}!\+\_\+\+\_\+xn\+\_\+section@{\+\_\+\+\_\+xn\+\_\+section}}
+\index{\+\_\+\+\_\+xn\+\_\+section@{\+\_\+\+\_\+xn\+\_\+section}!M\+M\+U Functions Interface@{M\+M\+U Functions Interface}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+xn\+\_\+section(uint32\+\_\+t $\ast$descriptor\+\_\+l1, mmu\+\_\+execute\+\_\+\+Type xn)}{__xn_section(uint32_t *descriptor_l1, mmu_execute_Type xn)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+N\+L\+I\+NE int \+\_\+\+\_\+xn\+\_\+section (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t $\ast$}]{descriptor\+\_\+l1, }
+\item[{mmu\+\_\+execute\+\_\+\+Type}]{xn}
+\end{DoxyParamCaption}
+)}\hypertarget{group___m_m_u___functions_gaac58bd6af8c207174df553059a28263e}{}\label{group___m_m_u___functions_gaac58bd6af8c207174df553059a28263e}
+
+
+Set section execution-\/never attribute. 
+
+The function sets section execution-\/never attribute
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em descriptor\+\_\+l1} & L1 descriptor. \\
+\hline
+\mbox{\tt in}  & {\em xn} & Section execution-\/never attribute \+: E\+X\+E\+C\+U\+TE , N\+O\+N\+\_\+\+E\+X\+E\+C\+U\+TE.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}

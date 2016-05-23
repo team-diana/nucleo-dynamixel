@@ -1,0 +1,125 @@
+\hypertarget{stm32f4xx__hal__pwr__ex_8h}{}\section{Dynamixel-\/\+M\+X106/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+N\+U\+C\+L\+E\+O\+\_\+\+F446\+R\+E/stm32f4xx\+\_\+hal\+\_\+pwr\+\_\+ex.h File Reference}
+\label{stm32f4xx__hal__pwr__ex_8h}\index{Dynamixel-\/\+M\+X106/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+N\+U\+C\+L\+E\+O\+\_\+\+F446\+R\+E/stm32f4xx\+\_\+hal\+\_\+pwr\+\_\+ex.\+h@{Dynamixel-\/\+M\+X106/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+N\+U\+C\+L\+E\+O\+\_\+\+F446\+R\+E/stm32f4xx\+\_\+hal\+\_\+pwr\+\_\+ex.\+h}}
+
+
+Header file of P\+WR H\+AL Extension module.  
+
+
+{\ttfamily \#include \char`\"{}stm32f4xx\+\_\+hal\+\_\+def.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries P\+W\+R\+\_\+\+M\+A\+I\+N\+R\+E\+G\+U\+L\+A\+T\+O\+R\+\_\+\+U\+N\+D\+E\+R\+D\+R\+I\+V\+E\+\_\+\+ON}~\hyperlink{group___peripheral___registers___bits___definition_ga59c516cad11a310e8c5b560b00220d45}{P\+W\+R\+\_\+\+C\+R\+\_\+\+M\+R\+U\+DS}
+\item 
+\#define {\bfseries P\+W\+R\+\_\+\+L\+O\+W\+P\+O\+W\+E\+R\+R\+E\+G\+U\+L\+A\+T\+O\+R\+\_\+\+U\+N\+D\+E\+R\+D\+R\+I\+V\+E\+\_\+\+ON}~((uint32\+\_\+t)(\hyperlink{group___peripheral___registers___bits___definition_ga3aeb8d6f2539b0a3a4b851aeba0eea66}{P\+W\+R\+\_\+\+C\+R\+\_\+\+L\+P\+DS} $\vert$ \hyperlink{group___peripheral___registers___bits___definition_gac1c7718e2c1a57985f79776683bb5464}{P\+W\+R\+\_\+\+C\+R\+\_\+\+L\+P\+U\+DS}))
+\item 
+\#define {\bfseries P\+W\+R\+\_\+\+F\+L\+A\+G\+\_\+\+O\+D\+R\+DY}~\hyperlink{group___peripheral___registers___bits___definition_gae35dfabd53bc335d95d330442cdfac6d}{P\+W\+R\+\_\+\+C\+S\+R\+\_\+\+O\+D\+R\+DY}
+\item 
+\#define {\bfseries P\+W\+R\+\_\+\+F\+L\+A\+G\+\_\+\+O\+D\+S\+W\+R\+DY}~\hyperlink{group___peripheral___registers___bits___definition_gabb55eb15d71248b59e36a158039f9b54}{P\+W\+R\+\_\+\+C\+S\+R\+\_\+\+O\+D\+S\+W\+R\+DY}
+\item 
+\#define {\bfseries P\+W\+R\+\_\+\+F\+L\+A\+G\+\_\+\+U\+D\+R\+DY}~\hyperlink{group___peripheral___registers___bits___definition_ga31f0172b9dcefa55d772d4cb0eed6687}{P\+W\+R\+\_\+\+C\+S\+R\+\_\+\+U\+D\+S\+W\+R\+DY}
+\item 
+\#define {\bfseries P\+W\+R\+\_\+\+R\+E\+G\+U\+L\+A\+T\+O\+R\+\_\+\+V\+O\+L\+T\+A\+G\+E\+\_\+\+S\+C\+A\+L\+E1}
+\item 
+\#define {\bfseries P\+W\+R\+\_\+\+R\+E\+G\+U\+L\+A\+T\+O\+R\+\_\+\+V\+O\+L\+T\+A\+G\+E\+\_\+\+S\+C\+A\+L\+E2}
+\item 
+\#define {\bfseries P\+W\+R\+\_\+\+R\+E\+G\+U\+L\+A\+T\+O\+R\+\_\+\+V\+O\+L\+T\+A\+G\+E\+\_\+\+S\+C\+A\+L\+E3}~\hyperlink{group___peripheral___registers___bits___definition_ga27b4e08a8936aa9828c5d683fde2fb59}{P\+W\+R\+\_\+\+C\+R\+\_\+\+V\+O\+S\+\_\+0}           /$\ast$ Scale 3 mode\+: the maximum value of f\+H\+C\+LK is 120 M\+Hz. $\ast$/
+\item 
+\#define {\bfseries P\+W\+R\+\_\+\+W\+A\+K\+E\+U\+P\+\_\+\+P\+I\+N2}~((uint32\+\_\+t)0x00000080)
+\item 
+\#define \hyperlink{group___p_w_r_ex___exported___constants_ga1ee778f7ff494723bd0ef04ec44b0f77}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+P\+W\+R\+\_\+\+V\+O\+L\+T\+A\+G\+E\+S\+C\+A\+L\+I\+N\+G\+\_\+\+C\+O\+N\+F\+IG}(\+\_\+\+\_\+\+R\+E\+G\+U\+L\+A\+T\+O\+R\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em macros configure the main internal regulator output voltage. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___p_w_r_ex___exported___constants_gaa6904ae4fd3b27e546a1a9ca86fd0325}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+P\+W\+R\+\_\+\+O\+V\+E\+R\+D\+R\+I\+V\+E\+\_\+\+E\+N\+A\+B\+LE}()~($\ast$(\hyperlink{core__sc300_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO} uint32\+\_\+t $\ast$) C\+R\+\_\+\+O\+D\+E\+N\+\_\+\+BB = E\+N\+A\+B\+LE)
+\begin{DoxyCompactList}\small\item\em Macros to enable or disable the Over drive mode. \end{DoxyCompactList}\item 
+\#define {\bfseries \+\_\+\+\_\+\+H\+A\+L\+\_\+\+P\+W\+R\+\_\+\+O\+V\+E\+R\+D\+R\+I\+V\+E\+\_\+\+D\+I\+S\+A\+B\+LE}()~($\ast$(\hyperlink{core__sc300_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO} uint32\+\_\+t $\ast$) C\+R\+\_\+\+O\+D\+E\+N\+\_\+\+BB = D\+I\+S\+A\+B\+LE)
+\item 
+\#define \hyperlink{group___p_w_r_ex___exported___constants_ga1f5fd3a41a03c729b283bf05af030716}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+P\+W\+R\+\_\+\+O\+V\+E\+R\+D\+R\+I\+V\+E\+S\+W\+I\+T\+C\+H\+I\+N\+G\+\_\+\+E\+N\+A\+B\+LE}()~($\ast$(\hyperlink{core__sc300_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO} uint32\+\_\+t $\ast$) C\+R\+\_\+\+O\+D\+S\+W\+E\+N\+\_\+\+BB = E\+N\+A\+B\+LE)
+\begin{DoxyCompactList}\small\item\em Macros to enable or disable the Over drive switching. \end{DoxyCompactList}\item 
+\#define {\bfseries \+\_\+\+\_\+\+H\+A\+L\+\_\+\+P\+W\+R\+\_\+\+O\+V\+E\+R\+D\+R\+I\+V\+E\+S\+W\+I\+T\+C\+H\+I\+N\+G\+\_\+\+D\+I\+S\+A\+B\+LE}()~($\ast$(\hyperlink{core__sc300_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO} uint32\+\_\+t $\ast$) C\+R\+\_\+\+O\+D\+S\+W\+E\+N\+\_\+\+BB = D\+I\+S\+A\+B\+LE)
+\item 
+\#define \hyperlink{group___p_w_r_ex___exported___constants_gafbaac4011a44566b0ba2a563736cca09}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+P\+W\+R\+\_\+\+U\+N\+D\+E\+R\+D\+R\+I\+V\+E\+\_\+\+E\+N\+A\+B\+LE}()~(P\+WR-\/$>$CR $\vert$= (uint32\+\_\+t)\hyperlink{group___peripheral___registers___bits___definition_ga150acdf90bcc4c040af0d1f5e1055f4a}{P\+W\+R\+\_\+\+C\+R\+\_\+\+U\+D\+EN})
+\begin{DoxyCompactList}\small\item\em Macros to enable or disable the Under drive mode. \end{DoxyCompactList}\item 
+\#define {\bfseries \+\_\+\+\_\+\+H\+A\+L\+\_\+\+P\+W\+R\+\_\+\+U\+N\+D\+E\+R\+D\+R\+I\+V\+E\+\_\+\+D\+I\+S\+A\+B\+LE}()~(P\+WR-\/$>$CR \&= (uint32\+\_\+t)($\sim$\hyperlink{group___peripheral___registers___bits___definition_ga150acdf90bcc4c040af0d1f5e1055f4a}{P\+W\+R\+\_\+\+C\+R\+\_\+\+U\+D\+EN}))
+\item 
+\#define \hyperlink{group___p_w_r_ex___exported___constants_ga846a66516ac8a6212f414f3d801169f9}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+P\+W\+R\+\_\+\+G\+E\+T\+\_\+\+O\+D\+R\+U\+D\+R\+\_\+\+F\+L\+AG}(\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+)~((P\+WR-\/$>$C\+SR \& (\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+)) == (\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+))
+\begin{DoxyCompactList}\small\item\em Check P\+WR flag is set or not. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___p_w_r_ex___exported___constants_ga474f22f28c87cc54df405d83852fcac1}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+P\+W\+R\+\_\+\+C\+L\+E\+A\+R\+\_\+\+O\+D\+R\+U\+D\+R\+\_\+\+F\+L\+AG}()~(P\+WR-\/$>$C\+SR $\vert$= P\+W\+R\+\_\+\+F\+L\+A\+G\+\_\+\+U\+D\+R\+DY)
+\begin{DoxyCompactList}\small\item\em Clear the Under-\/\+Drive Ready flag. \end{DoxyCompactList}\item 
+\#define {\bfseries F\+P\+D\+S\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+ER}~P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+V\+AL(\hyperlink{group___peripheral___registers___bits___definition_gafc01f8b6d4bd0294f745fde6d8e57002}{P\+W\+R\+\_\+\+C\+R\+\_\+\+F\+P\+DS})
+\item 
+\#define {\bfseries C\+R\+\_\+\+F\+P\+D\+S\+\_\+\+BB}~(uint32\+\_\+t)(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (P\+W\+R\+\_\+\+C\+R\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+BB $\ast$ 32) + (F\+P\+D\+S\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+ER $\ast$ 4))
+\item 
+\#define {\bfseries O\+D\+E\+N\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+ER}~P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+V\+AL(\hyperlink{group___peripheral___registers___bits___definition_gadbb849c6c4908d6f08f4fdc28d702522}{P\+W\+R\+\_\+\+C\+R\+\_\+\+O\+D\+EN})
+\item 
+\#define {\bfseries C\+R\+\_\+\+O\+D\+E\+N\+\_\+\+BB}~(uint32\+\_\+t)(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (P\+W\+R\+\_\+\+C\+R\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+BB $\ast$ 32) + (O\+D\+E\+N\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+ER $\ast$ 4))
+\item 
+\#define {\bfseries O\+D\+S\+W\+E\+N\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+ER}~P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+V\+AL(\hyperlink{group___peripheral___registers___bits___definition_gaf1e865d13e084ed53bded37c3cdea173}{P\+W\+R\+\_\+\+C\+R\+\_\+\+O\+D\+S\+W\+EN})
+\item 
+\#define {\bfseries C\+R\+\_\+\+O\+D\+S\+W\+E\+N\+\_\+\+BB}~(uint32\+\_\+t)(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (P\+W\+R\+\_\+\+C\+R\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+BB $\ast$ 32) + (O\+D\+S\+W\+E\+N\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+ER $\ast$ 4))
+\item 
+\#define {\bfseries M\+R\+L\+V\+D\+S\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+ER}~P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+V\+AL(\hyperlink{group___peripheral___registers___bits___definition_ga40e8c390899e9e836f1c52d90b64488d}{P\+W\+R\+\_\+\+C\+R\+\_\+\+M\+R\+L\+V\+DS})
+\item 
+\#define {\bfseries C\+R\+\_\+\+M\+R\+L\+V\+D\+S\+\_\+\+BB}~(uint32\+\_\+t)(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (P\+W\+R\+\_\+\+C\+R\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+BB $\ast$ 32) + (M\+R\+L\+V\+D\+S\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+ER $\ast$ 4))
+\item 
+\#define {\bfseries L\+P\+L\+V\+D\+S\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+ER}~P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+V\+AL(\hyperlink{group___peripheral___registers___bits___definition_ga6e37ea5ff0bd06d0d5aa7b2f15d63495}{P\+W\+R\+\_\+\+C\+R\+\_\+\+L\+P\+L\+V\+DS})
+\item 
+\#define {\bfseries C\+R\+\_\+\+L\+P\+L\+V\+D\+S\+\_\+\+BB}~(uint32\+\_\+t)(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (P\+W\+R\+\_\+\+C\+R\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+BB $\ast$ 32) + (L\+P\+L\+V\+D\+S\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+ER $\ast$ 4))
+\item 
+\#define {\bfseries B\+R\+E\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+ER}~P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+V\+AL(\hyperlink{group___peripheral___registers___bits___definition_ga0f99becaceb185431dbf46fb22718d0a}{P\+W\+R\+\_\+\+C\+S\+R\+\_\+\+B\+RE})
+\item 
+\#define {\bfseries C\+S\+R\+\_\+\+B\+R\+E\+\_\+\+BB}~(uint32\+\_\+t)(\hyperlink{group___peripheral__memory__map_gaed7efc100877000845c236ccdc9e144a}{P\+E\+R\+I\+P\+H\+\_\+\+B\+B\+\_\+\+B\+A\+SE} + (P\+W\+R\+\_\+\+C\+S\+R\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+BB $\ast$ 32) + (B\+R\+E\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+ER $\ast$ 4))
+\item 
+\#define {\bfseries I\+S\+\_\+\+P\+W\+R\+\_\+\+R\+E\+G\+U\+L\+A\+T\+O\+R\+\_\+\+U\+N\+D\+E\+R\+D\+R\+I\+VE}(R\+E\+G\+U\+L\+A\+T\+OR)
+\item 
+\#define {\bfseries I\+S\+\_\+\+P\+W\+R\+\_\+\+V\+O\+L\+T\+A\+G\+E\+\_\+\+S\+C\+A\+L\+I\+N\+G\+\_\+\+R\+A\+N\+GE}(V\+O\+L\+T\+A\+GE)
+\item 
+\#define {\bfseries I\+S\+\_\+\+P\+W\+R\+\_\+\+W\+A\+K\+E\+U\+P\+\_\+\+P\+IN}(P\+IN)~(((P\+IN) == P\+W\+R\+\_\+\+W\+A\+K\+E\+U\+P\+\_\+\+P\+I\+N1) $\vert$$\vert$ ((P\+IN) == P\+W\+R\+\_\+\+W\+A\+K\+E\+U\+P\+\_\+\+P\+I\+N2))
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries H\+A\+L\+\_\+\+P\+W\+R\+Ex\+\_\+\+Enable\+Flash\+Power\+Down} (void)
+\item 
+void {\bfseries H\+A\+L\+\_\+\+P\+W\+R\+Ex\+\_\+\+Disable\+Flash\+Power\+Down} (void)
+\item 
+\hyperlink{stm32f4xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{H\+A\+L\+\_\+\+Status\+Type\+Def} {\bfseries H\+A\+L\+\_\+\+P\+W\+R\+Ex\+\_\+\+Enable\+Bk\+Up\+Reg} (void)
+\item 
+\hyperlink{stm32f4xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{H\+A\+L\+\_\+\+Status\+Type\+Def} {\bfseries H\+A\+L\+\_\+\+P\+W\+R\+Ex\+\_\+\+Disable\+Bk\+Up\+Reg} (void)
+\item 
+uint32\+\_\+t {\bfseries H\+A\+L\+\_\+\+P\+W\+R\+Ex\+\_\+\+Get\+Voltage\+Range} (void)
+\item 
+\hyperlink{stm32f4xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{H\+A\+L\+\_\+\+Status\+Type\+Def} {\bfseries H\+A\+L\+\_\+\+P\+W\+R\+Ex\+\_\+\+Control\+Voltage\+Scaling} (uint32\+\_\+t Voltage\+Scaling)
+\item 
+\hyperlink{stm32f4xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{H\+A\+L\+\_\+\+Status\+Type\+Def} {\bfseries H\+A\+L\+\_\+\+P\+W\+R\+Ex\+\_\+\+Enable\+Over\+Drive} (void)
+\item 
+\hyperlink{stm32f4xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{H\+A\+L\+\_\+\+Status\+Type\+Def} {\bfseries H\+A\+L\+\_\+\+P\+W\+R\+Ex\+\_\+\+Disable\+Over\+Drive} (void)
+\item 
+\hyperlink{stm32f4xx__hal__def_8h_a63c0679d1cb8b8c684fbb0632743478f}{H\+A\+L\+\_\+\+Status\+Type\+Def} {\bfseries H\+A\+L\+\_\+\+P\+W\+R\+Ex\+\_\+\+Enter\+Under\+Drive\+S\+T\+O\+P\+Mode} (uint32\+\_\+t Regulator, uint8\+\_\+t S\+T\+O\+P\+Entry)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Header file of P\+WR H\+AL Extension module. 
+
+\begin{DoxyAuthor}{Author}
+M\+CD Application Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V1.\+4.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+09-\/\+October-\/2015 
+\end{DoxyDate}
+\begin{DoxyAttention}{Attention}
+
+\end{DoxyAttention}
+\subsubsection*{\begin{center}\copyright{} C\+O\+P\+Y\+R\+I\+G\+H\+T(c) 2015 S\+T\+Microelectronics\end{center} }
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met\+:
+\begin{DoxyEnumerate}
+\item Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+\item Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+\item Neither the name of S\+T\+Microelectronics nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+\end{DoxyEnumerate}
+
+T\+H\+IS S\+O\+F\+T\+W\+A\+RE IS P\+R\+O\+V\+I\+D\+ED BY T\+HE C\+O\+P\+Y\+R\+I\+G\+HT H\+O\+L\+D\+E\+RS A\+ND C\+O\+N\+T\+R\+I\+B\+U\+T\+O\+RS \char`\"{}\+A\+S I\+S\char`\"{} A\+ND A\+NY E\+X\+P\+R\+E\+SS OR I\+M\+P\+L\+I\+ED W\+A\+R\+R\+A\+N\+T\+I\+ES, I\+N\+C\+L\+U\+D\+I\+NG, B\+UT N\+OT L\+I\+M\+I\+T\+ED TO, T\+HE I\+M\+P\+L\+I\+ED W\+A\+R\+R\+A\+N\+T\+I\+ES OF M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY A\+ND F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE A\+RE D\+I\+S\+C\+L\+A\+I\+M\+ED. IN NO E\+V\+E\+NT S\+H\+A\+LL T\+HE C\+O\+P\+Y\+R\+I\+G\+HT H\+O\+L\+D\+ER OR C\+O\+N\+T\+R\+I\+B\+U\+T\+O\+RS BE L\+I\+A\+B\+LE F\+OR A\+NY D\+I\+R\+E\+CT, I\+N\+D\+I\+R\+E\+CT, I\+N\+C\+I\+D\+E\+N\+T\+AL, S\+P\+E\+C\+I\+AL, E\+X\+E\+M\+P\+L\+A\+RY, OR C\+O\+N\+S\+E\+Q\+U\+E\+N\+T\+I\+AL D\+A\+M\+A\+G\+ES (I\+N\+C\+L\+U\+D\+I\+NG, B\+UT N\+OT L\+I\+M\+I\+T\+ED TO, P\+R\+O\+C\+U\+R\+E\+M\+E\+NT OF S\+U\+B\+S\+T\+I\+T\+U\+TE G\+O\+O\+DS OR S\+E\+R\+V\+I\+C\+ES; L\+O\+SS OF U\+SE, D\+A\+TA, OR P\+R\+O\+F\+I\+TS; OR B\+U\+S\+I\+N\+E\+SS I\+N\+T\+E\+R\+R\+U\+P\+T\+I\+ON) H\+O\+W\+E\+V\+ER C\+A\+U\+S\+ED A\+ND ON A\+NY T\+H\+E\+O\+RY OF L\+I\+A\+B\+I\+L\+I\+TY, W\+H\+E\+T\+H\+ER IN C\+O\+N\+T\+R\+A\+CT, S\+T\+R\+I\+CT L\+I\+A\+B\+I\+L\+I\+TY, OR T\+O\+RT (I\+N\+C\+L\+U\+D\+I\+NG N\+E\+G\+L\+I\+G\+E\+N\+CE OR O\+T\+H\+E\+R\+W\+I\+SE) A\+R\+I\+S\+I\+NG IN A\+NY W\+AY O\+UT OF T\+HE U\+SE OF T\+H\+IS S\+O\+F\+T\+W\+A\+RE, E\+V\+EN IF A\+D\+V\+I\+S\+ED OF T\+HE P\+O\+S\+S\+I\+B\+I\+L\+I\+TY OF S\+U\+CH D\+A\+M\+A\+GE. 

@@ -1,0 +1,95 @@
+\hypertarget{classmbed_1_1_circular_buffer}{}\section{mbed\+:\+:Circular\+Buffer$<$ T, Buffer\+Size, Counter\+Type $>$ Class Template Reference}
+\label{classmbed_1_1_circular_buffer}\index{mbed\+::\+Circular\+Buffer$<$ T, Buffer\+Size, Counter\+Type $>$@{mbed\+::\+Circular\+Buffer$<$ T, Buffer\+Size, Counter\+Type $>$}}
+
+
+{\ttfamily \#include $<$Circular\+Buffer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmbed_1_1_circular_buffer_a7912eb5ef637aee9dec87ccc2c142027}{push} (const T \&data)
+\item 
+bool \hyperlink{classmbed_1_1_circular_buffer_ad3f648bd0c4c64dca2a4549eac41381c}{pop} (T \&data)
+\item 
+bool \hyperlink{classmbed_1_1_circular_buffer_a3d5c033b92daa3d0575702d3f0d9464d}{empty} ()
+\item 
+bool \hyperlink{classmbed_1_1_circular_buffer_a662aaf4fa7ef4e7aa0b9ee0d4a8e4f7a}{full} ()
+\item 
+void \hyperlink{classmbed_1_1_circular_buffer_aeaa832ce32a966c1605af04e988c273f}{reset} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T, uint32\+\_\+t Buffer\+Size, typename Counter\+Type = uint32\+\_\+t$>$\\*
+class mbed\+::\+Circular\+Buffer$<$ T, Buffer\+Size, Counter\+Type $>$}
+
+Templated Circular buffer class 
+
+\subsection{Member Function Documentation}
+\index{mbed\+::\+Circular\+Buffer@{mbed\+::\+Circular\+Buffer}!empty@{empty}}
+\index{empty@{empty}!mbed\+::\+Circular\+Buffer@{mbed\+::\+Circular\+Buffer}}
+\subsubsection[{\texorpdfstring{empty()}{empty()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , uint32\+\_\+t Buffer\+Size, typename Counter\+Type  = uint32\+\_\+t$>$ bool {\bf mbed\+::\+Circular\+Buffer}$<$ T, Buffer\+Size, Counter\+Type $>$\+::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmbed_1_1_circular_buffer_a3d5c033b92daa3d0575702d3f0d9464d}{}\label{classmbed_1_1_circular_buffer_a3d5c033b92daa3d0575702d3f0d9464d}
+Check if the buffer is empty
+
+\begin{DoxyReturn}{Returns}
+True if the buffer is empty, false if not 
+\end{DoxyReturn}
+\index{mbed\+::\+Circular\+Buffer@{mbed\+::\+Circular\+Buffer}!full@{full}}
+\index{full@{full}!mbed\+::\+Circular\+Buffer@{mbed\+::\+Circular\+Buffer}}
+\subsubsection[{\texorpdfstring{full()}{full()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , uint32\+\_\+t Buffer\+Size, typename Counter\+Type  = uint32\+\_\+t$>$ bool {\bf mbed\+::\+Circular\+Buffer}$<$ T, Buffer\+Size, Counter\+Type $>$\+::full (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmbed_1_1_circular_buffer_a662aaf4fa7ef4e7aa0b9ee0d4a8e4f7a}{}\label{classmbed_1_1_circular_buffer_a662aaf4fa7ef4e7aa0b9ee0d4a8e4f7a}
+Check if the buffer is full
+
+\begin{DoxyReturn}{Returns}
+True if the buffer is full, false if not 
+\end{DoxyReturn}
+\index{mbed\+::\+Circular\+Buffer@{mbed\+::\+Circular\+Buffer}!pop@{pop}}
+\index{pop@{pop}!mbed\+::\+Circular\+Buffer@{mbed\+::\+Circular\+Buffer}}
+\subsubsection[{\texorpdfstring{pop(\+T \&data)}{pop(T &data)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , uint32\+\_\+t Buffer\+Size, typename Counter\+Type  = uint32\+\_\+t$>$ bool {\bf mbed\+::\+Circular\+Buffer}$<$ T, Buffer\+Size, Counter\+Type $>$\+::pop (
+\begin{DoxyParamCaption}
+\item[{T \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmbed_1_1_circular_buffer_ad3f648bd0c4c64dca2a4549eac41381c}{}\label{classmbed_1_1_circular_buffer_ad3f648bd0c4c64dca2a4549eac41381c}
+Pop the transaction from the buffer
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Data to be pushed to the buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the buffer is not empty and data contains a transaction, false otherwise 
+\end{DoxyReturn}
+\index{mbed\+::\+Circular\+Buffer@{mbed\+::\+Circular\+Buffer}!push@{push}}
+\index{push@{push}!mbed\+::\+Circular\+Buffer@{mbed\+::\+Circular\+Buffer}}
+\subsubsection[{\texorpdfstring{push(const T \&data)}{push(const T &data)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , uint32\+\_\+t Buffer\+Size, typename Counter\+Type  = uint32\+\_\+t$>$ void {\bf mbed\+::\+Circular\+Buffer}$<$ T, Buffer\+Size, Counter\+Type $>$\+::push (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmbed_1_1_circular_buffer_a7912eb5ef637aee9dec87ccc2c142027}{}\label{classmbed_1_1_circular_buffer_a7912eb5ef637aee9dec87ccc2c142027}
+Push the transaction to the buffer. This overwrites the buffer if it\textquotesingle{}s full
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Data to be pushed to the buffer \\
+\hline
+\end{DoxyParams}
+\index{mbed\+::\+Circular\+Buffer@{mbed\+::\+Circular\+Buffer}!reset@{reset}}
+\index{reset@{reset}!mbed\+::\+Circular\+Buffer@{mbed\+::\+Circular\+Buffer}}
+\subsubsection[{\texorpdfstring{reset()}{reset()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , uint32\+\_\+t Buffer\+Size, typename Counter\+Type  = uint32\+\_\+t$>$ void {\bf mbed\+::\+Circular\+Buffer}$<$ T, Buffer\+Size, Counter\+Type $>$\+::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmbed_1_1_circular_buffer_aeaa832ce32a966c1605af04e988c273f}{}\label{classmbed_1_1_circular_buffer_aeaa832ce32a966c1605af04e988c273f}
+Reset the buffer 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dynamixel-\/\+M\+X106/mbed/Circular\+Buffer.\+h\end{DoxyCompactItemize}

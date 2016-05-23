@@ -1,0 +1,122 @@
+\hypertarget{group___u_s_a_r_t___private___macros}{}\section{U\+S\+A\+RT Private Macros}
+\label{group___u_s_a_r_t___private___macros}\index{U\+S\+A\+R\+T Private Macros@{U\+S\+A\+R\+T Private Macros}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+N\+A\+C\+K\+\_\+\+S\+T\+A\+TE}(N\+A\+CK)
+\item 
+\#define {\bfseries I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+L\+A\+S\+T\+B\+IT}(L\+A\+S\+T\+B\+IT)
+\item 
+\#define {\bfseries I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+P\+H\+A\+SE}(C\+P\+HA)~(((C\+P\+HA) == U\+S\+A\+R\+T\+\_\+\+P\+H\+A\+S\+E\+\_\+1\+E\+D\+GE) $\vert$$\vert$ ((C\+P\+HA) == U\+S\+A\+R\+T\+\_\+\+P\+H\+A\+S\+E\+\_\+2\+E\+D\+GE))\hypertarget{group___u_s_a_r_t___private___macros_ga6ea3d074e9204eb593472e03452e537b}{}\label{group___u_s_a_r_t___private___macros_ga6ea3d074e9204eb593472e03452e537b}
+
+\item 
+\#define {\bfseries I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+P\+O\+L\+A\+R\+I\+TY}(C\+P\+OL)~(((C\+P\+OL) == U\+S\+A\+R\+T\+\_\+\+P\+O\+L\+A\+R\+I\+T\+Y\+\_\+\+L\+OW) $\vert$$\vert$ ((C\+P\+OL) == U\+S\+A\+R\+T\+\_\+\+P\+O\+L\+A\+R\+I\+T\+Y\+\_\+\+H\+I\+GH))\hypertarget{group___u_s_a_r_t___private___macros_ga365cbaaf0cc68a8c689b4ee418cd287d}{}\label{group___u_s_a_r_t___private___macros_ga365cbaaf0cc68a8c689b4ee418cd287d}
+
+\item 
+\#define {\bfseries I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+C\+L\+O\+CK}(C\+L\+O\+CK)
+\item 
+\#define {\bfseries I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+W\+O\+R\+D\+\_\+\+L\+E\+N\+G\+TH}(L\+E\+N\+G\+TH)
+\item 
+\#define {\bfseries I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+S\+T\+O\+P\+B\+I\+TS}(S\+T\+O\+P\+B\+I\+TS)
+\item 
+\#define {\bfseries I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+P\+A\+R\+I\+TY}(P\+A\+R\+I\+TY)
+\item 
+\#define {\bfseries I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+M\+O\+DE}(M\+O\+DE)~((((M\+O\+DE) \& (uint32\+\_\+t)0x\+F\+F\+F3) == 0x00) \&\& ((\+M\+O\+D\+E) != (uint32\+\_\+t)0x00))\hypertarget{group___u_s_a_r_t___private___macros_gae9140e5ca405d2377fe0e82c79e136a2}{}\label{group___u_s_a_r_t___private___macros_gae9140e5ca405d2377fe0e82c79e136a2}
+
+\item 
+\#define {\bfseries I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+B\+A\+U\+D\+R\+A\+TE}(B\+A\+U\+D\+R\+A\+TE)~((B\+A\+U\+D\+R\+A\+TE) $<$ 10500001)\hypertarget{group___u_s_a_r_t___private___macros_ga9dc365e0a1e01031a8e0757a34b9d420}{}\label{group___u_s_a_r_t___private___macros_ga9dc365e0a1e01031a8e0757a34b9d420}
+
+\item 
+\#define {\bfseries U\+S\+A\+R\+T\+\_\+\+D\+IV}(\+\_\+\+P\+C\+L\+K\+\_\+,  \+\_\+\+B\+A\+U\+D\+\_\+)~(((\+\_\+\+P\+C\+L\+K\+\_\+)$\ast$25)/(2$\ast$(\+\_\+\+B\+A\+U\+D\+\_\+)))\hypertarget{group___u_s_a_r_t___private___macros_ga97e94c06b8493c8eafac36cb787dcb26}{}\label{group___u_s_a_r_t___private___macros_ga97e94c06b8493c8eafac36cb787dcb26}
+
+\item 
+\#define {\bfseries U\+S\+A\+R\+T\+\_\+\+D\+I\+V\+M\+A\+NT}(\+\_\+\+P\+C\+L\+K\+\_\+,  \+\_\+\+B\+A\+U\+D\+\_\+)~(U\+S\+A\+R\+T\+\_\+\+D\+IV((\+\_\+\+P\+C\+L\+K\+\_\+), (\+\_\+\+B\+A\+U\+D\+\_\+))/100)\hypertarget{group___u_s_a_r_t___private___macros_gaa2c98efc6728b5c725cb8d0105e877a5}{}\label{group___u_s_a_r_t___private___macros_gaa2c98efc6728b5c725cb8d0105e877a5}
+
+\item 
+\#define {\bfseries U\+S\+A\+R\+T\+\_\+\+D\+I\+V\+F\+R\+AQ}(\+\_\+\+P\+C\+L\+K\+\_\+,  \+\_\+\+B\+A\+U\+D\+\_\+)~(((U\+S\+A\+R\+T\+\_\+\+D\+IV((\+\_\+\+P\+C\+L\+K\+\_\+), (\+\_\+\+B\+A\+U\+D\+\_\+)) -\/ (U\+S\+A\+R\+T\+\_\+\+D\+I\+V\+M\+A\+NT((\+\_\+\+P\+C\+L\+K\+\_\+), (\+\_\+\+B\+A\+U\+D\+\_\+)) $\ast$ 100)) $\ast$ 16 + 50) / 100)\hypertarget{group___u_s_a_r_t___private___macros_ga00df975ff1f97cde5c9aff11decf858b}{}\label{group___u_s_a_r_t___private___macros_ga00df975ff1f97cde5c9aff11decf858b}
+
+\item 
+\#define {\bfseries U\+S\+A\+R\+T\+\_\+\+B\+RR}(\+\_\+\+P\+C\+L\+K\+\_\+,  \+\_\+\+B\+A\+U\+D\+\_\+)~((U\+S\+A\+R\+T\+\_\+\+D\+I\+V\+M\+A\+NT((\+\_\+\+P\+C\+L\+K\+\_\+), (\+\_\+\+B\+A\+U\+D\+\_\+)) $<$$<$ 4)$\vert$(U\+S\+A\+R\+T\+\_\+\+D\+I\+V\+F\+R\+AQ((\+\_\+\+P\+C\+L\+K\+\_\+), (\+\_\+\+B\+A\+U\+D\+\_\+)) \& 0x0\+F))\hypertarget{group___u_s_a_r_t___private___macros_ga783dc52032f468497a8affe268751909}{}\label{group___u_s_a_r_t___private___macros_ga783dc52032f468497a8affe268751909}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\index{U\+S\+A\+R\+T Private Macros@{U\+S\+A\+R\+T Private Macros}!I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+C\+L\+O\+CK@{I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+C\+L\+O\+CK}}
+\index{I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+C\+L\+O\+CK@{I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+C\+L\+O\+CK}!U\+S\+A\+R\+T Private Macros@{U\+S\+A\+R\+T Private Macros}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+C\+L\+O\+CK}{IS_USART_CLOCK}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+C\+L\+O\+CK(
+\begin{DoxyParamCaption}
+\item[{}]{C\+L\+O\+CK}
+\end{DoxyParamCaption}
+)}\hypertarget{group___u_s_a_r_t___private___macros_ga0f1e1ba37690b21b7338ed3b06614cf6}{}\label{group___u_s_a_r_t___private___macros_ga0f1e1ba37690b21b7338ed3b06614cf6}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((CLOCK) == USART\_CLOCK\_DISABLE) || \(\backslash\)
+                               ((CLOCK) == USART\_CLOCK\_ENABLE))
+\end{DoxyCode}
+\index{U\+S\+A\+R\+T Private Macros@{U\+S\+A\+R\+T Private Macros}!I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+L\+A\+S\+T\+B\+IT@{I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+L\+A\+S\+T\+B\+IT}}
+\index{I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+L\+A\+S\+T\+B\+IT@{I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+L\+A\+S\+T\+B\+IT}!U\+S\+A\+R\+T Private Macros@{U\+S\+A\+R\+T Private Macros}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+L\+A\+S\+T\+B\+IT}{IS_USART_LASTBIT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+L\+A\+S\+T\+B\+IT(
+\begin{DoxyParamCaption}
+\item[{}]{L\+A\+S\+T\+B\+IT}
+\end{DoxyParamCaption}
+)}\hypertarget{group___u_s_a_r_t___private___macros_gaa941695e5612b53e9c2aca6a9fa0d695}{}\label{group___u_s_a_r_t___private___macros_gaa941695e5612b53e9c2aca6a9fa0d695}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((LASTBIT) == USART\_LASTBIT\_DISABLE) || \(\backslash\)
+                                       ((LASTBIT) == USART\_LASTBIT\_ENABLE))
+\end{DoxyCode}
+\index{U\+S\+A\+R\+T Private Macros@{U\+S\+A\+R\+T Private Macros}!I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+N\+A\+C\+K\+\_\+\+S\+T\+A\+TE@{I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+N\+A\+C\+K\+\_\+\+S\+T\+A\+TE}}
+\index{I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+N\+A\+C\+K\+\_\+\+S\+T\+A\+TE@{I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+N\+A\+C\+K\+\_\+\+S\+T\+A\+TE}!U\+S\+A\+R\+T Private Macros@{U\+S\+A\+R\+T Private Macros}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+N\+A\+C\+K\+\_\+\+S\+T\+A\+TE}{IS_USART_NACK_STATE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+N\+A\+C\+K\+\_\+\+S\+T\+A\+TE(
+\begin{DoxyParamCaption}
+\item[{}]{N\+A\+CK}
+\end{DoxyParamCaption}
+)}\hypertarget{group___u_s_a_r_t___private___macros_ga92c8c26cb4d4f8f20c67a85c2d457797}{}\label{group___u_s_a_r_t___private___macros_ga92c8c26cb4d4f8f20c67a85c2d457797}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((NACK) == USART\_NACK\_ENABLE) || \(\backslash\)
+                                   ((NACK) == USART\_NACK\_DISABLE))
+\end{DoxyCode}
+\index{U\+S\+A\+R\+T Private Macros@{U\+S\+A\+R\+T Private Macros}!I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+P\+A\+R\+I\+TY@{I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+P\+A\+R\+I\+TY}}
+\index{I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+P\+A\+R\+I\+TY@{I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+P\+A\+R\+I\+TY}!U\+S\+A\+R\+T Private Macros@{U\+S\+A\+R\+T Private Macros}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+P\+A\+R\+I\+TY}{IS_USART_PARITY}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+P\+A\+R\+I\+TY(
+\begin{DoxyParamCaption}
+\item[{}]{P\+A\+R\+I\+TY}
+\end{DoxyParamCaption}
+)}\hypertarget{group___u_s_a_r_t___private___macros_gaa87b2e338e0ccc42887d3c56901bee87}{}\label{group___u_s_a_r_t___private___macros_gaa87b2e338e0ccc42887d3c56901bee87}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((PARITY) == USART\_PARITY\_NONE) || \(\backslash\)
+                                     ((PARITY) == USART\_PARITY\_EVEN) || \(\backslash\)
+                                     ((PARITY) == USART\_PARITY\_ODD))
+\end{DoxyCode}
+\index{U\+S\+A\+R\+T Private Macros@{U\+S\+A\+R\+T Private Macros}!I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+S\+T\+O\+P\+B\+I\+TS@{I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+S\+T\+O\+P\+B\+I\+TS}}
+\index{I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+S\+T\+O\+P\+B\+I\+TS@{I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+S\+T\+O\+P\+B\+I\+TS}!U\+S\+A\+R\+T Private Macros@{U\+S\+A\+R\+T Private Macros}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+S\+T\+O\+P\+B\+I\+TS}{IS_USART_STOPBITS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+S\+T\+O\+P\+B\+I\+TS(
+\begin{DoxyParamCaption}
+\item[{}]{S\+T\+O\+P\+B\+I\+TS}
+\end{DoxyParamCaption}
+)}\hypertarget{group___u_s_a_r_t___private___macros_ga6f9153c1fbee1058ba26ec88f0f20828}{}\label{group___u_s_a_r_t___private___macros_ga6f9153c1fbee1058ba26ec88f0f20828}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((STOPBITS) == USART\_STOPBITS\_1) || \(\backslash\)
+                                         ((STOPBITS) == USART\_STOPBITS\_0\_5) || \(\backslash\)
+                                         ((STOPBITS) == USART\_STOPBITS\_1\_5) || \(\backslash\)
+                                         ((STOPBITS) == USART\_STOPBITS\_2))
+\end{DoxyCode}
+\index{U\+S\+A\+R\+T Private Macros@{U\+S\+A\+R\+T Private Macros}!I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+W\+O\+R\+D\+\_\+\+L\+E\+N\+G\+TH@{I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+W\+O\+R\+D\+\_\+\+L\+E\+N\+G\+TH}}
+\index{I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+W\+O\+R\+D\+\_\+\+L\+E\+N\+G\+TH@{I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+W\+O\+R\+D\+\_\+\+L\+E\+N\+G\+TH}!U\+S\+A\+R\+T Private Macros@{U\+S\+A\+R\+T Private Macros}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+W\+O\+R\+D\+\_\+\+L\+E\+N\+G\+TH}{IS_USART_WORD_LENGTH}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+U\+S\+A\+R\+T\+\_\+\+W\+O\+R\+D\+\_\+\+L\+E\+N\+G\+TH(
+\begin{DoxyParamCaption}
+\item[{}]{L\+E\+N\+G\+TH}
+\end{DoxyParamCaption}
+)}\hypertarget{group___u_s_a_r_t___private___macros_ga5b07b29ee91f0bea4c10ec0fd74fbc04}{}\label{group___u_s_a_r_t___private___macros_ga5b07b29ee91f0bea4c10ec0fd74fbc04}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((LENGTH) == USART\_WORDLENGTH\_8B) || \(\backslash\)
+                                          ((LENGTH) == USART\_WORDLENGTH\_9B))
+\end{DoxyCode}

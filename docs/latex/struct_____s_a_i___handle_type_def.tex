@@ -1,0 +1,93 @@
+\hypertarget{struct_____s_a_i___handle_type_def}{}\section{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def Struct Reference}
+\label{struct_____s_a_i___handle_type_def}\index{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def}}
+
+
+S\+AI handle Structure definition.  
+
+
+
+
+{\ttfamily \#include $<$stm32f4xx\+\_\+hal\+\_\+sai.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_s_a_i___block___type_def}{S\+A\+I\+\_\+\+Block\+\_\+\+Type\+Def} $\ast$ \hyperlink{struct_____s_a_i___handle_type_def_a8f544698ef87977771b016fcd75d2ac0}{Instance}
+\item 
+\hyperlink{struct_s_a_i___init_type_def}{S\+A\+I\+\_\+\+Init\+Type\+Def} \hyperlink{struct_____s_a_i___handle_type_def_a184047822e47fc9bacb9e77b8d733081}{Init}
+\item 
+\hyperlink{struct_s_a_i___frame_init_type_def}{S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def} \hyperlink{struct_____s_a_i___handle_type_def_a2942d66875489996442c31fb646ff701}{Frame\+Init}
+\item 
+\hyperlink{struct_s_a_i___slot_init_type_def}{S\+A\+I\+\_\+\+Slot\+Init\+Type\+Def} \hyperlink{struct_____s_a_i___handle_type_def_a31541010b7ce773d32f5b2b48dc1bbe1}{Slot\+Init}
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{struct_____s_a_i___handle_type_def_a2c2504bbb7be8c14347157bbc4fae837}{p\+Buff\+Ptr}
+\item 
+uint16\+\_\+t \hyperlink{struct_____s_a_i___handle_type_def_a8f3114ca6990b3c9efafcdd76c8e21f2}{Xfer\+Size}
+\item 
+uint16\+\_\+t \hyperlink{struct_____s_a_i___handle_type_def_abef6c492c344416c607ddf6bcd0869ac}{Xfer\+Count}
+\item 
+\hyperlink{group___d_m_a___exported___types_ga41b754a906b86bce54dc79938970138b}{D\+M\+A\+\_\+\+Handle\+Type\+Def} $\ast$ \hyperlink{struct_____s_a_i___handle_type_def_a206dffa30475f86c45b5b749d96d969a}{hdmatx}
+\item 
+\hyperlink{group___d_m_a___exported___types_ga41b754a906b86bce54dc79938970138b}{D\+M\+A\+\_\+\+Handle\+Type\+Def} $\ast$ \hyperlink{struct_____s_a_i___handle_type_def_aeca9733265dacfb8368acab06ca5fa0d}{hdmarx}
+\item 
+\hyperlink{group___s_a_i___exported___types_ga957c3e6366add9a5d3c516ceb0ed8058}{S\+A\+Icallback} \hyperlink{struct_____s_a_i___handle_type_def_a91ba06a7ba7902471441ded24bb51262}{mutecallback}
+\item 
+void($\ast$ {\bfseries Interrupt\+Service\+Routine} )(struct \hyperlink{struct_____s_a_i___handle_type_def}{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def} $\ast$hsai)\hypertarget{struct_____s_a_i___handle_type_def_a6af795b63cc8d7b6c38f375e6a3b9ecf}{}\label{struct_____s_a_i___handle_type_def_a6af795b63cc8d7b6c38f375e6a3b9ecf}
+
+\item 
+\hyperlink{stm32f4xx__hal__def_8h_ab367482e943333a1299294eadaad284b}{H\+A\+L\+\_\+\+Lock\+Type\+Def} \hyperlink{struct_____s_a_i___handle_type_def_a0618c6ee0d6f7d735bf33619aeffbd30}{Lock}
+\item 
+\hyperlink{core__sc300_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO} \hyperlink{group___s_a_i___exported___types_gac758df9679f0ee29c77d9b1b66289589}{H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+State\+Type\+Def} \hyperlink{struct_____s_a_i___handle_type_def_a89c4679bb5c61aea9b747791a7ec5a5b}{State}
+\item 
+\hyperlink{core__sc300_8h_aec43007d9998a0a0e01faede4133d6be}{\+\_\+\+\_\+\+IO} uint32\+\_\+t \hyperlink{struct_____s_a_i___handle_type_def_a3fd57adcd0e53202b3339e35e50a00df}{Error\+Code}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+AI handle Structure definition. 
+
+\subsection{Member Data Documentation}
+\index{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def}!Error\+Code@{Error\+Code}}
+\index{Error\+Code@{Error\+Code}!\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Error\+Code}{ErrorCode}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \+\_\+\+\_\+\+IO} uint32\+\_\+t \+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def\+::\+Error\+Code}\hypertarget{struct_____s_a_i___handle_type_def_a3fd57adcd0e53202b3339e35e50a00df}{}\label{struct_____s_a_i___handle_type_def_a3fd57adcd0e53202b3339e35e50a00df}
+S\+AI Error code \index{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def}!Frame\+Init@{Frame\+Init}}
+\index{Frame\+Init@{Frame\+Init}!\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Frame\+Init}{FrameInit}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+A\+I\+\_\+\+Frame\+Init\+Type\+Def} \+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def\+::\+Frame\+Init}\hypertarget{struct_____s_a_i___handle_type_def_a2942d66875489996442c31fb646ff701}{}\label{struct_____s_a_i___handle_type_def_a2942d66875489996442c31fb646ff701}
+S\+AI Frame configuration parameters \index{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def}!hdmarx@{hdmarx}}
+\index{hdmarx@{hdmarx}!\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def}}
+\subsubsection[{\texorpdfstring{hdmarx}{hdmarx}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+M\+A\+\_\+\+Handle\+Type\+Def}$\ast$ \+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def\+::hdmarx}\hypertarget{struct_____s_a_i___handle_type_def_aeca9733265dacfb8368acab06ca5fa0d}{}\label{struct_____s_a_i___handle_type_def_aeca9733265dacfb8368acab06ca5fa0d}
+S\+AI Rx D\+MA handle parameters \index{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def}!hdmatx@{hdmatx}}
+\index{hdmatx@{hdmatx}!\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def}}
+\subsubsection[{\texorpdfstring{hdmatx}{hdmatx}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+M\+A\+\_\+\+Handle\+Type\+Def}$\ast$ \+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def\+::hdmatx}\hypertarget{struct_____s_a_i___handle_type_def_a206dffa30475f86c45b5b749d96d969a}{}\label{struct_____s_a_i___handle_type_def_a206dffa30475f86c45b5b749d96d969a}
+S\+AI Tx D\+MA handle parameters \index{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def}!Init@{Init}}
+\index{Init@{Init}!\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Init}{Init}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+A\+I\+\_\+\+Init\+Type\+Def} \+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def\+::\+Init}\hypertarget{struct_____s_a_i___handle_type_def_a184047822e47fc9bacb9e77b8d733081}{}\label{struct_____s_a_i___handle_type_def_a184047822e47fc9bacb9e77b8d733081}
+S\+AI communication parameters \index{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def}!Instance@{Instance}}
+\index{Instance@{Instance}!\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Instance}{Instance}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+A\+I\+\_\+\+Block\+\_\+\+Type\+Def}$\ast$ \+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def\+::\+Instance}\hypertarget{struct_____s_a_i___handle_type_def_a8f544698ef87977771b016fcd75d2ac0}{}\label{struct_____s_a_i___handle_type_def_a8f544698ef87977771b016fcd75d2ac0}
+S\+AI Blockx registers base address \index{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def}!Lock@{Lock}}
+\index{Lock@{Lock}!\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Lock}{Lock}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf H\+A\+L\+\_\+\+Lock\+Type\+Def} \+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def\+::\+Lock}\hypertarget{struct_____s_a_i___handle_type_def_a0618c6ee0d6f7d735bf33619aeffbd30}{}\label{struct_____s_a_i___handle_type_def_a0618c6ee0d6f7d735bf33619aeffbd30}
+S\+AI locking object \index{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def}!mutecallback@{mutecallback}}
+\index{mutecallback@{mutecallback}!\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def}}
+\subsubsection[{\texorpdfstring{mutecallback}{mutecallback}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+A\+Icallback} \+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def\+::mutecallback}\hypertarget{struct_____s_a_i___handle_type_def_a91ba06a7ba7902471441ded24bb51262}{}\label{struct_____s_a_i___handle_type_def_a91ba06a7ba7902471441ded24bb51262}
+S\+AI mute callback \index{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def}!p\+Buff\+Ptr@{p\+Buff\+Ptr}}
+\index{p\+Buff\+Ptr@{p\+Buff\+Ptr}!\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def}}
+\subsubsection[{\texorpdfstring{p\+Buff\+Ptr}{pBuffPtr}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t$\ast$ \+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def\+::p\+Buff\+Ptr}\hypertarget{struct_____s_a_i___handle_type_def_a2c2504bbb7be8c14347157bbc4fae837}{}\label{struct_____s_a_i___handle_type_def_a2c2504bbb7be8c14347157bbc4fae837}
+Pointer to S\+AI transfer Buffer \index{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def}!Slot\+Init@{Slot\+Init}}
+\index{Slot\+Init@{Slot\+Init}!\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Slot\+Init}{SlotInit}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+A\+I\+\_\+\+Slot\+Init\+Type\+Def} \+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def\+::\+Slot\+Init}\hypertarget{struct_____s_a_i___handle_type_def_a31541010b7ce773d32f5b2b48dc1bbe1}{}\label{struct_____s_a_i___handle_type_def_a31541010b7ce773d32f5b2b48dc1bbe1}
+S\+AI Slot configuration parameters \index{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def}!State@{State}}
+\index{State@{State}!\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def}}
+\subsubsection[{\texorpdfstring{State}{State}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \+\_\+\+\_\+\+IO} {\bf H\+A\+L\+\_\+\+S\+A\+I\+\_\+\+State\+Type\+Def} \+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def\+::\+State}\hypertarget{struct_____s_a_i___handle_type_def_a89c4679bb5c61aea9b747791a7ec5a5b}{}\label{struct_____s_a_i___handle_type_def_a89c4679bb5c61aea9b747791a7ec5a5b}
+S\+AI communication state \index{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def}!Xfer\+Count@{Xfer\+Count}}
+\index{Xfer\+Count@{Xfer\+Count}!\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Xfer\+Count}{XferCount}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t \+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def\+::\+Xfer\+Count}\hypertarget{struct_____s_a_i___handle_type_def_abef6c492c344416c607ddf6bcd0869ac}{}\label{struct_____s_a_i___handle_type_def_abef6c492c344416c607ddf6bcd0869ac}
+S\+AI transfer counter \index{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def}!Xfer\+Size@{Xfer\+Size}}
+\index{Xfer\+Size@{Xfer\+Size}!\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def@{\+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Xfer\+Size}{XferSize}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t \+\_\+\+\_\+\+S\+A\+I\+\_\+\+Handle\+Type\+Def\+::\+Xfer\+Size}\hypertarget{struct_____s_a_i___handle_type_def_a8f3114ca6990b3c9efafcdd76c8e21f2}{}\label{struct_____s_a_i___handle_type_def_a8f3114ca6990b3c9efafcdd76c8e21f2}
+S\+AI transfer size 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dynamixel-\/\+M\+X106/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+N\+U\+C\+L\+E\+O\+\_\+\+F446\+R\+E/\hyperlink{stm32f4xx__hal__sai_8h}{stm32f4xx\+\_\+hal\+\_\+sai.\+h}\end{DoxyCompactItemize}

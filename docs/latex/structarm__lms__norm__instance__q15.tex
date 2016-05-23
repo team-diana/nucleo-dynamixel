@@ -1,0 +1,65 @@
+\hypertarget{structarm__lms__norm__instance__q15}{}\section{arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15 Struct Reference}
+\label{structarm__lms__norm__instance__q15}\index{arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15@{arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15}}
+
+
+Instance structure for the Q15 normalized L\+MS filter.  
+
+
+
+
+{\ttfamily \#include $<$arm\+\_\+math.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \hyperlink{structarm__lms__norm__instance__q15_a9ee7a45f4f315d7996a969e25fdc7146}{num\+Taps}
+\item 
+q15\+\_\+t $\ast$ \hyperlink{structarm__lms__norm__instance__q15_aa4de490b3bdbd03561b76ee07901c8e3}{p\+State}
+\item 
+q15\+\_\+t $\ast$ \hyperlink{structarm__lms__norm__instance__q15_ae7bca648c75a2ffa02d87852bb78bc8a}{p\+Coeffs}
+\item 
+q15\+\_\+t \hyperlink{structarm__lms__norm__instance__q15_a7ce00f21d11cfda6d963240641deea8c}{mu}
+\item 
+uint8\+\_\+t \hyperlink{structarm__lms__norm__instance__q15_aa0d435fbcf7dedb7179d4467e9b79e9f}{post\+Shift}
+\item 
+q15\+\_\+t $\ast$ \hyperlink{structarm__lms__norm__instance__q15_a9aabb0e4c79f3db807e7a441fa36f5f8}{recip\+Table}
+\item 
+q15\+\_\+t \hyperlink{structarm__lms__norm__instance__q15_a1c81ded399919d8181026bc1c8602e7b}{energy}
+\item 
+q15\+\_\+t \hyperlink{structarm__lms__norm__instance__q15_a3fc1d6f97d2c6d5324871de6895cb7e9}{x0}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Instance structure for the Q15 normalized L\+MS filter. 
+
+\subsection{Member Data Documentation}
+\index{arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15@{arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15}!energy@{energy}}
+\index{energy@{energy}!arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15@{arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15}}
+\subsubsection[{\texorpdfstring{energy}{energy}}]{\setlength{\rightskip}{0pt plus 5cm}q15\+\_\+t arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15\+::energy}\hypertarget{structarm__lms__norm__instance__q15_a1c81ded399919d8181026bc1c8602e7b}{}\label{structarm__lms__norm__instance__q15_a1c81ded399919d8181026bc1c8602e7b}
+saves previous frame energy. \index{arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15@{arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15}!mu@{mu}}
+\index{mu@{mu}!arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15@{arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15}}
+\subsubsection[{\texorpdfstring{mu}{mu}}]{\setlength{\rightskip}{0pt plus 5cm}q15\+\_\+t arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15\+::mu}\hypertarget{structarm__lms__norm__instance__q15_a7ce00f21d11cfda6d963240641deea8c}{}\label{structarm__lms__norm__instance__q15_a7ce00f21d11cfda6d963240641deea8c}
+step size that controls filter coefficient updates. \index{arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15@{arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15}!num\+Taps@{num\+Taps}}
+\index{num\+Taps@{num\+Taps}!arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15@{arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15}}
+\subsubsection[{\texorpdfstring{num\+Taps}{numTaps}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15\+::num\+Taps}\hypertarget{structarm__lms__norm__instance__q15_a9ee7a45f4f315d7996a969e25fdc7146}{}\label{structarm__lms__norm__instance__q15_a9ee7a45f4f315d7996a969e25fdc7146}
+Number of coefficients in the filter. \index{arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15@{arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15}!p\+Coeffs@{p\+Coeffs}}
+\index{p\+Coeffs@{p\+Coeffs}!arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15@{arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15}}
+\subsubsection[{\texorpdfstring{p\+Coeffs}{pCoeffs}}]{\setlength{\rightskip}{0pt plus 5cm}q15\+\_\+t$\ast$ arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15\+::p\+Coeffs}\hypertarget{structarm__lms__norm__instance__q15_ae7bca648c75a2ffa02d87852bb78bc8a}{}\label{structarm__lms__norm__instance__q15_ae7bca648c75a2ffa02d87852bb78bc8a}
+points to the coefficient array. The array is of length num\+Taps. \index{arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15@{arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15}!post\+Shift@{post\+Shift}}
+\index{post\+Shift@{post\+Shift}!arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15@{arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15}}
+\subsubsection[{\texorpdfstring{post\+Shift}{postShift}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15\+::post\+Shift}\hypertarget{structarm__lms__norm__instance__q15_aa0d435fbcf7dedb7179d4467e9b79e9f}{}\label{structarm__lms__norm__instance__q15_aa0d435fbcf7dedb7179d4467e9b79e9f}
+bit shift applied to coefficients. \index{arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15@{arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15}!p\+State@{p\+State}}
+\index{p\+State@{p\+State}!arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15@{arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15}}
+\subsubsection[{\texorpdfstring{p\+State}{pState}}]{\setlength{\rightskip}{0pt plus 5cm}q15\+\_\+t$\ast$ arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15\+::p\+State}\hypertarget{structarm__lms__norm__instance__q15_aa4de490b3bdbd03561b76ee07901c8e3}{}\label{structarm__lms__norm__instance__q15_aa4de490b3bdbd03561b76ee07901c8e3}
+points to the state variable array. The array is of length num\+Taps+block\+Size-\/1. \index{arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15@{arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15}!recip\+Table@{recip\+Table}}
+\index{recip\+Table@{recip\+Table}!arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15@{arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15}}
+\subsubsection[{\texorpdfstring{recip\+Table}{recipTable}}]{\setlength{\rightskip}{0pt plus 5cm}q15\+\_\+t$\ast$ arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15\+::recip\+Table}\hypertarget{structarm__lms__norm__instance__q15_a9aabb0e4c79f3db807e7a441fa36f5f8}{}\label{structarm__lms__norm__instance__q15_a9aabb0e4c79f3db807e7a441fa36f5f8}
+Points to the reciprocal initial value table. \index{arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15@{arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15}!x0@{x0}}
+\index{x0@{x0}!arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15@{arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15}}
+\subsubsection[{\texorpdfstring{x0}{x0}}]{\setlength{\rightskip}{0pt plus 5cm}q15\+\_\+t arm\+\_\+lms\+\_\+norm\+\_\+instance\+\_\+q15\+::x0}\hypertarget{structarm__lms__norm__instance__q15_a3fc1d6f97d2c6d5324871de6895cb7e9}{}\label{structarm__lms__norm__instance__q15_a3fc1d6f97d2c6d5324871de6895cb7e9}
+saves previous input sample. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dynamixel-\/\+M\+X106/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+N\+U\+C\+L\+E\+O\+\_\+\+F446\+R\+E/arm\+\_\+math.\+h\end{DoxyCompactItemize}

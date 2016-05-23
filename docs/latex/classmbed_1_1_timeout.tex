@@ -1,0 +1,54 @@
+\hypertarget{classmbed_1_1_timeout}{}\section{mbed\+:\+:Timeout Class Reference}
+\label{classmbed_1_1_timeout}\index{mbed\+::\+Timeout@{mbed\+::\+Timeout}}
+
+
+{\ttfamily \#include $<$Timeout.\+h$>$}
+
+Inheritance diagram for mbed\+:\+:Timeout\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classmbed_1_1_timeout}
+\end{center}
+\end{figure}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries handler} ()\hypertarget{classmbed_1_1_timeout_a2324f9b01f39fa36f4b799541a46112b}{}\label{classmbed_1_1_timeout_a2324f9b01f39fa36f4b799541a46112b}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classmbed_1_1_timeout}{Timeout} is used to call a function at a point in the future
+
+You can use as many seperate \hyperlink{classmbed_1_1_timeout}{Timeout} objects as you require.
+
+Example\+: 
+\begin{DoxyCode}
+\textcolor{comment}{// Blink until timeout.}
+
+\textcolor{preprocessor}{#include "mbed.h"}
+
+Timeout timeout;
+DigitalOut led(LED1);
+
+\textcolor{keywordtype}{int} on = 1;
+
+\textcolor{keywordtype}{void} attimeout() \{
+    on = 0;
+\}
+
+\textcolor{keywordtype}{int} main() \{
+    timeout.attach(&attimeout, 5);
+    \textcolor{keywordflow}{while}(on) \{
+        led = !led;
+        wait(0.2);
+    \}
+\}
+\end{DoxyCode}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dynamixel-\/\+M\+X106/mbed/Timeout.\+h\end{DoxyCompactItemize}

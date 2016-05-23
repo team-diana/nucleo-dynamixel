@@ -1,0 +1,45 @@
+\hypertarget{struct_f_m_c___s_d_r_a_m___command_type_def}{}\section{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Command\+Type\+Def Struct Reference}
+\label{struct_f_m_c___s_d_r_a_m___command_type_def}\index{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Command\+Type\+Def@{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Command\+Type\+Def}}
+
+
+S\+D\+R\+AM command parameters structure definition.  
+
+
+
+
+{\ttfamily \#include $<$stm32f4xx\+\_\+ll\+\_\+fmc.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{struct_f_m_c___s_d_r_a_m___command_type_def_acce198aed22a4a6ee69abc568393a728}{Command\+Mode}
+\item 
+uint32\+\_\+t \hyperlink{struct_f_m_c___s_d_r_a_m___command_type_def_a1b77fbf8ef17e12284c64f174ed736de}{Command\+Target}
+\item 
+uint32\+\_\+t \hyperlink{struct_f_m_c___s_d_r_a_m___command_type_def_a22efd0147d0fa1372592aae8d4c2d037}{Auto\+Refresh\+Number}
+\item 
+uint32\+\_\+t \hyperlink{struct_f_m_c___s_d_r_a_m___command_type_def_ab50d70f643184b7d297f7bd3569b20d7}{Mode\+Register\+Definition}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\+D\+R\+AM command parameters structure definition. 
+
+\subsection{Member Data Documentation}
+\index{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Command\+Type\+Def@{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Command\+Type\+Def}!Auto\+Refresh\+Number@{Auto\+Refresh\+Number}}
+\index{Auto\+Refresh\+Number@{Auto\+Refresh\+Number}!F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Command\+Type\+Def@{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Command\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Auto\+Refresh\+Number}{AutoRefreshNumber}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Command\+Type\+Def\+::\+Auto\+Refresh\+Number}\hypertarget{struct_f_m_c___s_d_r_a_m___command_type_def_a22efd0147d0fa1372592aae8d4c2d037}{}\label{struct_f_m_c___s_d_r_a_m___command_type_def_a22efd0147d0fa1372592aae8d4c2d037}
+Defines the number of consecutive auto refresh command issued in auto refresh mode. This parameter can be a value between Min\+\_\+\+Data = 1 and Max\+\_\+\+Data = 16 \index{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Command\+Type\+Def@{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Command\+Type\+Def}!Command\+Mode@{Command\+Mode}}
+\index{Command\+Mode@{Command\+Mode}!F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Command\+Type\+Def@{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Command\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Command\+Mode}{CommandMode}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Command\+Type\+Def\+::\+Command\+Mode}\hypertarget{struct_f_m_c___s_d_r_a_m___command_type_def_acce198aed22a4a6ee69abc568393a728}{}\label{struct_f_m_c___s_d_r_a_m___command_type_def_acce198aed22a4a6ee69abc568393a728}
+Defines the command issued to the S\+D\+R\+AM device. This parameter can be a value of \hyperlink{group___f_m_c___s_d_r_a_m___command___mode}{F\+MC S\+D\+R\+AM Command Mode}. \index{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Command\+Type\+Def@{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Command\+Type\+Def}!Command\+Target@{Command\+Target}}
+\index{Command\+Target@{Command\+Target}!F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Command\+Type\+Def@{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Command\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Command\+Target}{CommandTarget}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Command\+Type\+Def\+::\+Command\+Target}\hypertarget{struct_f_m_c___s_d_r_a_m___command_type_def_a1b77fbf8ef17e12284c64f174ed736de}{}\label{struct_f_m_c___s_d_r_a_m___command_type_def_a1b77fbf8ef17e12284c64f174ed736de}
+Defines which device (1 or 2) the command will be issued to. This parameter can be a value of \hyperlink{group___f_m_c___s_d_r_a_m___command___target}{F\+MC S\+D\+R\+AM Command Target}. \index{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Command\+Type\+Def@{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Command\+Type\+Def}!Mode\+Register\+Definition@{Mode\+Register\+Definition}}
+\index{Mode\+Register\+Definition@{Mode\+Register\+Definition}!F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Command\+Type\+Def@{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Command\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Mode\+Register\+Definition}{ModeRegisterDefinition}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Command\+Type\+Def\+::\+Mode\+Register\+Definition}\hypertarget{struct_f_m_c___s_d_r_a_m___command_type_def_ab50d70f643184b7d297f7bd3569b20d7}{}\label{struct_f_m_c___s_d_r_a_m___command_type_def_ab50d70f643184b7d297f7bd3569b20d7}
+Defines the S\+D\+R\+AM Mode register content 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dynamixel-\/\+M\+X106/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+N\+U\+C\+L\+E\+O\+\_\+\+F446\+R\+E/\hyperlink{stm32f4xx__ll__fmc_8h}{stm32f4xx\+\_\+ll\+\_\+fmc.\+h}\end{DoxyCompactItemize}

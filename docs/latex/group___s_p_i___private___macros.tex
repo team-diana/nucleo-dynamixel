@@ -1,0 +1,200 @@
+\hypertarget{group___s_p_i___private___macros}{}\section{S\+PI Private Macros}
+\label{group___s_p_i___private___macros}\index{S\+P\+I Private Macros@{S\+P\+I Private Macros}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries I\+S\+\_\+\+S\+P\+I\+\_\+\+M\+O\+DE}(M\+O\+DE)
+\item 
+\#define {\bfseries I\+S\+\_\+\+S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+M\+O\+DE}(M\+O\+DE)
+\item 
+\#define {\bfseries I\+S\+\_\+\+S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+2\+L\+I\+N\+E\+S\+\_\+\+O\+R\+\_\+1\+L\+I\+NE}(M\+O\+DE)
+\item 
+\#define {\bfseries I\+S\+\_\+\+S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+2\+L\+I\+N\+ES}(M\+O\+DE)~((M\+O\+DE) == S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+2\+L\+I\+N\+ES)\hypertarget{group___s_p_i___private___macros_ga79454622381b22d02c8cdd3346c80f78}{}\label{group___s_p_i___private___macros_ga79454622381b22d02c8cdd3346c80f78}
+
+\item 
+\#define {\bfseries I\+S\+\_\+\+S\+P\+I\+\_\+\+D\+A\+T\+A\+S\+I\+ZE}(D\+A\+T\+A\+S\+I\+ZE)
+\item 
+\#define {\bfseries I\+S\+\_\+\+S\+P\+I\+\_\+\+C\+P\+OL}(C\+P\+OL)
+\item 
+\#define {\bfseries I\+S\+\_\+\+S\+P\+I\+\_\+\+C\+P\+HA}(C\+P\+HA)
+\item 
+\#define {\bfseries I\+S\+\_\+\+S\+P\+I\+\_\+\+N\+SS}(N\+SS)
+\item 
+\#define {\bfseries I\+S\+\_\+\+S\+P\+I\+\_\+\+B\+A\+U\+D\+R\+A\+T\+E\+\_\+\+P\+R\+E\+S\+C\+A\+L\+ER}(P\+R\+E\+S\+C\+A\+L\+ER)
+\item 
+\#define {\bfseries I\+S\+\_\+\+S\+P\+I\+\_\+\+F\+I\+R\+S\+T\+\_\+\+B\+IT}(B\+IT)
+\item 
+\#define {\bfseries I\+S\+\_\+\+S\+P\+I\+\_\+\+T\+I\+M\+O\+DE}(M\+O\+DE)
+\item 
+\#define {\bfseries I\+S\+\_\+\+S\+P\+I\+\_\+\+C\+R\+C\+\_\+\+C\+A\+L\+C\+U\+L\+A\+T\+I\+ON}(C\+A\+L\+C\+U\+L\+A\+T\+I\+ON)
+\item 
+\#define {\bfseries I\+S\+\_\+\+S\+P\+I\+\_\+\+C\+R\+C\+\_\+\+P\+O\+L\+Y\+N\+O\+M\+I\+AL}(P\+O\+L\+Y\+N\+O\+M\+I\+AL)~(((P\+O\+L\+Y\+N\+O\+M\+I\+AL) $>$= 0x1) \&\& ((\+P\+O\+L\+Y\+N\+O\+M\+I\+A\+L) $<$= 0x\+F\+F\+F\+F))\hypertarget{group___s_p_i___private___macros_ga76eec5bbb44c873aa52966a9cb6c8f8c}{}\label{group___s_p_i___private___macros_ga76eec5bbb44c873aa52966a9cb6c8f8c}
+
+\item 
+\#define {\bfseries S\+P\+I\+\_\+1\+L\+I\+N\+E\+\_\+\+TX}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)~((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$Instance-\/$>$C\+R1 $\vert$= \hyperlink{group___peripheral___registers___bits___definition_ga378953916b7701bd49f063c0366b703f}{S\+P\+I\+\_\+\+C\+R1\+\_\+\+B\+I\+D\+I\+OE})\hypertarget{group___s_p_i___private___macros_gae3b2eb5e818e58b66474d42dedac5523}{}\label{group___s_p_i___private___macros_gae3b2eb5e818e58b66474d42dedac5523}
+
+\item 
+\#define {\bfseries S\+P\+I\+\_\+1\+L\+I\+N\+E\+\_\+\+RX}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)~((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$Instance-\/$>$C\+R1 \&= $\sim$\hyperlink{group___peripheral___registers___bits___definition_ga378953916b7701bd49f063c0366b703f}{S\+P\+I\+\_\+\+C\+R1\+\_\+\+B\+I\+D\+I\+OE})\hypertarget{group___s_p_i___private___macros_gaa8d58cef91c1874d5a4dde4014cf6269}{}\label{group___s_p_i___private___macros_gaa8d58cef91c1874d5a4dde4014cf6269}
+
+\item 
+\#define {\bfseries S\+P\+I\+\_\+\+R\+E\+S\+E\+T\+\_\+\+C\+RC}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\index{S\+P\+I Private Macros@{S\+P\+I Private Macros}!I\+S\+\_\+\+S\+P\+I\+\_\+\+B\+A\+U\+D\+R\+A\+T\+E\+\_\+\+P\+R\+E\+S\+C\+A\+L\+ER@{I\+S\+\_\+\+S\+P\+I\+\_\+\+B\+A\+U\+D\+R\+A\+T\+E\+\_\+\+P\+R\+E\+S\+C\+A\+L\+ER}}
+\index{I\+S\+\_\+\+S\+P\+I\+\_\+\+B\+A\+U\+D\+R\+A\+T\+E\+\_\+\+P\+R\+E\+S\+C\+A\+L\+ER@{I\+S\+\_\+\+S\+P\+I\+\_\+\+B\+A\+U\+D\+R\+A\+T\+E\+\_\+\+P\+R\+E\+S\+C\+A\+L\+ER}!S\+P\+I Private Macros@{S\+P\+I Private Macros}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+S\+P\+I\+\_\+\+B\+A\+U\+D\+R\+A\+T\+E\+\_\+\+P\+R\+E\+S\+C\+A\+L\+ER}{IS_SPI_BAUDRATE_PRESCALER}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+S\+P\+I\+\_\+\+B\+A\+U\+D\+R\+A\+T\+E\+\_\+\+P\+R\+E\+S\+C\+A\+L\+ER(
+\begin{DoxyParamCaption}
+\item[{}]{P\+R\+E\+S\+C\+A\+L\+ER}
+\end{DoxyParamCaption}
+)}\hypertarget{group___s_p_i___private___macros_gae79f46ed9f91e39dc1f6912cb25fc716}{}\label{group___s_p_i___private___macros_gae79f46ed9f91e39dc1f6912cb25fc716}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((PRESCALER) == SPI\_BAUDRATEPRESCALER\_2)   || \(\backslash\)
+                                              ((PRESCALER) == SPI\_BAUDRATEPRESCALER\_4)   || \(\backslash\)
+                                              ((PRESCALER) == SPI\_BAUDRATEPRESCALER\_8)   || \(\backslash\)
+                                              ((PRESCALER) == SPI\_BAUDRATEPRESCALER\_16)  || \(\backslash\)
+                                              ((PRESCALER) == SPI\_BAUDRATEPRESCALER\_32)  || \(\backslash\)
+                                              ((PRESCALER) == SPI\_BAUDRATEPRESCALER\_64)  || \(\backslash\)
+                                              ((PRESCALER) == SPI\_BAUDRATEPRESCALER\_128) || \(\backslash\)
+                                              ((PRESCALER) == SPI\_BAUDRATEPRESCALER\_256))
+\end{DoxyCode}
+\index{S\+P\+I Private Macros@{S\+P\+I Private Macros}!I\+S\+\_\+\+S\+P\+I\+\_\+\+C\+P\+HA@{I\+S\+\_\+\+S\+P\+I\+\_\+\+C\+P\+HA}}
+\index{I\+S\+\_\+\+S\+P\+I\+\_\+\+C\+P\+HA@{I\+S\+\_\+\+S\+P\+I\+\_\+\+C\+P\+HA}!S\+P\+I Private Macros@{S\+P\+I Private Macros}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+S\+P\+I\+\_\+\+C\+P\+HA}{IS_SPI_CPHA}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+S\+P\+I\+\_\+\+C\+P\+HA(
+\begin{DoxyParamCaption}
+\item[{}]{C\+P\+HA}
+\end{DoxyParamCaption}
+)}\hypertarget{group___s_p_i___private___macros_ga6441f08edf79dd5b243c54b888d3cbf7}{}\label{group___s_p_i___private___macros_ga6441f08edf79dd5b243c54b888d3cbf7}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((CPHA) == SPI\_PHASE\_1EDGE) || \(\backslash\)
+                           ((CPHA) == SPI\_PHASE\_2EDGE))
+\end{DoxyCode}
+\index{S\+P\+I Private Macros@{S\+P\+I Private Macros}!I\+S\+\_\+\+S\+P\+I\+\_\+\+C\+P\+OL@{I\+S\+\_\+\+S\+P\+I\+\_\+\+C\+P\+OL}}
+\index{I\+S\+\_\+\+S\+P\+I\+\_\+\+C\+P\+OL@{I\+S\+\_\+\+S\+P\+I\+\_\+\+C\+P\+OL}!S\+P\+I Private Macros@{S\+P\+I Private Macros}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+S\+P\+I\+\_\+\+C\+P\+OL}{IS_SPI_CPOL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+S\+P\+I\+\_\+\+C\+P\+OL(
+\begin{DoxyParamCaption}
+\item[{}]{C\+P\+OL}
+\end{DoxyParamCaption}
+)}\hypertarget{group___s_p_i___private___macros_gafc1cc5b1ff7e801a409a7a1e6047acf9}{}\label{group___s_p_i___private___macros_gafc1cc5b1ff7e801a409a7a1e6047acf9}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((CPOL) == SPI\_POLARITY\_LOW) || \(\backslash\)
+                           ((CPOL) == SPI\_POLARITY\_HIGH))
+\end{DoxyCode}
+\index{S\+P\+I Private Macros@{S\+P\+I Private Macros}!I\+S\+\_\+\+S\+P\+I\+\_\+\+C\+R\+C\+\_\+\+C\+A\+L\+C\+U\+L\+A\+T\+I\+ON@{I\+S\+\_\+\+S\+P\+I\+\_\+\+C\+R\+C\+\_\+\+C\+A\+L\+C\+U\+L\+A\+T\+I\+ON}}
+\index{I\+S\+\_\+\+S\+P\+I\+\_\+\+C\+R\+C\+\_\+\+C\+A\+L\+C\+U\+L\+A\+T\+I\+ON@{I\+S\+\_\+\+S\+P\+I\+\_\+\+C\+R\+C\+\_\+\+C\+A\+L\+C\+U\+L\+A\+T\+I\+ON}!S\+P\+I Private Macros@{S\+P\+I Private Macros}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+S\+P\+I\+\_\+\+C\+R\+C\+\_\+\+C\+A\+L\+C\+U\+L\+A\+T\+I\+ON}{IS_SPI_CRC_CALCULATION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+S\+P\+I\+\_\+\+C\+R\+C\+\_\+\+C\+A\+L\+C\+U\+L\+A\+T\+I\+ON(
+\begin{DoxyParamCaption}
+\item[{}]{C\+A\+L\+C\+U\+L\+A\+T\+I\+ON}
+\end{DoxyParamCaption}
+)}\hypertarget{group___s_p_i___private___macros_ga96e66460d09a553fd9996c53dcc4b252}{}\label{group___s_p_i___private___macros_ga96e66460d09a553fd9996c53dcc4b252}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((CALCULATION) == SPI\_CRCCALCULATION\_DISABLE) || \(\backslash\)
+                                             ((CALCULATION) == SPI\_CRCCALCULATION\_ENABLE))
+\end{DoxyCode}
+\index{S\+P\+I Private Macros@{S\+P\+I Private Macros}!I\+S\+\_\+\+S\+P\+I\+\_\+\+D\+A\+T\+A\+S\+I\+ZE@{I\+S\+\_\+\+S\+P\+I\+\_\+\+D\+A\+T\+A\+S\+I\+ZE}}
+\index{I\+S\+\_\+\+S\+P\+I\+\_\+\+D\+A\+T\+A\+S\+I\+ZE@{I\+S\+\_\+\+S\+P\+I\+\_\+\+D\+A\+T\+A\+S\+I\+ZE}!S\+P\+I Private Macros@{S\+P\+I Private Macros}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+S\+P\+I\+\_\+\+D\+A\+T\+A\+S\+I\+ZE}{IS_SPI_DATASIZE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+S\+P\+I\+\_\+\+D\+A\+T\+A\+S\+I\+ZE(
+\begin{DoxyParamCaption}
+\item[{}]{D\+A\+T\+A\+S\+I\+ZE}
+\end{DoxyParamCaption}
+)}\hypertarget{group___s_p_i___private___macros_gab6f9f528f7eb70373b9caf3548e44e67}{}\label{group___s_p_i___private___macros_gab6f9f528f7eb70373b9caf3548e44e67}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((DATASIZE) == SPI\_DATASIZE\_16BIT) || \(\backslash\)
+                                   ((DATASIZE) == SPI\_DATASIZE\_8BIT))
+\end{DoxyCode}
+\index{S\+P\+I Private Macros@{S\+P\+I Private Macros}!I\+S\+\_\+\+S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+2\+L\+I\+N\+E\+S\+\_\+\+O\+R\+\_\+1\+L\+I\+NE@{I\+S\+\_\+\+S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+2\+L\+I\+N\+E\+S\+\_\+\+O\+R\+\_\+1\+L\+I\+NE}}
+\index{I\+S\+\_\+\+S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+2\+L\+I\+N\+E\+S\+\_\+\+O\+R\+\_\+1\+L\+I\+NE@{I\+S\+\_\+\+S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+2\+L\+I\+N\+E\+S\+\_\+\+O\+R\+\_\+1\+L\+I\+NE}!S\+P\+I Private Macros@{S\+P\+I Private Macros}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+2\+L\+I\+N\+E\+S\+\_\+\+O\+R\+\_\+1\+L\+I\+NE}{IS_SPI_DIRECTION_2LINES_OR_1LINE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+2\+L\+I\+N\+E\+S\+\_\+\+O\+R\+\_\+1\+L\+I\+NE(
+\begin{DoxyParamCaption}
+\item[{}]{M\+O\+DE}
+\end{DoxyParamCaption}
+)}\hypertarget{group___s_p_i___private___macros_ga29847ebb8b15a550b45705881641e7a4}{}\label{group___s_p_i___private___macros_ga29847ebb8b15a550b45705881641e7a4}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((MODE) == SPI\_DIRECTION\_2LINES)  || \(\backslash\)
+                                                ((MODE) == SPI\_DIRECTION\_1LINE))
+\end{DoxyCode}
+\index{S\+P\+I Private Macros@{S\+P\+I Private Macros}!I\+S\+\_\+\+S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+M\+O\+DE@{I\+S\+\_\+\+S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+M\+O\+DE}}
+\index{I\+S\+\_\+\+S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+M\+O\+DE@{I\+S\+\_\+\+S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+M\+O\+DE}!S\+P\+I Private Macros@{S\+P\+I Private Macros}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+M\+O\+DE}{IS_SPI_DIRECTION_MODE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+S\+P\+I\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+M\+O\+DE(
+\begin{DoxyParamCaption}
+\item[{}]{M\+O\+DE}
+\end{DoxyParamCaption}
+)}\hypertarget{group___s_p_i___private___macros_ga536857c68ce1d9806c04046707448b3e}{}\label{group___s_p_i___private___macros_ga536857c68ce1d9806c04046707448b3e}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((MODE) == SPI\_DIRECTION\_2LINES)        || \(\backslash\)
+                                     ((MODE) == SPI\_DIRECTION\_2LINES\_RXONLY) || \(\backslash\)
+                                     ((MODE) == SPI\_DIRECTION\_1LINE))
+\end{DoxyCode}
+\index{S\+P\+I Private Macros@{S\+P\+I Private Macros}!I\+S\+\_\+\+S\+P\+I\+\_\+\+F\+I\+R\+S\+T\+\_\+\+B\+IT@{I\+S\+\_\+\+S\+P\+I\+\_\+\+F\+I\+R\+S\+T\+\_\+\+B\+IT}}
+\index{I\+S\+\_\+\+S\+P\+I\+\_\+\+F\+I\+R\+S\+T\+\_\+\+B\+IT@{I\+S\+\_\+\+S\+P\+I\+\_\+\+F\+I\+R\+S\+T\+\_\+\+B\+IT}!S\+P\+I Private Macros@{S\+P\+I Private Macros}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+S\+P\+I\+\_\+\+F\+I\+R\+S\+T\+\_\+\+B\+IT}{IS_SPI_FIRST_BIT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+S\+P\+I\+\_\+\+F\+I\+R\+S\+T\+\_\+\+B\+IT(
+\begin{DoxyParamCaption}
+\item[{}]{B\+IT}
+\end{DoxyParamCaption}
+)}\hypertarget{group___s_p_i___private___macros_gabee8e0302741f4a5c41b96af640c63ad}{}\label{group___s_p_i___private___macros_gabee8e0302741f4a5c41b96af640c63ad}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((BIT) == SPI\_FIRSTBIT\_MSB) || \(\backslash\)
+                               ((BIT) == SPI\_FIRSTBIT\_LSB))
+\end{DoxyCode}
+\index{S\+P\+I Private Macros@{S\+P\+I Private Macros}!I\+S\+\_\+\+S\+P\+I\+\_\+\+M\+O\+DE@{I\+S\+\_\+\+S\+P\+I\+\_\+\+M\+O\+DE}}
+\index{I\+S\+\_\+\+S\+P\+I\+\_\+\+M\+O\+DE@{I\+S\+\_\+\+S\+P\+I\+\_\+\+M\+O\+DE}!S\+P\+I Private Macros@{S\+P\+I Private Macros}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+S\+P\+I\+\_\+\+M\+O\+DE}{IS_SPI_MODE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+S\+P\+I\+\_\+\+M\+O\+DE(
+\begin{DoxyParamCaption}
+\item[{}]{M\+O\+DE}
+\end{DoxyParamCaption}
+)}\hypertarget{group___s_p_i___private___macros_gad5135300763c75dbb446861536359f12}{}\label{group___s_p_i___private___macros_gad5135300763c75dbb446861536359f12}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((MODE) == SPI\_MODE\_SLAVE) || \(\backslash\)
+                           ((MODE) == SPI\_MODE\_MASTER))
+\end{DoxyCode}
+\index{S\+P\+I Private Macros@{S\+P\+I Private Macros}!I\+S\+\_\+\+S\+P\+I\+\_\+\+N\+SS@{I\+S\+\_\+\+S\+P\+I\+\_\+\+N\+SS}}
+\index{I\+S\+\_\+\+S\+P\+I\+\_\+\+N\+SS@{I\+S\+\_\+\+S\+P\+I\+\_\+\+N\+SS}!S\+P\+I Private Macros@{S\+P\+I Private Macros}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+S\+P\+I\+\_\+\+N\+SS}{IS_SPI_NSS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+S\+P\+I\+\_\+\+N\+SS(
+\begin{DoxyParamCaption}
+\item[{}]{N\+SS}
+\end{DoxyParamCaption}
+)}\hypertarget{group___s_p_i___private___macros_gabbeedf42eccef1bae4f88c606fc3b261}{}\label{group___s_p_i___private___macros_gabbeedf42eccef1bae4f88c606fc3b261}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((NSS) == SPI\_NSS\_SOFT)       || \(\backslash\)
+                         ((NSS) == SPI\_NSS\_HARD\_INPUT) || \(\backslash\)
+                         ((NSS) == SPI\_NSS\_HARD\_OUTPUT))
+\end{DoxyCode}
+\index{S\+P\+I Private Macros@{S\+P\+I Private Macros}!I\+S\+\_\+\+S\+P\+I\+\_\+\+T\+I\+M\+O\+DE@{I\+S\+\_\+\+S\+P\+I\+\_\+\+T\+I\+M\+O\+DE}}
+\index{I\+S\+\_\+\+S\+P\+I\+\_\+\+T\+I\+M\+O\+DE@{I\+S\+\_\+\+S\+P\+I\+\_\+\+T\+I\+M\+O\+DE}!S\+P\+I Private Macros@{S\+P\+I Private Macros}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+S\+P\+I\+\_\+\+T\+I\+M\+O\+DE}{IS_SPI_TIMODE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+S\+P\+I\+\_\+\+T\+I\+M\+O\+DE(
+\begin{DoxyParamCaption}
+\item[{}]{M\+O\+DE}
+\end{DoxyParamCaption}
+)}\hypertarget{group___s_p_i___private___macros_ga812f7bf5919bc6e45727d6ac05c60b49}{}\label{group___s_p_i___private___macros_ga812f7bf5919bc6e45727d6ac05c60b49}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((MODE) == SPI\_TIMODE\_DISABLE) || \(\backslash\)
+                             ((MODE) == SPI\_TIMODE\_ENABLE))
+\end{DoxyCode}
+\index{S\+P\+I Private Macros@{S\+P\+I Private Macros}!S\+P\+I\+\_\+\+R\+E\+S\+E\+T\+\_\+\+C\+RC@{S\+P\+I\+\_\+\+R\+E\+S\+E\+T\+\_\+\+C\+RC}}
+\index{S\+P\+I\+\_\+\+R\+E\+S\+E\+T\+\_\+\+C\+RC@{S\+P\+I\+\_\+\+R\+E\+S\+E\+T\+\_\+\+C\+RC}!S\+P\+I Private Macros@{S\+P\+I Private Macros}}
+\subsubsection[{\texorpdfstring{S\+P\+I\+\_\+\+R\+E\+S\+E\+T\+\_\+\+C\+RC}{SPI_RESET_CRC}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+P\+I\+\_\+\+R\+E\+S\+E\+T\+\_\+\+C\+RC(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)}\hypertarget{group___s_p_i___private___macros_gab120a0085b72939e7d19c4f6b3381a99}{}\label{group___s_p_i___private___macros_gab120a0085b72939e7d19c4f6b3381a99}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do}\{(\_\_HANDLE\_\_)->Instance->CR1 &= (~\hyperlink{group___peripheral___registers___bits___definition_gac9339b7c6466f09ad26c26b3bb81c51b}{SPI\_CR1\_CRCEN});\(\backslash\)
+                                           (\_\_HANDLE\_\_)->Instance->CR1 |= 
+      \hyperlink{group___peripheral___registers___bits___definition_gac9339b7c6466f09ad26c26b3bb81c51b}{SPI\_CR1\_CRCEN};\}\textcolor{keywordflow}{while}(0)
+\end{DoxyCode}

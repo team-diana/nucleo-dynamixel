@@ -1,0 +1,45 @@
+\hypertarget{struct_f_m_c___n_a_n_d___p_c_c___timing_type_def}{}\section{F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+P\+C\+C\+\_\+\+Timing\+Type\+Def Struct Reference}
+\label{struct_f_m_c___n_a_n_d___p_c_c___timing_type_def}\index{F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+P\+C\+C\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+P\+C\+C\+\_\+\+Timing\+Type\+Def}}
+
+
+F\+MC N\+A\+N\+D/\+P\+C\+C\+A\+RD Timing parameters structure definition.  
+
+
+
+
+{\ttfamily \#include $<$stm32f4xx\+\_\+ll\+\_\+fmc.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{struct_f_m_c___n_a_n_d___p_c_c___timing_type_def_a7f999bb43ce5bd642439b90056dd2819}{Setup\+Time}
+\item 
+uint32\+\_\+t \hyperlink{struct_f_m_c___n_a_n_d___p_c_c___timing_type_def_abec51342237cf19aacfbbdfa866648d9}{Wait\+Setup\+Time}
+\item 
+uint32\+\_\+t \hyperlink{struct_f_m_c___n_a_n_d___p_c_c___timing_type_def_a57728d0f89fd95015265e4dd195226d3}{Hold\+Setup\+Time}
+\item 
+uint32\+\_\+t \hyperlink{struct_f_m_c___n_a_n_d___p_c_c___timing_type_def_a0dbc37d1de815af58ecfd6c4e06b176d}{Hi\+Z\+Setup\+Time}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+F\+MC N\+A\+N\+D/\+P\+C\+C\+A\+RD Timing parameters structure definition. 
+
+\subsection{Member Data Documentation}
+\index{F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+P\+C\+C\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+P\+C\+C\+\_\+\+Timing\+Type\+Def}!Hi\+Z\+Setup\+Time@{Hi\+Z\+Setup\+Time}}
+\index{Hi\+Z\+Setup\+Time@{Hi\+Z\+Setup\+Time}!F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+P\+C\+C\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+P\+C\+C\+\_\+\+Timing\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Hi\+Z\+Setup\+Time}{HiZSetupTime}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+P\+C\+C\+\_\+\+Timing\+Type\+Def\+::\+Hi\+Z\+Setup\+Time}\hypertarget{struct_f_m_c___n_a_n_d___p_c_c___timing_type_def_a0dbc37d1de815af58ecfd6c4e06b176d}{}\label{struct_f_m_c___n_a_n_d___p_c_c___timing_type_def_a0dbc37d1de815af58ecfd6c4e06b176d}
+Defines the number of H\+C\+LK clock cycles during which the data bus is kept in HiZ after the start of a N\+A\+N\+D-\/\+Flash write access to common/\+Attribute or I/O memory space (depending on the memory space timing to be configured). This parameter can be a number between Min\+\_\+\+Data = 0 and Max\+\_\+\+Data = 255 \index{F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+P\+C\+C\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+P\+C\+C\+\_\+\+Timing\+Type\+Def}!Hold\+Setup\+Time@{Hold\+Setup\+Time}}
+\index{Hold\+Setup\+Time@{Hold\+Setup\+Time}!F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+P\+C\+C\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+P\+C\+C\+\_\+\+Timing\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Hold\+Setup\+Time}{HoldSetupTime}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+P\+C\+C\+\_\+\+Timing\+Type\+Def\+::\+Hold\+Setup\+Time}\hypertarget{struct_f_m_c___n_a_n_d___p_c_c___timing_type_def_a57728d0f89fd95015265e4dd195226d3}{}\label{struct_f_m_c___n_a_n_d___p_c_c___timing_type_def_a57728d0f89fd95015265e4dd195226d3}
+Defines the number of H\+C\+LK clock cycles to hold address (and data for write access) after the command de-\/assertion for N\+A\+N\+D-\/\+Flash read or write access to common/\+Attribute or I/O memory space (depending on the memory space timing to be configured). This parameter can be a number between Min\+\_\+\+Data = 0 and Max\+\_\+\+Data = 255 \index{F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+P\+C\+C\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+P\+C\+C\+\_\+\+Timing\+Type\+Def}!Setup\+Time@{Setup\+Time}}
+\index{Setup\+Time@{Setup\+Time}!F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+P\+C\+C\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+P\+C\+C\+\_\+\+Timing\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Setup\+Time}{SetupTime}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+P\+C\+C\+\_\+\+Timing\+Type\+Def\+::\+Setup\+Time}\hypertarget{struct_f_m_c___n_a_n_d___p_c_c___timing_type_def_a7f999bb43ce5bd642439b90056dd2819}{}\label{struct_f_m_c___n_a_n_d___p_c_c___timing_type_def_a7f999bb43ce5bd642439b90056dd2819}
+Defines the number of H\+C\+LK cycles to setup address before the command assertion for N\+A\+N\+D-\/\+Flash read or write access to common/\+Attribute or I/O memory space (depending on the memory space timing to be configured). This parameter can be a value between Min\+\_\+\+Data = 0 and Max\+\_\+\+Data = 255 \index{F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+P\+C\+C\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+P\+C\+C\+\_\+\+Timing\+Type\+Def}!Wait\+Setup\+Time@{Wait\+Setup\+Time}}
+\index{Wait\+Setup\+Time@{Wait\+Setup\+Time}!F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+P\+C\+C\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+P\+C\+C\+\_\+\+Timing\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Wait\+Setup\+Time}{WaitSetupTime}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t F\+M\+C\+\_\+\+N\+A\+N\+D\+\_\+\+P\+C\+C\+\_\+\+Timing\+Type\+Def\+::\+Wait\+Setup\+Time}\hypertarget{struct_f_m_c___n_a_n_d___p_c_c___timing_type_def_abec51342237cf19aacfbbdfa866648d9}{}\label{struct_f_m_c___n_a_n_d___p_c_c___timing_type_def_abec51342237cf19aacfbbdfa866648d9}
+Defines the minimum number of H\+C\+LK cycles to assert the command for N\+A\+N\+D-\/\+Flash read or write access to common/\+Attribute or I/O memory space (depending on the memory space timing to be configured). This parameter can be a number between Min\+\_\+\+Data = 0 and Max\+\_\+\+Data = 255 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dynamixel-\/\+M\+X106/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+N\+U\+C\+L\+E\+O\+\_\+\+F446\+R\+E/\hyperlink{stm32f4xx__ll__fmc_8h}{stm32f4xx\+\_\+ll\+\_\+fmc.\+h}\end{DoxyCompactItemize}

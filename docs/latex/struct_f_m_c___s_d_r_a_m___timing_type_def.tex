@@ -1,0 +1,60 @@
+\hypertarget{struct_f_m_c___s_d_r_a_m___timing_type_def}{}\section{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def Struct Reference}
+\label{struct_f_m_c___s_d_r_a_m___timing_type_def}\index{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def}}
+
+
+F\+MC S\+D\+R\+AM Timing parameters structure definition.  
+
+
+
+
+{\ttfamily \#include $<$stm32f4xx\+\_\+ll\+\_\+fmc.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{struct_f_m_c___s_d_r_a_m___timing_type_def_aa4e0baa631f3af95366dae966699f102}{Load\+To\+Active\+Delay}
+\item 
+uint32\+\_\+t \hyperlink{struct_f_m_c___s_d_r_a_m___timing_type_def_a05c3b7b4946d8fa707e5263a39baf73d}{Exit\+Self\+Refresh\+Delay}
+\item 
+uint32\+\_\+t \hyperlink{struct_f_m_c___s_d_r_a_m___timing_type_def_a8847315f4ac89d7278021ca07281f6f1}{Self\+Refresh\+Time}
+\item 
+uint32\+\_\+t \hyperlink{struct_f_m_c___s_d_r_a_m___timing_type_def_ad766564847851a0d5cda78f70a7c7b1e}{Row\+Cycle\+Delay}
+\item 
+uint32\+\_\+t \hyperlink{struct_f_m_c___s_d_r_a_m___timing_type_def_a9b4e896e7795ac9a32339a0e6520975e}{Write\+Recovery\+Time}
+\item 
+uint32\+\_\+t \hyperlink{struct_f_m_c___s_d_r_a_m___timing_type_def_a499042750059231bf7fc5bf9fc2c46aa}{R\+P\+Delay}
+\item 
+uint32\+\_\+t \hyperlink{struct_f_m_c___s_d_r_a_m___timing_type_def_a99beff6ce115b68684c7872a9196e61d}{R\+C\+D\+Delay}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+F\+MC S\+D\+R\+AM Timing parameters structure definition. 
+
+\subsection{Member Data Documentation}
+\index{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def}!Exit\+Self\+Refresh\+Delay@{Exit\+Self\+Refresh\+Delay}}
+\index{Exit\+Self\+Refresh\+Delay@{Exit\+Self\+Refresh\+Delay}!F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Exit\+Self\+Refresh\+Delay}{ExitSelfRefreshDelay}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def\+::\+Exit\+Self\+Refresh\+Delay}\hypertarget{struct_f_m_c___s_d_r_a_m___timing_type_def_a05c3b7b4946d8fa707e5263a39baf73d}{}\label{struct_f_m_c___s_d_r_a_m___timing_type_def_a05c3b7b4946d8fa707e5263a39baf73d}
+Defines the delay from releasing the self refresh command to issuing the Activate command in number of memory clock cycles. This parameter can be a value between Min\+\_\+\+Data = 1 and Max\+\_\+\+Data = 16 \index{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def}!Load\+To\+Active\+Delay@{Load\+To\+Active\+Delay}}
+\index{Load\+To\+Active\+Delay@{Load\+To\+Active\+Delay}!F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Load\+To\+Active\+Delay}{LoadToActiveDelay}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def\+::\+Load\+To\+Active\+Delay}\hypertarget{struct_f_m_c___s_d_r_a_m___timing_type_def_aa4e0baa631f3af95366dae966699f102}{}\label{struct_f_m_c___s_d_r_a_m___timing_type_def_aa4e0baa631f3af95366dae966699f102}
+Defines the delay between a Load Mode Register command and an active or Refresh command in number of memory clock cycles. This parameter can be a value between Min\+\_\+\+Data = 1 and Max\+\_\+\+Data = 16 \index{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def}!R\+C\+D\+Delay@{R\+C\+D\+Delay}}
+\index{R\+C\+D\+Delay@{R\+C\+D\+Delay}!F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def}}
+\subsubsection[{\texorpdfstring{R\+C\+D\+Delay}{RCDDelay}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def\+::\+R\+C\+D\+Delay}\hypertarget{struct_f_m_c___s_d_r_a_m___timing_type_def_a99beff6ce115b68684c7872a9196e61d}{}\label{struct_f_m_c___s_d_r_a_m___timing_type_def_a99beff6ce115b68684c7872a9196e61d}
+Defines the delay between the Activate Command and a Read/\+Write command in number of memory clock cycles. This parameter can be a value between Min\+\_\+\+Data = 1 and Max\+\_\+\+Data = 16 \index{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def}!Row\+Cycle\+Delay@{Row\+Cycle\+Delay}}
+\index{Row\+Cycle\+Delay@{Row\+Cycle\+Delay}!F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Row\+Cycle\+Delay}{RowCycleDelay}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def\+::\+Row\+Cycle\+Delay}\hypertarget{struct_f_m_c___s_d_r_a_m___timing_type_def_ad766564847851a0d5cda78f70a7c7b1e}{}\label{struct_f_m_c___s_d_r_a_m___timing_type_def_ad766564847851a0d5cda78f70a7c7b1e}
+Defines the delay between the Refresh command and the Activate command and the delay between two consecutive Refresh commands in number of memory clock cycles. This parameter can be a value between Min\+\_\+\+Data = 1 and Max\+\_\+\+Data = 16 \index{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def}!R\+P\+Delay@{R\+P\+Delay}}
+\index{R\+P\+Delay@{R\+P\+Delay}!F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def}}
+\subsubsection[{\texorpdfstring{R\+P\+Delay}{RPDelay}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def\+::\+R\+P\+Delay}\hypertarget{struct_f_m_c___s_d_r_a_m___timing_type_def_a499042750059231bf7fc5bf9fc2c46aa}{}\label{struct_f_m_c___s_d_r_a_m___timing_type_def_a499042750059231bf7fc5bf9fc2c46aa}
+Defines the delay between a Precharge Command and an other command in number of memory clock cycles. This parameter can be a value between Min\+\_\+\+Data = 1 and Max\+\_\+\+Data = 16 \index{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def}!Self\+Refresh\+Time@{Self\+Refresh\+Time}}
+\index{Self\+Refresh\+Time@{Self\+Refresh\+Time}!F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Self\+Refresh\+Time}{SelfRefreshTime}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def\+::\+Self\+Refresh\+Time}\hypertarget{struct_f_m_c___s_d_r_a_m___timing_type_def_a8847315f4ac89d7278021ca07281f6f1}{}\label{struct_f_m_c___s_d_r_a_m___timing_type_def_a8847315f4ac89d7278021ca07281f6f1}
+Defines the minimum Self Refresh period in number of memory clock cycles. This parameter can be a value between Min\+\_\+\+Data = 1 and Max\+\_\+\+Data = 16 \index{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def}!Write\+Recovery\+Time@{Write\+Recovery\+Time}}
+\index{Write\+Recovery\+Time@{Write\+Recovery\+Time}!F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def@{F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Write\+Recovery\+Time}{WriteRecoveryTime}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t F\+M\+C\+\_\+\+S\+D\+R\+A\+M\+\_\+\+Timing\+Type\+Def\+::\+Write\+Recovery\+Time}\hypertarget{struct_f_m_c___s_d_r_a_m___timing_type_def_a9b4e896e7795ac9a32339a0e6520975e}{}\label{struct_f_m_c___s_d_r_a_m___timing_type_def_a9b4e896e7795ac9a32339a0e6520975e}
+Defines the Write recovery Time in number of memory clock cycles. This parameter can be a value between Min\+\_\+\+Data = 1 and Max\+\_\+\+Data = 16 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dynamixel-\/\+M\+X106/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+N\+U\+C\+L\+E\+O\+\_\+\+F446\+R\+E/\hyperlink{stm32f4xx__ll__fmc_8h}{stm32f4xx\+\_\+ll\+\_\+fmc.\+h}\end{DoxyCompactItemize}

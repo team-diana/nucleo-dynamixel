@@ -1,0 +1,122 @@
+\hypertarget{classmbed_1_1_function_pointer_arg1}{}\section{mbed\+:\+:Function\+Pointer\+Arg1$<$ R, A1 $>$ Class Template Reference}
+\label{classmbed_1_1_function_pointer_arg1}\index{mbed\+::\+Function\+Pointer\+Arg1$<$ R, A1 $>$@{mbed\+::\+Function\+Pointer\+Arg1$<$ R, A1 $>$}}
+
+
+{\ttfamily \#include $<$Function\+Pointer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmbed_1_1_function_pointer_arg1_aef73e45314e689bde71cd7b59f80fc04}{Function\+Pointer\+Arg1} (R($\ast$function)(A1)=0)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classmbed_1_1_function_pointer_arg1_abb818b9698a16c20dd8c0335e7f21c4f}{Function\+Pointer\+Arg1} (T $\ast$object, R(T\+::$\ast$member)(A1))
+\item 
+void \hyperlink{classmbed_1_1_function_pointer_arg1_a2a0103808b31aea189f37d88b6156ef8}{attach} (R($\ast$function)(A1))
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{classmbed_1_1_function_pointer_arg1_a0a982633121d38ac036475d0e5456ab9}{attach} (T $\ast$object, R(T\+::$\ast$member)(A1))
+\item 
+R \hyperlink{classmbed_1_1_function_pointer_arg1_a49eb4fa6221746c3fd3d5a04fbcd5563}{call} (A1 a)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+R($\ast$)() \hyperlink{classmbed_1_1_function_pointer_arg1_a8dfc6095837c03196cf8027faf680c25}{get\+\_\+function} (A1)
+\item 
+R($\ast$ {\bfseries function} )(A1)\hypertarget{classmbed_1_1_function_pointer_arg1_a864fc1a43819b975c3cf767ae30041ac}{}\label{classmbed_1_1_function_pointer_arg1_a864fc1a43819b975c3cf767ae30041ac}
+
+\item 
+void $\ast$ {\bfseries object}\hypertarget{classmbed_1_1_function_pointer_arg1_a548c7abc27a7ed8f2b119940841fdb57}{}\label{classmbed_1_1_function_pointer_arg1_a548c7abc27a7ed8f2b119940841fdb57}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename R, typename A1$>$\\*
+class mbed\+::\+Function\+Pointer\+Arg1$<$ R, A1 $>$}
+
+A class for storing and calling a pointer to a static or member function 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{mbed\+::\+Function\+Pointer\+Arg1@{mbed\+::\+Function\+Pointer\+Arg1}!Function\+Pointer\+Arg1@{Function\+Pointer\+Arg1}}
+\index{Function\+Pointer\+Arg1@{Function\+Pointer\+Arg1}!mbed\+::\+Function\+Pointer\+Arg1@{mbed\+::\+Function\+Pointer\+Arg1}}
+\subsubsection[{\texorpdfstring{Function\+Pointer\+Arg1(\+R($\ast$function)(\+A1)=0)}{FunctionPointerArg1(R(*function)(A1)=0)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R, typename A1$>$ {\bf mbed\+::\+Function\+Pointer\+Arg1}$<$ R, A1 $>$\+::{\bf Function\+Pointer\+Arg1} (
+\begin{DoxyParamCaption}
+\item[{R($\ast$)(A1)}]{function = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmbed_1_1_function_pointer_arg1_aef73e45314e689bde71cd7b59f80fc04}{}\label{classmbed_1_1_function_pointer_arg1_aef73e45314e689bde71cd7b59f80fc04}
+Create a Function\+Pointer, attaching a static function
+
+
+\begin{DoxyParams}{Parameters}
+{\em function} & The static function to attach (default is none) \\
+\hline
+\end{DoxyParams}
+\index{mbed\+::\+Function\+Pointer\+Arg1@{mbed\+::\+Function\+Pointer\+Arg1}!Function\+Pointer\+Arg1@{Function\+Pointer\+Arg1}}
+\index{Function\+Pointer\+Arg1@{Function\+Pointer\+Arg1}!mbed\+::\+Function\+Pointer\+Arg1@{mbed\+::\+Function\+Pointer\+Arg1}}
+\subsubsection[{\texorpdfstring{Function\+Pointer\+Arg1(\+T $\ast$object, R(\+T\+::$\ast$member)(\+A1))}{FunctionPointerArg1(T *object, R(T::*member)(A1))}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R, typename A1$>$ template$<$typename T $>$ {\bf mbed\+::\+Function\+Pointer\+Arg1}$<$ R, A1 $>$\+::{\bf Function\+Pointer\+Arg1} (
+\begin{DoxyParamCaption}
+\item[{T $\ast$}]{object, }
+\item[{R(T\+::$\ast$)(A1)}]{member}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmbed_1_1_function_pointer_arg1_abb818b9698a16c20dd8c0335e7f21c4f}{}\label{classmbed_1_1_function_pointer_arg1_abb818b9698a16c20dd8c0335e7f21c4f}
+Create a Function\+Pointer, attaching a member function
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & The object pointer to invoke the member function on (i.\+e. the this pointer) \\
+\hline
+{\em function} & The address of the member function to attach \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{mbed\+::\+Function\+Pointer\+Arg1@{mbed\+::\+Function\+Pointer\+Arg1}!attach@{attach}}
+\index{attach@{attach}!mbed\+::\+Function\+Pointer\+Arg1@{mbed\+::\+Function\+Pointer\+Arg1}}
+\subsubsection[{\texorpdfstring{attach(\+R($\ast$function)(\+A1))}{attach(R(*function)(A1))}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R, typename A1$>$ void {\bf mbed\+::\+Function\+Pointer\+Arg1}$<$ R, A1 $>$\+::attach (
+\begin{DoxyParamCaption}
+\item[{R($\ast$)(A1)}]{function}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmbed_1_1_function_pointer_arg1_a2a0103808b31aea189f37d88b6156ef8}{}\label{classmbed_1_1_function_pointer_arg1_a2a0103808b31aea189f37d88b6156ef8}
+Attach a static function
+
+
+\begin{DoxyParams}{Parameters}
+{\em function} & The static function to attach (default is none) \\
+\hline
+\end{DoxyParams}
+\index{mbed\+::\+Function\+Pointer\+Arg1@{mbed\+::\+Function\+Pointer\+Arg1}!attach@{attach}}
+\index{attach@{attach}!mbed\+::\+Function\+Pointer\+Arg1@{mbed\+::\+Function\+Pointer\+Arg1}}
+\subsubsection[{\texorpdfstring{attach(\+T $\ast$object, R(\+T\+::$\ast$member)(\+A1))}{attach(T *object, R(T::*member)(A1))}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R, typename A1$>$ template$<$typename T $>$ void {\bf mbed\+::\+Function\+Pointer\+Arg1}$<$ R, A1 $>$\+::attach (
+\begin{DoxyParamCaption}
+\item[{T $\ast$}]{object, }
+\item[{R(T\+::$\ast$)(A1)}]{member}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmbed_1_1_function_pointer_arg1_a0a982633121d38ac036475d0e5456ab9}{}\label{classmbed_1_1_function_pointer_arg1_a0a982633121d38ac036475d0e5456ab9}
+Attach a member function
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & The object pointer to invoke the member function on (i.\+e. the this pointer) \\
+\hline
+{\em function} & The address of the member function to attach \\
+\hline
+\end{DoxyParams}
+\index{mbed\+::\+Function\+Pointer\+Arg1@{mbed\+::\+Function\+Pointer\+Arg1}!call@{call}}
+\index{call@{call}!mbed\+::\+Function\+Pointer\+Arg1@{mbed\+::\+Function\+Pointer\+Arg1}}
+\subsubsection[{\texorpdfstring{call(\+A1 a)}{call(A1 a)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R, typename A1$>$ R {\bf mbed\+::\+Function\+Pointer\+Arg1}$<$ R, A1 $>$\+::call (
+\begin{DoxyParamCaption}
+\item[{A1}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmbed_1_1_function_pointer_arg1_a49eb4fa6221746c3fd3d5a04fbcd5563}{}\label{classmbed_1_1_function_pointer_arg1_a49eb4fa6221746c3fd3d5a04fbcd5563}
+Call the attached static or member function 
+
+\subsection{Member Data Documentation}
+\index{mbed\+::\+Function\+Pointer\+Arg1@{mbed\+::\+Function\+Pointer\+Arg1}!get\+\_\+function@{get\+\_\+function}}
+\index{get\+\_\+function@{get\+\_\+function}!mbed\+::\+Function\+Pointer\+Arg1@{mbed\+::\+Function\+Pointer\+Arg1}}
+\subsubsection[{\texorpdfstring{get\+\_\+function}{get_function}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R, typename A1$>$ R($\ast$)() {\bf mbed\+::\+Function\+Pointer\+Arg1}$<$ R, A1 $>$\+::get\+\_\+function(A1)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classmbed_1_1_function_pointer_arg1_a8dfc6095837c03196cf8027faf680c25}{}\label{classmbed_1_1_function_pointer_arg1_a8dfc6095837c03196cf8027faf680c25}
+Get registered static function 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dynamixel-\/\+M\+X106/mbed/Function\+Pointer.\+h\end{DoxyCompactItemize}

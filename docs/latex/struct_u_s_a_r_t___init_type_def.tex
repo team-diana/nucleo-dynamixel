@@ -1,0 +1,72 @@
+\hypertarget{struct_u_s_a_r_t___init_type_def}{}\section{U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def Struct Reference}
+\label{struct_u_s_a_r_t___init_type_def}\index{U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def@{U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def}}
+
+
+U\+S\+A\+RT Init Structure definition.  
+
+
+
+
+{\ttfamily \#include $<$stm32f4xx\+\_\+hal\+\_\+usart.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{struct_u_s_a_r_t___init_type_def_adef2ac12c9e2091ba9f511718b30ae50}{Baud\+Rate}
+\item 
+uint32\+\_\+t \hyperlink{struct_u_s_a_r_t___init_type_def_ac4012d27b28014f60a3ad987c62d4fc7}{Word\+Length}
+\item 
+uint32\+\_\+t \hyperlink{struct_u_s_a_r_t___init_type_def_a1d8f4c07fa88a7e4b50c403b391e5fe5}{Stop\+Bits}
+\item 
+uint32\+\_\+t \hyperlink{struct_u_s_a_r_t___init_type_def_a87eb81cdeb80ee5c3d96aecbe9e75612}{Parity}
+\item 
+uint32\+\_\+t \hyperlink{struct_u_s_a_r_t___init_type_def_abd7e257f9d24a355ac9f720130d902ca}{Mode}
+\item 
+uint32\+\_\+t \hyperlink{struct_u_s_a_r_t___init_type_def_afc3f0418628e3eef91593a5122c049d3}{C\+L\+K\+Polarity}
+\item 
+uint32\+\_\+t \hyperlink{struct_u_s_a_r_t___init_type_def_ac596050ef100502529e0b78696ffbdc1}{C\+L\+K\+Phase}
+\item 
+uint32\+\_\+t \hyperlink{struct_u_s_a_r_t___init_type_def_a86c0426bafc6c8e67279cbff72ebbe00}{C\+L\+K\+Last\+Bit}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+U\+S\+A\+RT Init Structure definition. 
+
+\subsection{Member Data Documentation}
+\index{U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def@{U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def}!Baud\+Rate@{Baud\+Rate}}
+\index{Baud\+Rate@{Baud\+Rate}!U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def@{U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Baud\+Rate}{BaudRate}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def\+::\+Baud\+Rate}\hypertarget{struct_u_s_a_r_t___init_type_def_adef2ac12c9e2091ba9f511718b30ae50}{}\label{struct_u_s_a_r_t___init_type_def_adef2ac12c9e2091ba9f511718b30ae50}
+This member configures the Usart communication baud rate. The baud rate is computed using the following formula\+:
+\begin{DoxyItemize}
+\item Integer\+Divider = ((P\+C\+L\+Kx) / (8 $\ast$ (husart-\/$>$Init.\+Baud\+Rate)))
+\item Fractional\+Divider = ((Integer\+Divider -\/ ((uint32\+\_\+t) Integer\+Divider)) $\ast$ 8) + 0.\+5 
+\end{DoxyItemize}\index{U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def@{U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def}!C\+L\+K\+Last\+Bit@{C\+L\+K\+Last\+Bit}}
+\index{C\+L\+K\+Last\+Bit@{C\+L\+K\+Last\+Bit}!U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def@{U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{C\+L\+K\+Last\+Bit}{CLKLastBit}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def\+::\+C\+L\+K\+Last\+Bit}\hypertarget{struct_u_s_a_r_t___init_type_def_a86c0426bafc6c8e67279cbff72ebbe00}{}\label{struct_u_s_a_r_t___init_type_def_a86c0426bafc6c8e67279cbff72ebbe00}
+Specifies whether the clock pulse corresponding to the last transmitted data bit (M\+SB) has to be output on the S\+C\+LK pin in synchronous mode. This parameter can be a value of \hyperlink{group___u_s_a_r_t___last___bit}{U\+S\+A\+RT Last Bit} \index{U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def@{U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def}!C\+L\+K\+Phase@{C\+L\+K\+Phase}}
+\index{C\+L\+K\+Phase@{C\+L\+K\+Phase}!U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def@{U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{C\+L\+K\+Phase}{CLKPhase}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def\+::\+C\+L\+K\+Phase}\hypertarget{struct_u_s_a_r_t___init_type_def_ac596050ef100502529e0b78696ffbdc1}{}\label{struct_u_s_a_r_t___init_type_def_ac596050ef100502529e0b78696ffbdc1}
+Specifies the clock transition on which the bit capture is made. This parameter can be a value of \hyperlink{group___u_s_a_r_t___clock___phase}{U\+S\+A\+RT Clock Phase} \index{U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def@{U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def}!C\+L\+K\+Polarity@{C\+L\+K\+Polarity}}
+\index{C\+L\+K\+Polarity@{C\+L\+K\+Polarity}!U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def@{U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{C\+L\+K\+Polarity}{CLKPolarity}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def\+::\+C\+L\+K\+Polarity}\hypertarget{struct_u_s_a_r_t___init_type_def_afc3f0418628e3eef91593a5122c049d3}{}\label{struct_u_s_a_r_t___init_type_def_afc3f0418628e3eef91593a5122c049d3}
+Specifies the steady state of the serial clock. This parameter can be a value of \hyperlink{group___u_s_a_r_t___clock___polarity}{U\+S\+A\+RT Clock Polarity} \index{U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def@{U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def}!Mode@{Mode}}
+\index{Mode@{Mode}!U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def@{U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Mode}{Mode}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def\+::\+Mode}\hypertarget{struct_u_s_a_r_t___init_type_def_abd7e257f9d24a355ac9f720130d902ca}{}\label{struct_u_s_a_r_t___init_type_def_abd7e257f9d24a355ac9f720130d902ca}
+Specifies whether the Receive or Transmit mode is enabled or disabled. This parameter can be a value of \hyperlink{group___u_s_a_r_t___mode}{U\+S\+A\+RT Mode} \index{U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def@{U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def}!Parity@{Parity}}
+\index{Parity@{Parity}!U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def@{U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Parity}{Parity}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def\+::\+Parity}\hypertarget{struct_u_s_a_r_t___init_type_def_a87eb81cdeb80ee5c3d96aecbe9e75612}{}\label{struct_u_s_a_r_t___init_type_def_a87eb81cdeb80ee5c3d96aecbe9e75612}
+Specifies the parity mode. This parameter can be a value of \hyperlink{group___u_s_a_r_t___parity}{U\+S\+A\+RT Parity} \begin{DoxyNote}{Note}
+When parity is enabled, the computed parity is inserted at the M\+SB position of the transmitted data (9th bit when the word length is set to 9 data bits; 8th bit when the word length is set to 8 data bits). 
+\end{DoxyNote}
+\index{U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def@{U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def}!Stop\+Bits@{Stop\+Bits}}
+\index{Stop\+Bits@{Stop\+Bits}!U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def@{U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Stop\+Bits}{StopBits}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def\+::\+Stop\+Bits}\hypertarget{struct_u_s_a_r_t___init_type_def_a1d8f4c07fa88a7e4b50c403b391e5fe5}{}\label{struct_u_s_a_r_t___init_type_def_a1d8f4c07fa88a7e4b50c403b391e5fe5}
+Specifies the number of stop bits transmitted. This parameter can be a value of \hyperlink{group___u_s_a_r_t___stop___bits}{U\+S\+A\+RT Number of Stop Bits} \index{U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def@{U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def}!Word\+Length@{Word\+Length}}
+\index{Word\+Length@{Word\+Length}!U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def@{U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def}}
+\subsubsection[{\texorpdfstring{Word\+Length}{WordLength}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t U\+S\+A\+R\+T\+\_\+\+Init\+Type\+Def\+::\+Word\+Length}\hypertarget{struct_u_s_a_r_t___init_type_def_ac4012d27b28014f60a3ad987c62d4fc7}{}\label{struct_u_s_a_r_t___init_type_def_ac4012d27b28014f60a3ad987c62d4fc7}
+Specifies the number of data bits transmitted or received in a frame. This parameter can be a value of \hyperlink{group___u_s_a_r_t___word___length}{U\+S\+A\+RT Word Length} 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dynamixel-\/\+M\+X106/mbed/\+T\+A\+R\+G\+E\+T\+\_\+\+N\+U\+C\+L\+E\+O\+\_\+\+F446\+R\+E/\hyperlink{stm32f4xx__hal__usart_8h}{stm32f4xx\+\_\+hal\+\_\+usart.\+h}\end{DoxyCompactItemize}

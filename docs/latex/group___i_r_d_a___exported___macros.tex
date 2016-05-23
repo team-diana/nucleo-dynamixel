@@ -1,0 +1,422 @@
+\hypertarget{group___i_r_d_a___exported___macros}{}\section{I\+R\+DA Exported Macros}
+\label{group___i_r_d_a___exported___macros}\index{I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___i_r_d_a___exported___macros_ga3cdb66f911dce4c8544139adbb314faa}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+R\+E\+S\+E\+T\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+S\+T\+A\+TE}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)~((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$State = \hyperlink{group___i_r_d_a___exported___types_ggab3e65b75c9d4ae39bc50a31222509e1eaa004e82e1ca1d36b3dc84cf9441954dd}{H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+S\+ET})
+\begin{DoxyCompactList}\small\item\em Reset I\+R\+DA handle state. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___i_r_d_a___exported___macros_ga0c097de13209ede853a30d511cf5a00e}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+F\+L\+U\+S\+H\+\_\+\+D\+R\+R\+E\+G\+I\+S\+T\+ER}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)~((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$Instance-\/$>$DR)
+\begin{DoxyCompactList}\small\item\em Flushs the I\+R\+DA DR register. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___i_r_d_a___exported___macros_ga032a53fbbc65bfd0fff2b4a26c52e790}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+,  \+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+)~(((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$Instance-\/$>$SR \& (\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+)) == (\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+))
+\begin{DoxyCompactList}\small\item\em Checks whether the specified I\+R\+DA flag is set or not. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___i_r_d_a___exported___macros_ga4ebf474ecfd858f9320bef9bc67c0bce}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+,  \+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+)~((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$Instance-\/$>$SR = $\sim$(\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+))
+\begin{DoxyCompactList}\small\item\em Clears the specified I\+R\+DA pending flag. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___i_r_d_a___exported___macros_gae69bd04d655a956dba913c52638de303}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+P\+E\+F\+L\+AG}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Clear the I\+R\+DA PE pending flag. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___i_r_d_a___exported___macros_gaac85c179f4f6761f34acd00a4f8fdccb}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+E\+F\+L\+AG}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)~\hyperlink{group___i_r_d_a___exported___macros_gae69bd04d655a956dba913c52638de303}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+P\+E\+F\+L\+AG}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Clear the I\+R\+DA FE pending flag. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___i_r_d_a___exported___macros_gab93a0324a6fd84860dda19165e0dc9fd}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+N\+E\+F\+L\+AG}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)~\hyperlink{group___i_r_d_a___exported___macros_gae69bd04d655a956dba913c52638de303}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+P\+E\+F\+L\+AG}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Clear the I\+R\+DA NE pending flag. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___i_r_d_a___exported___macros_ga43c79a3caa8de46f51b8f0b597e89377}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+O\+R\+E\+F\+L\+AG}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)~\hyperlink{group___i_r_d_a___exported___macros_gae69bd04d655a956dba913c52638de303}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+P\+E\+F\+L\+AG}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Clear the I\+R\+DA O\+RE pending flag. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___i_r_d_a___exported___macros_ga8fe7de0106f994c56fdff184215dbcbf}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+I\+D\+L\+E\+F\+L\+AG}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)~\hyperlink{group___i_r_d_a___exported___macros_gae69bd04d655a956dba913c52638de303}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+P\+E\+F\+L\+AG}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Clear the I\+R\+DA I\+D\+LE pending flag. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___i_r_d_a___exported___macros_gae9ccdc86c1bcb8ed3857474d8c3823fa}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+IT}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+,  \+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Enables or disables the specified I\+R\+DA interrupt. \end{DoxyCompactList}\item 
+\#define {\bfseries \+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+IT}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+,  \+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+)
+\item 
+\#define \hyperlink{group___i_r_d_a___exported___macros_ga1c50dd0407d6e4159f90c9bc74545925}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+G\+E\+T\+\_\+\+I\+T\+\_\+\+S\+O\+U\+R\+CE}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+,  \+\_\+\+\_\+\+I\+T\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Checks whether the specified I\+R\+DA interrupt has occurred or not. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___i_r_d_a___exported___macros_ga2af9a200c672b78abfec855501b15fe9}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+O\+N\+E\+\_\+\+B\+I\+T\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+E\+N\+A\+B\+LE}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)~((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$Instance-\/$>$C\+R3$\vert$= \hyperlink{group___peripheral___registers___bits___definition_ga9a96fb1a7beab602cbc8cb0393593826}{U\+S\+A\+R\+T\+\_\+\+C\+R3\+\_\+\+O\+N\+E\+B\+IT})
+\begin{DoxyCompactList}\small\item\em Macro to enable the I\+R\+DA\textquotesingle{}s one bit sample method. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___i_r_d_a___exported___macros_ga68c1c53595fe30df9e25d6bfea0c421f}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+O\+N\+E\+\_\+\+B\+I\+T\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+D\+I\+S\+A\+B\+LE}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)~((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$Instance-\/$>$C\+R3 \&= (uint16\+\_\+t)$\sim$((uint16\+\_\+t)\hyperlink{group___peripheral___registers___bits___definition_ga9a96fb1a7beab602cbc8cb0393593826}{U\+S\+A\+R\+T\+\_\+\+C\+R3\+\_\+\+O\+N\+E\+B\+IT}))
+\begin{DoxyCompactList}\small\item\em Macro to disable the I\+R\+DA\textquotesingle{}s one bit sample method. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___i_r_d_a___exported___macros_ga94d14e3105494108f4ba6f69aa1728a7}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+E\+N\+A\+B\+LE}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)~((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$Instance-\/$>$C\+R1 $\vert$=  \hyperlink{group___peripheral___registers___bits___definition_ga2bb650676aaae4a5203f372d497d5947}{U\+S\+A\+R\+T\+\_\+\+C\+R1\+\_\+\+UE})
+\begin{DoxyCompactList}\small\item\em Enable U\+A\+R\+T/\+U\+S\+A\+RT associated to I\+R\+DA Handle. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___i_r_d_a___exported___macros_gaf049a81f535415532182a2bb10cbee1d}{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+D\+I\+S\+A\+B\+LE}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)~((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$Instance-\/$>$C\+R1 \&=  $\sim$\hyperlink{group___peripheral___registers___bits___definition_ga2bb650676aaae4a5203f372d497d5947}{U\+S\+A\+R\+T\+\_\+\+C\+R1\+\_\+\+UE})
+\begin{DoxyCompactList}\small\item\em Disable U\+A\+R\+T/\+U\+S\+A\+RT associated to I\+R\+DA Handle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\index{I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}!\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+E\+F\+L\+AG@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+E\+F\+L\+AG}}
+\index{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+E\+F\+L\+AG@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+E\+F\+L\+AG}!I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+E\+F\+L\+AG}{__HAL_IRDA_CLEAR_FEFLAG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+E\+F\+L\+AG(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)~{\bf \+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+P\+E\+F\+L\+AG}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)}\hypertarget{group___i_r_d_a___exported___macros_gaac85c179f4f6761f34acd00a4f8fdccb}{}\label{group___i_r_d_a___exported___macros_gaac85c179f4f6761f34acd00a4f8fdccb}
+
+
+Clear the I\+R\+DA FE pending flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$strong$>$\+H\+A\+N\+D\+L\+E$<$/strong$>$} & specifies the U\+S\+A\+RT Handle. This parameter can be U\+S\+A\+R\+Tx where x\+: 1, 2, 3, 4, 5, 6, 7 or 8 to select the U\+S\+A\+RT or U\+A\+RT peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\index{I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}!\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG}}
+\index{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG}!I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG}{__HAL_IRDA_CLEAR_FLAG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+F\+L\+AG(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+, }
+\item[{}]{\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)~((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$Instance-\/$>$SR = $\sim$(\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+))}\hypertarget{group___i_r_d_a___exported___macros_ga4ebf474ecfd858f9320bef9bc67c0bce}{}\label{group___i_r_d_a___exported___macros_ga4ebf474ecfd858f9320bef9bc67c0bce}
+
+
+Clears the specified I\+R\+DA pending flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$strong$>$\+H\+A\+N\+D\+L\+E$<$/strong$>$} & specifies the U\+S\+A\+RT Handle. This parameter can be U\+S\+A\+R\+Tx where x\+: 1, 2, 3, 4, 5, 6, 7 or 8 to select the U\+S\+A\+RT or U\+A\+RT peripheral. \\
+\hline
+{\em $<$strong$>$\+F\+L\+A\+G$<$/strong$>$} & specifies the flag to check. This parameter can be any combination of the following values\+: \begin{DoxyItemize}
+\item I\+R\+D\+A\+\_\+\+F\+L\+A\+G\+\_\+\+TC\+: Transmission Complete flag. \item I\+R\+D\+A\+\_\+\+F\+L\+A\+G\+\_\+\+R\+X\+NE\+: Receive data register not empty flag.\end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+PE (Parity error), FE (Framing error), NE (Noise error), O\+RE (Over\+Run error) and I\+D\+LE (Idle line detected) flags are cleared by software sequence\+: a read operation to U\+S\+A\+R\+T\+\_\+\+SR register followed by a read operation to U\+S\+A\+R\+T\+\_\+\+DR register. 
+
+R\+X\+NE flag can be also cleared by a read to the U\+S\+A\+R\+T\+\_\+\+DR register. 
+
+TC flag can be also cleared by software sequence\+: a read operation to U\+S\+A\+R\+T\+\_\+\+SR register followed by a write operation to U\+S\+A\+R\+T\+\_\+\+DR register. 
+
+T\+XE flag is cleared only by a write to the U\+S\+A\+R\+T\+\_\+\+DR register.
+\end{DoxyNote}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\index{I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}!\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+I\+D\+L\+E\+F\+L\+AG@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+I\+D\+L\+E\+F\+L\+AG}}
+\index{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+I\+D\+L\+E\+F\+L\+AG@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+I\+D\+L\+E\+F\+L\+AG}!I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+I\+D\+L\+E\+F\+L\+AG}{__HAL_IRDA_CLEAR_IDLEFLAG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+I\+D\+L\+E\+F\+L\+AG(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)~{\bf \+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+P\+E\+F\+L\+AG}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)}\hypertarget{group___i_r_d_a___exported___macros_ga8fe7de0106f994c56fdff184215dbcbf}{}\label{group___i_r_d_a___exported___macros_ga8fe7de0106f994c56fdff184215dbcbf}
+
+
+Clear the I\+R\+DA I\+D\+LE pending flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$strong$>$\+H\+A\+N\+D\+L\+E$<$/strong$>$} & specifies the U\+S\+A\+RT Handle. This parameter can be U\+S\+A\+R\+Tx where x\+: 1, 2, 3, 4, 5, 6, 7 or 8 to select the U\+S\+A\+RT or U\+A\+RT peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\index{I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}!\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+N\+E\+F\+L\+AG@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+N\+E\+F\+L\+AG}}
+\index{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+N\+E\+F\+L\+AG@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+N\+E\+F\+L\+AG}!I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+N\+E\+F\+L\+AG}{__HAL_IRDA_CLEAR_NEFLAG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+N\+E\+F\+L\+AG(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)~{\bf \+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+P\+E\+F\+L\+AG}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)}\hypertarget{group___i_r_d_a___exported___macros_gab93a0324a6fd84860dda19165e0dc9fd}{}\label{group___i_r_d_a___exported___macros_gab93a0324a6fd84860dda19165e0dc9fd}
+
+
+Clear the I\+R\+DA NE pending flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$strong$>$\+H\+A\+N\+D\+L\+E$<$/strong$>$} & specifies the U\+S\+A\+RT Handle. This parameter can be U\+S\+A\+R\+Tx where x\+: 1, 2, 3, 4, 5, 6, 7 or 8 to select the U\+S\+A\+RT or U\+A\+RT peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\index{I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}!\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+O\+R\+E\+F\+L\+AG@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+O\+R\+E\+F\+L\+AG}}
+\index{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+O\+R\+E\+F\+L\+AG@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+O\+R\+E\+F\+L\+AG}!I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+O\+R\+E\+F\+L\+AG}{__HAL_IRDA_CLEAR_OREFLAG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+O\+R\+E\+F\+L\+AG(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)~{\bf \+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+P\+E\+F\+L\+AG}(\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)}\hypertarget{group___i_r_d_a___exported___macros_ga43c79a3caa8de46f51b8f0b597e89377}{}\label{group___i_r_d_a___exported___macros_ga43c79a3caa8de46f51b8f0b597e89377}
+
+
+Clear the I\+R\+DA O\+RE pending flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$strong$>$\+H\+A\+N\+D\+L\+E$<$/strong$>$} & specifies the U\+S\+A\+RT Handle. This parameter can be U\+S\+A\+R\+Tx where x\+: 1, 2, 3, 4, 5, 6, 7 or 8 to select the U\+S\+A\+RT or U\+A\+RT peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\index{I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}!\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+P\+E\+F\+L\+AG@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+P\+E\+F\+L\+AG}}
+\index{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+P\+E\+F\+L\+AG@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+P\+E\+F\+L\+AG}!I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+P\+E\+F\+L\+AG}{__HAL_IRDA_CLEAR_PEFLAG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+C\+L\+E\+A\+R\+\_\+\+P\+E\+F\+L\+AG(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)}\hypertarget{group___i_r_d_a___exported___macros_gae69bd04d655a956dba913c52638de303}{}\label{group___i_r_d_a___exported___macros_gae69bd04d655a956dba913c52638de303}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do}\{                                           \hyperlink{core__ca9_8h_aec43007d9998a0a0e01faede4133d6be}{\(\backslash\)}
+\hyperlink{core__ca9_8h_aec43007d9998a0a0e01faede4133d6be}{    \_\_IO} uint32\_t tmpreg;                       \(\backslash\)
+    tmpreg = (\_\_HANDLE\_\_)->Instance->SR;        \(\backslash\)
+    UNUSED(tmpreg);                             \(\backslash\)
+  \} \textcolor{keywordflow}{while}(0)
+\end{DoxyCode}
+
+
+Clear the I\+R\+DA PE pending flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$strong$>$\+H\+A\+N\+D\+L\+E$<$/strong$>$} & specifies the U\+S\+A\+RT Handle. This parameter can be U\+S\+A\+R\+Tx where x\+: 1, 2, 3, 4, 5, 6, 7 or 8 to select the U\+S\+A\+RT or U\+A\+RT peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\index{I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}!\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+D\+I\+S\+A\+B\+LE@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+D\+I\+S\+A\+B\+LE}}
+\index{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+D\+I\+S\+A\+B\+LE@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+D\+I\+S\+A\+B\+LE}!I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+D\+I\+S\+A\+B\+LE}{__HAL_IRDA_DISABLE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+D\+I\+S\+A\+B\+LE(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)~((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$Instance-\/$>$C\+R1 \&=  $\sim${\bf U\+S\+A\+R\+T\+\_\+\+C\+R1\+\_\+\+UE})}\hypertarget{group___i_r_d_a___exported___macros_gaf049a81f535415532182a2bb10cbee1d}{}\label{group___i_r_d_a___exported___macros_gaf049a81f535415532182a2bb10cbee1d}
+
+
+Disable U\+A\+R\+T/\+U\+S\+A\+RT associated to I\+R\+DA Handle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$strong$>$\+H\+A\+N\+D\+L\+E$<$/strong$>$} & specifies the I\+R\+DA Handle. I\+R\+DA Handle selects the U\+S\+A\+R\+Tx or U\+A\+R\+Ty peripheral (U\+S\+A\+RT,U\+A\+RT availability and x,y values depending on device). \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\index{I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}!\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+IT@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+IT}}
+\index{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+IT@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+IT}!I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+IT}{__HAL_IRDA_DISABLE_IT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+IT(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+, }
+\item[{}]{\+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)}\hypertarget{group___i_r_d_a___exported___macros_ga8c3dd373ded6fa0790e65f54ac1f548d}{}\label{group___i_r_d_a___exported___macros_ga8c3dd373ded6fa0790e65f54ac1f548d}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+((((\_\_INTERRUPT\_\_) >> 28) == 1)? ((\_\_HANDLE\_\_)->Instance->CR1 &= ~((\_\_INTERRUPT\_\_) & 
+      \hyperlink{group___i_r_d_a___private___constants_ga38eeb904e4117f70c18bf3767c7ba4a6}{IRDA\_IT\_MASK})): \(\backslash\)
+                                                           (((\_\_INTERRUPT\_\_) >> 28) == 2)? ((\_\_HANDLE\_\_)->
+      Instance->CR2 &= ~((\_\_INTERRUPT\_\_) & \hyperlink{group___i_r_d_a___private___constants_ga38eeb904e4117f70c18bf3767c7ba4a6}{IRDA\_IT\_MASK})): \(\backslash\)
+                                                           ((\_\_HANDLE\_\_)->Instance->CR3 &= ~ ((
+      \_\_INTERRUPT\_\_) & \hyperlink{group___i_r_d_a___private___constants_ga38eeb904e4117f70c18bf3767c7ba4a6}{IRDA\_IT\_MASK})))
+\end{DoxyCode}
+\index{I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}!\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+E\+N\+A\+B\+LE@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+E\+N\+A\+B\+LE}}
+\index{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+E\+N\+A\+B\+LE@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+E\+N\+A\+B\+LE}!I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+E\+N\+A\+B\+LE}{__HAL_IRDA_ENABLE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+E\+N\+A\+B\+LE(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)~((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$Instance-\/$>$C\+R1 $\vert$=  {\bf U\+S\+A\+R\+T\+\_\+\+C\+R1\+\_\+\+UE})}\hypertarget{group___i_r_d_a___exported___macros_ga94d14e3105494108f4ba6f69aa1728a7}{}\label{group___i_r_d_a___exported___macros_ga94d14e3105494108f4ba6f69aa1728a7}
+
+
+Enable U\+A\+R\+T/\+U\+S\+A\+RT associated to I\+R\+DA Handle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$strong$>$\+H\+A\+N\+D\+L\+E$<$/strong$>$} & specifies the I\+R\+DA Handle. I\+R\+DA Handle selects the U\+S\+A\+R\+Tx or U\+A\+R\+Ty peripheral (U\+S\+A\+RT,U\+A\+RT availability and x,y values depending on device). \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\index{I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}!\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+IT@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+IT}}
+\index{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+IT@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+IT}!I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+IT}{__HAL_IRDA_ENABLE_IT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+IT(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+, }
+\item[{}]{\+\_\+\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)}\hypertarget{group___i_r_d_a___exported___macros_gae9ccdc86c1bcb8ed3857474d8c3823fa}{}\label{group___i_r_d_a___exported___macros_gae9ccdc86c1bcb8ed3857474d8c3823fa}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+((((\_\_INTERRUPT\_\_) >> 28) == 1)? ((\_\_HANDLE\_\_)->Instance->CR1 |= ((\_\_INTERRUPT\_\_) & 
+      \hyperlink{group___i_r_d_a___private___constants_ga38eeb904e4117f70c18bf3767c7ba4a6}{IRDA\_IT\_MASK})): \(\backslash\)
+                                                           (((\_\_INTERRUPT\_\_) >> 28) == 2)? ((\_\_HANDLE\_\_)->
+      Instance->CR2 |=  ((\_\_INTERRUPT\_\_) & \hyperlink{group___i_r_d_a___private___constants_ga38eeb904e4117f70c18bf3767c7ba4a6}{IRDA\_IT\_MASK})): \(\backslash\)
+                                                        ((\_\_HANDLE\_\_)->Instance->CR3 |= ((\_\_INTERRUPT\_\_) & 
+      \hyperlink{group___i_r_d_a___private___constants_ga38eeb904e4117f70c18bf3767c7ba4a6}{IRDA\_IT\_MASK})))
+\end{DoxyCode}
+
+
+Enables or disables the specified I\+R\+DA interrupt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$strong$>$\+H\+A\+N\+D\+L\+E$<$/strong$>$} & specifies the U\+S\+A\+RT Handle. This parameter can be U\+S\+A\+R\+Tx where x\+: 1, 2, 3, 4, 5, 6, 7 or 8 to select the U\+S\+A\+RT or U\+A\+RT peripheral. \\
+\hline
+{\em $<$strong$>$\+I\+N\+T\+E\+R\+R\+U\+P\+T$<$/strong$>$} & specifies the I\+R\+DA interrupt source to check. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item I\+R\+D\+A\+\_\+\+I\+T\+\_\+\+T\+XE\+: Transmit Data Register empty interrupt \item I\+R\+D\+A\+\_\+\+I\+T\+\_\+\+TC\+: Transmission complete interrupt \item I\+R\+D\+A\+\_\+\+I\+T\+\_\+\+R\+X\+NE\+: Receive Data register not empty interrupt \item I\+R\+D\+A\+\_\+\+I\+T\+\_\+\+I\+D\+LE\+: Idle line detection interrupt \item I\+R\+D\+A\+\_\+\+I\+T\+\_\+\+PE\+: Parity Error interrupt \item I\+R\+D\+A\+\_\+\+I\+T\+\_\+\+E\+RR\+: Error interrupt(\+Frame error, noise error, overrun error) \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\index{I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}!\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+F\+L\+U\+S\+H\+\_\+\+D\+R\+R\+E\+G\+I\+S\+T\+ER@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+F\+L\+U\+S\+H\+\_\+\+D\+R\+R\+E\+G\+I\+S\+T\+ER}}
+\index{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+F\+L\+U\+S\+H\+\_\+\+D\+R\+R\+E\+G\+I\+S\+T\+ER@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+F\+L\+U\+S\+H\+\_\+\+D\+R\+R\+E\+G\+I\+S\+T\+ER}!I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+F\+L\+U\+S\+H\+\_\+\+D\+R\+R\+E\+G\+I\+S\+T\+ER}{__HAL_IRDA_FLUSH_DRREGISTER}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+F\+L\+U\+S\+H\+\_\+\+D\+R\+R\+E\+G\+I\+S\+T\+ER(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)~((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$Instance-\/$>$DR)}\hypertarget{group___i_r_d_a___exported___macros_ga0c097de13209ede853a30d511cf5a00e}{}\label{group___i_r_d_a___exported___macros_ga0c097de13209ede853a30d511cf5a00e}
+
+
+Flushs the I\+R\+DA DR register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$strong$>$\+H\+A\+N\+D\+L\+E$<$/strong$>$} & specifies the U\+S\+A\+RT Handle. This parameter can be U\+S\+A\+R\+Tx where x\+: 1, 2, 3, 4, 5, 6, 7 or 8 to select the U\+S\+A\+RT or U\+A\+RT peripheral. \\
+\hline
+\end{DoxyParams}
+\index{I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}!\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG}}
+\index{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG}!I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG}{__HAL_IRDA_GET_FLAG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+G\+E\+T\+\_\+\+F\+L\+AG(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+, }
+\item[{}]{\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)~(((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$Instance-\/$>$SR \& (\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+)) == (\+\_\+\+\_\+\+F\+L\+A\+G\+\_\+\+\_\+))}\hypertarget{group___i_r_d_a___exported___macros_ga032a53fbbc65bfd0fff2b4a26c52e790}{}\label{group___i_r_d_a___exported___macros_ga032a53fbbc65bfd0fff2b4a26c52e790}
+
+
+Checks whether the specified I\+R\+DA flag is set or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$strong$>$\+H\+A\+N\+D\+L\+E$<$/strong$>$} & specifies the U\+S\+A\+RT Handle. This parameter can be U\+S\+A\+R\+Tx where x\+: 1, 2, 3, 4, 5, 6, 7 or 8 to select the U\+S\+A\+RT or U\+A\+RT peripheral. \\
+\hline
+{\em $<$strong$>$\+F\+L\+A\+G$<$/strong$>$} & specifies the flag to check. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item I\+R\+D\+A\+\_\+\+F\+L\+A\+G\+\_\+\+T\+XE\+: Transmit data register empty flag \item I\+R\+D\+A\+\_\+\+F\+L\+A\+G\+\_\+\+TC\+: Transmission Complete flag \item I\+R\+D\+A\+\_\+\+F\+L\+A\+G\+\_\+\+R\+X\+NE\+: Receive data register not empty flag \item I\+R\+D\+A\+\_\+\+F\+L\+A\+G\+\_\+\+I\+D\+LE\+: Idle Line detection flag \item I\+R\+D\+A\+\_\+\+F\+L\+A\+G\+\_\+\+O\+RE\+: Over\+Run Error flag \item I\+R\+D\+A\+\_\+\+F\+L\+A\+G\+\_\+\+NE\+: Noise Error flag \item I\+R\+D\+A\+\_\+\+F\+L\+A\+G\+\_\+\+FE\+: Framing Error flag \item I\+R\+D\+A\+\_\+\+F\+L\+A\+G\+\_\+\+PE\+: Parity Error flag \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of {\bfseries F\+L\+AG} (T\+R\+UE or F\+A\+L\+SE). \\
+\hline
+\end{DoxyRetVals}
+\index{I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}!\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+G\+E\+T\+\_\+\+I\+T\+\_\+\+S\+O\+U\+R\+CE@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+G\+E\+T\+\_\+\+I\+T\+\_\+\+S\+O\+U\+R\+CE}}
+\index{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+G\+E\+T\+\_\+\+I\+T\+\_\+\+S\+O\+U\+R\+CE@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+G\+E\+T\+\_\+\+I\+T\+\_\+\+S\+O\+U\+R\+CE}!I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+G\+E\+T\+\_\+\+I\+T\+\_\+\+S\+O\+U\+R\+CE}{__HAL_IRDA_GET_IT_SOURCE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+G\+E\+T\+\_\+\+I\+T\+\_\+\+S\+O\+U\+R\+CE(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+, }
+\item[{}]{\+\_\+\+\_\+\+I\+T\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)}\hypertarget{group___i_r_d_a___exported___macros_ga1c50dd0407d6e4159f90c9bc74545925}{}\label{group___i_r_d_a___exported___macros_ga1c50dd0407d6e4159f90c9bc74545925}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+(((((\_\_IT\_\_) >> 28) == 1)? (\_\_HANDLE\_\_)->Instance->CR1:(((((uint32\_t)(\_\_IT\_\_)) >> 28) == 2)? \(\backslash\)
+                                                      (\_\_HANDLE\_\_)->Instance->CR2 : (\_\_HANDLE\_\_)->Instance
+      ->CR3)) & (((uint32\_t)(\_\_IT\_\_)) & \hyperlink{group___i_r_d_a___private___constants_ga38eeb904e4117f70c18bf3767c7ba4a6}{IRDA\_IT\_MASK}))
+\end{DoxyCode}
+
+
+Checks whether the specified I\+R\+DA interrupt has occurred or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$strong$>$\+H\+A\+N\+D\+L\+E$<$/strong$>$} & specifies the U\+S\+A\+RT Handle. This parameter can be U\+S\+A\+R\+Tx where x\+: 1, 2, 3, 4, 5, 6, 7 or 8 to select the U\+S\+A\+RT or U\+A\+RT peripheral. \\
+\hline
+{\em $<$strong$>$\+I\+T$<$/strong$>$} & specifies the I\+R\+DA interrupt source to check. This parameter can be one of the following values\+: \begin{DoxyItemize}
+\item I\+R\+D\+A\+\_\+\+I\+T\+\_\+\+T\+XE\+: Transmit Data Register empty interrupt \item I\+R\+D\+A\+\_\+\+I\+T\+\_\+\+TC\+: Transmission complete interrupt \item I\+R\+D\+A\+\_\+\+I\+T\+\_\+\+R\+X\+NE\+: Receive Data register not empty interrupt \item I\+R\+D\+A\+\_\+\+I\+T\+\_\+\+I\+D\+LE\+: Idle line detection interrupt \item U\+S\+A\+R\+T\+\_\+\+I\+T\+\_\+\+E\+RR\+: Error interrupt \item I\+R\+D\+A\+\_\+\+I\+T\+\_\+\+PE\+: Parity Error interrupt \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em The} & new state of {\bfseries IT} (T\+R\+UE or F\+A\+L\+SE). \\
+\hline
+\end{DoxyRetVals}
+\index{I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}!\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+O\+N\+E\+\_\+\+B\+I\+T\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+D\+I\+S\+A\+B\+LE@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+O\+N\+E\+\_\+\+B\+I\+T\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+D\+I\+S\+A\+B\+LE}}
+\index{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+O\+N\+E\+\_\+\+B\+I\+T\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+D\+I\+S\+A\+B\+LE@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+O\+N\+E\+\_\+\+B\+I\+T\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+D\+I\+S\+A\+B\+LE}!I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+O\+N\+E\+\_\+\+B\+I\+T\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+D\+I\+S\+A\+B\+LE}{__HAL_IRDA_ONE_BIT_SAMPLE_DISABLE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+O\+N\+E\+\_\+\+B\+I\+T\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+D\+I\+S\+A\+B\+LE(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)~((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$Instance-\/$>$C\+R3 \&= (uint16\+\_\+t)$\sim$((uint16\+\_\+t){\bf U\+S\+A\+R\+T\+\_\+\+C\+R3\+\_\+\+O\+N\+E\+B\+IT}))}\hypertarget{group___i_r_d_a___exported___macros_ga68c1c53595fe30df9e25d6bfea0c421f}{}\label{group___i_r_d_a___exported___macros_ga68c1c53595fe30df9e25d6bfea0c421f}
+
+
+Macro to disable the I\+R\+DA\textquotesingle{}s one bit sample method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$strong$>$\+H\+A\+N\+D\+L\+E$<$/strong$>$} & specifies the I\+R\+DA Handle. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\index{I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}!\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+O\+N\+E\+\_\+\+B\+I\+T\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+E\+N\+A\+B\+LE@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+O\+N\+E\+\_\+\+B\+I\+T\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+E\+N\+A\+B\+LE}}
+\index{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+O\+N\+E\+\_\+\+B\+I\+T\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+E\+N\+A\+B\+LE@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+O\+N\+E\+\_\+\+B\+I\+T\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+E\+N\+A\+B\+LE}!I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+O\+N\+E\+\_\+\+B\+I\+T\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+E\+N\+A\+B\+LE}{__HAL_IRDA_ONE_BIT_SAMPLE_ENABLE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+O\+N\+E\+\_\+\+B\+I\+T\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+E\+N\+A\+B\+LE(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)~((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$Instance-\/$>$C\+R3$\vert$= {\bf U\+S\+A\+R\+T\+\_\+\+C\+R3\+\_\+\+O\+N\+E\+B\+IT})}\hypertarget{group___i_r_d_a___exported___macros_ga2af9a200c672b78abfec855501b15fe9}{}\label{group___i_r_d_a___exported___macros_ga2af9a200c672b78abfec855501b15fe9}
+
+
+Macro to enable the I\+R\+DA\textquotesingle{}s one bit sample method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$strong$>$\+H\+A\+N\+D\+L\+E$<$/strong$>$} & specifies the I\+R\+DA Handle. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\index{I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}!\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+R\+E\+S\+E\+T\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+S\+T\+A\+TE@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+R\+E\+S\+E\+T\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+S\+T\+A\+TE}}
+\index{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+R\+E\+S\+E\+T\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+S\+T\+A\+TE@{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+R\+E\+S\+E\+T\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+S\+T\+A\+TE}!I\+R\+D\+A Exported Macros@{I\+R\+D\+A Exported Macros}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+R\+E\+S\+E\+T\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+S\+T\+A\+TE}{__HAL_IRDA_RESET_HANDLE_STATE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+\_\+\+H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+R\+E\+S\+E\+T\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+S\+T\+A\+TE(
+\begin{DoxyParamCaption}
+\item[{}]{\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+}
+\end{DoxyParamCaption}
+)~((\+\_\+\+\_\+\+H\+A\+N\+D\+L\+E\+\_\+\+\_\+)-\/$>$State = {\bf H\+A\+L\+\_\+\+I\+R\+D\+A\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+S\+ET})}\hypertarget{group___i_r_d_a___exported___macros_ga3cdb66f911dce4c8544139adbb314faa}{}\label{group___i_r_d_a___exported___macros_ga3cdb66f911dce4c8544139adbb314faa}
+
+
+Reset I\+R\+DA handle state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$strong$>$\+H\+A\+N\+D\+L\+E$<$/strong$>$} & specifies the U\+S\+A\+RT Handle. This parameter can be U\+S\+A\+R\+Tx where x\+: 1, 2, 3, 4, 5, 6, 7 or 8 to select the U\+S\+A\+RT or U\+A\+RT peripheral. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
