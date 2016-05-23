@@ -47,7 +47,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
-      <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -80,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('index.html','');});
+$(document).ready(function(){initNavTree('md_README.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -102,12 +103,16 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="title">nucleo-dynamixel </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Library for working with dynamixel servomotors, designed for stm32 nucleo boards</p>
-<h2>Usage example</h2>
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;#include &quot;MX106.h&quot;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;#include &quot;communication_1.h&quot;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;communication_1 wire(PA_9, PA_10, 9600);</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;MX106 motor_21(21, wire, 1);</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;MX106 motor_22(22, wire, 1);</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;int main() {</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;   // set speed mode</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;   motor_21.SetMode(0);</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;   // set joint mode</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;   motor_22.SetMode(1);</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;   // Set new motor speed. The motor will move continously at this speed</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;   motor_21.SetSpeed(0.25);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;   // Set new motor position. The motor will reach 180 degrees and then stop</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;   motor_22.GoalPosition(180);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div></div><!-- fragment --><h2>Document the code</h2>
-<p>See existing documentation, use the same format. Use the \brief, \param, \return keywords</p>
-<h2>Update doxygen</h2>
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;# in the project directory</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;# update doxygen html files</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;doxygen</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;# commit changes</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;git push origin master</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;# push update on gh-pages</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;git subtree push --prefix docs/html origin gh-page</div></div><!-- fragment --> </div></div><!-- contents -->
+<div class="textblock"><p>,</p>
+<p>Library for working with dynamixel servomotors, designed for stm32 nucleo boards</p>
+<h2>Document the code</h2>
+<p>See existing documentation, use the same format. Use the </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
