@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.1651828185/PATH/delimiter=;
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.1651828185/PATH/operation=replace
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.1651828185/PATH/value=C\:\\Program Files (x86)\\GNU Tools ARM Embedded\\5.3 2016q1\\bin;C\:\\STM32Toolchain\\Build Tools\\bin;C\:/Program Files/Java/jre1.8.0_91/bin/server;C\:/Program Files/Java/jre1.8.0_91/bin;C\:/Program Files/Java/jre1.8.0_91/lib/amd64;C\:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C\:\\ProgramData\\Oracle\\Java\\javapath;C\:\\WINDOWS\\system32;C\:\\WINDOWS;C\:\\WINDOWS\\System32\\Wbem;C\:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C\:\\Program Files (x86)\\Skype\\Phone\\;C\:\\Program Files\\MATLAB\\R2016a\\runtime\\win64;C\:\\Program Files\\MATLAB\\R2016a\\bin;c\:\\altera\\91sp2\\quartus\\bin;C\:\\altera\\91sp2\\modelsim_ase\\win32aloem;C\:\\Program Files\\LaTeX\\miktex\\bin\\x64\\;C\:\\STM32Toolchain\\eclipse
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.1651828185/append=true
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.1651828185/appendContributed=true
