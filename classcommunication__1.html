@@ -72,6 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -111,11 +112,16 @@ $(document).ready(function(){initNavTree('classcommunication__1.html','');});
 <div class="title">communication_1 Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This class handle communication with dynamixel products that use the Communication 1 protocol.  
+ <a href="classcommunication__1.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="communication__1_8h_source.html">communication_1.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a03b0e85ad36aa9bac39d0fc7663c77ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03b0e85ad36aa9bac39d0fc7663c77ca"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>communication_1</b> (PinName tx, PinName rx, int baud_rate)</td></tr>
+<tr class="memitem:a03b0e85ad36aa9bac39d0fc7663c77ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcommunication__1.html#a03b0e85ad36aa9bac39d0fc7663c77ca">communication_1</a> (PinName tx, PinName rx, int baud_rate)</td></tr>
+<tr class="memdesc:a03b0e85ad36aa9bac39d0fc7663c77ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="classcommunication__1.html" title="This class handle communication with dynamixel products that use the Communication 1 protocol...">communication_1</a>.  <a href="#a03b0e85ad36aa9bac39d0fc7663c77ca">More...</a><br /></td></tr>
 <tr class="separator:a03b0e85ad36aa9bac39d0fc7663c77ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81c6441018c25b1d7d3578a97fb0e712"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a81c6441018c25b1d7d3578a97fb0e712"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (int ID, int start, int length, char *data)</td></tr>
@@ -124,6 +130,52 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (int ID, int 
 int&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (int ID, int start, int length, char *data, int flag=0)</td></tr>
 <tr class="separator:a21d61cc68098426a4f916a1cd6504734"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class handle communication with dynamixel products that use the Communication 1 protocol. </p>
+<p>This class handle communication with dynamixel products that use the Communication 1 protocol <a href="http://support.robotis.com/en/product/dynamixel/dxl_communication.htm">http://support.robotis.com/en/product/dynamixel/dxl_communication.htm</a> It uses a SerialHalfDuplex port. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a03b0e85ad36aa9bac39d0fc7663c77ca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">communication_1::communication_1 </td>
+          <td>(</td>
+          <td class="paramtype">PinName&#160;</td>
+          <td class="paramname"><em>tx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PinName&#160;</td>
+          <td class="paramname"><em>rx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>baud_rate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a <a class="el" href="classcommunication__1.html" title="This class handle communication with dynamixel products that use the Communication 1 protocol...">communication_1</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tx</td><td>pin for tx, elettrically connected to rx </td></tr>
+    <tr><td class="paramname">rx</td><td>pin for rx, elettrically connected to tx </td></tr>
+    <tr><td class="paramname">baud_rate</td><td>as defined in the dynamixel documentation (e.g. 9600) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Dynamixel-MX106/communication_1/<a class="el" href="communication__1_8h_source.html">communication_1.h</a></li>
 <li>Dynamixel-MX106/communication_1/communication_1.cpp</li>
