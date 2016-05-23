@@ -1,0 +1,38 @@
+var group___m_m_u___functions =
+[
+    [ "RegionStruct", "struct_region_struct.html", [
+      [ "domain", "struct_region_struct.html#abdfcd371daa9bf33f88a25f3b8cdeec0", null ],
+      [ "e_t", "struct_region_struct.html#a490a04e6b4a2be661137dccc77f7ab3c", null ],
+      [ "g_t", "struct_region_struct.html#aaab551b9b577914a2dd63381aa8574f6", null ],
+      [ "inner_norm_t", "struct_region_struct.html#abb79a425b194f3b7019b828124f74d3e", null ],
+      [ "mem_t", "struct_region_struct.html#a96eea15f88c7c48f2804d9dd62f13dc1", null ],
+      [ "outer_norm_t", "struct_region_struct.html#a5f2d9c482e1a5e5ae18ce1e34b940be2", null ],
+      [ "priv_t", "struct_region_struct.html#aca1e31dc5efb9db558fde5d0acc392c7", null ],
+      [ "rg_t", "struct_region_struct.html#af459d58d720e3c319b3ef5e877d27a2d", null ],
+      [ "sec_t", "struct_region_struct.html#ae8004f07bc61c36f27bd8b881e04b597", null ],
+      [ "sh_t", "struct_region_struct.html#a7c73b178aa8eadb16dbe1aba75f3c5ad", null ],
+      [ "user_t", "struct_region_struct.html#a0f45fe48c95fb9674571f6f085aa862e", null ],
+      [ "xn_t", "struct_region_struct.html#a3d361ef2b9edc3c7a3aa672a284555f3", null ]
+    ] ],
+    [ "__ap_page", "group___m_m_u___functions.html#gaf87456022881530f30354c3e84955bf8", null ],
+    [ "__ap_section", "group___m_m_u___functions.html#ga5f069f471adb154153051c570c3a6ab2", null ],
+    [ "__domain_page", "group___m_m_u___functions.html#gaf6ade9af49080e011c6ac9ad46b4993f", null ],
+    [ "__domain_section", "group___m_m_u___functions.html#gab9c5062b00045439b84362310c3bc5d0", null ],
+    [ "__get_page_descriptor", "group___m_m_u___functions.html#ga8ebe9d61b0b1e139068fd24e61f042b0", null ],
+    [ "__get_section_descriptor", "group___m_m_u___functions.html#gaba0a8d570464881118b1594d32237547", null ],
+    [ "__global_page", "group___m_m_u___functions.html#ga941feca37d9210110e090dc4ecd43ca5", null ],
+    [ "__global_section", "group___m_m_u___functions.html#gab9ebaae8d22bfbff6ce2909c778ca43a", null ],
+    [ "__memory_page", "group___m_m_u___functions.html#ga3eb167ca2d2e63c53a62ac1fb7cde793", null ],
+    [ "__memory_section", "group___m_m_u___functions.html#ga3883e7cea429d89d07e32fe69b241565", null ],
+    [ "__p_page", "group___m_m_u___functions.html#gad99cf050a448feeb534988003e38b861", null ],
+    [ "__p_section", "group___m_m_u___functions.html#ga47d76089fa83ddf1ad420f37c2787f8e", null ],
+    [ "__secure_page", "group___m_m_u___functions.html#ga27417dca4e862ec314c09fd2b89383ff", null ],
+    [ "__secure_section", "group___m_m_u___functions.html#gac1430230710ffbf0f3f279f118b0f8b3", null ],
+    [ "__shared_page", "group___m_m_u___functions.html#gae48e2237412f51af7bdbd7d4d3d5125d", null ],
+    [ "__shared_section", "group___m_m_u___functions.html#ga9913b6ac45889fea12f9caa6292b89b3", null ],
+    [ "__TTPage_4k", "group___m_m_u___functions.html#gab749bcf38edf77ab4112682e0e34834c", null ],
+    [ "__TTPage_64k", "group___m_m_u___functions.html#gacf942453d586ba20dd49c7d7d2e073a3", null ],
+    [ "__TTSection", "group___m_m_u___functions.html#gafb0322c3afe9d9b67411eb1e5d093d2e", null ],
+    [ "__xn_page", "group___m_m_u___functions.html#ga29333191c243fead911c3a25586583ef", null ],
+    [ "__xn_section", "group___m_m_u___functions.html#gaac58bd6af8c207174df553059a28263e", null ]
+];
