@@ -53,8 +53,9 @@
         int GoalPosition(float degrees);
 
 				/** 
-        * \brief Set the maximum speed used during movement. Motor will try to reach this speed.
+        * \brief Set the speed in speed mode. Motor will reach this speed.
 				* \param goal_speed  speciefied as  TODO: specify
+				* sign specifies direction.
 				*/
         int SetSpeed(float goal_speed);
     
